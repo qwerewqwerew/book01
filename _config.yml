@@ -9,8 +9,8 @@ description: >
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
+url:              'https://qwerewqwerew.github.io/book01/'
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
@@ -36,7 +36,7 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
-syntax_highlighter_style: colorful
+syntax_highlighter_style: base16
 
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
