@@ -4,6 +4,13 @@ title: About
 permalink: /about/
 ---
 지킬로 문서를 만들어보자(https://docs.github.com/ko/pages/setting-up-a-github-pages-site-with-jekyll)
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
