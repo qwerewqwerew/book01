@@ -57,7 +57,7 @@ The search functionality in jekyll-gitbook theme is powered by the [gitbook-plug
 The code highlight style is configurable the following entry in `_config.yaml`:
 
 ```yaml
-syntax_highlighter_style: colorful
+syntax_highlighter_style: base16
 ```
 
 The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
