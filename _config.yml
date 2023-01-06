@@ -36,7 +36,7 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
-syntax_highlighter_style: gruvbox
+syntax_highlighter_style: base16.dark
 
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
@@ -61,6 +61,9 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+
+tracker:
+  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, G-VLV52W1RFQ>"  
 #https://jekyllrb-ko.github.io/
 #gem install bundler jekyll
 #jekyll new my-blog

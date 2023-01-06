@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Jekyll Gitbook Theme
+title: Captain Coder Mango
 permalink: /
 ---
 
@@ -83,7 +83,7 @@ minimal configuration in `_config.yaml`:
 
 ```yaml
 tracker:
-  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
+  google_analytics: "G-VLV52W1RFQ"
 ```
 
 Similarly, CNZZ can be added with the following configuration in `_config.yaml`
