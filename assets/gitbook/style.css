@@ -175,6 +175,7 @@ table {
 .hidden {
 	display: none;
 }
+li{word-break: break-all; word-wrap: break-word;}
 .alert {
 	padding: 15px;
 	margin-bottom: 20px;
