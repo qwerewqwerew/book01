@@ -45,10 +45,11 @@ permalink:        /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
+  - _pages
 
 collections:
   pages:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 page_width: 800px
