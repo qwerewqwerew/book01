@@ -16,5 +16,8 @@
     "test": "stylelint '**/*.scss'",
     "format": "prettier --write '**/*.{scss,js,json}'",
     "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "dependencies": {
+    "sass-migrator": "^1.7.2"
   }
 }
