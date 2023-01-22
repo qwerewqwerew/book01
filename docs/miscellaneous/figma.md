@@ -1,8 +1,8 @@
 ---
-title: 01-figma
-parent: miscellaneous
+title: 04-figma
+parent: Miscellaneous
 layout: default
-nav_order: 2
+
 ---
 
 

@@ -1,8 +1,7 @@
 ---
 layout: default
-title:  Analytics-01
-parent: miscellaneous
-nav_order: 2
+title:  01-Analytics
+parent: Miscellaneous
 ---
 
 ---

@@ -6,20 +6,30 @@ description: "자꾸까먹어서 적는 블로그."
 permalink: /
 ---
 
-# HOME
+[Javascript]({{'/docs/javascript/'| relative_url}} )
+---
 
+[jQuery]({{'/docs/jQuery/'| relative_url}} )
+---
+
+[Javascript+jQuery]({{'/docs/javascript+jQuery/'| relative_url}} )
 ---
 
 
-## 1. HTML
-{% link docs/javascript/index.md %} 
+[PHP]({{'/docs/php/'| relative_url}} )
+---
+
+
+[Projects]({{'/docs/Projects/'| relative_url}} )
+---
 
 
 
-{:toc}
-{: .fs-6 .fw-300 }
+[Jekyll]({{'/docs/Jekyll/'| relative_url}} )
+---
 
-## 목차
-{: .no_toc .text-delta }
 
-[테마설명서]:https://just-the-docs.github.io/just-the-docs/docs/customization/
+
+[Miscellaneous]({{'/docs/miscellaneous/'| relative_url}} )
+---
+
