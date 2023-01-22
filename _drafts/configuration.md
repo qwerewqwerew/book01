@@ -3,7 +3,7 @@ layout: default
 title: Configuration
 nav_order: 2
 ---
-# https://100sang.net/292
+
 # Configuration
 {: .no_toc }
 

@@ -7,6 +7,10 @@ layout: post
 ---
 -----
 
+1. TOC
+{:toc}
+--
+
 ### 00. 도움말 링크
 
 [지킬공식사이트](https://jekyllrb-ko.github.io/)
@@ -27,27 +31,9 @@ layout: post
 
 [지킬북테마] (https://github.com/sighingnow/jekyll-gitbook/fork)
 
-[4]:(https://github.com/allejo/jekyll-toc)
+[just-the-docs](https://just-the-docs.github.io/just-the-docs/)
 
-[5]:(https://github.com/gitbook-plugins/gitbook-plugin-search-pro)
-
-[6]:(https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes)
-
-[7]:(https://analytics.google.com/analytics/web/)
-
-[8]:(https://www.cnzz.com/)
-
-[9]:(https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
-
-[10]:( https://github.com/sighingnow/jekyll-gitbook/blob/master/gitbook/custom.css)
-
-[11]:( https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas)
-
-[12]:( https://rubygems.org/gems/jekyll-remote-theme)
-
-[13]:( https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
-
-[14]:( https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml)
+[just-the-docs](https://100sang.net/292)
 
 ---
 

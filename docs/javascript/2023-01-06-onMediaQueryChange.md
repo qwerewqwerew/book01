@@ -6,6 +6,9 @@ date: 2023-01-06
 layout: post
 ---
 
+1. TOC
+{:toc}
+--
 ## 01 미디어쿼리가 변할때 실행하는 함수
 
 `onMediaQueryChange`

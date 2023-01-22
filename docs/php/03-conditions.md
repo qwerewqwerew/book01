@@ -4,6 +4,9 @@ title: 03-조건문,반복문
 date: 2023-01-10
 parent: PHP
 ---
+1. TOC
+{:toc}
+--
 
 ## 01 conditions.php
 
@@ -51,27 +54,27 @@ if($first_name == 'Mango'){
 1. `$first_name = 'mango';` 와 `$first_name == 'Mango'` 를 다르게 판단하여
    `거짓입니다';` 가 출력된다
 
-1. `if($first_name == 'Mango' && $last_name='kim')` 으로 조건을 변경해본다.
-1. 둘다 참이어야 참으로 판단되므로 거짓이 나온다.
-1. `if($first_name == 'Mango' || $last_name='kim')` 으로 조건을 변경해본다.
-1. 둘중 하나만 참이면 참으로 판단되므로 진실이 나온다
-1. `if($first_name == 'Mango' and $last_name='kim')` 으로 조건을 변경해본다.
-1. php 에서만 사용되는 조건식으로 둘다 참이어야 한다
-1. `if($first_name == 'Mango' or $last_name='kim')` 으로 조건을 변경해본다.
-1. php 에서만 사용되는 조건식으로 둘다 참이어야 한다
-1. `if($first_name == 'Mango' xor $last_name='kim')` 으로 조건을 변경해본다.
-1. php 에서만 사용되는 조건식으로 두개가 서로 다르면 참이다
+2. `if($first_name == 'Mango' && $last_name='kim')` 으로 조건을 변경해본다.
+3. 둘다 참이어야 참으로 판단되므로 거짓이 나온다.
+4. `if($first_name == 'Mango' || $last_name='kim')` 으로 조건을 변경해본다.
+5. 둘중 하나만 참이면 참으로 판단되므로 진실이 나온다
+6. `if($first_name == 'Mango' and $last_name='kim')` 으로 조건을 변경해본다.
+7. php 에서만 사용되는 조건식으로 둘다 참이어야 한다
+8. `if($first_name == 'Mango' or $last_name='kim')` 으로 조건을 변경해본다.
+8. php 에서만 사용되는 조건식으로 둘다 참이어야 한다
+10. `if($first_name == 'Mango' xor $last_name='kim')` 으로 조건을 변경해본다.
+11. php 에서만 사용되는 조건식으로 두개가 서로 다르면 참이다
 
 ---
 
-## 배열
+## 02. array.php
 
 1. array.php 생성
-1. 배열의 문법
-1. `$배열이름 = array();`
-1. 배열을 생성하고 값 넣기
+> 배열의 문법
+> `$배열이름 = array();`
+> 배열을 생성하고 값 넣기
 
-### 01-1
+### 02-1 배열의 생성
 
 ```php
 <?php
@@ -88,10 +91,11 @@ echo $fruits
 
 1. 아래와 같은 에러가 출력된다
    <img src='{{"/assets/img/error0.png" | relative_url }}'>
+2. 자바스크립트와 마찬가지로 배열의 값은 원소 단위로 꺼내어야 한다.
+  `echo $fruits[0]` 으로 작성하거나 반복문을 이용한다.
+3. echo 를 주석처리한다.
 
-1. echo 를 주석처리한다.
-
-### 01-2
+### 02-2
 
 1. isset 으로 확인해보자
    > #### isset
@@ -116,7 +120,8 @@ if (isset($fruits[3])) {
 
 ---
 
-## for
+
+### 02-3 배열의 조작
 
 > #### count()
 >
@@ -125,13 +130,10 @@ if (isset($fruits[3])) {
 >
 > {: .block-tip }
 
-1. for문
-
-### 02-1
-
 ```php
 
 <?php
+  $fruits = array('apple', 'banana', 'orange');
     for($i=0;  $i<count($fruits); $i++){
         echo $fruits[$i].'<br/>';
     }
@@ -139,11 +141,9 @@ if (isset($fruits[3])) {
 
 ```
 
-<script src="//onlinegdb.com/embed/js/nDr8uhVzt?theme=dark"></script>
+## 연관배열 Associative Array
 
-2. forEach문
-
-### 02-2
+### 02-4 foreach
 
 ```php
 
@@ -154,12 +154,6 @@ if (isset($fruits[3])) {
 ?>
 
 ```
-<script src="//onlinegdb.com/embed/js/O5QCPHmCA?theme=dark"></script>
-
-
-## 연관배열 Associative Array
-
-### 02-3 foreach
 
 ```php
 
@@ -174,14 +168,13 @@ foreach ($prices as $key => $price) {
 }
 ?>
 
-
 ```
 
 $key는 배열의 요소를 의미하고 $price 는 값을 하나씩 의미한다
 
-<img src='{{"/assets/img/php30.jpg" | relative_url }}'>
+<img src='{{"/assets/img/php-30.jpg" | relative_url }}'>
 
-### 02-4 
+### 02-5 
 
 위의 배열을 줄여보기
 아래처럼 한줄로 줄일수 있다.
@@ -198,8 +191,109 @@ foreach ($array as $key => $price) {
 ```
 >
 >#### 이전까지는 배열의 인덱스 번호를 활용하여 선언후 키에 할당하였으나 문자열에 직접 할당함
->  
-{: .block-tip }
+
+
+---
+
+## 03 Loop
+
+### 03-1 while
+
+  {: .note }
+  > while(조건식){
+  >    실행문
+  > }
+
+```php
+<h1>Loop</h1>
+<h2>while</h2>
+<?php
+$i = 0;
+while ($i < 5) {  //i가5미만일때 까지 실행
+    echo ($i++) . "<br/>";  //i=i+1
+}
+?>
+```
+실행
+![]({{'/assets/img/php55.jpg'| relative_url}} ) 
+
+### 03-2 do/while
+  {: .note }
+  > while(조건식){
+  >    실행문
+  > }
+
+```php
+<h2>do/while</h2>
+<?php
+$j = 0;
+do {
+    echo ($j++) . "<br/>";
+} while ($j < 5);
+?>
+```
+실행
+![]({{'/assets/img/php56.jpg'| relative_url}} )
+
+### 03-3 for
+{: .note }
+>
+>for(초기값;조건;증감식){실행문}
+
+```php
+<h2>for</h2>
+<?php
+for ($k = 0; $k < 5; $k++) {
+    echo $k . '<br/>';
+    echo "{$k}<br/>"; //쌍따옴표 작성시 변수명과 문자열을 묶어서 출력할수 있다
+}
+?>
+
+```
+실행
+![]({{'/assets/img/php57.jpg'| relative_url}} )
+
+
+### 03-4 foreach
+{: .note }
+>foreach(배열 as 변수){실행문}
+>
+
+```php
+<?php
+$results = array(0, 5, 6, 7, 8); //5개의 값이있는 배열 생성
+foreach ($results as $result) {
+    echo "변수 \$result의 값은 {$result} 입니다. <br/>";
+}
+?>
+```
+실행 - 배열의 요소들을 하나씩 출력함
+![]({{'/assets/img/php58.jpg'| relative_url}} )
+
+
+### 03-5 foreach(associative array)
+{: .note-title }
+> 키와 값이 있는 배열
+>
+
+```php
+<?php
+$scores = array(
+    "국어" => 80,
+    "영어" => 90,
+    "수학" => 100,
+    "과학" => 95,
+);
+foreach ($scores as $key => $score) {
+    echo "배열 \$scores에서 키값 '{$key}'에 대한 값은 {$score}입니다.<br>";
+}
+?>
+
+```
+![]({{'/assets/img/php59.jpg'| relative_url}} )
+출력
+![]({{'/assets/img/php60.jpg'| relative_url}} )
+---
 
 ### 문제
 
@@ -231,3 +325,5 @@ echo "합계: $sum,평균:$avg <br>";
 ```
 1. 출력
 ![]({{'/assets/img/php46.jpg'| relative_url}} )
+
+---
