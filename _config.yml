@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: 망고는 코딩대장
 description: 깜빡깜빡해서 쓰는거에요
-url: "https://qwerewqwerew.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/book01" # the subpath of your site, e.g. /blog
+url: "https://qwerewqwerew.github.io"
+baseurl: "/book01" 
 
 permalink: pretty
 
