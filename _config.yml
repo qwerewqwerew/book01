@@ -35,7 +35,6 @@ exclude:
    - vendor/ruby/
  # specific to the theme website:
    - bin/
-   - lib/
    - "*.gemspec"
    - "*.gem"
    - LICENSE.txt
