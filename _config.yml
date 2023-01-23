@@ -34,16 +34,7 @@ exclude:
    - vendor/gems/
    - vendor/ruby/
  # specific to the theme website:
-   - bin/
-   - lib/
-   - "*.gemspec"
-   - "*.gem"
-   - LICENSE.txt
-   - package.json
-   - package-lock.json
-   - Rakefile
-   - README.md
-   - index.markdown
+
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -93,8 +84,8 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 #aux_links:
- # "GitHub":
-#  - "//github.com/qwerewqwerew/book01/"
+ "GitHub":
+ - "//github.com/qwerewqwerew/book01/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false

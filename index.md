@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-nav_order: 1
 description: "자꾸까먹어서 적는 블로그."
 permalink: /
 ---

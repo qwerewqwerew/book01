@@ -16,4 +16,6 @@ $(function () {
 			});
 		});
 	});
+
+	$(".anc").attr("target","_blank");
 })

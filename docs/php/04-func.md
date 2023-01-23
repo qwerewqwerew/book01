@@ -3,6 +3,7 @@ layout: post
 title: 04-함수와 변수
 date: 2023-01-10
 parent: PHP
+tags: [function, variable]
 ---
 ---
 1. TOC
@@ -29,7 +30,7 @@ parent: PHP
 
 ---
 
-## 01-1 :  함수
+### 01-1 :  함수
 
 + `xmapp/htdoc/func.php` 생성
 
@@ -64,7 +65,7 @@ parent: PHP
 
 ---
 
-## 01-2 : 활용
+### 01-2 : 활용
 
 + 간단한 덧셈함수를 만들어 보자
 
@@ -90,7 +91,7 @@ php  </summary>
 
 ---
 
-## 01-3 배열의 값을 출력하는 함수 [plus]
+### 01-3 배열의 값을 출력하는 함수 [plus]
 
 {: .note }
 > print_r
@@ -126,7 +127,7 @@ php  </summary>
 
 ---
 
-## 01-4
+### 01-4
 {: .note-title }
 > pre 태그를 추가해주는 것을 함수로 작성
 >

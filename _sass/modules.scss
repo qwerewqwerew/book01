@@ -2,8 +2,8 @@
 @import "./vendor/normalize.scss/normalize";
 
 // Modules
+@import "custom/custom";
 @import "./base";
-@import "./custom";
 @import "./layout";
 @import "./content";
 @import "./navigation";
