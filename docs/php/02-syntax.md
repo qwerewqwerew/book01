@@ -115,3 +115,9 @@ parent: PHP
 <img src='{{ "/assets/img/php39.jpg" | relative_url }}'>
 <img src='{{ "/assets/img/php40.jpg" | relative_url }}'>
 
+---
+
+|영어명|한국어명|여는 태그|닫는 태그|설명|
+|standard tag	|  표준 태그, 긴 태그	       |<?php|?>|항상 사용 가능|
+|short open tag|  짧은 여는 태그, 짧은 태그[2]|<?	|?>|기본값은 사용불가. short_open_tag=On 적용하면 사용가능. 권장하지 않음.|
+|echo shortcut	| 단축 태그                	 |<?=|?|항상 사용 가능. <?php echo 내용; ?>의 축약형|
