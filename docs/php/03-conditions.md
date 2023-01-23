@@ -3,7 +3,7 @@ layout: post
 title: 03-조건문,반복문
 date: 2023-01-10
 parent: PHP
-tags: [conditions, array, loop]
+tags: [conditions, array, loop, isset]
 ---
 1. TOC
 {:toc}
@@ -202,10 +202,10 @@ foreach ($array as $key => $price) {
 
 ### 03-1 while
 
-  {: .note }
-  > while(조건식){
-  >    실행문
-  > }
+{: .note }
+> while(조건식){
+>    실행문
+> }
 
 ```php
 <h1>Loop</h1>

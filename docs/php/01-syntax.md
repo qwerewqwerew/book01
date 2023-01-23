@@ -104,7 +104,7 @@ parent: PHP
 <body>
    <?php 
       $name="망고";
-      echo $name'대장';
+      echo $name'대장'; 
       echo "🥇 $name 대장";
       echo "🥇 $myname 대장";
    ?>
