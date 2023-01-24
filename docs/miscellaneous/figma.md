@@ -11,3 +11,9 @@ layout: default
 
 
 [교안링크](https://mango2.notion.site/273d0c563ce04e3684ac251cdfe74b99)
+
+## Resizing 옵션
+
+* Fixed : 고정크기
+* Hug content : 컨텐츠 감싸기 (내용기준)
+* Fill container : 컨테이너 채우기 (부모기준)
