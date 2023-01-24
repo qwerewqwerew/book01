@@ -39,7 +39,7 @@ exclude:
    - "*.gem"
    #- LICENSE.txt
    - package.json
-   #- package-lock.json
+   - package-lock.json
    - Rakefile
    #- README.md
    #- index.markdown

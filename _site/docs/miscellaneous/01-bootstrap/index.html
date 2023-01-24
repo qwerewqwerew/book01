@@ -1,0 +1,165 @@
+<ol>
+  <li>TOC
+    <p>–</p>
+  </li>
+</ol>
+
+<h2 id="01-nodejs-설치">01 nodeJS 설치</h2>
+<p><a href="https://nodejs.org/dist/latest-v16.x/">NodeJS 16 버전 설치</a>
+  <strong>EXPO 개발시 v18 충돌남</strong></p>
+
+<h2 id="01-bootstrap-인스톨">01 bootstrap 인스톨</h2>
+
+<ol>
+  <li>
+    <p>bootstrap 폴더 생성</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">npm init -y</code></p>
+  </li>
+</ol>
+
+<ul>
+  <li>pacakage.json 파일생성</li>
+</ul>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">npm i bootstrap</code></li>
+  <li><code class="language-plaintext highlighter-rouge">npm i bootstrap-icons</code></li>
+</ol>
+
+<ul>
+  <li>위의 과정 진행후 node_modules 폴더를 열면 bootstrap 폴더가 보인다</li>
+</ul>
+
+<ol>
+  <li>index.html 파일생성</li>
+  <li>scss 폴더 생성</li>
+  <li>scss / main.scss 파일생성</li>
+  <li>livescsscompiler 세팅</li>
+</ol>
+
+<ul>
+  <li><img src="/book01/assets/img/scss1.jpg" alt="" /></li>
+  <li><img src="/book01/assets/img/scss2.jpg" alt="" /></li>
+  <li><img src="/book01/assets/img/scss3.jpg" alt="" /></li>
+</ul>
+
+<ol>
+  <li>scss 환경설정</li>
+</ol>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"liveSassCompile.settings.formats"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"expanded"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"extensionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">".css"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"savePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"~../css"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"savePathReplacementPairs"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"compressed"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"extensionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">".min.css"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"savePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"~../css"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"savePathReplacementPairs"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="err">,</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li>index.html 작성</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>bootstrap<span class="nt">&lt;/title&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body&gt;&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>main.scss 작성</li>
+</ol>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">"../node_modules/bootstrap/scss/bootstrap.scss"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>vscode 하단의 watch scss 를 클릭하면 프로젝트 폴더에 css 폴더와 함께 컴파일된 css 생성</li>
+</ol>
+
+<hr />
+
+<h2 id="02">02</h2>
+
+<ol>
+  <li>모듈링크</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;head&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="nt">/&gt;</span>
+		<span class="nt">&lt;title&gt;</span>bootstrap<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/main.min.css"</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;/head&gt;</span>
+	<span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">"bg-primary"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"node_modules/bootstrap/dist/js/bootstrap.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>실행화면 배경색이 primary-color 인지 확인</p>
+  </li>
+  <li>
+    <p>버튼추가</p>
+
+    <p><code class="language-plaintext highlighter-rouge">&lt;button type="button" class="btn-light btn"&gt;전송&lt;/button&gt;</code></p>
+
+    <p><code class="language-plaintext highlighter-rouge">&lt;button type="button" class="btn-outline-light btn"&gt;전송&lt;/button&gt;</code></p>
+  </li>
+</ol>
+
+<h2 id="03">03</h2>
+
+<ol>
+  <li>main.scss</li>
+  <li>변수를 변경하여 수정해본다</li>
+</ol>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary</span><span class="p">:</span><span class="no">pink</span><span class="p">;</span>
+<span class="nv">$light</span><span class="p">:</span><span class="no">gray</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">"../node_modules/bootstrap/scss/bootstrap.scss"</span><span class="p">;</span>
+
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-light btn"</span><span class="nt">&gt;</span>전송<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-outline-light btn"</span><span class="nt">&gt;</span>전송<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-primary btn"</span><span class="nt">&gt;</span>전송<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-outline-primary btn"</span><span class="nt">&gt;</span>전송<span class="nt">&lt;/button&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"node_modules/bootstrap/dist/js/bootstrap.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+
+</code></pre></div></div>
+
+<h2 id="04">04</h2>
+
+<ol>
+  <li>아이콘 넣기</li>
+</ol>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"node_modules/bootstrap-icons/icons/alarm.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"node_modules/bootstrap-icons/icons/phone-fill.svg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+</code></pre></div></div>
