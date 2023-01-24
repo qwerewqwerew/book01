@@ -719,89 +719,89 @@
     "url": "/book01/docs/miscellaneous/figma/",
     "relUrl": "/docs/miscellaneous/figma/"
   },"120": {
-    "doc": "Home",
-    "title": "Javascript",
-    "content": " ",
-    "url": "/book01/#javascript",
-    "relUrl": "/#javascript"
-  },"121": {
-    "doc": "Home",
-    "title": "jQuery",
-    "content": " ",
-    "url": "/book01/#jquery",
-    "relUrl": "/#jquery"
-  },"122": {
-    "doc": "Home",
-    "title": "Javascript+jQuery",
-    "content": " ",
-    "url": "/book01/#javascriptjquery",
-    "relUrl": "/#javascriptjquery"
-  },"123": {
-    "doc": "Home",
-    "title": "PHP",
-    "content": " ",
-    "url": "/book01/#php",
-    "relUrl": "/#php"
-  },"124": {
-    "doc": "Home",
-    "title": "Projects",
-    "content": " ",
-    "url": "/book01/#projects",
-    "relUrl": "/#projects"
-  },"125": {
-    "doc": "Home",
-    "title": "Jekyll",
-    "content": " ",
-    "url": "/book01/#jekyll",
-    "relUrl": "/#jekyll"
-  },"126": {
-    "doc": "Home",
-    "title": "Miscellaneous",
-    "content": " ",
-    "url": "/book01/#miscellaneous",
-    "relUrl": "/#miscellaneous"
-  },"127": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "/book01/",
-    "relUrl": "/"
-  },"128": {
-    "doc": "jQuery",
-    "title": "jQuery",
-    "content": " ",
-    "url": "/book01/docs/jQuery/",
-    "relUrl": "/docs/jQuery/"
-  },"129": {
-    "doc": "Miscellaneous",
-    "title": "Miscellaneous",
-    "content": " ",
-    "url": "/book01/docs/miscellaneous/",
-    "relUrl": "/docs/miscellaneous/"
-  },"130": {
     "doc": "Products",
     "title": "Products",
     "content": " ",
     "url": "/book01/docs/Projects/",
     "relUrl": "/docs/Projects/"
-  },"131": {
-    "doc": "Jekyll",
-    "title": "Jekyll",
+  },"121": {
+    "doc": "Miscellaneous",
+    "title": "Miscellaneous",
     "content": " ",
-    "url": "/book01/docs/Jekyll/",
-    "relUrl": "/docs/Jekyll/"
-  },"132": {
-    "doc": "PHP",
-    "title": "PHP",
+    "url": "/book01/docs/miscellaneous/",
+    "relUrl": "/docs/miscellaneous/"
+  },"122": {
+    "doc": "jQuery",
+    "title": "jQuery",
     "content": " ",
-    "url": "/book01/docs/php/",
-    "relUrl": "/docs/php/"
-  },"133": {
+    "url": "/book01/docs/jQuery/",
+    "relUrl": "/docs/jQuery/"
+  },"123": {
     "doc": "Javascript",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/docs/javascript/",
     "relUrl": "/docs/javascript/"
+  },"124": {
+    "doc": "Jekyll",
+    "title": "Jekyll",
+    "content": " ",
+    "url": "/book01/docs/Jekyll/",
+    "relUrl": "/docs/Jekyll/"
+  },"125": {
+    "doc": "PHP",
+    "title": "PHP",
+    "content": " ",
+    "url": "/book01/docs/php/",
+    "relUrl": "/docs/php/"
+  },"126": {
+    "doc": "Home",
+    "title": "Javascript",
+    "content": " ",
+    "url": "/book01/#javascript",
+    "relUrl": "/#javascript"
+  },"127": {
+    "doc": "Home",
+    "title": "jQuery",
+    "content": " ",
+    "url": "/book01/#jquery",
+    "relUrl": "/#jquery"
+  },"128": {
+    "doc": "Home",
+    "title": "Javascript+jQuery",
+    "content": " ",
+    "url": "/book01/#javascriptjquery",
+    "relUrl": "/#javascriptjquery"
+  },"129": {
+    "doc": "Home",
+    "title": "PHP",
+    "content": " ",
+    "url": "/book01/#php",
+    "relUrl": "/#php"
+  },"130": {
+    "doc": "Home",
+    "title": "Projects",
+    "content": " ",
+    "url": "/book01/#projects",
+    "relUrl": "/#projects"
+  },"131": {
+    "doc": "Home",
+    "title": "Jekyll",
+    "content": " ",
+    "url": "/book01/#jekyll",
+    "relUrl": "/#jekyll"
+  },"132": {
+    "doc": "Home",
+    "title": "Miscellaneous",
+    "content": " ",
+    "url": "/book01/#miscellaneous",
+    "relUrl": "/#miscellaneous"
+  },"133": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/book01/",
+    "relUrl": "/"
   },"134": {
     "doc": "Javascript+JQuery",
     "title": "Javascript+JQuery",

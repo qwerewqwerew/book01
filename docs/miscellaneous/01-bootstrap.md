@@ -1,7 +1,6 @@
 ---
 title: 01-bootstrap scss 개발하기
-layout: custom
-date: 2023-01-10
+layout: default
 parent: miscellaneous
 tags: [bootstrap,scss]
 ---
