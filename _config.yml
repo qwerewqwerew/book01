@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 망고는 코딩대장
-description: 깜빡깜빡해서 쓰는거에요
+description: 깜빡깜빡해서 쓰는 블로그
 url: "https://qwerewqwerew.github.io"
 baseurl: "/book01" 
 
@@ -120,7 +120,7 @@ callouts:
     color: blue
   new:
     title: New
-    color: green
+    color: purple
   note:
     title: Note
     color: yellow

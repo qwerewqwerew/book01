@@ -1,13 +1,13 @@
 ---
-title: 01-bootstrap scss 개발하기
+title: 02-bootstrap scss 개발하기
 layout: default
-parent: miscellaneous
+parent: Miscellaneous
 tags: [bootstrap,scss]
 ---
 
 1. TOC
    {:toc}
-   --
+---
 
 ## 01 nodeJS 설치
 [NodeJS 16 버전 설치](https://nodejs.org/dist/latest-v16.x/)

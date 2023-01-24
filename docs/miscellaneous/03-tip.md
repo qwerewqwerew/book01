@@ -1,9 +1,14 @@
 ---
-title: 03-Batch
+title: 03-tip
 parent: Miscellaneous
 layout: default
 ---
------
+
+1. TOC
+   {:toc}
+---
+
+
 ###  01. 배치파일 만들기
 >
 >  배치파일(batch file)은 윈도우의 명령 프롬프트(cmd)에서 순서대로 실행할 명령어들을 한번에 일괄로 실행되도록 하기 위해 작성한 명령어
@@ -14,6 +19,7 @@ layout: default
   - 메모장을 사용해서 텍스트 파일로 코드를 생성한 후 배치파일로 저장할 수 있다
 2. 간단한 배치파일 명령어 배우기. 
   - 배치 파일은 여러 도스 명령어로 실행되기 때문에, 배치 파일의 명령어도 도스 명령어와 비슷하다. 몇가지 중요한 명령어를 살펴보자:
+
   - `ECHO `– 화면에 텍스트 출력
   - `@ECHO OFF`  –출력되는 텍스트 감추기
   - `START `– 기본 프로그램으로 파일 실행
@@ -24,6 +30,7 @@ layout: default
   - `XCOPY `– 추가 기능에 따라 파일 복사
   - `FOR/IN`/`DO`  –파일 지정.
   - `TITLE`- 현재 창 이름 편집.
+  
     <img src='{{" https://www.wikihow.com/images/thumb/a/aa/4288-2-2.jpg/v4-728px-4288-2-2.jpg "}}'>
 3. 확장자 .bat 로 저장
 
@@ -43,4 +50,7 @@ bundle exec jekyll serve
 pause
 
 ```
+
+### 03 유닉스타임변환기
+[유닉스타임변환기](http://chongmoa.com/unixtime)
 

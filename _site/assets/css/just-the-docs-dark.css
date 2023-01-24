@@ -876,7 +876,7 @@ img {
   color: #183385;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(-50%);
+  transform: translateX(-10%);
 }
 
 .anc {
@@ -7936,7 +7936,7 @@ img {
   color: #183385;
   cursor: pointer;
   z-index: 999;
-  transform: translateX(-50%);
+  transform: translateX(-10%);
 }
 
 .anc {
