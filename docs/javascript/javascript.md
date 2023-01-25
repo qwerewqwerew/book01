@@ -1,6 +1,5 @@
 ---
 title: 시간표시
-date: 2023-01-07
 parent: Javascript
 layout: post
 ---
