@@ -860,53 +860,6 @@ template {
   display: none;
 }
 
-.bg-w-100 {
-  background-color: rgba(255, 255, 255, 0.1960784314) !important;
-}
-
-.bg-w-200 {
-  background-color: rgba(255, 255, 255, 0.3450980392) !important;
-}
-
-.bg-w-300 {
-  background-color: rgba(255, 255, 255, 0.7450980392) !important;
-}
-
-.bg-w-000 {
-  background-color: rgba(255, 255, 255, 0.1176470588) !important;
-}
-
-img {
-  display: block;
-}
-
-.close {
-  left: 0px;
-  top: 0px;
-  color: #183385;
-  cursor: pointer;
-  z-index: 999;
-  transform: translateX(-10%);
-}
-
-.anc {
-  color: #f77ef1;
-}
-
-code {
-  font-size: 0.95em;
-}
-
-#main-content h2, #main-content h3, #main-content h4 {
-  margin-bottom: 1.5em;
-}
-#main-content h2 {
-  color: #f5f6fa;
-}
-#main-content h3 {
-  color: #e6e1e8;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -1237,6 +1190,53 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   color: #7253ed;
+}
+
+.bg-w-100 {
+  background-color: rgba(255, 255, 255, 0.1960784314) !important;
+}
+
+.bg-w-200 {
+  background-color: rgba(255, 255, 255, 0.3450980392) !important;
+}
+
+.bg-w-300 {
+  background-color: rgba(255, 255, 255, 0.7450980392) !important;
+}
+
+.bg-w-000 {
+  background-color: rgba(255, 255, 255, 0.1176470588) !important;
+}
+
+img {
+  display: block;
+}
+
+.close {
+  left: 0px;
+  top: 0px;
+  color: #183385;
+  cursor: pointer;
+  z-index: 999;
+  transform: translateX(-10%);
+}
+
+.anc {
+  color: #f77ef1;
+}
+
+code {
+  font-size: 0.95em;
+}
+
+#main-content h2, #main-content h3, #main-content h4 {
+  margin-bottom: 1.5em;
+}
+#main-content h2 {
+  color: #f5f6fa;
+}
+#main-content h3 {
+  color: #e6e1e8;
 }
 
 .main-content {
@@ -7726,14 +7726,14 @@ blockquote.important-title > p:last-child {
 }
 
 p.new, blockquote.new {
-  background: rgba(65, 214, 147, 0.2);
-  border-left: 4px solid #026e57;
+  background: rgba(114, 83, 237, 0.2);
+  border-left: 4px solid #381885;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
 p.new::before, blockquote.new::before {
-  color: #026e57;
+  color: #381885;
   content: "New";
   display: block;
   font-weight: bold;
@@ -7742,7 +7742,7 @@ p.new::before, blockquote.new::before {
   padding-bottom: 0.125rem;
 }
 p.new > .new-title, blockquote.new > .new-title {
-  color: #026e57;
+  color: #381885;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7751,8 +7751,8 @@ p.new > .new-title, blockquote.new > .new-title {
 }
 
 p.new-title, blockquote.new-title {
-  background: rgba(65, 214, 147, 0.2);
-  border-left: 4px solid #026e57;
+  background: rgba(114, 83, 237, 0.2);
+  border-left: 4px solid #381885;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7760,7 +7760,7 @@ p.new-title, blockquote.new-title {
 p.new-title > p:first-child, blockquote.new-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #026e57;
+  color: #381885;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
