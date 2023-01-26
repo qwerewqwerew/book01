@@ -1219,16 +1219,6 @@ code {
   font-size: 0.95em;
 }
 
-#main-content h2, #main-content h3, #main-content h4 {
-  margin-bottom: 1.5em;
-}
-#main-content h2 {
-  color: #f5f6fa;
-}
-#main-content h3 {
-  color: #e6e1e8;
-}
-
 .main-content {
   line-height: 1.6;
 }
@@ -7945,16 +7935,6 @@ img {
 
 code {
   font-size: 0.95em;
-}
-
-#main-content h2, #main-content h3, #main-content h4 {
-  margin-bottom: 1.5em;
-}
-#main-content h2 {
-  color: #f5f6fa;
-}
-#main-content h3 {
-  color: #e6e1e8;
 }
 
 /*# sourceMappingURL=just-the-docs-dark.css.map */

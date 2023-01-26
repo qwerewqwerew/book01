@@ -468,377 +468,383 @@
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#1-인덱스-번호를-활용한-탭ui"
   },"78": {
     "doc": "04-탭UI(인덱스활용)",
+    "title": "2-정말 쉬운 탭",
+    "content": "&lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 탭: 클릭한것만 보이기(나머지 감추기) --&gt; &lt;/head&gt; &lt;body&gt; &lt;ul&gt; &lt;li class=\"b1\"&gt;btn1&lt;/li&gt; &lt;li class=\"b2\"&gt;btn2&lt;/li&gt; &lt;li class=\"b3\"&gt;btn3&lt;/li&gt; &lt;/ul&gt; &lt;div&gt; &lt;h3 class=\"h1\"&gt;para1&lt;/h3&gt; &lt;h3 class=\"h2\"&gt;para2&lt;/h3&gt; &lt;h3 class=\"h3\"&gt;para3&lt;/h3&gt; &lt;/div&gt; &lt;!-- vanilla JS --&gt; &lt;script&gt; var h1=document.querySelector(\".h1\"); var h2=document.querySelector(\".h2\"); var h3=document.querySelector(\".h3\"); var b1=document.querySelector(\".b1\"); var b2=document.querySelector(\".b2\"); var b3=document.querySelector(\".b3\"); b1.onclick=function(){ h1.style.display=\"block\"; h2.style.display=\"none\"; h3.style.display=\"none\"; } b2.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"block\"; h3.style.display=\"none\"; } b3.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"none\"; h3.style.display=\"block\"; } &lt;/script&gt; &lt;!-- JQuery --&gt; &lt;script src='https://code.jquery.com/jquery-3.6.0.min.js'&gt;&lt;/script&gt; &lt;script&gt; /* $('h3').hide(); $('.h1').show(); $('.b2').click(function () { $('.h1').hide(); $('.h2').show(); }) */ &lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . var h1=document.querySelector(\".h1\"); var h2=document.querySelector(\".h2\"); var h3=document.querySelector(\".h3\"); var b1=document.querySelector(\".b1\"); var b2=document.querySelector(\".b2\"); var b3=document.querySelector(\".b3\"); h2.style.display = \"none\"; h3.style.display = \"none\"; b1.onclick=function(){ h1.style.display=\"block\"; h2.style.display=\"none\"; h3.style.display=\"none\"; } b2.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"block\"; h3.style.display=\"none\"; } b3.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"none\"; h3.style.display=\"block\"; } . $('h3').hide(); $('.h1').show(); $('.b1').click(function () { $('.h1').show(); $('.h2').hide(); $('.h3').hide(); }) $('.b2').click(function () { $('.h1').hide(); $('.h2').show(); $('.h3').hide(); }) $('.b3').click(function () { $('.h1').hide(); $('.h2').hide(); $('.h3').show(); }) . ",
+    "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#2-%EC%A0%95%EB%A7%90-%EC%89%AC%EC%9A%B4-%ED%83%AD",
+    "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#2-정말-쉬운-탭"
+  },"79": {
+    "doc": "04-탭UI(인덱스활용)",
     "title": "04-탭UI(인덱스활용)",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/"
-  },"79": {
+  },"80": {
     "doc": "04-크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | .height() | 높이 | . | .innerHeight() | 요소의 padding을 포함한 높이 | . | .outerHeight() | 요소의 border, padding 포함한 높이 | . | .outerHeight(true) | 요소의 margin, border, padding 포함한 높이 | . ",
     "url": "/book01/docs/jQuery/04/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/jQuery/04/#01-요소-크기-알아내기"
-  },"80": {
+  },"81": {
     "doc": "04-크기알아내기",
     "title": "04-크기알아내기",
     "content": " ",
     "url": "/book01/docs/jQuery/04/",
     "relUrl": "/docs/jQuery/04/"
-  },"81": {
+  },"82": {
     "doc": "05-include",
     "title": "01 Include",
     "content": "공통으로 쓰는 파일을 외부에 불러와서 쓸수 있다. html 문서의 header, footer 같은 반복되는 영역을 외부에 저장 해 놓고 불러와서 사용하는 것 . 01-1 문서분리 . | functions.php -&gt; 다른이름으로 저장 -&gt; home.php | 표시된 부분을 반복영역으로 간주하고 진행한다 . | . | 표시된 부분의 코드를 잘라낸다 . | . | vscode 에 inc 폴더를 생성하고 하위에 header.php 를 만든다. | | . | 잘라낸 코드를 header.php 에 붙여넣는다. | | 편집완료스샷 | | . | . 01-2 변수설정 . | header.php 수정 . | 삽입한 페이지의 제목을 출력할수 있도록 title을 변수처리 | . | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;&lt;?= $title; ?&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;&lt;?= $title; ?&gt;&lt;/h1&gt; . 01-3 header . | home.php 수정 | . &lt;?php $title='home'; include('inc/header.php'); ?&gt; ... | ` $title=’home’; -&gt; inc/header.php`에 전달할 title 변수값 | include('inc/header.php'); -&gt; include 함수는 삽입할 파일의 경로를 작성하면 된다. | home.php 를 실행하여 탭 제목과 h1의 변수값이 변경되었는지 확인한다 실행 . | 개발자도구에서 변수값이 적용된것을 확인한다. | . header.php 만 단독으로 실행할 경우 에러발생 home.php 의 $title 변수를 include 함수 이후에 초기화 할 경우 에러발생 . 01-4 응용 . title 변수에 값을 확인하여 없으면 에러대신 빈값 출력시키기 . &lt;?php if(!isset($title)){ $title=''; } &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; ... ?&gt; . | header.php 의 최상단에 작성 | isset 함수를 활용하여 변수의 상태를 확인한다. $title 변수가 준비되지 않았을경우 true 이므로 $title변수에 빈값을 저장한다. | 이제 header.php 만 실행해도 오류가 발생하지 않는다 | . 실행 . | 주석처리 후 계속 진행 | . 01-5 footer . | home.php 편집 | &lt;/body&gt;&lt;/html&gt;를 잘라낸다 | 문서의 하단에 아래의 코드를 작성한다. | ... &lt;?php include('inc/footer.php') ?&gt; . | inc/footer.php 를 생성후 잘라낸 코드를 붙여넣는다 . | 실행하여 결과를 확인 &lt;/body&gt;&lt;/html&gt;가 추가된것 확인 . | . ",
     "url": "/book01/docs/php/05-include/#01-include",
     "relUrl": "/docs/php/05-include/#01-include"
-  },"82": {
+  },"83": {
     "doc": "05-include",
     "title": "02 Require",
     "content": "함수를 include 해보자 . 02-1 . | inc/functions.php 생성 | home.php의 함수의 호출문만 functions.php는 함수의 실행문 만 으로 분리한다. | . home.php &lt;?php $title = '망고홈'; include('inc/header.php'); require('inc/functions.php'); ?&gt; &lt;pre&gt; function 함수이름 (매개변수1,매개변수2){ ...실행문 } 함수이름(); function func_add(){ } &lt;/pre&gt; &lt;h2&gt;SUM&lt;/h2&gt; &lt;?php echo sum(50, 20); ?&gt; &lt;hr&gt; &lt;?php $fruits = ['apple', 'mango', 'banana', 'orange']; output($fruits) ?&gt; &lt;hr&gt; &lt;?php $result = sum1(10, 20); echo $result; ?&gt; &lt;hr&gt; &lt;h2&gt;지역변수 전역변수&lt;/h2&gt; &lt;?php myfunc(); ?&gt; &lt;hr&gt; &lt;h2&gt;전역변수&lt;/h2&gt; &lt;?php $var2 = 20; myfunc2(); echo \"{$var2} 임&lt;br&gt;\"; ?&gt; &lt;hr&gt; &lt;h2&gt;정적변수&lt;/h2&gt; &lt;?php increment(); increment(); increment(); ?&gt; &lt;?php include('inc/footer.php') ?&gt; . function.php &lt;?php function sum($x, $y) { return $x + $y; } function output($value) { echo '&lt;pre&gt;'; print_r($value); echo '&lt;/pre&gt;'; } function sum1($x, $y) { $result = $x + $y; //지역변수(local variable) return $result; } function myfunc() { $var = 10; echo \"{$var}\"; } function myfunc2() { global $var2; //global echo \"$var2 임 &lt;br&gt;\"; //출력됨 } function increment() { static $count; $count++; echo \"$count&lt;br/&gt;\"; } . home.php에서 sum 함수의 인자를 변경해서 실행해본다 . 모든 함수가 오류없이 실행되는지 확인 . ",
     "url": "/book01/docs/php/05-include/#02-require",
     "relUrl": "/docs/php/05-include/#02-require"
-  },"83": {
+  },"84": {
     "doc": "05-include",
     "title": "03 Include VS Require",
     "content": "home.php 의 include 문장을 변경 . &lt;?php $title = '망고홈'; include('inc/headers.php'); //없는 경로 include('inc/functions.php'); //include로 수정 ?&gt; . 오류출력 후 그대로 실행 . home.php 의 include 문장을 변경 . &lt;?php $title = '망고홈'; require('inc/headers.php'); require('inc/functions.php'); ?&gt; . 오류출력 실행안함 . Include : 단순히 구조를 반복할때 Require: 오류발생시 치명적인 상황일때 (데이터베이스와의 연동…) . ",
     "url": "/book01/docs/php/05-include/#03-include-vs-require",
     "relUrl": "/docs/php/05-include/#03-include-vs-require"
-  },"84": {
+  },"85": {
     "doc": "05-include",
     "title": "04 _once",
     "content": ". | include를 반복해보자 | . include('inc/header.php'); include('inc/header.php'); require('inc/header.php'); require('inc/header.php'); . | 두번씩 반복 적용된다. | . | _once 를 사용해보자 | . &lt;?php $title = '망고홈'; include('inc/header.php'); include_once('inc/header.php'); //once를 붙이면 한번만됨 require('inc/header.php'); require_once('inc/header.php'); //once를 붙이면 한번만됨 require_once('inc/functions.php'); ?&gt; . ",
     "url": "/book01/docs/php/05-include/#04-_once",
     "relUrl": "/docs/php/05-include/#04-_once"
-  },"85": {
+  },"86": {
     "doc": "05-include",
     "title": "05-include",
     "content": ". | 01 Include . | 01-1 문서분리 | 01-2 변수설정 | 01-3 header | 01-4 응용 | 01-5 footer | . | 02 Require . | 02-1 | . | 03 Include VS Require | 04 _once | . 🔗php 공식문서 . ",
     "url": "/book01/docs/php/05-include/",
     "relUrl": "/docs/php/05-include/"
-  },"86": {
+  },"87": {
     "doc": "05-fullPage",
     "title": "01 풀페이지",
     "content": "풀페이지 공식문서 . 파일다운로드 . ** id=\"fullpage 를 최상위 요소에 꼭 넣어야 한다 ** . | 3 버전 이후로 유료화 되었으므로 2버전 으로 추가한다. | . html . &lt;header&gt; &lt;nav&gt; &lt;ul&gt; &lt;li data-menuanchor=\"section1\"&gt;&lt;a href=\"#section1\"&gt;section1&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section2\"&gt;&lt;a href=\"#section2\"&gt;section2&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section3\"&gt;&lt;a href=\"#section3\"&gt;section3&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section4\"&gt;&lt;a href=\"#section4\"&gt;section4&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section5\"&gt;&lt;a href=\"#section5\"&gt;section5&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;/header&gt; &lt;main id=\"fullpage\"&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 1&lt;/h2&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 01&lt;/h3&gt; &lt;/div&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 02&lt;/h3&gt; &lt;/div&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 03&lt;/h3&gt; &lt;/div&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 3&lt;/h2&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 4&lt;/h2&gt; &lt;/section&gt; &lt;footer class=\"section fp-auto-height\"&gt; &lt;h2&gt;footer&lt;/h2&gt; &lt;/footer&gt; &lt;/main&gt; . script . $(function () { $(\"#fullpage\").fullpage({ //options here anchors: [\"section1\", \"section2\", \"section3\", \"section4\", \"section5\"],//앵커 navigation: true, // 네비게이션 navigationPosition: \"right\", //네비게이션 위치 sectionsColor: [\"#ccc\", \"#bbb\", \"#ddd\", \"#eee\", \"#fff\"],//섹션색상 afterLoad: function (anchorLink, index) { // 섹션이동후 실행 콜백함수 console.log(\"현재 섹션 번호는 \" + index); // if(index == 5){ // alert('마지막입니다.'); // } }, afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { //슬라이드 실행후 콜백함수 console.log(\"현재 슬라이드 번호는\" + slideIndex); }, }); }); . ",
     "url": "/book01/docs/jQuery/05/#01-%ED%92%80%ED%8E%98%EC%9D%B4%EC%A7%80",
     "relUrl": "/docs/jQuery/05/#01-풀페이지"
-  },"87": {
+  },"88": {
     "doc": "05-fullPage",
     "title": "05-fullPage",
     "content": ". ",
     "url": "/book01/docs/jQuery/05/",
     "relUrl": "/docs/jQuery/05/"
-  },"88": {
+  },"89": {
     "doc": "06-form",
     "title": "01 form.php",
     "content": "이번 예제에서는 데이터가 어떤 방식으로 전송이 되는지 흐름을 파악하도록 한다. 데이터조작은 추후 진행한다. 간단한 회원가입 입력 폼을 제작해보자. 01-1 form.php . | form.php 문서 생성후 코드 작성 | . &lt;?php $title='login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; . | . | form.php 작성 . | . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; /* action=\"서버주소\" method=\"전송방법 \"*/ &lt;form action=\"request.php\" method=\"get\"&gt; &lt;p&gt; &lt;label for=\"userName\"&gt;Name&lt;/label&gt; /* type=\"데이터형식\" name=\"필드명\" id=\"아이디\" */ &lt;input type=\"text\" name=\"userName\" id=\"userName\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"userEmail\"&gt;Email&lt;/label&gt; &lt;input type=\"email\" name=\"userEmail\" id=\"userEmail\"&gt; &lt;/p&gt; &lt;p&gt; &lt;input type=\"submit\" value=\"로그인\"&gt; &lt;/p&gt; . 실행화면 . 01-2 request.php . $_GET[userName] [super globals variable : 모든 범위에서 사용 가능한 내장 변수] . HTTP 프로토콜의 GET 방식을 통해 사용자가 서버에 요청하였을 때 URL을 통해 전송된 데이터를 각각의 원소로 가지는 배열 변수. &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;?php $name = $_GET[\"userName\"]; //form.php의 name=\"userName\" 속성의 값을 전달받는다. $email = $_GET[\"userEmail\"];//form.php의 name=\"userEmail\" 속성의 값을 전달받는다. echo $name . '님의 입력한 이메일은' . $email . '입니다'; ?&gt; &lt;?php include('inc/footer.php'); ?&gt; . | login.php 에 회원정보 입력후 로그인 클릭 | request.php의 주소표시줄과 화면출력 내용 확인 | . http://localhost/request.php?userName=+%EA%B9%80%EB%A7%9D%EA%B3%A0&amp;userEmail=asdf%40gflgi.com . 🔑 get 방식은 사용자가 입력한 정보가 주소표시줄에 노출됨 . 01-3 post . post 방식으로 바꿔보자 . form.php . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;!-- &lt;form action=\"request.php\" method=\"get\"&gt; --&gt; &lt;form action=\"request.php\" method=\"post\"&gt; &lt;p&gt; &lt;label for=\"userName\"&gt;Name&lt;/label&gt; &lt;input type=\"text\" name=\"userName\" id=\"userName\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"userEmail\"&gt;Email&lt;/label&gt; &lt;input type=\"email\" name=\"userEmail\" id=\"userEmail\"&gt; &lt;/p&gt; &lt;p&gt; &lt;input type=\"submit\" value=\"로그인\"&gt; &lt;/p&gt; &lt;/form&gt; . request.php . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;?php //$name = $_GET[\"userName\"]; //$email = $_GET[\"userEmail\"]; $name = $_POST[\"userName\"]; $email = $_POST[\"userEmail\"]; echo $name . '님의 입력한 이메일은' . $email . '입니다'; ?&gt; &lt;?php include('inc/footer.php'); ?&gt; . 실행 . 🔑post방식은 주소표시줄에 노출되지 않음 . ",
     "url": "/book01/docs/php/06-form/#01-formphp",
     "relUrl": "/docs/php/06-form/#01-formphp"
-  },"89": {
+  },"90": {
     "doc": "06-form",
     "title": "02 정리",
     "content": "Http 프로토콜을 사용하여 get 과 post 방식으로 데이터의 요청/응답을 작성해보았다. 두가지 방식을 정리해보자 . | GET 요청은 캐시( Cache : 자주 접근하는 데이터를 복사 해놓는 임시 저장소)가 가능하다. | GET 요청은 브라우저 히스토리에 남는다. | GET 요청은 길이 제한이 있다. | GET 요청은 중요한 정보를 다루면 안된다. | . | POST 요청은 캐시되지 않는다. | POST 요청은 브라우저 히스토리에 남지 않는다. | POST 요청은 데이터 길이에 제한이 없다. | . 🔑CTRL + F5 를 누르면 캐시가 삭제된다 . ",
     "url": "/book01/docs/php/06-form/#02-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/php/06-form/#02-정리"
-  },"90": {
+  },"91": {
     "doc": "06-form",
     "title": "06-form",
     "content": ". | 01 form.php . | 01-1 form.php | 01-2 request.php | 01-3 post | . | 02 정리 | . 🔗php GET 🔗php SuperGlobals . ",
     "url": "/book01/docs/php/06-form/",
     "relUrl": "/docs/php/06-form/"
-  },"91": {
+  },"92": {
     "doc": "06-BXslider",
     "title": "01 BXslider",
     "content": "BXslider 공식문서 . 가장 유명한 jQuery 캐로셀 플러그인 . 파일다운로드 . 기본슬라이드 . 좌우컨트롤 . 멀티플 . 옵션활용 . 애니메이션 활용 . 동영상 . &lt;div class=\"slideWrap\"&gt; &lt;div class=\"video_slides\"&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; .slideWrap{ max-width: 960px; width:90%; margin:2em auto; position: relative; } . $('.video_slides').bxSlider({ video: true, onSliderLoad:function(currentIndex){ $('.video_slides div').eq(currentIndex + 1).find('video').get(0).play(); }, onSlideAfter:function($slideElement){ $slideElement.siblings().find('video').get(0).pause(); $slideElement.find('video').get(0).play(); } }); . ",
     "url": "/book01/docs/jQuery/06/#01-bxslider",
     "relUrl": "/docs/jQuery/06/#01-bxslider"
-  },"92": {
+  },"93": {
     "doc": "06-BXslider",
     "title": "06-BXslider",
     "content": ". ",
     "url": "/book01/docs/jQuery/06/",
     "relUrl": "/docs/jQuery/06/"
-  },"93": {
+  },"94": {
     "doc": "07-form-validator",
     "title": "01 form.php",
     "content": "검색창에 php를 검색해보자 주소표시줄에 search?q 라는 낱말 뒤에 우리가 입력한 단어가 보인다. q는 Query 의 표시로 Query란 (질의문:저장되어져 있는 정보를 골라내기 위한 질문) 이다 . 위의 그림은 http GET 방식으로 데이터를 요청한 예시이다. 직접 만들어보자 . 01-1 . | 07/get-input.php 생성 | . &lt;?php ?&gt; &lt;h1&gt;get input&lt;/h1&gt; . 실행 . | 브라우저 주소창에 쿼리문과 파라미터를 작성후 엔터를 쳐본다 당연히 데이터가 없으니 아무것도 안나올 것이다. | . | php 작성 | . &lt;?php $product_id=$_GET['productid']; ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; . 실행 . get 방식의 요청으로 들어온 매개변수 값을 취득하여 화면에 출력 . 01-2 . 매개변수 2개 . &lt;?php $product = $_GET['product']; //superGlobals php문서 어디서나 사용가능 $limit = $_GET['limit']; //limit 추가 ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt;-👍Limit &lt;?= $limit;?&gt; //출력 &lt;/p&gt; . 실행 . 🔑파라미터를 연결할때는 &amp; 를 작성 . | 매개변수 두개의 값이 잘 전달된것을 확인 | . ",
     "url": "/book01/docs/php/07-validator/#01-formphp",
     "relUrl": "/docs/php/07-validator/#01-formphp"
-  },"94": {
+  },"95": {
     "doc": "07-form-validator",
     "title": "02 filter",
     "content": "사용자가 악의적으로 주소창을 통해 위험한 데이터를 전송할수 있다. filter 를 사용하여 데이터를 골라내자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); if($product == false || $limit == false){ die();//멈춰 } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; -👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . | 매개변수를 글자로 보내면 실행안됨 | . | 숫자로 보내면 실행됨 | . 02-1 . 필터에 해당되지 않을경우 기본값을 출력하자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); //if($product == false || $limit == false){ // die();//멈춰 //} if($product == false){ //변수 product 가 false 이면 $product = 10; // product에 10할당 } if($limit == false){ $limit = 10; } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; - 👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . 🔑 위의 코드 처럼 작성하면 빈 화면이 출력되지 않겠죠? . ",
     "url": "/book01/docs/php/07-validator/#02-filter",
     "relUrl": "/docs/php/07-validator/#02-filter"
-  },"95": {
+  },"96": {
     "doc": "07-form-validator",
     "title": "07-form-validator",
     "content": ". | 01 form.php . | 01-1 | 01-2 | . | 02 filter . | 02-1 | . | . 🔗php filter . ",
     "url": "/book01/docs/php/07-validator/",
     "relUrl": "/docs/php/07-validator/"
-  },"96": {
+  },"97": {
     "doc": "08-Cookie,Session",
     "title": "00 쿠키와 세션",
     "content": ". | 쿠키:클라이언트(브라우저) 로컬에 저장 되는 키와 값이 들어있는 데이터 파일 . | 쿠키의 구성 . | 이름 : 쿠키를 구별하는데 사용된다. | 값 : 쿠키의 이름과 mapping된 값이다. | 유효시간 : 쿠키의 유지시간이다. | 도메인 : 쿠키를 전송할 도메인 정보이다. | 경로 : 쿠키를 전송할 요청 경로이다. | . | . | 세션: 사용자 정보 파일을 서버에 저장 . | session은 cookie를 사용해서 session ID 만을 저장 | . | cache : 이미지나 CSS, JS 파일등을 브라우저나 서버의 앞 단에 저장해놓고 사용하는 것 | . ",
     "url": "/book01/docs/php/08-cookie/#00-%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98",
     "relUrl": "/docs/php/08-cookie/#00-쿠키와-세션"
-  },"97": {
+  },"98": {
     "doc": "08-Cookie,Session",
     "title": "01 Cookie 생성",
     "content": "xmapp/htdoc/cookie/cookie_test.php 파일생성 . | php 에 접속하여 cookie 를 검색해보자 | setcookie 클릭 | 설명을 본다. | | 첫번째 값으로는 문자로 이름, 두번째 값으로 문자로 값, 세번째로는 배열로 옵션을 작성한다. | name(이름),value(값),expires_or_options(만기일),path(경로) 을 작성해야한다. | . | cookie_test.php 파일작성 $_COOKIE $_COOKIE 는 쿠키의 이름을 불러서 값을 호출할수 있는 superGlobals 입니다. | . &lt;?php $cookieName = \"city\"; //쿠키의 이름 $cookieValue = \"seoul\"; //쿠키의 값 //setcookie 함수에 인자전달() setcookie($cookieName, $cookieValue, time() + 60, \"/\");//time() + 600 만료시간: 현재부터 600초 이후 만료 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;쿠키테스트&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;새로고침(f5) 하면 생성된 쿠키를 확인할 수 있습니다.&lt;/p&gt; &lt;?php if(!isset($_COOKIE[$cookieName])){ //$cookieName 변수가 세팅되지 않으면 true echo \"{$cookieName}라는 이름의 쿠키는 생성이 되지 않았습니다.\"; }else{ echo \"{$cookieName}라는 이름의 쿠키는 생성되었고, 값은 \".$_COOKIE[$cookieName].\"입니다.\"; } ?&gt; &lt;/body&gt; &lt;/html&gt; . time() + 60 에 지정한 60초가 지나면 쿠키가 생성되고 브라우저 새로고침하면 메시지는 else 문의 내용이 출력된다 . 실행화면 — . ",
     "url": "/book01/docs/php/08-cookie/#01-cookie-%EC%83%9D%EC%84%B1",
     "relUrl": "/docs/php/08-cookie/#01-cookie-생성"
-  },"98": {
+  },"99": {
     "doc": "08-Cookie,Session",
     "title": "02 Cookie 삭제",
     "content": "xmapp/htdoc/cookie/cookie_del.php 파일생성 . 🔑쿠키의 삭제는 만기일을 현재보다 이전으로 설정하면 된다 . &lt;?php $cookieName = \"city\"; $cookieValue = \"seoul\"; setcookie($cookieName, $cookieValue, time() - 60, \"/\"); ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;title&gt;쿠키삭제&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo $cookieName . '의 쿠키가 삭제 되었습니다.'; echo '생성된 값은 '.$_COOKIE[$cookieName] . '입니다.'; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . 쿠키가 생성되자마자 삭제되었으므로 삭제 메시지와 함께 오류출력 . ",
     "url": "/book01/docs/php/08-cookie/#02-cookie-%EC%82%AD%EC%A0%9C",
     "relUrl": "/docs/php/08-cookie/#02-cookie-삭제"
-  },"99": {
+  },"100": {
     "doc": "08-Cookie,Session",
     "title": "03 Session",
     "content": "브라우저가 해당 사이트에서 벗어나면 세션종료 사이트 접속후 30분이상 상호작용이 없으면 세션종료 . {: .new }[#1] . htdoc/session/session.php 생성 . 🔑 세션은 사용자의 정보를 서버에 저장하는것 . &lt;?php session_start(); //세션시작 $_SESSION[\"city\"]= \"seoul\"; $_SESSION[\"gu\"] = \"gangnam\"; ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo \"세션 변수가 등록되었습니다.\"; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . htdoc/session/session_set.php 생성 . &lt;?php session_start();//세션시작 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php if(!isset($_SESSION[\"city\"])){ //city이름의 세션이 없으면 true echo \"해당 세션변수가 등록되지 않았습니다.\"; }else{ echo \"나의 도시는 {$_SESSION['city']}.입니다.&lt;br/&gt;\"; echo \"{$_SESSION['gu']}구에 있습니다&lt;br/&gt;\"; print_r($_SESSION);//세션의 모든 정보를 보여줘(모든 세션의 정보를 연관배열형태로 출력) } ?&gt; &lt;/body&gt; &lt;/html&gt; . session.php에서 등록한 세션값이 저장되어 출력되는것을 볼수있다. 03-1 session 찾아보기 . | xmapp 설치폴더 에서 php.ini 를 찾아본다 | xmapp/php/php.ini-development 파일을 vscode로 연다 | xmapp/php/php.ini 로 저장한다. | ctrl+F 를 눌러 session.save_path 를 검색한다. | . | 우리가 사용중인 프로그램이 포터블 이므로 C드라이브로 가야한다 | C:\\Users\\Administrator\\AppData\\Local\\Temp\\ 폴더로 이동한다. | . | 해당 폴더에서 파일명이 sess_~ 로 시작하는 파일을 vscode로 열어본다 - | 세션정보를 확인할수 있다 | . ",
     "url": "/book01/docs/php/08-cookie/#03-session",
     "relUrl": "/docs/php/08-cookie/#03-session"
-  },"100": {
+  },"101": {
     "doc": "08-Cookie,Session",
     "title": "04 seisson 지우기",
     "content": "htdoc/session/session_del.php 생성 . 세션은 두가지 방법으로 지울수 있다. &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session delete&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php session_unset(); //모든 세션 변수의 등록을 해지한다. session_destroy(); //세션 아이디 삭제 echo \"모든 세션 변수가 등록 해지되었고, 세션 아이디도 삭제됨\"; print_r($_SESSION); ?&gt; &lt;/body&gt; &lt;/html&gt; . ",
     "url": "/book01/docs/php/08-cookie/#04-seisson-%EC%A7%80%EC%9A%B0%EA%B8%B0",
     "relUrl": "/docs/php/08-cookie/#04-seisson-지우기"
-  },"101": {
+  },"102": {
     "doc": "08-Cookie,Session",
     "title": "08-Cookie,Session",
     "content": ". | 00 쿠키와 세션 | 01 Cookie 생성 | 02 Cookie 삭제 | 03 Session . | 03-1 session 찾아보기 | . | 04 seisson 지우기 | . 🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/08-cookie/",
     "relUrl": "/docs/php/08-cookie/"
-  },"102": {
+  },"103": {
     "doc": "09-board",
     "title": "관련링크",
     "content": "🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/09-board/#%EA%B4%80%EB%A0%A8%EB%A7%81%ED%81%AC",
     "relUrl": "/docs/php/09-board/#관련링크"
-  },"103": {
+  },"104": {
     "doc": "09-board",
     "title": "01 SQL 을 활용한 게시판을 만들어보자",
     "content": "😺 SQL 이란? . 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어 . 😺 게시판구현을 위해 알아야 할것 . create, read, update, delete (생성), (조회),(수정), (삭제) . 😺 필요한 개발환경 서버를 설치 하고 데이터 베이스를 생성 할 테이블 생성 (xmapp) (mango_board) . 01-1:테이블생성 . | xmapp control-panel열기 . | . | | . ",
     "url": "/book01/docs/php/09-board/#01-sql-%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/php/09-board/#01-sql-을-활용한-게시판을-만들어보자"
-  },"104": {
+  },"105": {
     "doc": "09-board",
     "title": "09-board",
     "content": ". | 관련링크 | 01 SQL 을 활용한 게시판을 만들어보자 . | 01-1:테이블생성 | . | . ",
     "url": "/book01/docs/php/09-board/",
     "relUrl": "/docs/php/09-board/"
-  },"105": {
+  },"106": {
     "doc": "01-Dooosan-시작",
     "title": "프로젝트 - 기업사이트",
     "content": "두산클론 . 230113(금) 수업 . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0\" /&gt; &lt;link rel=\"stylesheet\" href=\"css/reset.css\"&gt; &lt;link rel=\"stylesheet\" href=\"css/style.css\"&gt; &lt;link rel=\"stylesheet\" href=\"css/media.css\"&gt; &lt;style&gt; #layer { display: block; } #layer { display: none; } &lt;/style&gt; &lt;script src=\"https://code.jquery.com/jquery-1.12.0.min.js\"&gt;&lt;/script&gt; &lt;script src=\"js/script.js\"&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;header id=\"header\"&gt; &lt;div class=\"header_cover cf\"&gt; &lt;h1 class=\"logo fl\"&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/logo.png\" alt=\"두산그룹 로고\" /&gt;&lt;/a&gt; &lt;/h1&gt; &lt;a href=\"#\" class=\"mo\"&gt;&lt;span class=\"material-symbols-outlined\"&gt; menu &lt;/span&gt;&lt;/a&gt; &lt;ul class=\"nav fl\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;회사소개 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;투자정보 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;미디어센터 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class=\"mo_menu\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;회사소개 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;목표와 핵심가치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;경영전략&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;리더쉽&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;기술과 혁신&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;계열사&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개요&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;윤리경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;상생협력&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;EHS&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회공헌&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;투자정보 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;IR자료&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;거버넌스&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;보고서&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;공시&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;전자공고&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;미디어센터 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;캠페인 &amp;amp; PR영상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;메뉴얼 브로슈어&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 인재,두산인&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;커리어두산&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- //.mo_menu --&gt; &lt;div class=\"pc full_menu\"&gt; &lt;div class=\"full_cover\"&gt; &lt;ul&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;목표와 핵심가치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;경영전략&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;리더쉽&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;기술과 혁신&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;계열사&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개요&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;윤리경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;상생협력&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;EHS&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회공헌&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;IR자료&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;거버넌스&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;보고서&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;공시&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;전자공고&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;캠페인 &amp;amp; PR영상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;메뉴얼 브로슈어&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 인재,두산인&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;커리어두산&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;ul class=\"gnb fr\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;한국어&lt;/a&gt;&lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/ico_search.png\" alt=\"\" class=\"leave\"&gt;&lt;img src=\"./images/ico_search_on.png\" alt=\"\" class=\"hover\"&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/btn_gnb_right_menu.png\" alt=\"\" class=\"leave\" /&gt;&lt;img src=\"./images/btn_gnb_right_menu_ov.png\" alt=\"\" class=\"hover\" /&gt;&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/header&gt; &lt;section id=\"main_slide\"&gt; &lt;!-- .slide_cover&gt;ul&gt;li&gt;a&gt;img+p --&gt; &lt;div class=\"slide_cover\"&gt; &lt;ul&gt; &lt;!-- 한장의 슬라이드그룹 --&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main1.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main1_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box1\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main2.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main2_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box2\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main3.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main3_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box3\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;&lt;!-- //.slide_cover --&gt; &lt;div class=\"slide_btn\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color on\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class=\"reset\"&gt; &lt;div class=\"pause_btn off\"&gt;&lt;img src=\"./images/ico_kv_pause.png\" alt=\"\"&gt;&lt;/div&gt; &lt;div class=\"start_btn on\"&gt;&lt;img src=\"./images/ico_kv_play.png\" alt=\"\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=\"main_cursor cf\"&gt; &lt;div class=\"cursor_left\"&gt;&lt;/div&gt; &lt;div class=\"cursor_right\"&gt;&lt;/div&gt; &lt;div class=\"cursor\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/section&gt; &lt;!-- //#main_slide --&gt; &lt;section id=\"content\"&gt; &lt;/section&gt; &lt;!-- //#content --&gt; &lt;section id=\"media_center\"&gt;&lt;/section&gt; &lt;!-- //#media_center --&gt; &lt;section id=\"find\"&gt;&lt;/section&gt; &lt;!-- //#find --&gt; &lt;footer id=\"footer\"&gt;&lt;/footer&gt; &lt;/body&gt; &lt;/html&gt; . css . @charset \"utf-8\"; .cf:after { content: \"\"; display: block; clear: both; } /* layout */ [class*=\"_cover\"] { width: 100%; max-width: 1400px; margin: auto; } /* link 스타일 정의 */ a { font-size: 1.6rem; } /* layer popup */ #layer { position: fixed; width: 500px; height: 500px; background: #ccc; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 999999999; font-size: 2.4em; padding: 3em; box-sizing: border-box; line-height: 2; top: 50px; left: 150px; } #layer button { position: absolute; cursor: pointer; padding: 10px 20px; right: 0; top: 0; background-color: #222; color: #fff; } /* #header */ #header { width: 100%; height: 90px; position: relative; font-size: 1.3rem; background: #fff; } #header .logo { width: 10%; height: 100%; } /* 140px, 90px */ .logo a { display: block; width: 100%; height: 100%; } .logo a img { display: block; width: 80%; margin: auto; padding-top: 17px; } #header .nav { width: 50%; margin: 0 10%; display: flex; } .nav li { width: 20%; text-align: center; line-height: 90px; } .nav a { display: block; width: 100%; height: 100%; color: #000; font-weight: 700; position: relative; } .nav .line { width: 0%; height: 2px; background: #1634db; position: absolute; left: 0; bottom: 0; transition: width 0.8s; } .nav a:hover .line { width: 100%; } /* .mo_menu */ #header .mo { float: right; padding-right: 20px; display: none; line-height: 90px; } .mo span { font-size: 3rem; } .mo_menu { position: absolute; width: 100%; background-color: white; left: 0; top: 100%; z-index: 99999; display: none; } .mo_menu ul { display: flex; flex-direction: column; width: 100%; max-width: 50%; margin: auto; } /* .pc.full_menu */ #header .full_menu { position: absolute; left: 0; width: 100%; height: 450px; border-top: 1px solid #c1c1c1; box-sizing: border-box; background-color: #fff; top: 100%; z-index: 999999999; /* display: none; */ } .full_menu .full_cover &gt; ul { display: flex; width: 60%; height: 100%; margin-left: 20%; } .full_menu .full_cover &gt; ul &gt; li { width: 20%; max-width: 140px; height: 450px; border-left: 1px solid #c1c1c1; box-sizing: border-box; } .full_menu .full_cover &gt; ul &gt; li:last-child { border-right: 1px solid #c1c1c1; } .full_menu .full_cover &gt; ul ul { width: 100%; } .full_menu .full_cover &gt; ul ul li { width: 100%; line-height: 50px; text-align: center; } .full_menu .full_cover &gt; ul ul li a { position: relative; color: #000; } .full_menu .full_cover &gt; ul ul li a:after { content: \"\"; position: absolute; background-color: #1634db; transition: all 0.5s; left: 0; width: 0; height: 1px; bottom: -5px; } .full_menu .full_cover &gt; ul ul li a:hover:after { width: 100%; } /* gnb */ #header .gnb { width: 20%; display: flex; } .gnb li { font-size: 1.4rem; width: 100%; } .gnb li:nth-child(1) a { background: url(../images/ico_lang.png) no-repeat 0 50% /30%; } .gnb li a { display: block; width: 100%; height: 100%; line-height: 90px; text-align: center; color: #000; } .gnb li a img { width: 40px; vertical-align: middle; } .gnb li a img.leave { display: inline-block; } .gnb li a img.hover { display: none; } .gnb li a:hover img.leave { display: none; } .gnb li a:hover img.hover { display: inline-block; transform: scale(1.1); } /* #main_slide */ #main_slide { position: relative; width: 100%; height: 800px; overflow: hidden; } #main_slide &gt; .slide_cover { position: relative; width: 90%; height: 100%; max-width: none; } #main_slide &gt; .slide_cover ul { position: relative; width: 100%; height: 100%; } /*90%*/ #main_slide &gt; .slide_cover ul li { position: absolute; width: 100%; height: 100%; overflow: hidden; } #main_slide &gt; .slide_cover ul li.on { z-index: 6; } #main_slide &gt; .slide_cover ul li a { position: relative; display: block; width: 100%; height: 100%; } #main_slide &gt; .slide_cover ul li a h2.img_logo { position: absolute; top: 15%; left: 10%; color: #fff; font-size: 6rem; width: 480px; word-break: keep-all; opacity: 0; transition: all 2s; letter-spacing: -2.5px; } #main_slide &gt; .slide_cover ul li a h2.img_logo.on { top: 10%; opacity: 1; } #main_slide &gt; .slide_cover ul li a p.img_text { position: absolute; bottom: 0; right: 10%; color: #fff; font-size: 2.4rem; width: 400px; opacity: 0; transition: all 2s; } #main_slide &gt; .slide_cover ul li a p.img_text.on { bottom: 15%; opacity: 1; } #main_slide &gt; .slide_cover ul li a .box { position: absolute; bottom: 10%; left: 55%; width: 0; height: 250px; transition: all 1.5s; } #main_slide &gt; .slide_cover ul li a .box.box1.on { background-color: #0d28bd; } #main_slide &gt; .slide_cover ul li a .box.box2.on { background-color: #0088ce; } #main_slide &gt; .slide_cover ul li a .box.box3.on { background-color: #00ad83; } #main_slide &gt; .slide_cover ul li a .box.on { width: 250px; animation: rotate 15s infinite linear; } @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(45deg); } } #main_slide &gt; .slide_cover ul li a .white_box { position: absolute; top: 0; left: -100%; width: 100%; height: 100%; z-index: 7; background-color: #fff; } .slide_cover ul li a img { display: block; width: 100%; height: auto; transition: all 5s; } .slide_cover ul li a img.mo { display: none; } .slide_cover ul li a img.on { transform: scale(1.1); } /* .slide_btn */ .slide_btn { position: absolute; bottom: 100px; left: 200px; width: 300px; height: 10px; z-index: 11; } .slide_btn ul { display: flex; } .slide_btn ul li { position: relative; width: 90px; height: 10px; margin-left: 15px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; } .slide_btn ul li:nth-child(1) { margin-left: 0; } .slide_btn ul li a { position: relative; display: block; width: 100%; } .slide_btn ul li a .color { position: absolute; top: 0; left: 0; z-index: 2; width: 0%; height: 10px; background-color: rgba(255, 255, 255, 0.8); } .slide_btn ul li a .color.on { animation: width 7s linear forwards; } @keyframes width { 0% { width: 0; } 100% { width: 100%; } } .slide_btn .reset { position: absolute; top: 50%; right: -40px; transform: translateY(-50%); width: 30px; height: 30px; cursor: pointer; } .slide_btn .reset .off { display: block; } .slide_btn .reset .on { display: none; } .slide_btn .reset img { display: block; width: 100%; height: auto; } /* .main_cursor */ .main_cursor { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 9; } .main_cursor .cursor { position: absolute; top: 0; left: 0; transform: translate(-50%, -50%); width: 60px; height: 60px; background: no-repeat center/contain; pointer-events: none; } .main_cursor .cursor:before{ content:''; display:block; position: absolute; top:0; left:0; width:60px; height:60px; background-image: url(\"../images/main_cursor_l.svg\"); opacity: 0; } .main_cursor .cursor:after{ content:''; display:block; position: absolute; top:0; left:0; width:60px; height:60px; background-image: url(\"../images/main_cursor_r.svg\"); opacity: 0; } .main_cursor .cursor_left{ position: absolute; top:0; left:0; width:50%; height: 100%; cursor: none; cursor: default; } .main_cursor .cursor_right{ position: absolute; top:0; right:0; width:50%; height: 100%; cursor: none; cursor: default; } .main_cursor .cursor_left:hover ~ .cursor::before{opacity:1;} .main_cursor .cursor_left:hover ~ .cursor::after{opacity:0;} .main_cursor .cursor_right:hover ~ .cursor::before{opacity:0;} .main_cursor .cursor_right:hover ~ .cursor::after{opacity:1;} . jQuery . $(function () { gnb(); function gnb() { $(\".full_menu, .nav li\").mouseover(function () { $(\".full_menu\").stop().slideDown(600); }); $(\".full_menu, .nav li\").mouseleave(function () { $(\".full_menu\").stop().slideUp(600); }); $(\".full_cover&gt;ul&gt;li\").mouseover(function () { var i = $(this).index(); $(\".nav li\").eq(i).find(\".line\").css(\"width\", \"100%\"); }); $(\".full_cover&gt;ul&gt;li\").mouseleave(function () { var i = $(this).index(); $(\".nav li\").eq(i).find(\".line\").css(\"width\", \"0%\"); }); $(\".nav li\").mouseover(function () { $(this).find(\".line\").css(\"width\", \"100%\"); }); $(\".nav li\").mouseleave(function () { $(this).find(\".line\").css(\"width\", \"0%\"); }); $(\"#header .mo\").click(function () { $(\".mo_menu\").stop().slideToggle(\"fast\"); $(\"#header .mo\").css(\"color\", \"red\"); }); } var i = 0; //current var k = null; //prev var n = null; //next var mainInterval; //setIntervalID var speed = 2000; //반복시간 /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { i++; k = i - 1; if (i == 3) { i = 0; } slide(); }, speed); } function slide() { $(\".slide_btn ul li\").off(\"click\"); $(\".cursor_left, .cursor_right\").off(\"click\"); $(\".reset\").off(\"click\", reset); clearInterval(mainInterval); $(\".slide_cover ul li\") .find(\".white_box\") .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { $(\".white_box\").stop().animate({ left: \"100%\" }, 1000); $(\".slide_cover ul li\").eq(i).addClass(\"on\"); $(\".slide_cover ul li\").eq(k).removeClass(\"on\"); /* 추가 */ $(\".color, .img_logo, .img_text, .box\").removeClass(\"on\"); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".img_logo\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".img_text\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".box\").addClass(\"on\"); $(\".slide_cover ul li a img\").removeClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\"a img\").addClass(\"on\"); }); $(\".slide_cover ul li\") .eq(k) .animate({ left: 0 }, 2000, function () { setTimeout(function () { //trigger $(\".slide_cover ul li\").on(\"click\", click_slide); $(\".cursor_left\").on(\"click\", left_click); $(\".cursor_right\").on(\"click\", right_click); var pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); $(\".color\").removeClass(\"on\"); } else { timer(); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); } }, 1000); }); n = i; } /** * click_slide * pager 함수 * * **/ function click_slide() { i = $(this).index(); if (i == n) return; k = n; console.log(i, n, k); slide(); $(\".color\").removeClass(\"on\"); } /** * left_click * left 커서함수 * * **/ function left_click() { i--; if (i == -1) i = 2; if (i == n) return; k = n; slide(); $(\".color\").removeClass(\"on\"); } /** * right_click * right 커서함수 * * ***/ function right_click() { i++; if (i == 3) i = 0; if (i == n) return; k = n; slide(); $(\".color\").removeClass(\"on\"); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { var pause_css = $(\".pause_btn\").css(\"display\"); var start_css = $(\".start_btn\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); $(\".color\").removeClass(\"on\"); } else { timer(); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); } } /**이벤트 핸들러 */ $(\".reset\").click(function () { reset(); }); $(\".reset .pause_btn\").click(function () { $(\".pause_btn\").css(\"display\", \"none\"); $(\".start_btn\").css(\"display\", \"block\"); }); $(\".reset .start_btn\").click(function () { $(\".pause_btn\").css(\"display\", \"block\"); $(\".start_btn\").css(\"display\", \"none\"); }); $(\".slide_btn ul li\").on(\"click\", click_slide); $(\".cursor_left\").on(\"click\", left_click); $(\".cursor_right\").on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY; $(\".cursor\").css({ left: x, top: y, }); }); /*** * Resize * * */ $(window).resize(function () { var w_width = $(window).width(); var img_height = $(\".slide_cover ul li img.pc\").height(); var img_height_mo = $(\".slide_cover ul li img.mo\").height(); if (w_width &gt; 1330) { $(\"#main_slide .slide_cover\").height(img_height); } else { $(\"#main_slide .slide_cover\").height(img_height_mo); $(\".slide_cover ul li img.pc\").css(\"display\", \"none\"); $(\".slide_cover ul li img.mo\").css(\"display\", \"block\"); } }); $(window).trigger(\"resize\"); }); //jQuery . ",
     "url": "/book01/docs/Projects/2023-01-06-corp/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B8%B0%EC%97%85%EC%82%AC%EC%9D%B4%ED%8A%B8",
     "relUrl": "/docs/Projects/2023-01-06-corp/#프로젝트---기업사이트"
-  },"106": {
+  },"107": {
     "doc": "01-Dooosan-시작",
     "title": "01-Dooosan-시작",
     "content": ". ",
     "url": "/book01/docs/Projects/2023-01-06-corp/",
     "relUrl": "/docs/Projects/2023-01-06-corp/"
-  },"107": {
+  },"108": {
     "doc": "03-Dooosan-반응형",
     "title": "03-Dooosan-반응형",
     "content": ". | HTML | . &lt;div id=\"content\"&gt; &lt;div class=\"content_cover\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"계열사\"&gt; &lt;img src=\"./images/ico_int_1.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_1_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"두산뉴스룸\"&gt; &lt;img src=\"./images/ico_int_2.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_2_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"브랜드 활약상\"&gt; &lt;img src=\"./images/ico_int_3.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_3_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"사업장 위치\"&gt; &lt;img src=\"./images/ico_int_4.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_4_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .content_cover --&gt; &lt;/div&gt; &lt;!-- #content --&gt; &lt;div id=\"media_center\"&gt; &lt;div class=\"media_cover\"&gt; &lt;h1 class=\"title\"&gt;미디어센터&lt;/h1&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/0dc4e114-18c5-4730-a6f5-b562cf92c806.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산인프라코어, 드론측량부터 장비 운용까지...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/7fe5a7e3-f03e-42bd-9ab6-952c0708aab0.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산중공업, 시노펙스와 손잡고 친환경 수처리&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/8cfd1b42-e65e-4f32-b7ad-0cbe695e741c.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산,'파워젠 인터내셔널 2019' 참가&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/18dfd093-6a9d-48f6-9da4-f9af62fcd702.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산밥캣, 미국 미네소타에 글로벌 협업센터 설립...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/47950c97-c3d7-45ff-be02-410a04d16d65.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산, 인도네이사 현지에서 단독으로'두산테크데스크'&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/be2914e1-6eb0-4041-a39b-7be3052ec239.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] (주)두산, 3개 은행과 함께 동반성장펀드 조성&lt;/p&gt; &lt;div class=\"arrow\"&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .media_cover --&gt; &lt;/div&gt; &lt;!-- #media_center --&gt; &lt;div id=\"find\"&gt; &lt;div class=\"find_cover cf\"&gt; &lt;div class=\"find_left fl\"&gt; &lt;h1 class=\"what_find\"&gt;무엇을 찾으시나요?&lt;/h1&gt; &lt;form action=\"#\" method=\"post\"&gt; &lt;input type=\"text\" name=\"search\" id=\"search\" value=\"\" placeholder=\"검색어를 입력하세요.\" /&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/btn_search_arrow_black.png\" alt=\"\" /&gt; &lt;/a&gt; &lt;/form&gt; &lt;/div&gt; &lt;div class=\"find_right fl\"&gt; &lt;div class=\"right_cover\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;CI&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업영역&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산연강재단&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;굴착기&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산인프라코어&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;인재상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용공고&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산 스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산모빌리티이노베이션&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .find_cover --&gt; &lt;/div&gt; &lt;!-- #find --&gt; &lt;div id=\"footer\"&gt; &lt;div class=\"footer_cover cf\"&gt; &lt;div class=\"foot_left\"&gt; &lt;h1 class=\"f_logo cf\"&gt; &lt;img src=\"./images/logo_gnb.png\" alt=\"\" /&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" class=\"on\" /&gt; &lt;span&gt;&amp;copy; 2019 (주)두산중공업&lt;/span&gt; &lt;/h1&gt; &lt;/div&gt; &lt;div class=\"foot_center\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;Contact is&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업장 위치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;법적고지&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;이용약관&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사이트맵&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=\"foot_right\"&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .footer_cover --&gt; &lt;/div&gt; &lt;!-- #footer --&gt; . | css | . @media screen and (max-width: 1500px) { .find_cover { width: 90%; padding: 0; } } /* 1400px */ @media screen and (max-width: 1400px) { #header .header_cover { width: 90%; } .full_menu .full_cover { width: 90%; } .media_cover { width: 90%; } #content .content_cover { width: 90%; } .find_cover { width: 90%; padding: 0; } .footer_cover { width: 90%; } .find_cover .find_left form #search { width: 90%; margin: 0 0 0 5%; } .find_cover .find_left .what_find { margin-left: 5%; } .find_cover .find_left form a { right: 50px; } } /* 1330px */ @media screen and (max-width: 1330px) { #header { height: auto; } .full_menu { display: none; } .header_cover .logo { float: none; margin: 0 auto; padding: 20px 0; } .header_cover .logo a img { padding: 0; } .header_cover .nav { display: none; } .header_cover .logo + .mo { display: block; } .header_cover .gnb { display: none; } .slide_cover ul li a p.img_text { width: auto; right: auto; left: 50%; transform: translate(-50%, -50%); font-size: 18px; text-align: center; word-break: keep-all; } .slide_btn { left: 50%; bottom: 20px; transform: translate(-50%, -50%); } .slide_cover ul li a .box { left: 15%; bottom: 13%; height: 100px; } .slide_cover ul li a .box.on { width: 100px; } .slide_cover ul li a h1.img_logo { width: auto; font-size: 30px; left: 5%; } .slide_cover ul li a h1.img_logo.on { top: 5%; } .slide_cover ul li a img.pc { display: none; } .slide_cover ul li a img.mo { display: block; } #find { height: auto; } .find_cover { padding: 0; } .find_cover .fl { float: none; width: 100%; height: auto; margin-top: 50px; } .find_cover .find_left .what_find { padding: 30px 0 0 30px; box-sizing: border-box; } .find_cover .find_left form #search { width: 90%; margin-left: 5%; } .find_cover .find_left form a { right: 8%; } .find_cover .find_right { float: none; width: 100%; } .footer_cover .foot_left { float: none; width: 90%; margin: 0 auto; text-align: center; } .footer_cover .foot_center { float: none; width: 100%; } .footer_cover .foot_right { float: none; width: 10%; } .footer_cover .foot_left img { float: none; display: inline-block; width: 10%; } .footer_cover .foot_left img.on { display: inline-block; width: 8%; margin-left: 10px; } .footer_cover .foot_left span { display: none; } .footer_cover .foot_right { display: none; } } @media screen and (max-width: 1200px) { .media_cover ul { margin-top: 50px; } .media_cover ul li { width: 49.5%; margin: 0; height: 200px; } .media_cover ul li:nth-child(3n + 1) { margin: 0; } .media_cover ul li:nth-child(2n) { margin-left: 1%; margin-top: 1%; } .media_cover ul li:nth-child(2n + 1) { margin-top: 1%; } .media_cover ul li a .text { font-size: 14px; } .media_cover .title { font-size: 24px; } #content .content_cover ul li { width: 50%; line-height: normal; height: auto; margin-top: 20px; } #content .content_cover ul li a { color: transparent; height: auto; line-height: normal; } #content .content_cover ul li a img { position: static; transform: none; } #content .content_cover ul li a:after { content: attr(data-text); display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #000; } } . ",
     "url": "/book01/docs/Projects/2023-01-06-responsive/",
     "relUrl": "/docs/Projects/2023-01-06-responsive/"
-  },"108": {
+  },"109": {
     "doc": "02-Dooosan-스크립트",
     "title": "02-Dooosan-스크립트",
     "content": "슬라이드 설명 이미지 . | 객체와 변수 선언 var current = 0; //current var prev = null; //prev var next = null; //next let mainInterval; //setIntervalID var speed = 4000; //반복시간 var pause_css; var slides = $(\".slide_cover ul li\"); var obj = { \"btn\": $(\".slide_btn ul li\"), \"btn-ani\": $(\".color\"), \"left\": $(\".cursor_left\"), \"right\": $(\".cursor_right\"), \"wbox\": $(\".white_box\"), \"cbox\": $(\".box\"), \"logo\": $(\".img_logo\"), \"text\": $(\".img_text\"), \"reset\": $(\".reset\"), \"pause\": $(\".pause_btn\"), \"play\": $(\".play_btn\"), } . | 슬라이드 함수 작성 | . /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { current++; prev = current - 1; if (current == 3) { current = 0; } slide(); }, speed); } function remove(x) { x.removeClass(\"on\"); } function add(x) { x.addClass(\"on\"); } function slide() { obj.btn.off(\"click\"); obj.left.off(\"click\"); obj.right.off(\"click\"); obj.reset.off(\"click\", reset); clearInterval(mainInterval); slides .find(obj.wbox) .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { obj.wbox.stop().animate({ left: \"100%\" }, 1000); add(slides.eq(current)); // remove(slides.eq(prev)); remove(obj.pager); remove(obj.logo); remove(obj.text); remove(obj.cbox); add(obj.btn.eq(current).find(obj.pager)); add(slides.eq(current).find(obj.logo)); add(slides.eq(current).find(obj.text)); add(slides.eq(current).find(obj.cbox)); remove(slides.find(\"a img\")); console.log(slides.eq(current)); add(slides.eq(current).find(\"a img\")); }); slides.eq(prev).animate({ left: 0 }, 2000, function () { setTimeout(function () { obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { add(obj.btn.eq(current).find(obj.pager)); timer(); } }, 1000); }); next = current; } /** * click_slide * pager 함수 * * **/ function click_slide() { current = $(this).index(); if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * left_click * left 커서함수 * * **/ function left_click() { current--; if (current == -1) current = 2; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * right_click * right 커서함수 * * ***/ function right_click() { current++; if (current == 3) current = 0; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { pause_css = obj.pause.css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { timer(); add(obj.btn.eq(current).find(obj.pager)); } } /**이벤트 핸들러 */ obj.reset.click(function () { reset(); }); obj.pause.click(function () { obj.pause.css(\"display\", \"none\"); obj.play.css(\"display\", \"block\"); }); obj.play.click(function () { obj.pause.css(\"display\", \"block\"); obj.play.css(\"display\", \"none\"); }); obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY - 80; $(\".cursor\").css({ left: x, top: y, }); }); . ",
     "url": "/book01/docs/Projects/2023-01-06-slide/",
     "relUrl": "/docs/Projects/2023-01-06-slide/"
-  },"109": {
+  },"110": {
     "doc": "ajax",
     "title": "ajax",
     "content": ". | ajax2 | . – . (XMLHttpRequest)[https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest] . const url = \"https://dummyjson.com/products\"; const req = new XMLHttpRequest(); let div = document.querySelector(\"div\"); req.onload = (e) =&gt; { const datas = req.response; // not responseText for (data of datas.products) { let { brand, parent } = data; div.innerHTML += `brand: ${brand}, &lt;br&gt; parent: ${parent}&lt;br&gt;&lt;hr&gt;`; console.log(brand, parent); } }; req.open(\"GET\", url); req.responseType = \"json\"; req.send(); . ajax2 . ",
     "url": "/book01/docs/javascript/ajax/",
     "relUrl": "/docs/javascript/ajax/"
-  },"110": {
+  },"111": {
     "doc": "event-bubbling",
     "title": "event-bubbling",
     "content": ". | 버블링과 캡쳐링의 그림설명 | 01 이벤트 버블링 | 예제 | 설명 | 02 이벤트 캡쳐링 | 예제 | 03 이벤트 위임 | 예제 | 04 버블링 막기 | 05 버블링과 캡쳐링 둘다 막기 | 예제 | . – . 모던자바스크립트 . 버블링과 캡쳐링의 그림설명 . 01 이벤트 버블링 . ** 이벤트가 상위 요소로 전파 ** . event.currentTarget : 이벤트를 등록해 놓은 요소를 반환 . event.target : 이벤트가 발생한 요소를 반환 . 예제 . 설명 . three 요소를 클릭하면 상위요소까지 출력된다. 02 이벤트 캡쳐링 . ** 이벤트가 하위 요소로 전파 ** . 예제 . 03 이벤트 위임 . ** 이벤트 버블링을 활용함 ** 모던자바스크립트 elem.closest(selector) 메서드는 elem의 상위 요소 중 selector와 일치하는 가장 근접한 조상 요소를 반환합니다. 위 코드에선 이벤트가 발생한 요소부터 시작해 위로 올라가며 가장 가까운 &lt;td&gt; 요소를 찾습니다. event.target이 &lt;td&gt;안에 있지 않으면 그 즉시 null을 반환하므로 아무 작업도 일어나지 않습니다. 중첩 테이블이 있는 경우 event.target은 현재 테이블 바깥에 있는 &lt;td&gt;가 될 수도 있습니다. 이런 경우를 처리하기 위해 &lt;td&gt;가 팔괘도 안에 있는지를 확인합니다. 이제 진짜 td를 강조해 줍니다. 예제 . 04 버블링 막기 . 최초로 이벤트가 발생되는 엘리먼트의 이벤트 핸들러에event.stopPropagation()라는 API 를 추가 . &lt;body onclick=\"alert(`버블링은 여기까지 도달하지 못합니다.`)\"&gt; &lt;button onclick=\"event.stopPropagation()\"&gt;클릭해 주세요.&lt;/button&gt; &lt;/body&gt; . 모든 이벤트 버블링을 멈추고 싶은 경우에는 event.stopImmediatePropagation() API 추가 . 05 버블링과 캡쳐링 둘다 막기 . ` e.stopPropagation()` . 예제 . ",
     "url": "/book01/docs/javascript/event/",
     "relUrl": "/docs/javascript/event/"
-  },"111": {
+  },"112": {
     "doc": "function",
     "title": "function",
     "content": ". | 01 return | 오류 | 수정 | 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . | 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 | . | . – . 01 return . [return 명령문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/return) 은 함수 실행을 종료하고, 주어진 값을 함수 호출 지점으로 반환한다. 함수의 실행문 내부에 묵시적으로 정의되어 있다. 오류 . 수정 . 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . 아래의 함수는 두개의 숫자와 연산자를 입력받아 값을 반환하는 계산기 프로그램이다 함수의 중복을 고차함수로 작성하여 제거해보자 . 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 . !(/assets/js03.jpg) . !(/assets/js04.jpg) . ",
     "url": "/book01/docs/javascript/function/",
     "relUrl": "/docs/javascript/function/"
-  },"112": {
+  },"113": {
     "doc": "getComputedStyle",
     "title": "01 getComputedStyle",
     "content": "문법 . getComputedStyle var style = window.getComputedStyle(element[, pseudoElt]); . 매개변수 . | element 속성값을 얻으려하는 Element | pseudoElt (선택) 일치시킬 의사요소(pseudo element)를 지정하는 문자열. 보통의 요소들에 대해서는 생략되거나 null이어야 함. | . 호환성 . getComputedStyle은 IE9 이상의 브라우저에서 지원됩니다. — . ",
     "url": "/book01/docs/javascript/getComputedStyle/#01-getcomputedstyle",
     "relUrl": "/docs/javascript/getComputedStyle/#01-getcomputedstyle"
-  },"113": {
+  },"114": {
     "doc": "getComputedStyle",
     "title": "getComputedStyle",
     "content": ". | 01 getComputedStyle . | 문법 | 매개변수 | 호환성 | . | . – . ",
     "url": "/book01/docs/javascript/getComputedStyle/",
     "relUrl": "/docs/javascript/getComputedStyle/"
-  },"114": {
+  },"115": {
     "doc": "Javascript",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/docs/javascript/",
     "relUrl": "/docs/javascript/"
-  },"115": {
+  },"116": {
     "doc": "Jekyll",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/docs/Jekyll/",
     "relUrl": "/docs/Jekyll/"
-  },"116": {
+  },"117": {
     "doc": "Miscellaneous",
     "title": "Miscellaneous",
     "content": " ",
     "url": "/book01/docs/miscellaneous/",
     "relUrl": "/docs/miscellaneous/"
-  },"117": {
+  },"118": {
     "doc": "Javascript+JQuery",
     "title": "Javascript+JQuery",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/",
     "relUrl": "/docs/javascript+jQuery/"
-  },"118": {
+  },"119": {
     "doc": "jQuery",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/docs/jQuery/",
     "relUrl": "/docs/jQuery/"
-  },"119": {
+  },"120": {
     "doc": "PHP",
     "title": "PHP",
     "content": " ",
     "url": "/book01/docs/php/",
     "relUrl": "/docs/php/"
-  },"120": {
+  },"121": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/book01/docs/Projects/",
     "relUrl": "/docs/Projects/"
-  },"121": {
+  },"122": {
     "doc": "Home",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/#javascript",
     "relUrl": "/#javascript"
-  },"122": {
+  },"123": {
     "doc": "Home",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/#jquery",
     "relUrl": "/#jquery"
-  },"123": {
+  },"124": {
     "doc": "Home",
     "title": "Javascript+jQuery",
     "content": " ",
     "url": "/book01/#javascriptjquery",
     "relUrl": "/#javascriptjquery"
-  },"124": {
+  },"125": {
     "doc": "Home",
     "title": "PHP",
     "content": " ",
     "url": "/book01/#php",
     "relUrl": "/#php"
-  },"125": {
+  },"126": {
     "doc": "Home",
     "title": "Projects",
     "content": " ",
     "url": "/book01/#projects",
     "relUrl": "/#projects"
-  },"126": {
+  },"127": {
     "doc": "Home",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/#jekyll",
     "relUrl": "/#jekyll"
-  },"127": {
+  },"128": {
     "doc": "Home",
     "title": "Miscellaneous",
     "content": " ",
     "url": "/book01/#miscellaneous",
     "relUrl": "/#miscellaneous"
-  },"128": {
+  },"129": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/book01/",
     "relUrl": "/"
-  },"129": {
+  },"130": {
     "doc": "시간표시",
     "title": "01 시간표시하기",
     "content": " ",
     "url": "/book01/docs/javascript/javascript/#01-%EC%8B%9C%EA%B0%84%ED%91%9C%EC%8B%9C%ED%95%98%EA%B8%B0",
     "relUrl": "/docs/javascript/javascript/#01-시간표시하기"
-  },"130": {
+  },"131": {
     "doc": "시간표시",
     "title": "01-01 toLocaleTimeString() : 현지시간으로 표시",
     "content": "toLocaleTimeString() 메서드는 Date 객체의 날짜의 시간 부분을 지역에 맞는 언어 포맷으로 반환 . 문법: StringdateStringtoLocaleTimeString([Stringlocales[, Objectoptions]]) . 예시: . /* 시간을 표시하기 */ var now = new Date(); var display = now.toLocaleTimeString(); console.log(display); //var time=setInterval(display,1000) document.write(\"현재 시각은 \" + display); . 출력: . ",
     "url": "/book01/docs/javascript/javascript/#01-01-tolocaletimestring--%ED%98%84%EC%A7%80%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%ED%91%9C%EC%8B%9C",
     "relUrl": "/docs/javascript/javascript/#01-01-tolocaletimestring--현지시간으로-표시"
-  },"131": {
+  },"132": {
     "doc": "시간표시",
     "title": "01-02 Date()",
     "content": "문법: new Date(year, month, date, hours, minutes, seconds, ms) . | year는 반드시 네 자리 숫자로 작성 | month는 0(1월)부터 11(12월) 사이의 숫자로 작성 | date는 일을 나타내는데, 값이 없는 경우엔 1일로 처리됨 | hours/minutes/seconds/ms에 값이 없는 경우엔 0으로 처리됨 | . 예제: . var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); console.log(`${hour} 시 ${minute}분 ${second} 초 ${milliSecond}`) . 실행: . 날짜를 설정할땐 . setFullYear(year, [month], [date]) setMonth(month, [date]) setDate(date) setHours(hour, [min], [sec], [ms]) setMinutes(min, [sec], [ms]) setSeconds(sec, [ms]) setMilliseconds(ms) setTime(milliseconds) (1970년 1월 1일 00:00:00 UTC부터 밀리초 이후를 나타내는 날짜를 설정) . 날짜를 얻어올땐 . getFullYear(year, [month], [date]) getMonth(month, [date]) getDate(date) getHours(hour, [min], [sec], [ms]) getMinutes(min, [sec], [ms]) getSeconds(sec, [ms]) getMilliseconds(ms) getTime(milliseconds) . 현재 시간을 알려주는 Date.now() . 1970년 1월 1일 0시 0분 0초부터 현재까지의 시간을 밀리초(millisecond) 단위의 정수로 반환 . ",
     "url": "/book01/docs/javascript/javascript/#01-02-date",
     "relUrl": "/docs/javascript/javascript/#01-02-date"
-  },"132": {
+  },"133": {
     "doc": "시간표시",
     "title": "01-03 RGB 시계",
     "content": "사용할 이미지 . | | | . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;sample5&lt;/title&gt; &lt;script src=\"clock(vanilla).js\" defer&gt;&lt;/script&gt; &lt;style&gt; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=\"clock\"&gt; &lt;img alt=\"clock\" src=\"clock.png\"/&gt; &lt;img alt=\"hour\" src=\"h.png\" class=\"hour\"/&gt; &lt;img alt=\"min\" src=\"m.png\" class=\"min\"/&gt; &lt;div class=\"sec\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=\"digital\"&gt;&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; . css . *{margin:0;padding:0} #clock{position:relative;width:300px;height:300px;margin:100px auto 0} #clock img{position:absolute;top:0;left:0;display:block} .sec{width:3px;height:140px;transform-origin:50% 100%;position:absolute;right:50%;top:3%} . js . function clock() { var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); if (hour &gt; 11) hour -= 12; var degreeOfSecond = second * 6 + (milliSecond * 6) / 1000; var degreeOfMinute = minute * 6 + degreeOfSecond / 60; var degreeOfHour = hour * 30 + degreeOfMinute / 12; var redNeedle = 0; var greenNeedle = 0; var blueNeedle = 0; if (degreeOfSecond &lt; 90) { redNeedle = Math.round((255 * degreeOfSecond) / 90); } else if (90 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 180) { redNeedle = Math.round(255 - 255 * ((degreeOfSecond - 90) / 90)); greenNeedle = Math.round((255 * (degreeOfSecond - 90)) / 90); } else if (180 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 270) { greenNeedle = Math.round(255 - (255 * (degreeOfSecond - 180)) / 90); blueNeedle = Math.round((255 * (degreeOfSecond - 180)) / 90); } else { blueNeedle = Math.round(255 - (255 * (degreeOfSecond - 270)) / 90); } var needles = Array.apply(null, document.querySelector(\"#clock\").children); needles[1].style.transform = \"rotate(\" + degreeOfHour + \"deg)\"; needles[2].style.transform = \"rotate(\" + degreeOfMinute + \"deg)\"; needles[3].style.transform = \"rotate(\" + degreeOfSecond + \"deg)\"; needles[3].style.backgroundColor = \"rgb(\" + redNeedle + \",\" + greenNeedle + \",\" + blueNeedle + \")\"; } setInterval(clock, 1000 / 60); . 실행 . ",
     "url": "/book01/docs/javascript/javascript/#01-03-rgb-%EC%8B%9C%EA%B3%84",
     "relUrl": "/docs/javascript/javascript/#01-03-rgb-시계"
-  },"133": {
+  },"134": {
     "doc": "시간표시",
     "title": "시간표시",
     "content": ". | 01 시간표시하기 . | 01-01 toLocaleTimeString() : 현지시간으로 표시 | 01-02 Date() . | 날짜를 설정할땐 | 날짜를 얻어올땐 | 현재 시간을 알려주는 Date.now() | . | 01-03 RGB 시계 . | 사용할 이미지 | html | css | js | 실행 | . | . | . – . ",
     "url": "/book01/docs/javascript/javascript/",
     "relUrl": "/docs/javascript/javascript/"
-  },"134": {
+  },"135": {
     "doc": "onMediaQueryChange",
     "title": "01 미디어쿼리가 변할때 실행하는 함수",
     "content": "onMediaQueryChange . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;샘플&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;main class=\"centering\"&gt; &lt;div class=\"rectangle\"&gt;&lt;/div&gt; &lt;/main&gt; &lt;/body&gt; &lt;/html&gt; .rectangle { background-image: linear-gradient(-135deg, #00aaff, #5500ff); } .rectangle.big-size { background-image: linear-gradient(-135deg, red, #ff00a2); } .rectangle { width: 100%; height: calc(100% - 50px); transition: 300ms ease-in-out all; } . const rectAngle = document.querySelector('.rectangle'); // 미디어쿼리 정보 const mediaQueryList = matchMedia('(min-width: 600px)'); // 미디어쿼리 변화 시점에 따라 처리 mediaQueryList.addListener(onMediaQueryChange); /** * 미디어쿼리 변화 시점에 따라 실행되는 함수 */ function onMediaQueryChange(mediaQueryList) { if (mediaQueryList.matches === true) { rectAngle.classList.add('big-size'); console.log('윈도우 창의 크기가 600px 이상입니다.'); } else { rectAngle.classList.remove('big-size'); console.log('윈도우 창의 크기가 600px 미만입니다.'); } } // 화면 표시 시점에 onMediaQueryChange( ) 1회 실행 onMediaQueryChange(mediaQueryList); . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/#01-%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC%EA%B0%80-%EB%B3%80%ED%95%A0%EB%95%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%ED%95%A8%EC%88%98",
     "relUrl": "/docs/javascript/onMediaQueryChange/#01-미디어쿼리가-변할때-실행하는-함수"
-  },"135": {
+  },"136": {
     "doc": "onMediaQueryChange",
     "title": "onMediaQueryChange",
     "content": ". | 01 미디어쿼리가 변할때 실행하는 함수 | . – . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/",
     "relUrl": "/docs/javascript/onMediaQueryChange/"
-  },"136": {
+  },"137": {
     "doc": "scrollAmountJS",
     "title": "01 스크롤양 얻기",
     "content": "함수종류 . | 종류 | 설명 | . | document.documentElement.scrollTop / scrollLeft | document.querySelector(‘html’).scrollTop; 요소의 수직 스크롤 반환 | . | window.pageYOffset / pageXOffset | scrollY의 다른 이름으로, 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환 (IE ○) | . | window.scrollY / scrollX | 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환(IE X) | . 예제 . ",
     "url": "/book01/docs/javascript/scrollAmountJS/#01-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%96%91-%EC%96%BB%EA%B8%B0",
     "relUrl": "/docs/javascript/scrollAmountJS/#01-스크롤양-얻기"
-  },"137": {
+  },"138": {
     "doc": "scrollAmountJS",
     "title": "scrollAmountJS",
     "content": ". | 01 스크롤양 얻기 . | 함수종류 | 예제 | . | . – . ",
     "url": "/book01/docs/javascript/scrollAmountJS/",
     "relUrl": "/docs/javascript/scrollAmountJS/"
-  },"138": {
+  },"139": {
     "doc": "크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | clientHeight | padding을 포함한 높이 | . | scrollHeight | padding을 포함한 화면 상에 표시되지 않은 콘텐츠를 포함한 높이 | . | offsetHeight | border, padding, 스크롤 바를 포함한 높이 | . ",
     "url": "/book01/docs/javascript/size/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#01-요소-크기-알아내기"
-  },"139": {
+  },"140": {
     "doc": "크기알아내기",
     "title": "02 윈도우의 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | window.innerWidth | 스크롤 바를 포함하지 않는 창 너비 | . | window.innerHeight | 스크롤 바를 포함하지 않은 창 높이 | . | window.outerWidth | 스크롤 바를 포함, 창의 너비 | . | window.outerHeight | 스크롤 바를 포함한 창의 높이 | . ",
     "url": "/book01/docs/javascript/size/#02-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#02-윈도우의-크기-알아내기"
-  },"140": {
+  },"141": {
     "doc": "크기알아내기",
     "title": "크기알아내기",
     "content": ". | 01 요소 크기 알아내기 . | 함수종류 | . | 02 윈도우의 크기 알아내기 . | 함수종류 | . | . – . ",
