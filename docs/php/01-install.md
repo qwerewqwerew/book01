@@ -32,18 +32,21 @@ parent: PHP
 
 1. xmapp 설치 - [https://www.apachefriends.org/download.html](https://www.apachefriends.org/download.html)
 
-xmapp 포터블 링크 [googleDrive](https://drive.google.com/file/d/1LVF1XA1P5hV9Y7zPJYDiJA7UWhcCL-nI/view?usp=share_link)
+      xmapp 포터블 링크 [googleDrive](https://drive.google.com/file/d/1LVF1XA1P5hV9Y7zPJYDiJA7UWhcCL-nI/view?usp=share_link)
 
-xmapp 포터블 링크 [sourceforge](https://sourceforge.net/projects/xampp/files/)
+      xmapp 포터블 링크 [sourceforge](https://sourceforge.net/projects/xampp/files/)
 
-2. **파일 압축 푼 후 setup_xampp.bat 파일 실행**
-2. **파일 압축 푼 후 mysql_start.bat 파일 실행**
-2. **파일 압축 푼 후 apache_start.bat 파일 실행**
 
 2. **본 메뉴얼은 포터블과 설치판이 뒤섞여 있으므로 수업과 함께 진행해야 함**
 
+2. 😺 포터블로 깔아볼까?
+   2. **파일 압축 푼 후 setup_xampp.bat 파일 실행**
+   2. **파일 압축 푼 후 mysql_start.bat 파일 실행**
+   2. **파일 압축 푼 후 apache_start.bat 파일 실행**
 
-2. **만약 포터블 설치후 Mysql 서버 실행이 안될시 설치버전으로 진행할것**
+
+2.  😺 포터블이 안되면 할수없지
+   - **만약 포터블 설치후 Mysql 서버 실행이 안될시 설치버전으로 진행할것**
 
 2. phpMyadmin 만 체크후 → next
    <img src='{{ "/assets/img/Untitled.png" | relative_url }}'>
