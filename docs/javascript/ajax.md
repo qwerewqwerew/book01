@@ -4,9 +4,13 @@ parent: Javascript
 layout: post
 ---
 
+## Table of contents
+{: .no_toc .text-delta }
+
 1. TOC
 {:toc}
---
+
+---
 
 (XMLHttpRequest)[https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest]
 

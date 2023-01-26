@@ -61,7 +61,7 @@
   },"10": {
     "doc": "01-설치",
     "title": "01.설치",
-    "content": ". | xmapp 설치 - https://www.apachefriends.org/download.html xmapp 포터블 링크 googleDrive xmapp 포터블 링크 sourceforge . | 파일 압축 푼 후 setup_xampp.bat 파일 실행 | 파일 압축 푼 후 mysql_start.bat 파일 실행 | 파일 압축 푼 후 apache_start.bat 파일 실행 . | 본 메뉴얼은 포터블과 설치판이 뒤섞여 있으므로 수업과 함께 진행해야 함 . | phpMyadmin 만 체크후 → next . | 123456 비밀번호는 6자리 적어놓는다 이후에 데이터베이스 관련한 수업할 때 이 비번을 이용하므로 꼭 기억해놓는다 . | 중간에 방화벽으로 차단이 나올경우 모두 엑세스 허용해준다. | 설치완료 | . localhost 를 입력해도 접속할수 있다 . ",
+    "content": ". | xmapp 설치 - https://www.apachefriends.org/download.html | . xmapp 포터블 링크 googleDrive . xmapp 포터블 링크 sourceforge . | 파일 압축 푼 후 setup_xampp.bat 파일 실행 | 파일 압축 푼 후 mysql_start.bat 파일 실행 | 파일 압축 푼 후 apache_start.bat 파일 실행 . | 본 메뉴얼은 포터블과 설치판이 뒤섞여 있으므로 수업과 함께 진행해야 함 . | 만약 포터블 설치후 Mysql 서버 실행이 안될시 설치버전으로 진행할것 . | phpMyadmin 만 체크후 → next . | 123456 비밀번호는 6자리 적어놓는다 이후에 데이터베이스 관련한 수업할 때 이 비번을 이용하므로 꼭 기억해놓는다 . | 중간에 방화벽으로 차단이 나올경우 모두 엑세스 허용해준다. | 설치완료 | . localhost 를 입력해도 접속할수 있다 . ",
     "url": "/book01/docs/php/01-install/#01%EC%84%A4%EC%B9%98",
     "relUrl": "/docs/php/01-install/#01설치"
   },"11": {
@@ -660,191 +660,197 @@
     "relUrl": "/docs/Projects/2023-01-06-slide/"
   },"110": {
     "doc": "ajax",
+    "title": "Table of contents",
+    "content": ". | ajax2 | . (XMLHttpRequest)[https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest] . const url = \"https://dummyjson.com/products\"; const req = new XMLHttpRequest(); let div = document.querySelector(\"div\"); req.onload = (e) =&gt; { const datas = req.response; // not responseText for (data of datas.products) { let { brand, parent } = data; div.innerHTML += `brand: ${brand}, &lt;br&gt; parent: ${parent}&lt;br&gt;&lt;hr&gt;`; console.log(brand, parent); } }; req.open(\"GET\", url); req.responseType = \"json\"; req.send(); . ajax2 . ",
+    "url": "/book01/docs/javascript/ajax/#table-of-contents",
+    "relUrl": "/docs/javascript/ajax/#table-of-contents"
+  },"111": {
+    "doc": "ajax",
     "title": "ajax",
-    "content": ". | ajax2 | . – . (XMLHttpRequest)[https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest] . const url = \"https://dummyjson.com/products\"; const req = new XMLHttpRequest(); let div = document.querySelector(\"div\"); req.onload = (e) =&gt; { const datas = req.response; // not responseText for (data of datas.products) { let { brand, parent } = data; div.innerHTML += `brand: ${brand}, &lt;br&gt; parent: ${parent}&lt;br&gt;&lt;hr&gt;`; console.log(brand, parent); } }; req.open(\"GET\", url); req.responseType = \"json\"; req.send(); . ajax2 . ",
+    "content": " ",
     "url": "/book01/docs/javascript/ajax/",
     "relUrl": "/docs/javascript/ajax/"
-  },"111": {
+  },"112": {
     "doc": "event-bubbling",
     "title": "event-bubbling",
     "content": ". | 버블링과 캡쳐링의 그림설명 | 01 이벤트 버블링 | 예제 | 설명 | 02 이벤트 캡쳐링 | 예제 | 03 이벤트 위임 | 예제 | 04 버블링 막기 | 05 버블링과 캡쳐링 둘다 막기 | 예제 | . – . 모던자바스크립트 . 버블링과 캡쳐링의 그림설명 . 01 이벤트 버블링 . ** 이벤트가 상위 요소로 전파 ** . event.currentTarget : 이벤트를 등록해 놓은 요소를 반환 . event.target : 이벤트가 발생한 요소를 반환 . 예제 . 설명 . three 요소를 클릭하면 상위요소까지 출력된다. 02 이벤트 캡쳐링 . ** 이벤트가 하위 요소로 전파 ** . 예제 . 03 이벤트 위임 . ** 이벤트 버블링을 활용함 ** 모던자바스크립트 elem.closest(selector) 메서드는 elem의 상위 요소 중 selector와 일치하는 가장 근접한 조상 요소를 반환합니다. 위 코드에선 이벤트가 발생한 요소부터 시작해 위로 올라가며 가장 가까운 &lt;td&gt; 요소를 찾습니다. event.target이 &lt;td&gt;안에 있지 않으면 그 즉시 null을 반환하므로 아무 작업도 일어나지 않습니다. 중첩 테이블이 있는 경우 event.target은 현재 테이블 바깥에 있는 &lt;td&gt;가 될 수도 있습니다. 이런 경우를 처리하기 위해 &lt;td&gt;가 팔괘도 안에 있는지를 확인합니다. 이제 진짜 td를 강조해 줍니다. 예제 . 04 버블링 막기 . 최초로 이벤트가 발생되는 엘리먼트의 이벤트 핸들러에event.stopPropagation()라는 API 를 추가 . &lt;body onclick=\"alert(`버블링은 여기까지 도달하지 못합니다.`)\"&gt; &lt;button onclick=\"event.stopPropagation()\"&gt;클릭해 주세요.&lt;/button&gt; &lt;/body&gt; . 모든 이벤트 버블링을 멈추고 싶은 경우에는 event.stopImmediatePropagation() API 추가 . 05 버블링과 캡쳐링 둘다 막기 . ` e.stopPropagation()` . 예제 . ",
     "url": "/book01/docs/javascript/event/",
     "relUrl": "/docs/javascript/event/"
-  },"112": {
+  },"113": {
     "doc": "function",
     "title": "function",
     "content": ". | 01 return | 오류 | 수정 | 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . | 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 | . | . – . 01 return . [return 명령문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/return) 은 함수 실행을 종료하고, 주어진 값을 함수 호출 지점으로 반환한다. 함수의 실행문 내부에 묵시적으로 정의되어 있다. 오류 . 수정 . 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . 아래의 함수는 두개의 숫자와 연산자를 입력받아 값을 반환하는 계산기 프로그램이다 함수의 중복을 고차함수로 작성하여 제거해보자 . 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 . !(/assets/js03.jpg) . !(/assets/js04.jpg) . ",
     "url": "/book01/docs/javascript/function/",
     "relUrl": "/docs/javascript/function/"
-  },"113": {
+  },"114": {
     "doc": "getComputedStyle",
     "title": "01 getComputedStyle",
     "content": "문법 . getComputedStyle var style = window.getComputedStyle(element[, pseudoElt]); . 매개변수 . | element 속성값을 얻으려하는 Element | pseudoElt (선택) 일치시킬 의사요소(pseudo element)를 지정하는 문자열. 보통의 요소들에 대해서는 생략되거나 null이어야 함. | . 호환성 . getComputedStyle은 IE9 이상의 브라우저에서 지원됩니다. — . ",
     "url": "/book01/docs/javascript/getComputedStyle/#01-getcomputedstyle",
     "relUrl": "/docs/javascript/getComputedStyle/#01-getcomputedstyle"
-  },"114": {
+  },"115": {
     "doc": "getComputedStyle",
     "title": "getComputedStyle",
     "content": ". | 01 getComputedStyle . | 문법 | 매개변수 | 호환성 | . | . – . ",
     "url": "/book01/docs/javascript/getComputedStyle/",
     "relUrl": "/docs/javascript/getComputedStyle/"
-  },"115": {
+  },"116": {
     "doc": "Javascript",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/docs/javascript/",
     "relUrl": "/docs/javascript/"
-  },"116": {
+  },"117": {
     "doc": "Jekyll",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/docs/Jekyll/",
     "relUrl": "/docs/Jekyll/"
-  },"117": {
+  },"118": {
     "doc": "Miscellaneous",
     "title": "Miscellaneous",
     "content": " ",
     "url": "/book01/docs/miscellaneous/",
     "relUrl": "/docs/miscellaneous/"
-  },"118": {
+  },"119": {
     "doc": "Javascript+JQuery",
     "title": "Javascript+JQuery",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/",
     "relUrl": "/docs/javascript+jQuery/"
-  },"119": {
+  },"120": {
     "doc": "jQuery",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/docs/jQuery/",
     "relUrl": "/docs/jQuery/"
-  },"120": {
+  },"121": {
     "doc": "PHP",
     "title": "PHP",
     "content": " ",
     "url": "/book01/docs/php/",
     "relUrl": "/docs/php/"
-  },"121": {
+  },"122": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/book01/docs/Projects/",
     "relUrl": "/docs/Projects/"
-  },"122": {
+  },"123": {
     "doc": "Home",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/#javascript",
     "relUrl": "/#javascript"
-  },"123": {
+  },"124": {
     "doc": "Home",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/#jquery",
     "relUrl": "/#jquery"
-  },"124": {
+  },"125": {
     "doc": "Home",
     "title": "Javascript+jQuery",
     "content": " ",
     "url": "/book01/#javascriptjquery",
     "relUrl": "/#javascriptjquery"
-  },"125": {
+  },"126": {
     "doc": "Home",
     "title": "PHP",
     "content": " ",
     "url": "/book01/#php",
     "relUrl": "/#php"
-  },"126": {
+  },"127": {
     "doc": "Home",
     "title": "Projects",
     "content": " ",
     "url": "/book01/#projects",
     "relUrl": "/#projects"
-  },"127": {
+  },"128": {
     "doc": "Home",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/#jekyll",
     "relUrl": "/#jekyll"
-  },"128": {
+  },"129": {
     "doc": "Home",
     "title": "Miscellaneous",
     "content": " ",
     "url": "/book01/#miscellaneous",
     "relUrl": "/#miscellaneous"
-  },"129": {
+  },"130": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/book01/",
     "relUrl": "/"
-  },"130": {
+  },"131": {
     "doc": "시간표시",
     "title": "01 시간표시하기",
     "content": " ",
     "url": "/book01/docs/javascript/javascript/#01-%EC%8B%9C%EA%B0%84%ED%91%9C%EC%8B%9C%ED%95%98%EA%B8%B0",
     "relUrl": "/docs/javascript/javascript/#01-시간표시하기"
-  },"131": {
+  },"132": {
     "doc": "시간표시",
     "title": "01-01 toLocaleTimeString() : 현지시간으로 표시",
     "content": "toLocaleTimeString() 메서드는 Date 객체의 날짜의 시간 부분을 지역에 맞는 언어 포맷으로 반환 . 문법: StringdateStringtoLocaleTimeString([Stringlocales[, Objectoptions]]) . 예시: . /* 시간을 표시하기 */ var now = new Date(); var display = now.toLocaleTimeString(); console.log(display); //var time=setInterval(display,1000) document.write(\"현재 시각은 \" + display); . 출력: . ",
     "url": "/book01/docs/javascript/javascript/#01-01-tolocaletimestring--%ED%98%84%EC%A7%80%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%ED%91%9C%EC%8B%9C",
     "relUrl": "/docs/javascript/javascript/#01-01-tolocaletimestring--현지시간으로-표시"
-  },"132": {
+  },"133": {
     "doc": "시간표시",
     "title": "01-02 Date()",
     "content": "문법: new Date(year, month, date, hours, minutes, seconds, ms) . | year는 반드시 네 자리 숫자로 작성 | month는 0(1월)부터 11(12월) 사이의 숫자로 작성 | date는 일을 나타내는데, 값이 없는 경우엔 1일로 처리됨 | hours/minutes/seconds/ms에 값이 없는 경우엔 0으로 처리됨 | . 예제: . var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); console.log(`${hour} 시 ${minute}분 ${second} 초 ${milliSecond}`) . 실행: . 날짜를 설정할땐 . setFullYear(year, [month], [date]) setMonth(month, [date]) setDate(date) setHours(hour, [min], [sec], [ms]) setMinutes(min, [sec], [ms]) setSeconds(sec, [ms]) setMilliseconds(ms) setTime(milliseconds) (1970년 1월 1일 00:00:00 UTC부터 밀리초 이후를 나타내는 날짜를 설정) . 날짜를 얻어올땐 . getFullYear(year, [month], [date]) getMonth(month, [date]) getDate(date) getHours(hour, [min], [sec], [ms]) getMinutes(min, [sec], [ms]) getSeconds(sec, [ms]) getMilliseconds(ms) getTime(milliseconds) . 현재 시간을 알려주는 Date.now() . 1970년 1월 1일 0시 0분 0초부터 현재까지의 시간을 밀리초(millisecond) 단위의 정수로 반환 . ",
     "url": "/book01/docs/javascript/javascript/#01-02-date",
     "relUrl": "/docs/javascript/javascript/#01-02-date"
-  },"133": {
+  },"134": {
     "doc": "시간표시",
     "title": "01-03 RGB 시계",
     "content": "사용할 이미지 . | | | . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;sample5&lt;/title&gt; &lt;script src=\"clock(vanilla).js\" defer&gt;&lt;/script&gt; &lt;style&gt; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=\"clock\"&gt; &lt;img alt=\"clock\" src=\"clock.png\"/&gt; &lt;img alt=\"hour\" src=\"h.png\" class=\"hour\"/&gt; &lt;img alt=\"min\" src=\"m.png\" class=\"min\"/&gt; &lt;div class=\"sec\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=\"digital\"&gt;&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; . css . *{margin:0;padding:0} #clock{position:relative;width:300px;height:300px;margin:100px auto 0} #clock img{position:absolute;top:0;left:0;display:block} .sec{width:3px;height:140px;transform-origin:50% 100%;position:absolute;right:50%;top:3%} . js . function clock() { var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); if (hour &gt; 11) hour -= 12; var degreeOfSecond = second * 6 + (milliSecond * 6) / 1000; var degreeOfMinute = minute * 6 + degreeOfSecond / 60; var degreeOfHour = hour * 30 + degreeOfMinute / 12; var redNeedle = 0; var greenNeedle = 0; var blueNeedle = 0; if (degreeOfSecond &lt; 90) { redNeedle = Math.round((255 * degreeOfSecond) / 90); } else if (90 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 180) { redNeedle = Math.round(255 - 255 * ((degreeOfSecond - 90) / 90)); greenNeedle = Math.round((255 * (degreeOfSecond - 90)) / 90); } else if (180 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 270) { greenNeedle = Math.round(255 - (255 * (degreeOfSecond - 180)) / 90); blueNeedle = Math.round((255 * (degreeOfSecond - 180)) / 90); } else { blueNeedle = Math.round(255 - (255 * (degreeOfSecond - 270)) / 90); } var needles = Array.apply(null, document.querySelector(\"#clock\").children); needles[1].style.transform = \"rotate(\" + degreeOfHour + \"deg)\"; needles[2].style.transform = \"rotate(\" + degreeOfMinute + \"deg)\"; needles[3].style.transform = \"rotate(\" + degreeOfSecond + \"deg)\"; needles[3].style.backgroundColor = \"rgb(\" + redNeedle + \",\" + greenNeedle + \",\" + blueNeedle + \")\"; } setInterval(clock, 1000 / 60); . 실행 . ",
     "url": "/book01/docs/javascript/javascript/#01-03-rgb-%EC%8B%9C%EA%B3%84",
     "relUrl": "/docs/javascript/javascript/#01-03-rgb-시계"
-  },"134": {
+  },"135": {
     "doc": "시간표시",
     "title": "시간표시",
     "content": ". | 01 시간표시하기 . | 01-01 toLocaleTimeString() : 현지시간으로 표시 | 01-02 Date() . | 날짜를 설정할땐 | 날짜를 얻어올땐 | 현재 시간을 알려주는 Date.now() | . | 01-03 RGB 시계 . | 사용할 이미지 | html | css | js | 실행 | . | . | . – . ",
     "url": "/book01/docs/javascript/javascript/",
     "relUrl": "/docs/javascript/javascript/"
-  },"135": {
+  },"136": {
     "doc": "onMediaQueryChange",
     "title": "01 미디어쿼리가 변할때 실행하는 함수",
     "content": "onMediaQueryChange . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;샘플&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;main class=\"centering\"&gt; &lt;div class=\"rectangle\"&gt;&lt;/div&gt; &lt;/main&gt; &lt;/body&gt; &lt;/html&gt; .rectangle { background-image: linear-gradient(-135deg, #00aaff, #5500ff); } .rectangle.big-size { background-image: linear-gradient(-135deg, red, #ff00a2); } .rectangle { width: 100%; height: calc(100% - 50px); transition: 300ms ease-in-out all; } . const rectAngle = document.querySelector('.rectangle'); // 미디어쿼리 정보 const mediaQueryList = matchMedia('(min-width: 600px)'); // 미디어쿼리 변화 시점에 따라 처리 mediaQueryList.addListener(onMediaQueryChange); /** * 미디어쿼리 변화 시점에 따라 실행되는 함수 */ function onMediaQueryChange(mediaQueryList) { if (mediaQueryList.matches === true) { rectAngle.classList.add('big-size'); console.log('윈도우 창의 크기가 600px 이상입니다.'); } else { rectAngle.classList.remove('big-size'); console.log('윈도우 창의 크기가 600px 미만입니다.'); } } // 화면 표시 시점에 onMediaQueryChange( ) 1회 실행 onMediaQueryChange(mediaQueryList); . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/#01-%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC%EA%B0%80-%EB%B3%80%ED%95%A0%EB%95%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%ED%95%A8%EC%88%98",
     "relUrl": "/docs/javascript/onMediaQueryChange/#01-미디어쿼리가-변할때-실행하는-함수"
-  },"136": {
+  },"137": {
     "doc": "onMediaQueryChange",
     "title": "onMediaQueryChange",
     "content": ". | 01 미디어쿼리가 변할때 실행하는 함수 | . – . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/",
     "relUrl": "/docs/javascript/onMediaQueryChange/"
-  },"137": {
+  },"138": {
     "doc": "scrollAmountJS",
     "title": "01 스크롤양 얻기",
     "content": "함수종류 . | 종류 | 설명 | . | document.documentElement.scrollTop / scrollLeft | document.querySelector(‘html’).scrollTop; 요소의 수직 스크롤 반환 | . | window.pageYOffset / pageXOffset | scrollY의 다른 이름으로, 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환 (IE ○) | . | window.scrollY / scrollX | 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환(IE X) | . 예제 . ",
     "url": "/book01/docs/javascript/scrollAmountJS/#01-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%96%91-%EC%96%BB%EA%B8%B0",
     "relUrl": "/docs/javascript/scrollAmountJS/#01-스크롤양-얻기"
-  },"138": {
+  },"139": {
     "doc": "scrollAmountJS",
     "title": "scrollAmountJS",
     "content": ". | 01 스크롤양 얻기 . | 함수종류 | 예제 | . | . – . ",
     "url": "/book01/docs/javascript/scrollAmountJS/",
     "relUrl": "/docs/javascript/scrollAmountJS/"
-  },"139": {
+  },"140": {
     "doc": "크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | clientHeight | padding을 포함한 높이 | . | scrollHeight | padding을 포함한 화면 상에 표시되지 않은 콘텐츠를 포함한 높이 | . | offsetHeight | border, padding, 스크롤 바를 포함한 높이 | . ",
     "url": "/book01/docs/javascript/size/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#01-요소-크기-알아내기"
-  },"140": {
+  },"141": {
     "doc": "크기알아내기",
     "title": "02 윈도우의 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | window.innerWidth | 스크롤 바를 포함하지 않는 창 너비 | . | window.innerHeight | 스크롤 바를 포함하지 않은 창 높이 | . | window.outerWidth | 스크롤 바를 포함, 창의 너비 | . | window.outerHeight | 스크롤 바를 포함한 창의 높이 | . ",
     "url": "/book01/docs/javascript/size/#02-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#02-윈도우의-크기-알아내기"
-  },"141": {
+  },"142": {
     "doc": "크기알아내기",
     "title": "크기알아내기",
     "content": ". | 01 요소 크기 알아내기 . | 함수종류 | . | 02 윈도우의 크기 알아내기 . | 함수종류 | . | . – . ",

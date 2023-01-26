@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: 망고는 코딩대장
 description: 깜빡깜빡해서 쓰는 블로그
-url: "https://qwerewqwerew.github.io"
-baseurl: "/book01" 
+url: "https://qwerewqwerew.github.io/"
+baseurl: "book01" 
 
 permalink: pretty
 
@@ -36,7 +36,7 @@ exclude:
  # specific to the theme website:
 
 
-
+asset_url: /assets
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
 
