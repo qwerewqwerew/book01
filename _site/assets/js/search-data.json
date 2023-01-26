@@ -53,611 +53,611 @@
     "url": "/book01/docs/jQuery/01-UI/",
     "relUrl": "/docs/jQuery/01-UI/"
   },"9": {
+    "doc": "01-Dooosan-시작",
+    "title": "프로젝트 - 기업사이트",
+    "content": "두산클론 . 230113(금) 수업 . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0\" /&gt; &lt;link rel=\"stylesheet\" href=\"css/reset.css\"&gt; &lt;link rel=\"stylesheet\" href=\"css/style.css\"&gt; &lt;link rel=\"stylesheet\" href=\"css/media.css\"&gt; &lt;style&gt; #layer { display: block; } #layer { display: none; } &lt;/style&gt; &lt;script src=\"https://code.jquery.com/jquery-1.12.0.min.js\"&gt;&lt;/script&gt; &lt;script src=\"js/script.js\"&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;header id=\"header\"&gt; &lt;div class=\"header_cover cf\"&gt; &lt;h1 class=\"logo fl\"&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/logo.png\" alt=\"두산그룹 로고\" /&gt;&lt;/a&gt; &lt;/h1&gt; &lt;a href=\"#\" class=\"mo\"&gt;&lt;span class=\"material-symbols-outlined\"&gt; menu &lt;/span&gt;&lt;/a&gt; &lt;ul class=\"nav fl\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;회사소개 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;투자정보 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;미디어센터 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class=\"mo_menu\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;회사소개 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;목표와 핵심가치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;경영전략&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;리더쉽&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;기술과 혁신&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;계열사&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개요&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;윤리경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;상생협력&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;EHS&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회공헌&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;투자정보 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;IR자료&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;거버넌스&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;보고서&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;공시&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;전자공고&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;미디어센터 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;캠페인 &amp;amp; PR영상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;메뉴얼 브로슈어&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 인재,두산인&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;커리어두산&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- //.mo_menu --&gt; &lt;div class=\"pc full_menu\"&gt; &lt;div class=\"full_cover\"&gt; &lt;ul&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;목표와 핵심가치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;경영전략&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;리더쉽&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;기술과 혁신&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;계열사&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개요&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;윤리경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;상생협력&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;EHS&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회공헌&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;IR자료&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;거버넌스&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;보고서&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;공시&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;전자공고&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;캠페인 &amp;amp; PR영상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;메뉴얼 브로슈어&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 인재,두산인&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;커리어두산&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;ul class=\"gnb fr\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;한국어&lt;/a&gt;&lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/ico_search.png\" alt=\"\" class=\"leave\"&gt;&lt;img src=\"./images/ico_search_on.png\" alt=\"\" class=\"hover\"&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/btn_gnb_right_menu.png\" alt=\"\" class=\"leave\" /&gt;&lt;img src=\"./images/btn_gnb_right_menu_ov.png\" alt=\"\" class=\"hover\" /&gt;&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/header&gt; &lt;section id=\"main_slide\"&gt; &lt;!-- .slide_cover&gt;ul&gt;li&gt;a&gt;img+p --&gt; &lt;div class=\"slide_cover\"&gt; &lt;ul&gt; &lt;!-- 한장의 슬라이드그룹 --&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main1.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main1_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box1\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main2.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main2_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box2\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main3.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main3_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box3\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;&lt;!-- //.slide_cover --&gt; &lt;div class=\"slide_btn\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color on\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class=\"reset\"&gt; &lt;div class=\"pause_btn off\"&gt;&lt;img src=\"./images/ico_kv_pause.png\" alt=\"\"&gt;&lt;/div&gt; &lt;div class=\"start_btn on\"&gt;&lt;img src=\"./images/ico_kv_play.png\" alt=\"\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=\"main_cursor cf\"&gt; &lt;div class=\"cursor_left\"&gt;&lt;/div&gt; &lt;div class=\"cursor_right\"&gt;&lt;/div&gt; &lt;div class=\"cursor\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/section&gt; &lt;!-- //#main_slide --&gt; &lt;section id=\"content\"&gt; &lt;/section&gt; &lt;!-- //#content --&gt; &lt;section id=\"media_center\"&gt;&lt;/section&gt; &lt;!-- //#media_center --&gt; &lt;section id=\"find\"&gt;&lt;/section&gt; &lt;!-- //#find --&gt; &lt;footer id=\"footer\"&gt;&lt;/footer&gt; &lt;/body&gt; &lt;/html&gt; . css . @charset \"utf-8\"; .cf:after { content: \"\"; display: block; clear: both; } /* layout */ [class*=\"_cover\"] { width: 100%; max-width: 1400px; margin: auto; } /* link 스타일 정의 */ a { font-size: 1.6rem; } /* layer popup */ #layer { position: fixed; width: 500px; height: 500px; background: #ccc; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 999999999; font-size: 2.4em; padding: 3em; box-sizing: border-box; line-height: 2; top: 50px; left: 150px; } #layer button { position: absolute; cursor: pointer; padding: 10px 20px; right: 0; top: 0; background-color: #222; color: #fff; } /* #header */ #header { width: 100%; height: 90px; position: relative; font-size: 1.3rem; background: #fff; } #header .logo { width: 10%; height: 100%; } /* 140px, 90px */ .logo a { display: block; width: 100%; height: 100%; } .logo a img { display: block; width: 80%; margin: auto; padding-top: 17px; } #header .nav { width: 50%; margin: 0 10%; display: flex; } .nav li { width: 20%; text-align: center; line-height: 90px; } .nav a { display: block; width: 100%; height: 100%; color: #000; font-weight: 700; position: relative; } .nav .line { width: 0%; height: 2px; background: #1634db; position: absolute; left: 0; bottom: 0; transition: width 0.8s; } .nav a:hover .line { width: 100%; } /* .mo_menu */ #header .mo { float: right; padding-right: 20px; display: none; line-height: 90px; } .mo span { font-size: 3rem; } .mo_menu { position: absolute; width: 100%; background-color: white; left: 0; top: 100%; z-index: 99999; display: none; } .mo_menu ul { display: flex; flex-direction: column; width: 100%; max-width: 50%; margin: auto; } /* .pc.full_menu */ #header .full_menu { position: absolute; left: 0; width: 100%; height: 450px; border-top: 1px solid #c1c1c1; box-sizing: border-box; background-color: #fff; top: 100%; z-index: 999999999; /* display: none; */ } .full_menu .full_cover &gt; ul { display: flex; width: 60%; height: 100%; margin-left: 20%; } .full_menu .full_cover &gt; ul &gt; li { width: 20%; max-width: 140px; height: 450px; border-left: 1px solid #c1c1c1; box-sizing: border-box; } .full_menu .full_cover &gt; ul &gt; li:last-child { border-right: 1px solid #c1c1c1; } .full_menu .full_cover &gt; ul ul { width: 100%; } .full_menu .full_cover &gt; ul ul li { width: 100%; line-height: 50px; text-align: center; } .full_menu .full_cover &gt; ul ul li a { position: relative; color: #000; } .full_menu .full_cover &gt; ul ul li a:after { content: \"\"; position: absolute; background-color: #1634db; transition: all 0.5s; left: 0; width: 0; height: 1px; bottom: -5px; } .full_menu .full_cover &gt; ul ul li a:hover:after { width: 100%; } /* gnb */ #header .gnb { width: 20%; display: flex; } .gnb li { font-size: 1.4rem; width: 100%; } .gnb li:nth-child(1) a { background: url(../images/ico_lang.png) no-repeat 0 50% /30%; } .gnb li a { display: block; width: 100%; height: 100%; line-height: 90px; text-align: center; color: #000; } .gnb li a img { width: 40px; vertical-align: middle; } .gnb li a img.leave { display: inline-block; } .gnb li a img.hover { display: none; } .gnb li a:hover img.leave { display: none; } .gnb li a:hover img.hover { display: inline-block; transform: scale(1.1); } /* #main_slide */ #main_slide { position: relative; width: 100%; height: 800px; overflow: hidden; } #main_slide &gt; .slide_cover { position: relative; width: 90%; height: 100%; max-width: none; } #main_slide &gt; .slide_cover ul { position: relative; width: 100%; height: 100%; } /*90%*/ #main_slide &gt; .slide_cover ul li { position: absolute; width: 100%; height: 100%; overflow: hidden; } #main_slide &gt; .slide_cover ul li.on { z-index: 6; } #main_slide &gt; .slide_cover ul li a { position: relative; display: block; width: 100%; height: 100%; } #main_slide &gt; .slide_cover ul li a h2.img_logo { position: absolute; top: 15%; left: 10%; color: #fff; font-size: 6rem; width: 480px; word-break: keep-all; opacity: 0; transition: all 2s; letter-spacing: -2.5px; } #main_slide &gt; .slide_cover ul li a h2.img_logo.on { top: 10%; opacity: 1; } #main_slide &gt; .slide_cover ul li a p.img_text { position: absolute; bottom: 0; right: 10%; color: #fff; font-size: 2.4rem; width: 400px; opacity: 0; transition: all 2s; } #main_slide &gt; .slide_cover ul li a p.img_text.on { bottom: 15%; opacity: 1; } #main_slide &gt; .slide_cover ul li a .box { position: absolute; bottom: 10%; left: 55%; width: 0; height: 250px; transition: all 1.5s; } #main_slide &gt; .slide_cover ul li a .box.box1.on { background-color: #0d28bd; } #main_slide &gt; .slide_cover ul li a .box.box2.on { background-color: #0088ce; } #main_slide &gt; .slide_cover ul li a .box.box3.on { background-color: #00ad83; } #main_slide &gt; .slide_cover ul li a .box.on { width: 250px; animation: rotate 15s infinite linear; } @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(45deg); } } #main_slide &gt; .slide_cover ul li a .white_box { position: absolute; top: 0; left: -100%; width: 100%; height: 100%; z-index: 7; background-color: #fff; } .slide_cover ul li a img { display: block; width: 100%; height: auto; transition: all 5s; } .slide_cover ul li a img.mo { display: none; } .slide_cover ul li a img.on { transform: scale(1.1); } /* .slide_btn */ .slide_btn { position: absolute; bottom: 100px; left: 200px; width: 300px; height: 10px; z-index: 11; } .slide_btn ul { display: flex; } .slide_btn ul li { position: relative; width: 90px; height: 10px; margin-left: 15px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; } .slide_btn ul li:nth-child(1) { margin-left: 0; } .slide_btn ul li a { position: relative; display: block; width: 100%; } .slide_btn ul li a .color { position: absolute; top: 0; left: 0; z-index: 2; width: 0%; height: 10px; background-color: rgba(255, 255, 255, 0.8); } .slide_btn ul li a .color.on { animation: width 7s linear forwards; } @keyframes width { 0% { width: 0; } 100% { width: 100%; } } .slide_btn .reset { position: absolute; top: 50%; right: -40px; transform: translateY(-50%); width: 30px; height: 30px; cursor: pointer; } .slide_btn .reset .off { display: block; } .slide_btn .reset .on { display: none; } .slide_btn .reset img { display: block; width: 100%; height: auto; } /* .main_cursor */ .main_cursor { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 9; } .main_cursor .cursor { position: absolute; top: 0; left: 0; transform: translate(-50%, -50%); width: 60px; height: 60px; background: no-repeat center/contain; pointer-events: none; } .main_cursor .cursor:before{ content:''; display:block; position: absolute; top:0; left:0; width:60px; height:60px; background-image: url(\"../images/main_cursor_l.svg\"); opacity: 0; } .main_cursor .cursor:after{ content:''; display:block; position: absolute; top:0; left:0; width:60px; height:60px; background-image: url(\"../images/main_cursor_r.svg\"); opacity: 0; } .main_cursor .cursor_left{ position: absolute; top:0; left:0; width:50%; height: 100%; cursor: none; cursor: default; } .main_cursor .cursor_right{ position: absolute; top:0; right:0; width:50%; height: 100%; cursor: none; cursor: default; } .main_cursor .cursor_left:hover ~ .cursor::before{opacity:1;} .main_cursor .cursor_left:hover ~ .cursor::after{opacity:0;} .main_cursor .cursor_right:hover ~ .cursor::before{opacity:0;} .main_cursor .cursor_right:hover ~ .cursor::after{opacity:1;} . jQuery . $(function () { gnb(); function gnb() { $(\".full_menu, .nav li\").mouseover(function () { $(\".full_menu\").stop().slideDown(600); }); $(\".full_menu, .nav li\").mouseleave(function () { $(\".full_menu\").stop().slideUp(600); }); $(\".full_cover&gt;ul&gt;li\").mouseover(function () { var i = $(this).index(); $(\".nav li\").eq(i).find(\".line\").css(\"width\", \"100%\"); }); $(\".full_cover&gt;ul&gt;li\").mouseleave(function () { var i = $(this).index(); $(\".nav li\").eq(i).find(\".line\").css(\"width\", \"0%\"); }); $(\".nav li\").mouseover(function () { $(this).find(\".line\").css(\"width\", \"100%\"); }); $(\".nav li\").mouseleave(function () { $(this).find(\".line\").css(\"width\", \"0%\"); }); $(\"#header .mo\").click(function () { $(\".mo_menu\").stop().slideToggle(\"fast\"); $(\"#header .mo\").css(\"color\", \"red\"); }); } var i = 0; //current var k = null; //prev var n = null; //next var mainInterval; //setIntervalID var speed = 2000; //반복시간 /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { i++; k = i - 1; if (i == 3) { i = 0; } slide(); }, speed); } function slide() { $(\".slide_btn ul li\").off(\"click\"); $(\".cursor_left, .cursor_right\").off(\"click\"); $(\".reset\").off(\"click\", reset); clearInterval(mainInterval); $(\".slide_cover ul li\") .find(\".white_box\") .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { $(\".white_box\").stop().animate({ left: \"100%\" }, 1000); $(\".slide_cover ul li\").eq(i).addClass(\"on\"); $(\".slide_cover ul li\").eq(k).removeClass(\"on\"); /* 추가 */ $(\".color, .img_logo, .img_text, .box\").removeClass(\"on\"); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".img_logo\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".img_text\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".box\").addClass(\"on\"); $(\".slide_cover ul li a img\").removeClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\"a img\").addClass(\"on\"); }); $(\".slide_cover ul li\") .eq(k) .animate({ left: 0 }, 2000, function () { setTimeout(function () { //trigger $(\".slide_cover ul li\").on(\"click\", click_slide); $(\".cursor_left\").on(\"click\", left_click); $(\".cursor_right\").on(\"click\", right_click); var pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); $(\".color\").removeClass(\"on\"); } else { timer(); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); } }, 1000); }); n = i; } /** * click_slide * pager 함수 * * **/ function click_slide() { i = $(this).index(); if (i == n) return; k = n; console.log(i, n, k); slide(); $(\".color\").removeClass(\"on\"); } /** * left_click * left 커서함수 * * **/ function left_click() { i--; if (i == -1) i = 2; if (i == n) return; k = n; slide(); $(\".color\").removeClass(\"on\"); } /** * right_click * right 커서함수 * * ***/ function right_click() { i++; if (i == 3) i = 0; if (i == n) return; k = n; slide(); $(\".color\").removeClass(\"on\"); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { var pause_css = $(\".pause_btn\").css(\"display\"); var start_css = $(\".start_btn\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); $(\".color\").removeClass(\"on\"); } else { timer(); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); } } /**이벤트 핸들러 */ $(\".reset\").click(function () { reset(); }); $(\".reset .pause_btn\").click(function () { $(\".pause_btn\").css(\"display\", \"none\"); $(\".start_btn\").css(\"display\", \"block\"); }); $(\".reset .start_btn\").click(function () { $(\".pause_btn\").css(\"display\", \"block\"); $(\".start_btn\").css(\"display\", \"none\"); }); $(\".slide_btn ul li\").on(\"click\", click_slide); $(\".cursor_left\").on(\"click\", left_click); $(\".cursor_right\").on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY; $(\".cursor\").css({ left: x, top: y, }); }); /*** * Resize * * */ $(window).resize(function () { var w_width = $(window).width(); var img_height = $(\".slide_cover ul li img.pc\").height(); var img_height_mo = $(\".slide_cover ul li img.mo\").height(); if (w_width &gt; 1330) { $(\"#main_slide .slide_cover\").height(img_height); } else { $(\"#main_slide .slide_cover\").height(img_height_mo); $(\".slide_cover ul li img.pc\").css(\"display\", \"none\"); $(\".slide_cover ul li img.mo\").css(\"display\", \"block\"); } }); $(window).trigger(\"resize\"); }); //jQuery . ",
+    "url": "/book01/docs/Projects/01-corp/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B8%B0%EC%97%85%EC%82%AC%EC%9D%B4%ED%8A%B8",
+    "relUrl": "/docs/Projects/01-corp/#프로젝트---기업사이트"
+  },"10": {
+    "doc": "01-Dooosan-시작",
+    "title": "01-Dooosan-시작",
+    "content": ". ",
+    "url": "/book01/docs/Projects/01-corp/",
+    "relUrl": "/docs/Projects/01-corp/"
+  },"11": {
     "doc": "01-설치",
     "title": "00.php 란",
     "content": "PHP란? 서버사이드 언어 중 하나로(Java, PHP, Ruby, Python, Node.js …)로 무료임 php를 설치하면 회원가입, 로그인, 내용 검색, 관리자로 로그인해서 콘텐츠를 등록할 수 있음 php를 설치하려면 php와 아파치 서버, 데이터베이스가 설치되어 있어야 함. | apm setup | apache : 웹서버 프로그램 | php : 서버사이드 언어 | mysql : 데이터베이스 | phpmadmin : 데이터베이스를 편리하게 운영할수 있는 프로그램 | bitnami wamp⇒ 위의 프로그램들을 통합 설치해주는 통합개발환경설정관리툴 | bitnami 의 서비스가 종료되어 xmapp로 진행함 | . ",
     "url": "/book01/docs/php/01-install/#00php-%EB%9E%80",
     "relUrl": "/docs/php/01-install/#00php-란"
-  },"10": {
+  },"12": {
     "doc": "01-설치",
     "title": "01.설치",
     "content": ". | xmapp 설치 - https://www.apachefriends.org/download.html | . xmapp 포터블 링크 googleDrive . xmapp 포터블 링크 sourceforge . | 파일 압축 푼 후 setup_xampp.bat 파일 실행 | 파일 압축 푼 후 mysql_start.bat 파일 실행 | 파일 압축 푼 후 apache_start.bat 파일 실행 . | 본 메뉴얼은 포터블과 설치판이 뒤섞여 있으므로 수업과 함께 진행해야 함 . | 만약 포터블 설치후 Mysql 서버 실행이 안될시 설치버전으로 진행할것 . | phpMyadmin 만 체크후 → next . | 123456 비밀번호는 6자리 적어놓는다 이후에 데이터베이스 관련한 수업할 때 이 비번을 이용하므로 꼭 기억해놓는다 . | 중간에 방화벽으로 차단이 나올경우 모두 엑세스 허용해준다. | 설치완료 | . localhost 를 입력해도 접속할수 있다 . ",
     "url": "/book01/docs/php/01-install/#01%EC%84%A4%EC%B9%98",
     "relUrl": "/docs/php/01-install/#01설치"
-  },"11": {
+  },"13": {
     "doc": "01-설치",
     "title": "01-01.설치확인",
     "content": ". | 01-5 단계에서 브라우저에서 확인한 페이지가 있는 루트 폴더를 찾아보자 **C:\\xampp\\htdocs\\dashboard\\** . | dashboard의 index 파일을 vscode에서 열어보자 | index.html 의 내용을 변경하면 브라우저화면에 출력되는 내용도 변경된다 | php.info 파일을 실행하여 php 정보를 확인하자 . | xmapp control panel을 실행하여 아파치 서버와 mySQL을 실행해보자 | mySQL 실행시 phpmyAdmin 화면에 로그인 창이 뜨면 설치시 설정한 root 계정의 비밀번호로 로그인한다. | 로그인완료 | phpmyAdmin 은 database 를 쉽게 다룰수 있게 도와주는 gui 툴이다 (git의 sourcetree 와 유사) | . ",
     "url": "/book01/docs/php/01-install/#01-01%EC%84%A4%EC%B9%98%ED%99%95%EC%9D%B8",
     "relUrl": "/docs/php/01-install/#01-01설치확인"
-  },"12": {
+  },"14": {
     "doc": "01-설치",
     "title": "01-02. 환경변수설정",
     "content": ". | 윈도우 시작버튼 우클릭 . | 시스템 클릭 . | 고급시스템설정 클릭 . | 환경변수 -&gt; 새로만들기 클릭 . | 변수명에 PHP를 입력한다. | 그후 디렉터리 찾아보기를 클릭한다. | . | 그후 탐색기가 열리면 php.exe 가 설치된 경로를 찾아 이동한다. | 그후 설치된 폴더를 클릭한다. php는 xmapp 가 설치된 폴더 내에 깔려있다. | . | 확인 . | 확인 | . ",
     "url": "/book01/docs/php/01-install/#01-02-%ED%99%98%EA%B2%BD%EB%B3%80%EC%88%98%EC%84%A4%EC%A0%95",
     "relUrl": "/docs/php/01-install/#01-02-환경변수설정"
-  },"13": {
+  },"15": {
     "doc": "01-설치",
     "title": "01-03. VSCode Extention설치",
     "content": ". | php intellisense(코끼리표) - 문법교정 기능제공 | php debug - 오류수정 기능 제공 | . ",
     "url": "/book01/docs/php/01-install/#01-03-vscode-extention%EC%84%A4%EC%B9%98",
     "relUrl": "/docs/php/01-install/#01-03-vscode-extention설치"
-  },"14": {
+  },"16": {
     "doc": "01-설치",
     "title": "01-04. php_xdebug 환경세팅",
     "content": ". | php debug Extention 의 intro 화면으로 이동하여 설명서를 본다 | Extention의 링크로 이동_Xdebug installation wizard . | 02-4 단계 에서 진행한 phpinfo 문서 실행 | 05-2 단계의 링크를 클릭하여 창을 연다 | 새창이 열리면 phpinfo의 모든 내용을 복사 붙여넣기 한다. | 새창이 열리면 php_xdebug의 설명에 맞게 환경을 세팅한다. | php_xdebug-3.2.0-8.1-vs16-x86_64.dll 다운로드 | 다운로드한 파일을 C:\\xampp\\php\\ext로 이동하고 이름을 다음으로 바꿉니다.php_xdebug.dll | 다 C:\\xampp\\php\\php.ini 파일을 열고 zend_extension = xdebug 추가 하십시오. | 아파치 웹서버 재시작 | . | . ",
     "url": "/book01/docs/php/01-install/#01-04-php_xdebug-%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85",
     "relUrl": "/docs/php/01-install/#01-04-php_xdebug-환경세팅"
-  },"15": {
+  },"17": {
     "doc": "01-설치",
     "title": "01-05. VSCode 설정",
     "content": ". | VSCODE 실행후 php 문서를 열면 아래와 같은 오류창 보임 . | ctrl + , -&gt; preference 검색 . | . | php 검색 -&gt; Extensions -&gt; Edit in settings.json 선택 | . | settings.json 파일에 아래의 코드를 추가 후 저장 . | \"php.validate.executablePath\": “php.exe 가 설치된 경로를 작성”, | . | . \"php.validate.enable\": false, \"php.validate.executablePath\": \"C:\\xampp\\php\\php.exe\", . ",
     "url": "/book01/docs/php/01-install/#01-05-vscode-%EC%84%A4%EC%A0%95",
     "relUrl": "/docs/php/01-install/#01-05-vscode-설정"
-  },"16": {
+  },"18": {
     "doc": "01-설치",
     "title": "01-설치",
     "content": ". | 00.php 란 | 01.설치 . | 01-01.설치확인 | 01-02. 환경변수설정 | 01-03. VSCode Extention설치 | 01-04. php_xdebug 환경세팅 | 01-05. VSCode 설정 | . | . – . ",
     "url": "/book01/docs/php/01-install/",
     "relUrl": "/docs/php/01-install/"
-  },"17": {
+  },"19": {
     "doc": "01-SNSLogin",
     "title": "01 naver",
     "content": "01-1 네이버로그인 API . 🔗네이버개발자 . 🔗 네이버로그인 API가이드 . | 아래의 동영상 가이드를 보면서 따라한다. 🔗 동영상 가이드 . | 네이버로그인 API가이드 의 예제를 복사하여 vscode 에 붙여넣고 수정후 서버에 올린다. | 꼭 서버환경에 업로드 하여 테스트 해본다 . | . ",
     "url": "/book01/docs/javascript/01-snsLogin/#01-naver",
     "relUrl": "/docs/javascript/01-snsLogin/#01-naver"
-  },"18": {
+  },"20": {
     "doc": "01-SNSLogin",
     "title": "01-SNSLogin",
     "content": ". | 01 naver . | 01-1 네이버로그인 API | . | . – . SNS 로그인 기능을 구현해보자 . ",
     "url": "/book01/docs/javascript/01-snsLogin/",
     "relUrl": "/docs/javascript/01-snsLogin/"
-  },"19": {
+  },"21": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01 DOM 조작",
     "content": "DocumentObjectModel 을 탐색하고 조작하는 명령어를 알아보자 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-dom-%EC%A1%B0%EC%9E%91",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-dom-조작"
-  },"20": {
+  },"22": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-1 Js",
     "content": "함수종류 . | 종류 | 설명 | . | Element.innerText | 요소내 포함 된 text 을 가져오거나 설정숨긴글씨제외 | . | Element.innerHTML | 요소내 포함 된 HTML 을 가져오거나 설정 | . | Element.textContent | 요소내 포함 된 text 을 가져오거나 설정숨긴글씨포함 | . | Element.insertAdjacentHTML() | 특정 위치에 DOM tree 안에 원하는 node들을 추가함 | . | 🔗mdn | 'beforebegin' element 앞에 | . |   | 'afterbegin' element 안에 가장 첫번째 child | . |   | 'beforeend' element 안에 가장 지막 child | . |   | 'afterend' element 뒤에 | . | Element.getAttribute() | 태그의 속성을 얻어옴 | . | Element.setAttribute() | 태그의 속성을 변경함 | . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-1-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-1-js"
-  },"21": {
+  },"23": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-2 JQ",
     "content": "함수종류 . | 종류 | 설명 | . | $(“ele”).text(“”); | text 요소 취득,수정,치환 | . | $(“ele”).html(“”); | html 요소 취득,수정,치환 | . | $(“selector”).append(“”); | 요소를 막내로 추가 | . | $(“selector”).prepend(“”); | 요소를 첫째로 추가 | . | $(“selector”).before(“”); | 요소를 앞에 추가 | . | $(“selector”).after(“”); | 요소를 뒤에 추가 | . $(\"ele\").text(\"\")/html(\"\") 은 인자를 몇개 전달하는지만 기억하자 . $(\"ele\").text/html( ): 가져와 . $(\"ele\").text/html(\"\") : 비워 . $(\"ele\").text/html(\"\",\"\"):바꿔 . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-2-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-2-jq"
-  },"22": {
+  },"24": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02 EVENT",
     "content": "웹 브라우저에서 버튼을 클릭한다거나 mouse를 움직이거나 하는 모든 행위를 ‘이벤트’라고 합니다. 그리고 이벤트발생 시 함수의 실행문이 수행되도록 이벤트를 지정하는 것을 이벤트 핸들러라고 합니다. 이벤트 발생시 관련 정보를 가지고 있는 이벤트 객체를 전달받을수 있습니다. ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-event",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-event"
-  },"23": {
+  },"25": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-1 Js",
     "content": "함수종류 . | 이벤트 객체의 속성 | 설명 | 예시 | . | 일반 | — | — | . | type | 이벤트 종류 | event.type =&gt; click 등 | . | target | 이벤트를 발생시킨 요소 | event.target.id :이벤트를 발생시킨 요소의 id 값을 나타냄 | . | 좌표 | — | — | . | screenX,screenY | 사용자 모니터 화면을 기준으로 한 좌표 |   | . | pageX ,pageY | 전체 문서를 기준으로 한 좌표(스크롤포함) |   | . | clientX,clientY | 브라우저에서 사용자에게 웹페이지가 보여지는 영역을 기준(스크롤무시) |   | . | offsetX,offsetY | 이벤트 대상 객체(좌표를 출력하도록 하는 이벤트가 걸려있는 DOM node를 기준)에서의 상대 좌표 |   | . | 키보드,마우스 | — | — | . | mouse | 마우스 눌러진 버튼 (좌측 버튼 : 0, 가운데 : 1, 우측 : 2) |   | . | key | 눌린 키의 값 |   | . | keyCode | 눌린 키의코드) |   | . | altKey | Alt 키 눌려진 여부 (true : 눌려짐, false : 안 눌려짐) |   | . | ctrlKey | Ctrl 키 눌려진 여부 |   | . | shiftKey | 시프트 키 눌려진 여부 |   | . | touchstart | 스크린에 손가락이 닿을때 |   | . | touchmove | 스크린에 손가락이 닿을채로 움직일때 |   | . | touchend | 스크린에 손가락을 뗄때 |   | . | 메소드 | — | — | . | preventDefault() | 이벤트에 대한웹브라우저의 기본동작 취소하기 | +. | . | stopPropagation() | 이벤트 버블링의 정지 |   | . | stopimmediatePropagation() | 이벤트 버블링의 즉시 정지-같은 요소의 다른이벤트 리스너 실행까지도 멈춤) |   | . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-1-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-1-js"
-  },"24": {
+  },"26": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-2 JQ",
     "content": "함수종류 . 🔗jQuery . | 종류 | 설명 | . | $(“ele”).text(“”); | text 요소 취득,수정,치환 | . | $(“ele”).html(“”); | html 요소 취득,수정,치환 | . | $(“selector”).append(“”); | 요소를 막내로 추가 | . | $(“selector”).prepend(“”); | 요소를 첫째로 추가 | . | $(“selector”).before(“”); | 요소를 앞에 추가 | . | $(“selector”).after(“”); | 요소를 뒤에 추가 | . $(\"ele\").text(\"\")/html(\"\") 은 인자를 몇개 전달하는지만 기억하자 . $(\"ele\").text/html( ): 가져와 . $(\"ele\").text/html(\"\") : 비워 . $(\"ele\").text/html(\"aaa\"):바꿔 . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq"
-  },"25": {
+  },"27": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03 Accrodian",
     "content": "아코디언 UI를 만들어보자 . 선택된 요소만 펼쳐지는 형태인 아코디언 UI를 구현해 보자. 선택된 요소만 on 시키는 두가지 방법 . | 모두 off 선택된 것 만 on | 조건을 비교해서 모두 off 선택된 것 만 on | . 1단계 . CSS 없이 기능만 제작한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-accrodian",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-accrodian"
-  },"26": {
+  },"28": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-1 Js",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-js"
-  },"27": {
+  },"29": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-1 JQ",
     "content": "2단계 . CSS 를 넣어 UI를 완성한다 전부 off 후 클릭한것만 on 한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-jq"
-  },"28": {
+  },"30": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-2 Js",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-js"
-  },"29": {
+  },"31": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-2 JQ",
     "content": "3단계 . 조건을 비교하여 전부 off 후 클릭한것만 on 한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq-1",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq-1"
-  },"30": {
+  },"32": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-3 Js",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-js"
-  },"31": {
+  },"33": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-3 JQ",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-jq"
-  },"32": {
+  },"34": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "버그수정",
     "content": "높이를 고정으로 주었더니 4번째 메뉴가 안보인다. 높이를 요소에서 가져와서 조작하자 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#%EB%B2%84%EA%B7%B8%EC%88%98%EC%A0%95",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#버그수정"
-  },"33": {
+  },"35": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "04 토글구현",
     "content": "javascript 에서 .hasClass(“on”) 은 classList.contains(‘on’) 으로 작성한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#04-%ED%86%A0%EA%B8%80%EA%B5%AC%ED%98%84",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#04-토글구현"
-  },"34": {
+  },"36": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-돔조작, 이벤트, 아코디언",
     "content": "이전 예제 링크 . javascript01 . javascript02 . javascript03 . javascript04 . javascript05 . javascript06 . javascript07 . javascript08 . javascript09 . 자바스크립트 설명 그림 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/"
-  },"35": {
+  },"37": {
     "doc": "01-지킬설치",
     "title": "| 컨텐츠를 구성하는 가장 기본적인 요소",
     "content": "04. 구조 . ├── about.md # =&gt; http://example.com/about.html ├── index.html # =&gt; http://example.com/ └── contact.html # =&gt; http://example.com/contact.html . | 페이지가 많을 경우 하위 폴더로 정리할수 있다. 사이트 빌드 시, 사이트 소스에서 페이지를 그룹지을 때 사용한 하위 폴더가 동일한 형태로 _site 폴더 안에 생성됩니다. 하지만, 페이지의 | 머리말에 다른 고유주소가 설정되어 있으면, _site 의 하위 폴더는 이에 맞게 변형됩니다. | 04-1 하위폴더 생성시 구조 | . ├── about.md # =&gt; http://example.com/about.html ├── documentation # 페이지가 들어있는 폴더 │ └── doc1.md # =&gt; http://example.com/documentation/doc1.html ├── design # 페이지가 들어있는 폴더 │ └── draft.md # =&gt; http://example.com/design/draft.html . 📌 디렉토리 구조 원문 링크 . 05. 깃허브 빌드시 테마가 깨질때 . | 원인: github에 업로드한 테마파일의 경로가 로컬환경과 달라져서 그렇다. | 해결: _config.yml 의 url 과 baseurl 값을 변경한다 | . url: 'https://qwerewqwerew.github.io' # 내 깃블로그 주소 baseurl: '/book01' # 깃페이지 경로 . ",
     "url": "/book01/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/#-%EC%BB%A8%ED%85%90%EC%B8%A0%EB%A5%BC-%EA%B5%AC%EC%84%B1%ED%95%98%EB%8A%94-%EA%B0%80%EC%9E%A5-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%EC%9A%94%EC%86%8C",
     "relUrl": "/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/#-컨텐츠를-구성하는-가장-기본적인-요소"
-  },"36": {
+  },"38": {
     "doc": "01-지킬설치",
     "title": "01-지킬설치",
     "content": ". | 00. 도움말 링크 | 01. 지킬설치 . | 01-1 루비설치 | . | 01-2 지킬 구성파일 설치 | 01-3 지킬 블로그 생성 | 01-4 블로그 실행 | 02. 이미지 넣기 | 03. 페이지 | | 컨텐츠를 구성하는 가장 기본적인 요소 . | 04. 구조 | 05. 깃허브 빌드시 테마가 깨질때 | . | . – . 00. 도움말 링크 . 지킬공식사이트 . 리퀴드문법정리 . 리퀴드변수정리 . 지킬메뉴얼한국어블로그 . 망고는코딩대장 레파지토리 . 깃블로그 단계별 설치가이드 . [깃페이지설명서] (https://pages.github.com) . [깃테마] (https://pages.github.com/themes) . [지킬북테마] (https://github.com/sighingnow/jekyll-gitbook/fork) . just-the-docs . just-the-docs . 01. 지킬설치 . 01-1 루비설치 . ** 지킬을 사용하려면 루비를 설치해야한다. ** . | Ruby 설치: RubyInstaller 파일 다운로드 후 실행 (ruby -v으로 설치 확인) 루비다운로드 . | 프로그램 설치후 PC 재부팅 한다. | . 01-2 지킬 구성파일 설치 . | 윈도우 시작버튼 누르고 cmd입력 . | Jekyll 설치: 터미널에 gem install bundler jekyll . | . 01-3 지킬 블로그 생성 . | 블로그 생성: jekyll new my-blog . | 현재 디렉토리 하위에 my-blog 라는 폴더가 생성되며 지킬블로그 테마가 설치된다. | 테마를 다운로드 했을경우 bundle install 을 실행한다. | . 01-4 블로그 실행 . | 터미널 실행 : cd my-blog . | bundle exec jekyll serve . | http://localhost:4000으로 접속 . | . 02. 이미지 넣기 . | HTML 문법으로 넣기 | . | Absolute URL (절대 경로): url과 baseurl을 앞에 붙여준다. | . &lt;img src='/book01/assets/img/image.png' &gt; &lt;!-- result : http://blog.mango.io/my-baseurl/assets/img/image.png --&gt; . | 아래의 이미지처럼 해보세요 | . 03. 페이지 . ",
     "url": "/book01/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/",
     "relUrl": "/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/"
-  },"37": {
+  },"39": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "01 nodeJS 설치",
     "content": "NodeJS 16 버전 설치 EXPO 개발시 v18 충돌남 . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-nodejs-%EC%84%A4%EC%B9%98",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-nodejs-설치"
-  },"38": {
+  },"40": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "01 bootstrap 인스톨",
     "content": ". | bootstrap 폴더 생성 . | npm init -y . | . | pacakage.json 파일생성 | . | npm i bootstrap | npm i bootstrap-icons | . | 위의 과정 진행후 node_modules 폴더를 열면 bootstrap 폴더가 보인다 | . | index.html 파일생성 | scss 폴더 생성 | scss / main.scss 파일생성 | livescsscompiler 세팅 | . | | | . | scss 환경설정 | . \"liveSassCompile.settings.formats\": [ { \"format\": \"expanded\", \"extensionName\": \".css\", \"savePath\": \"~../css\", \"savePathReplacementPairs\": null }, { \"format\": \"compressed\", \"extensionName\": \".min.css\", \"savePath\": \"~../css\", \"savePathReplacementPairs\": null } ], . | index.html 작성 | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;bootstrap&lt;/title&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt; . | main.scss 작성 | . @import \"../node_modules/bootstrap/scss/bootstrap.scss\"; . | vscode 하단의 watch scss 를 클릭하면 프로젝트 폴더에 css 폴더와 함께 컴파일된 css 생성 | . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-bootstrap-%EC%9D%B8%EC%8A%A4%ED%86%A8",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-bootstrap-인스톨"
-  },"39": {
+  },"41": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "02",
     "content": ". | 모듈링크 | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;bootstrap&lt;/title&gt; &lt;link rel=\"stylesheet\" href=\"css/main.min.css\" /&gt; &lt;/head&gt; &lt;body class=\"bg-primary\"&gt; &lt;script src=\"node_modules/bootstrap/dist/js/bootstrap.js\"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . | 실행화면 배경색이 primary-color 인지 확인 . | 버튼추가 . &lt;button type=\"button\" class=\"btn-light btn\"&gt;전송&lt;/button&gt; . &lt;button type=\"button\" class=\"btn-outline-light btn\"&gt;전송&lt;/button&gt; . | . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#02",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#02"
-  },"40": {
+  },"42": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "03",
     "content": ". | main.scss | 변수를 변경하여 수정해본다 | . $primary:pink; $light:gray; @import \"../node_modules/bootstrap/scss/bootstrap.scss\"; . &lt;body&gt; &lt;button type=\"button\" class=\"btn-light btn\"&gt;전송&lt;/button&gt; &lt;button type=\"button\" class=\"btn-outline-light btn\"&gt;전송&lt;/button&gt; &lt;button type=\"button\" class=\"btn-primary btn\"&gt;전송&lt;/button&gt; &lt;button type=\"button\" class=\"btn-outline-primary btn\"&gt;전송&lt;/button&gt; &lt;script src=\"node_modules/bootstrap/dist/js/bootstrap.js\"&gt;&lt;/script&gt; &lt;/body&gt; . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#03",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#03"
-  },"41": {
+  },"43": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "04",
     "content": ". | 아이콘 넣기 | . &lt;img src=\"node_modules/bootstrap-icons/icons/alarm.svg\" alt=\"\"&gt; &lt;img src=\"node_modules/bootstrap-icons/icons/phone-fill.svg\" alt=\"\"&gt; . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#04",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#04"
-  },"42": {
+  },"44": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "02-bootstrap scss 개발하기",
     "content": ". | TOC . | . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/"
-  },"43": {
+  },"45": {
+    "doc": "02-Dooosan-스크립트",
+    "title": "02-Dooosan-스크립트",
+    "content": "슬라이드 설명 이미지 . | 객체와 변수 선언 var current = 0; //current var prev = null; //prev var next = null; //next let mainInterval; //setIntervalID var speed = 4000; //반복시간 var pause_css; var slides = $(\".slide_cover ul li\"); var obj = { \"btn\": $(\".slide_btn ul li\"), \"btn-ani\": $(\".color\"), \"left\": $(\".cursor_left\"), \"right\": $(\".cursor_right\"), \"wbox\": $(\".white_box\"), \"cbox\": $(\".box\"), \"logo\": $(\".img_logo\"), \"text\": $(\".img_text\"), \"reset\": $(\".reset\"), \"pause\": $(\".pause_btn\"), \"play\": $(\".play_btn\"), } . | 슬라이드 함수 작성 | . /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { current++; prev = current - 1; if (current == 3) { current = 0; } slide(); }, speed); } function remove(x) { x.removeClass(\"on\"); } function add(x) { x.addClass(\"on\"); } function slide() { obj.btn.off(\"click\"); obj.left.off(\"click\"); obj.right.off(\"click\"); obj.reset.off(\"click\", reset); clearInterval(mainInterval); slides .find(obj.wbox) .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { obj.wbox.stop().animate({ left: \"100%\" }, 1000); add(slides.eq(current)); // remove(slides.eq(prev)); remove(obj.pager); remove(obj.logo); remove(obj.text); remove(obj.cbox); add(obj.btn.eq(current).find(obj.pager)); add(slides.eq(current).find(obj.logo)); add(slides.eq(current).find(obj.text)); add(slides.eq(current).find(obj.cbox)); remove(slides.find(\"a img\")); console.log(slides.eq(current)); add(slides.eq(current).find(\"a img\")); }); slides.eq(prev).animate({ left: 0 }, 2000, function () { setTimeout(function () { obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { add(obj.btn.eq(current).find(obj.pager)); timer(); } }, 1000); }); next = current; } /** * click_slide * pager 함수 * * **/ function click_slide() { current = $(this).index(); if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * left_click * left 커서함수 * * **/ function left_click() { current--; if (current == -1) current = 2; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * right_click * right 커서함수 * * ***/ function right_click() { current++; if (current == 3) current = 0; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { pause_css = obj.pause.css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { timer(); add(obj.btn.eq(current).find(obj.pager)); } } /**이벤트 핸들러 */ obj.reset.click(function () { reset(); }); obj.pause.click(function () { obj.pause.css(\"display\", \"none\"); obj.play.css(\"display\", \"block\"); }); obj.play.click(function () { obj.pause.css(\"display\", \"block\"); obj.play.css(\"display\", \"none\"); }); obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY - 80; $(\".cursor\").css({ left: x, top: y, }); }); . ",
+    "url": "/book01/docs/Projects/02-slide/",
+    "relUrl": "/docs/Projects/02-slide/"
+  },"46": {
     "doc": "02-기초문법",
     "title": "01 index.php",
     "content": ". | vscode를 실행한다. | 새문서를 만든다. | C\\xmapp\\htdocs 폴더의 index.php 파일을 모두 지우고 아래의 코드로 수정한다. | . &lt;?php echo '망고안녕~~'; ?&gt; . | C\\xmapp\\xampp-control.exe를 실행하여 서버실행 | 작성한 문서를 서버환경에서 확인한다. | . ",
     "url": "/book01/docs/php/02-syntax/#01-indexphp",
     "relUrl": "/docs/php/02-syntax/#01-indexphp"
-  },"44": {
+  },"47": {
     "doc": "02-기초문법",
     "title": "02 php 의 기본 문법",
     "content": "&lt;?php 로 시작해서 . ?&gt; 로 끝남 . ",
     "url": "/book01/docs/php/02-syntax/#02-php-%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95",
     "relUrl": "/docs/php/02-syntax/#02-php-의-기본-문법"
-  },"45": {
+  },"48": {
     "doc": "02-기초문법",
     "title": "03 다른 언어와 사용",
     "content": "&lt;?php echo \"&lt;h1&gt;망고는 코딩대장&lt;/h1&gt;\" ?&gt; . &lt;h1&gt; &lt;?php echo \"망고는 코딩대장\" ?&gt; &lt;/h1&gt; . ",
     "url": "/book01/docs/php/02-syntax/#03-%EB%8B%A4%EB%A5%B8-%EC%96%B8%EC%96%B4%EC%99%80-%EC%82%AC%EC%9A%A9",
     "relUrl": "/docs/php/02-syntax/#03-다른-언어와-사용"
-  },"46": {
+  },"49": {
     "doc": "02-기초문법",
     "title": "04 오류찾기",
     "content": "04-01 주석 . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;타이틀&lt;/h1&gt; &lt;?php //echo 문자열 출력함수 echo '망고대장' /* 여러줄 주석 */ #한줄주석 ?&gt; &lt;/body&gt; &lt;/html&gt; . 04-02 변수 . $변수명=값 . &lt;?php $name=\"망고\"; echo $name.'대장'; # 문자열과 연결할때는 . echo \"$name 대장\"; # 문자열이 쌍따옴표로 묶여있으면 . 없어도 됨 ?&gt; . + . ",
     "url": "/book01/docs/php/02-syntax/#04-%EC%98%A4%EB%A5%98%EC%B0%BE%EA%B8%B0",
     "relUrl": "/docs/php/02-syntax/#04-오류찾기"
-  },"47": {
+  },"50": {
     "doc": "02-기초문법",
     "title": "에러",
     "content": "&lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;에러&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php $name=\"망고\"; echo $name'대장'; echo \"🥇 $name 대장\"; echo \"🥇 $myname 대장\"; ?&gt; &lt;/body&gt; &lt;/html&gt; . | 영어명 | 한국어명 | 여는 태그 | 닫는 태그 | 설명 | . | standard tag | 표준 태그, 긴 태그 | &lt;?php | ?&gt; | 항상 사용 가능 | . | short open tag | 짧은 여는 태그, 짧은 태그[2] | &lt;? | ?&gt; | 기본값은 사용불가. short_open_tag=On 적용하면 사용가능. 권장하지 않음. | . | echo shortcut | 단축 태그 | &lt;?= | ? | 항상 사용 가능. &lt;?php echo 내용; ?&gt;의 축약형 | . ",
     "url": "/book01/docs/php/02-syntax/#%EC%97%90%EB%9F%AC",
     "relUrl": "/docs/php/02-syntax/#에러"
-  },"48": {
+  },"51": {
     "doc": "02-기초문법",
     "title": "02-기초문법",
     "content": ". | 01 index.php | 02 php 의 기본 문법 | 03 다른 언어와 사용 | 04 오류찾기 . | 04-01 주석 | 04-02 변수 | . | 에러 | . – . ",
     "url": "/book01/docs/php/02-syntax/",
     "relUrl": "/docs/php/02-syntax/"
-  },"49": {
+  },"52": {
     "doc": "02-스크롤 애니메이션",
     "title": "1-Progress Indicator",
     "content": "| 현재 진행율을 표시하는 UI 만들어보자. (progress indicator) | . | progress indicator 를 제작하려면 2가지 값이 필요하다 | . | 1. 요소(문서)의 높이 | . | 2. 브라우저의 스크롤 양 | . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#1-progress-indicator",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#1-progress-indicator"
-  },"50": {
+  },"53": {
     "doc": "02-스크롤 애니메이션",
     "title": "01 요소(문서)의 높이(크기) 를 알아보자",
     "content": "01-1 Js . 함수종류 . 01-2 JQ . 함수종류 . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#01-%EC%9A%94%EC%86%8C%EB%AC%B8%EC%84%9C%EC%9D%98-%EB%86%92%EC%9D%B4%ED%81%AC%EA%B8%B0-%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#01-요소문서의-높이크기-를-알아보자"
-  },"51": {
+  },"54": {
     "doc": "02-스크롤 애니메이션",
     "title": "02 스크롤 양을 얻어보자",
     "content": "02-1 Js . 함수종류 . 02-2 JQ . 함수종류 . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#02-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%96%91%EC%9D%84-%EC%96%BB%EC%96%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#02-스크롤-양을-얻어보자"
-  },"52": {
+  },"55": {
     "doc": "02-스크롤 애니메이션",
     "title": "03 제작해보자",
     "content": "백분율구하기 공식 🔞 최고 난이도의 수학문제 . (부분/전체) X 100 . 03-1 JS . 03-2 JQ . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#03-%EC%A0%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#03-제작해보자"
-  },"53": {
+  },"56": {
     "doc": "02-스크롤 애니메이션",
     "title": "2 - 섹션별 애니메이트",
     "content": "03-1 JS . 03-2 JQ . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#2---%EC%84%B9%EC%85%98%EB%B3%84-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%ED%8A%B8",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#2---섹션별-애니메이트"
-  },"54": {
+  },"57": {
     "doc": "02-스크롤 애니메이션",
     "title": "02-스크롤 애니메이션",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/"
-  },"55": {
+  },"58": {
     "doc": "02-지킬 permalink",
     "title": "지킬캐시삭제",
     "content": "jekyll clean . ",
     "url": "/book01/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/#%EC%A7%80%ED%82%AC%EC%BA%90%EC%8B%9C%EC%82%AD%EC%A0%9C",
     "relUrl": "/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/#지킬캐시삭제"
-  },"56": {
+  },"59": {
     "doc": "02-지킬 permalink",
     "title": "02-지킬 permalink",
     "content": ". | 지킬캐시삭제 | . – . 커스터마이징 - 고유 주소(Permalink) . 고유 주소(Permalink) . 참고 위키백과의 Permalink . 고유 주소는 포스트, 페이지, 컬렉션의 도메인명과 디렉토리를 제외한 URL을 나타낸다. Jekyll은 date처럼 다양한 템플릿 변수를 활용하거나 이 템플릿 변수의 패턴을 자동으로 사용하는 기능을 내장하고 있으며 사용자가 스타일을 작성하여 사용할 수 도 있는 유연함 또한 가지고 있다. 콜론과 동적인 요소로 이루어진 키워드(템플릿 변수)로 표시되는 템플릿 URL을 생성하여 고유 주소로 사용하며, 템플릿 고유주소의 기본값은 /:categories/:year/:month/:day/:title.html로 되어 있다. 고유 주소 구성 고유 주소는 _config.yml 환경 설정 파일이나 각 포스트, 페이지, 컬렉션이 가지고 있는 YAML 머리말에서 구성할 수 있다. _config.yml 파일에서 아래와 같이 고유 주소를 설정하면 프로젝트 전체에 해당 설정이 적용된다. 1 permalink: /:categories/:year/:month/:day/:title.html 위의 설정값은 기본값이므로 고유 주소에 대한 설정을 하지 않으면 위에 패턴으로 적용된다. 고유 주소 스타일 설정 . 고유 주소는 Jekyll에 내장되어 있는 스타일을 사용하여 설정할 수도 있다. 1 permalink : date 위의 date는 :categories/:year/:month/:day/:title.html과 동일하다. 기본 내장된 고유 주소 스타일 목록은 아래에서 다시 다루겠다. YAML 머리말 . 포스트, 페이지, 컬렉션의 머리말에 고유 주소를 설정하면 모든 전역 설정이 재정의 된다. 1 2 3 4 — title: My page title permalink: /mypageurl/ — _config.yml에 아래와 같이 정의되어 있더라도 . 1 permalink : date 이 페이지의 고유 주소 URL은 http://somedomain.com/mypageurl/로 설정된다. 흔히 pretty URL 이라고 부르는 .html 파일 확장자를 생략한 고유 주소를 사용하면 아래처럼 페이지명과 동일한 폴더를 생성하고 그 폴더 안에 index.html 파일을 작성한다. 1 2 ├─ mypageurl │ └─── index.html 고유 주소로 /mypageurl/를 사용하면 Jekyll이 생성해준 대로 mypageurl 폴더 내의 index.html 파일을 불러오므로 http://somedomain.com/mypageurl/의 주소로 접근하면 mypageurl/index.html 파일을 렌더링해준다. 고유 주소의 템플릿 변수 _config.yml 파일에서 사용할 수 있는 고유 주소의 템플릿 변수들을 소개한다. 변수 설명 year 포스트의 파일명 기준 연도 month 포스트의 파일명 기준 월 i_month 0을 제외한 포스트의 파일명 기준 월(10미만에서 09 -&gt; 9) day 포스트의 파일명 기준 일 i_day 0을 제외한 포스트의 파일명 기준 일(10미만에서 09 -&gt; 9) short_year 포스트의 파일명 기준 두 자리 게시 연도 hour 포스트의 파일명 기준 시간 (24시간제, 00..23 형식) minute 포스트의 파일명 기준 분 (00..59 형식) second 포스트의 파일명 기준 초 (00..60 형식)) title 포스트의 파일명 기준 문서 제목 머리말의 slug로 값을 덮어쓸 수 있음 slug 포스트의 파일명 기준으로 영어와 숫자가 아닌 모든 문자를 하이픈(-)으로 변경한 문서 제목 categories 해당 포스트에 지정된 카테고리들 카테고리가 2개 이상이면 계층구조로 URL이 생성 카테고리가 하나도 없으면 무시됨 위의 시간 또는 카테고리와 관련된 모든 템플릿 변수는 포스트에만 사용할 수 있다. 기본 내장 고유 주소 스타일 템플릿 변수를 사용하여 고유 주소의 패턴을 지정할 수도 있지만 기본 내장된 스타일도 제공한다. 스타일명 URL 템플릿 date /:categories/:year/:month/:day/:title.html pretty /:categories/:year/:month/:day/:title/ ordinal /:categories/:year/:y_day/:title.html none /:categories/:title.html 참고 YAML 머리말의 고유 주소 지정 기본 내장 고유 주소 스타일은 YAML 머리말에선 인식되지않는다. 포스트의 고유 주소 예시 고유 주소의 스타일이 포스트에 적용되는 방식의 몇 가지 예시를 아래의 표를 통해 알아보자. 스타일을 적용할 포스트의 파일명은 /2009-04-29-slap-chop.md 이다. 스타일명 URL 템플릿 미지정 혹은 date /2009/04/29/slap-chop.html pretty /2009/04/29/slap-chop/ /:month-:day-:year/:title.html /04-29-2009/slap-chop.html /blog/:year/:month/:day/:title/ /blog/2009/04/29/slap-chop/ /:year/:month/:title /2009/04/slap-chop 페이지와 컬렉션의 고유 주소 설정 위에서 언급했듯 _config.yml 환경설정 파일에서 고유 주소를 설정하면 포스트, 페이지, 컬렉션에 고유 주소 스타일을 전역으로 지정한다. 하지만 포스트와는 달리 페이지와 컬렉션은 시간 이나 범주 가 없기 때문에 고유 주소 스타일을 지정해도 무시된다. 아래의 예시를 보자. 고유 주소 스타일 /:parent/:year/:month/:day/:title.html의 경우 . 포스트 : /:parent/:year/:month/:day/:title.html 페이지나 컬렉션 : /:title.html 고유 주소 스타일 pretty의 경우(/:categories/:year/:month/:day/:title/과 동일) . 포스트 : /:parent/:year/:month/:day/:title 페이지나 컬렉션 : /:title/ 파일 확장명을 포함하는 고유 주소 스타일 date의 경우 . 포스트 : /:year/:month/:day/:title.html 페이지나 컬렉션 : /:title.html 고유 주소와 기본 경로 포스트, 페이지, 컬렉션마다 생성된 사이트의 포스트, 페이지의 경로가 다르다. 아래 종류별로 차이점을 기술한다. 포스트 _posts 디렉토리에서 포스트를 작성했을 경우 _posts의 하위 디렉토리는 고유 주소에 포함되지 않는다.html 파일 확장명을 생략하는 pretty와 같은 고유 주소 스타일을 사용할 경우 각 포스트는 포스트명과 동일한 폴더를 생성한 뒤 해당 폴더에 index.html 파일을 생성하여 렌더링한다. 예시 : parentname/2016/12/01/mypostname/index.html . 페이지 고유 주소의 스타일에 따라 변동되는 포스트와는 달리 페이지는 디렉토리 구조를 그대로 가져다가 쓴다. 단 예외적으로 특정 페이지의 YAML 머리말에 고유 주소가 선언된 경우 고유 주소의 설정대로 생성한다. 포스트와 마찬가지로 .html 파일 확장명을 생략하는 pretty와 같은 고유 주소 스타일을 사용할 경우 각 페이지는 페이지명과 동일한 폴더를 생성한 뒤 해당 폴더에 index.html 파일을 생성하여 렌더링한다. 예시 : mypage/index.html . 컬렉션 컬렉션은 컬렉션명에 접두사가 있는 경우를 제외하고는 _site 디렉토리와 유사한 구조로 생성된다. 예시 : collectionname/mypage.html .html 파일 확장명을 생략하는 pretty와 같은 고유 주소 스타일을 사용할 경우 고유 주소의 경로는 llection_name/mypage/index.html로 설정된다. 빌드시 _site의 페이지 병합 사이트를 생성할 때 _site 디렉토리의 페이지를 병합하려면 경로가 지정되지 않은 상태에서 각 페이지의 YAML 머리말에 permalink 변수를 이용해 고유 주소를 추가하자. 다시 풀어서 설명하면 이렇다. 페이지를 폴더별로 구분한 상태에서 사이트를 생성한다면 각 폴더명을 포함하여 고유 주소가 생성될 것이다. 폴더의 계층 구조가 복잡할수록 깔끔하지않은 고유 주소를 생성하게 될 것이고 이를 방지하기 위해선 각 페이지마다 고유 주소를 할당하여 사이트를 생성하는 것이다. 조금 번거롭겠지만 www.yoursite.com/mypageurl.html과 같은 깔끔한 고유 주소를 생성할 수 있을 것이다. 아래와 같이 추가하여 고유 주소를 설정해주면 된다. 1 2 3 4 — title: My page permalink: mypageurl.html — 끝에 /가 없는 고유 주소 Jekyll에선 URL 끝에 /나 파일의 확장자도 포함하지 않는 고유 주소를 지원한다. 하지만 고유 주소를 지정한다고 해서 생성되는 파일이 확장자가 없는 것은 아니므로 웹 서버를 이용할 시 추가적인 지원이 필요하다. 추가적인 지원이란 URL에 확장자없이 요청되는 경우 해당 파일을 연결하도록 작업해야 함을 말한다. 단 Github와 Jekyll에 내장된 WEBrick 서버는 추가 작업없이 동작한다. ",
     "url": "/book01/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/",
     "relUrl": "/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/"
-  },"57": {
+  },"60": {
     "doc": "02-팁",
     "title": "01 사용중인 jQuery 버전확인",
     "content": "크롬 화면에서 F12를 누른 후 $().jquery . ",
     "url": "/book01/docs/jQuery/02/#01-%EC%82%AC%EC%9A%A9%EC%A4%91%EC%9D%B8-jquery-%EB%B2%84%EC%A0%84%ED%99%95%EC%9D%B8",
     "relUrl": "/docs/jQuery/02/#01-사용중인-jquery-버전확인"
-  },"58": {
+  },"61": {
     "doc": "02-팁",
     "title": "02-팁",
     "content": ". ",
     "url": "/book01/docs/jQuery/02/",
     "relUrl": "/docs/jQuery/02/"
-  },"59": {
+  },"62": {
     "doc": "03-조건문,반복문",
     "title": "01 conditions.php",
     "content": "01-1 참과 거짓 . | C\\xmapp\\htdocs 폴더에 conditions.php 파일생성 | . &lt;?php $result = 1 &lt; 3; echo $result; ?&gt; . | localhost:8080/conditions.php 의 결과를 확인한다. | . &lt;?php $result = 1 &gt; 3; echo $result; ?&gt; . | localhost:8080/condition.php 의 결과를 확인한다. | true는 1 이므로 이전의 결과는 1이 출력되었으나 false 는 화면에 아무것도 나오지 않는다. | ` echo $result; 를 주석처리 후 조건문을 echo $result2 == false;` 로 변경해본다 | 화면에 1이 출력된다. | . 01-2 대소문자의 구분 . $first_name = 'mango'; $last_name = 'kim'; if($first_name == 'Mango'){ echo '진실입니다'; } else{ echo '거짓입니다'; } . | $first_name = 'mango'; 와 $first_name == 'Mango' 를 다르게 판단하여 거짓입니다'; 가 출력된다 . | if($first_name == 'Mango' &amp;&amp; $last_name='kim') 으로 조건을 변경해본다. | 둘다 참이어야 참으로 판단되므로 거짓이 나온다. | if($first_name == 'Mango' || $last_name='kim') 으로 조건을 변경해본다. | 둘중 하나만 참이면 참으로 판단되므로 진실이 나온다 | if($first_name == 'Mango' and $last_name='kim') 으로 조건을 변경해본다. | php 에서만 사용되는 조건식으로 둘다 참이어야 한다 | if($first_name == 'Mango' or $last_name='kim') 으로 조건을 변경해본다. | php 에서만 사용되는 조건식으로 둘다 참이어야 한다 | if($first_name == 'Mango' xor $last_name='kim') 으로 조건을 변경해본다. | php 에서만 사용되는 조건식으로 두개가 서로 다르면 참이다 | . ",
     "url": "/book01/docs/php/03-conditions/#01-conditionsphp",
     "relUrl": "/docs/php/03-conditions/#01-conditionsphp"
-  },"60": {
+  },"63": {
     "doc": "03-조건문,반복문",
     "title": "02. array.php",
     "content": ". | array.php 생성 배열의 문법 $배열이름 = array(); 배열을 생성하고 값 넣기 . | . 02-1 배열의 생성 . &lt;?php $fruits=array(); $fruits[0]=\"사과\"; $fruits[1]=\"바나나\"; $fruits[2]=\"한라봉\"; echo $fruits ?&gt; . | 아래와 같은 에러가 출력된다 | 자바스크립트와 마찬가지로 배열의 값은 원소 단위로 꺼내어야 한다. echo $fruits[0] 으로 작성하거나 반복문을 이용한다. | echo 를 주석처리한다. | . 02-2 isset . | isset 으로 확인해보자 isset . isset( $var1, $var2, … ); 변수 설정 여부 확인 (준비되었는지) $var가 설정되었는지 확인하고, 설정되었으면 TRUE, 설정되지 않았으면 FALSE를 반환 . | ... //echo $fruits if (isset($fruits[3])) { echo $fruits[3]; } else { echo '과일 배열에는 3번째 값이 없다'; } . 02-3 배열의 조작 . count() . 배열의 개수를 반환 count($test) . &lt;?php $fruits = array('apple', 'banana', 'orange'); for($i=0; $i&lt;count($fruits); $i++){ echo $fruits[$i].'&lt;br/&gt;'; } ?&gt; . ",
     "url": "/book01/docs/php/03-conditions/#02-arrayphp",
     "relUrl": "/docs/php/03-conditions/#02-arrayphp"
-  },"61": {
+  },"64": {
     "doc": "03-조건문,반복문",
     "title": "연관배열 Associative Array",
     "content": "02-4 foreach . &lt;?php foreach($fruits as $item){ echo $item.'&lt;br/&gt;'; } ?&gt; . &lt;?php $prices = array(); $prices['apple'] = 1000; $prices['banana'] = 2000; $prices['orange'] = 1500; foreach ($prices as $key =&gt; $price) { echo $key . \"_\" . $price . \"&lt;/br&gt;\"; } ?&gt; . $key는 배열의 요소를 의미하고 $price 는 값을 하나씩 의미한다 . 02-5 . 위의 배열을 줄여보기 아래처럼 한줄로 줄일수 있다. // $array[\"apple\"] = 1000; // 연관 배열 요소 추가 // $array[\"banana\"] = 2000; // $array[\"orange\"] = 1500; $array = array('apple' =&gt; 1000, 'banana' =&gt; 2000, 'orange' =&gt; 1500); foreach ($array as $key =&gt; $price) { echo $key . \"::\" . $price . \"&lt;/br&gt;\"; } . 이전까지는 배열의 인덱스 번호를 활용하여 선언후 키에 할당하였으나 문자열에 직접 할당함 . ",
     "url": "/book01/docs/php/03-conditions/#%EC%97%B0%EA%B4%80%EB%B0%B0%EC%97%B4-associative-array",
     "relUrl": "/docs/php/03-conditions/#연관배열-associative-array"
-  },"62": {
+  },"65": {
     "doc": "03-조건문,반복문",
     "title": "03 Loop",
     "content": "03-1 while . while(조건식){ 실행문 } . &lt;h1&gt;Loop&lt;/h1&gt; &lt;h2&gt;while&lt;/h2&gt; &lt;?php $i = 0; while ($i &lt; 5) { //i가5미만일때 까지 실행 echo ($i++) . \"&lt;br/&gt;\"; //i=i+1 } ?&gt; . 실행 . 03-2 do/while . while(조건식){ 실행문 } . &lt;h2&gt;do/while&lt;/h2&gt; &lt;?php $j = 0; do { echo ($j++) . \"&lt;br/&gt;\"; } while ($j &lt; 5); ?&gt; . 실행 . 03-3 for . for(초기값;조건;증감식){실행문} . &lt;h2&gt;for&lt;/h2&gt; &lt;?php for ($k = 0; $k &lt; 5; $k++) { echo $k . '&lt;br/&gt;'; echo \"{$k}&lt;br/&gt;\"; //쌍따옴표 작성시 변수명과 문자열을 묶어서 출력할수 있다 } ?&gt; . 실행 . 03-4 foreach . foreach(배열 as 변수){실행문} . &lt;?php $results = array(0, 5, 6, 7, 8); //5개의 값이있는 배열 생성 foreach ($results as $result) { echo \"변수 \\$result의 값은 {$result} 입니다. &lt;br/&gt;\"; } ?&gt; . 실행 - 배열의 요소들을 하나씩 출력함 . 03-5 foreach(associative array) . 키와 값이 있는 배열 . &lt;?php $scores = array( \"국어\" =&gt; 80, \"영어\" =&gt; 90, \"수학\" =&gt; 100, \"과학\" =&gt; 95, ); foreach ($scores as $key =&gt; $score) { echo \"배열 \\$scores에서 키값 '{$key}'에 대한 값은 {$score}입니다.&lt;br&gt;\"; } ?&gt; . 출력 — . 문제 . | 배열을 이용해 과목성적의 합계와 평균 구하기 | . &lt;?php //배열을 이용하여 합계, 평균 구하기 ,원소는 0부터 시작 //과목별 점수 $eng=99; $computer=80; $program=85; //과목별 점수를 배열에 할당 $score[0]=90; $score[1]=80; $score[2]=85; $sum =0 ; for($a=0; $a&lt;=2; $a++){ $sum+=$score[$a]; } $avg=$sum/3; echo \"과목점수: $score[0],$score[1],$score[2], &lt;br&gt;\"; echo \"합계: $sum,평균:$avg &lt;br&gt;\"; ?&gt; . | 출력 | . ",
     "url": "/book01/docs/php/03-conditions/#03-loop",
     "relUrl": "/docs/php/03-conditions/#03-loop"
-  },"63": {
+  },"66": {
     "doc": "03-조건문,반복문",
     "title": "03-조건문,반복문",
     "content": ". | 01 conditions.php . | 01-1 참과 거짓 | 01-2 대소문자의 구분 | . | 02. array.php . | 02-1 배열의 생성 | 02-2 isset . | isset | . | 02-3 배열의 조작 . | count() | . | . | 연관배열 Associative Array . | 02-4 foreach | 02-5 | . | 03 Loop . | 03-1 while | 03-2 do/while | 03-3 for | 03-4 foreach | 03-5 foreach(associative array) | 문제 | . | . – . ",
     "url": "/book01/docs/php/03-conditions/",
     "relUrl": "/docs/php/03-conditions/"
-  },"64": {
+  },"67": {
+    "doc": "03-Dooosan-반응형",
+    "title": "03-Dooosan-반응형",
+    "content": ". | HTML | . &lt;div id=\"content\"&gt; &lt;div class=\"content_cover\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"계열사\"&gt; &lt;img src=\"./images/ico_int_1.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_1_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"두산뉴스룸\"&gt; &lt;img src=\"./images/ico_int_2.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_2_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"브랜드 활약상\"&gt; &lt;img src=\"./images/ico_int_3.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_3_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"사업장 위치\"&gt; &lt;img src=\"./images/ico_int_4.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_4_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .content_cover --&gt; &lt;/div&gt; &lt;!-- #content --&gt; &lt;div id=\"media_center\"&gt; &lt;div class=\"media_cover\"&gt; &lt;h1 class=\"title\"&gt;미디어센터&lt;/h1&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/0dc4e114-18c5-4730-a6f5-b562cf92c806.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산인프라코어, 드론측량부터 장비 운용까지...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/7fe5a7e3-f03e-42bd-9ab6-952c0708aab0.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산중공업, 시노펙스와 손잡고 친환경 수처리&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/8cfd1b42-e65e-4f32-b7ad-0cbe695e741c.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산,'파워젠 인터내셔널 2019' 참가&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/18dfd093-6a9d-48f6-9da4-f9af62fcd702.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산밥캣, 미국 미네소타에 글로벌 협업센터 설립...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/47950c97-c3d7-45ff-be02-410a04d16d65.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산, 인도네이사 현지에서 단독으로'두산테크데스크'&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/be2914e1-6eb0-4041-a39b-7be3052ec239.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] (주)두산, 3개 은행과 함께 동반성장펀드 조성&lt;/p&gt; &lt;div class=\"arrow\"&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .media_cover --&gt; &lt;/div&gt; &lt;!-- #media_center --&gt; &lt;div id=\"find\"&gt; &lt;div class=\"find_cover cf\"&gt; &lt;div class=\"find_left fl\"&gt; &lt;h1 class=\"what_find\"&gt;무엇을 찾으시나요?&lt;/h1&gt; &lt;form action=\"#\" method=\"post\"&gt; &lt;input type=\"text\" name=\"search\" id=\"search\" value=\"\" placeholder=\"검색어를 입력하세요.\" /&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/btn_search_arrow_black.png\" alt=\"\" /&gt; &lt;/a&gt; &lt;/form&gt; &lt;/div&gt; &lt;div class=\"find_right fl\"&gt; &lt;div class=\"right_cover\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;CI&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업영역&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산연강재단&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;굴착기&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산인프라코어&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;인재상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용공고&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산 스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산모빌리티이노베이션&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .find_cover --&gt; &lt;/div&gt; &lt;!-- #find --&gt; &lt;div id=\"footer\"&gt; &lt;div class=\"footer_cover cf\"&gt; &lt;div class=\"foot_left\"&gt; &lt;h1 class=\"f_logo cf\"&gt; &lt;img src=\"./images/logo_gnb.png\" alt=\"\" /&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" class=\"on\" /&gt; &lt;span&gt;&amp;copy; 2019 (주)두산중공업&lt;/span&gt; &lt;/h1&gt; &lt;/div&gt; &lt;div class=\"foot_center\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;Contact is&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업장 위치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;법적고지&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;이용약관&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사이트맵&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=\"foot_right\"&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .footer_cover --&gt; &lt;/div&gt; &lt;!-- #footer --&gt; . | css | . @media screen and (max-width: 1500px) { .find_cover { width: 90%; padding: 0; } } /* 1400px */ @media screen and (max-width: 1400px) { #header .header_cover { width: 90%; } .full_menu .full_cover { width: 90%; } .media_cover { width: 90%; } #content .content_cover { width: 90%; } .find_cover { width: 90%; padding: 0; } .footer_cover { width: 90%; } .find_cover .find_left form #search { width: 90%; margin: 0 0 0 5%; } .find_cover .find_left .what_find { margin-left: 5%; } .find_cover .find_left form a { right: 50px; } } /* 1330px */ @media screen and (max-width: 1330px) { #header { height: auto; } .full_menu { display: none; } .header_cover .logo { float: none; margin: 0 auto; padding: 20px 0; } .header_cover .logo a img { padding: 0; } .header_cover .nav { display: none; } .header_cover .logo + .mo { display: block; } .header_cover .gnb { display: none; } .slide_cover ul li a p.img_text { width: auto; right: auto; left: 50%; transform: translate(-50%, -50%); font-size: 18px; text-align: center; word-break: keep-all; } .slide_btn { left: 50%; bottom: 20px; transform: translate(-50%, -50%); } .slide_cover ul li a .box { left: 15%; bottom: 13%; height: 100px; } .slide_cover ul li a .box.on { width: 100px; } .slide_cover ul li a h1.img_logo { width: auto; font-size: 30px; left: 5%; } .slide_cover ul li a h1.img_logo.on { top: 5%; } .slide_cover ul li a img.pc { display: none; } .slide_cover ul li a img.mo { display: block; } #find { height: auto; } .find_cover { padding: 0; } .find_cover .fl { float: none; width: 100%; height: auto; margin-top: 50px; } .find_cover .find_left .what_find { padding: 30px 0 0 30px; box-sizing: border-box; } .find_cover .find_left form #search { width: 90%; margin-left: 5%; } .find_cover .find_left form a { right: 8%; } .find_cover .find_right { float: none; width: 100%; } .footer_cover .foot_left { float: none; width: 90%; margin: 0 auto; text-align: center; } .footer_cover .foot_center { float: none; width: 100%; } .footer_cover .foot_right { float: none; width: 10%; } .footer_cover .foot_left img { float: none; display: inline-block; width: 10%; } .footer_cover .foot_left img.on { display: inline-block; width: 8%; margin-left: 10px; } .footer_cover .foot_left span { display: none; } .footer_cover .foot_right { display: none; } } @media screen and (max-width: 1200px) { .media_cover ul { margin-top: 50px; } .media_cover ul li { width: 49.5%; margin: 0; height: 200px; } .media_cover ul li:nth-child(3n + 1) { margin: 0; } .media_cover ul li:nth-child(2n) { margin-left: 1%; margin-top: 1%; } .media_cover ul li:nth-child(2n + 1) { margin-top: 1%; } .media_cover ul li a .text { font-size: 14px; } .media_cover .title { font-size: 24px; } #content .content_cover ul li { width: 50%; line-height: normal; height: auto; margin-top: 20px; } #content .content_cover ul li a { color: transparent; height: auto; line-height: normal; } #content .content_cover ul li a img { position: static; transform: none; } #content .content_cover ul li a:after { content: attr(data-text); display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #000; } } . ",
+    "url": "/book01/docs/Projects/03-responsive/",
+    "relUrl": "/docs/Projects/03-responsive/"
+  },"68": {
     "doc": "03-tip",
     "title": "03-tip",
     "content": ". | TOC . | . 01. 배치파일 만들기 . 배치파일(batch file)은 윈도우의 명령 프롬프트(cmd)에서 순서대로 실행할 명령어들을 한번에 일괄로 실행되도록 하기 위해 작성한 명령어 . | 메모장 열기. | 메모장을 사용해서 텍스트 파일로 코드를 생성한 후 배치파일로 저장할 수 있다 | . | 간단한 배치파일 명령어 배우기. | 배치 파일은 여러 도스 명령어로 실행되기 때문에, 배치 파일의 명령어도 도스 명령어와 비슷하다. 몇가지 중요한 명령어를 살펴보자: | . | . | ECHO – 화면에 텍스트 출력 | @ECHO OFF –출력되는 텍스트 감추기 | START – 기본 프로그램으로 파일 실행 | REM – 프로그램에 글자 입력 | MKDIR/RMDIR –디렉토리를 생성하거나 삭제 | DEL – 파일 삭제 | COPY – 파일 복사 | XCOPY – 추가 기능에 따라 파일 복사 | FOR/IN/DO –파일 지정. | TITLE- 현재 창 이름 편집. 3. 확장자 .bat 로 저장 . | . 02 외장드라이브에서 지킬서버 실행하는 bat 만들기 . | 윈도우 메모장 실행 | 아래의 코드에서 경로수정후 메모장에 붙여넣기 | cd /d k:\\ 의 k:\\는 본인의 외장하드 경로로 변경해야 한다. | serve.bat 파일명으로 저장 | 더블클릭해서 파일 실행 | . cd /d k:\\ cd Jekyll cd book01 bundle exec jekyll serve pause . 03 유닉스타임변환기 . 유닉스타임변환기 . ",
     "url": "/book01/docs/miscellaneous/03-tip/",
     "relUrl": "/docs/miscellaneous/03-tip/"
-  },"65": {
+  },"69": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "마우스포인터를 변경해보자",
     "content": "| 마우스 좌표값을 이용하여 DOM 요소와 애니메이션을 구현한다. | . | 알아야 할 것 | . | 1. 마우스 좌표값 (브라우저, 화면에서 포인터의 위치정보 얻어오기) | . | 2. 애니메이트 시킬 대상의 좌표 (움직일 대상도 위치정보가 있어야 한다.) | . 사용할 이미지 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#%EB%A7%88%EC%9A%B0%EC%8A%A4%ED%8F%AC%EC%9D%B8%ED%84%B0%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%95%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#마우스포인터를-변경해보자"
-  },"66": {
+  },"70": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "01 요소(문서)의 높이(크기) 를 알아보자",
     "content": "01-1 Js . 함수종류 . 01-2 JQ . 함수종류 . 02 스크롤 양을 얻어보자 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#01-%EC%9A%94%EC%86%8C%EB%AC%B8%EC%84%9C%EC%9D%98-%EB%86%92%EC%9D%B4%ED%81%AC%EA%B8%B0-%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#01-요소문서의-높이크기-를-알아보자"
-  },"67": {
+  },"71": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "02-1 Js",
     "content": "함수종류 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-1-js",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-1-js"
-  },"68": {
+  },"72": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "02-2 JQ",
     "content": "함수종류 . 03 제작해보자 . JS . JQ . 04 키티 3D 회전 . #m3 { width: 100px; height: 100px; position: absolute; z-index: 999999; top: 50px; left: 30px; transition: all 0.5s ease-in-out; } #m3{ animation: rotate 2.5s infinite alternate; animation-play-state:paused; /* animation-play-state:running; */ } @keyframes rotate{ 0%{transform:perspective(200px) rotateY(0deg)} 50%{transform:perspective(200px) rotateY(-180deg)} 100%{transform:perspective(200px) rotateY(-360deg)} } . perspective . 요소를 3D 공간에 배치함 perspective(거리) 거리값이 클수록 먼 거리에서 보는것과 같은 효과 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-2-jq",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-2-jq"
-  },"69": {
+  },"73": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "03-마우스 포인터 변경하기",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
-  },"70": {
+  },"74": {
     "doc": 3,
     "title": "01 스크롤양 얻기",
     "content": "함수종류 . | 종류 | 설명 | . | $(“element”).scrollTop() / scrollLeft() | 요소의 수직/수평 스크롤 양 반환 | . 예제 . ",
     "url": "/book01/docs/jQuery/03/#01-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%96%91-%EC%96%BB%EA%B8%B0",
     "relUrl": "/docs/jQuery/03/#01-스크롤양-얻기"
-  },"71": {
+  },"75": {
     "doc": 3,
     "title": 3,
     "content": ". ",
     "url": "/book01/docs/jQuery/03/",
     "relUrl": "/docs/jQuery/03/"
-  },"72": {
+  },"76": {
     "doc": "04-figma",
     "title": "Resizing 옵션",
     "content": ". | Fixed : 고정크기 | Hug content : 컨텐츠 감싸기 (내용기준) | Fill container : 컨테이너 채우기 (부모기준) | . ",
     "url": "/book01/docs/miscellaneous/04-figma/#resizing-%EC%98%B5%EC%85%98",
     "relUrl": "/docs/miscellaneous/04-figma/#resizing-옵션"
-  },"73": {
+  },"77": {
     "doc": "04-figma",
     "title": "04-figma",
     "content": "예제파일1 . 교안링크 . ",
     "url": "/book01/docs/miscellaneous/04-figma/",
     "relUrl": "/docs/miscellaneous/04-figma/"
-  },"74": {
+  },"78": {
     "doc": "04-함수와 변수",
     "title": "01 function",
     "content": "문법 . function 함수이름 (매개변수1,매개변수2){ …실행문 } 함수이름(); . 함수네이밍규칙 - 영문소문자로 시작 , 특수문자는 _ 만 가능 . 01-1 : 함수 . | xmapp/htdoc/func.php 생성 | . html &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;function&lt;/h1&gt; &lt;pre&gt; function 함수이름 (매개변수1,매개변수2){ ...실행문 } 함수이름(); function func_add(){ } &lt;/pre&gt; &lt;/body&gt; &lt;/html&gt; . 01-2 : 활용 . | 간단한 덧셈함수를 만들어 보자 | . php &lt;?php function sum($x, $y) { return $x + $y; } echo sum(10, 20) ?&gt; . 실행화면 : . 01-3 배열의 값을 출력하는 함수 [plus] . print_r 변수의 정보를 출력해주는 함수 . PHP에서 변수는 배열(Array)과 객체(Object)도 포함 . | 예제 | . php &lt;?php $fruits=['apple','mango','banana','orange']; echo '&lt;pre&gt;'; print_r($fruits); echo '&lt;/pre&gt;'; ?&gt; . 실행화면 . | $fruits 의 정보가 출력된다 배열의 각 인덱스 번호에 해당하는 값을 출력해줌 . | print_r 의 위, 아래에 echo와 함께 pre 태그를 출력 . | . 01-4 . pre 태그를 추가해주는 것을 함수로 작성 . php &lt;?php $fruits = ['apple', 'mango', 'banana', 'orange']; // echo '&lt;pre&gt;'; // print_r($fruits); // echo '&lt;/pre&gt;'; function output($value) { echo '&lt;pre&gt;'; print_r($value); echo '&lt;/pre&gt;'; } output($fruits) ?&gt; . 출력: . ",
     "url": "/book01/docs/php/04-func/#01-function",
     "relUrl": "/docs/php/04-func/#01-function"
-  },"75": {
+  },"79": {
     "doc": "04-함수와 변수",
     "title": "02 variable",
     "content": "02-1 . 더하기 함수 변형 plus . php . function sum1($x, $y) { $result=$x+$y; //$result 지역변수 선언 return $result; //$result 변수 리턴 } $result= sum1(10, 20);//$result 전역변수에 sum1(10,20) 호출 echo $result; . 출력 . | 전역변수 $result 에 주석처리후 실행 | . | 지역변수 $result는 함수 밖으로 꺼내올수 없으므로 에러 | . 02-2 . | 지역변수를 알아보자 | . &lt;hr&gt; &lt;h2&gt;지역변수 전역변수&lt;/h2&gt; &lt;?php function myfunc() { $var = 10; echo \"{$var}\"; //지역변수로써 함수 외부에서 출력안됨 } myfunc(); echo \"{$var}\"; ?&gt; . | $var 의 스코프는 myfunc 함수의 바디영역이므로 실행오류 발생 | . 02-3 전역변수 . | 전역변수를 알아보자 | . &lt;hr&gt; &lt;h2&gt;전역변수&lt;/h2&gt; &lt;?php $var2 = 20; function myfunc2() { echo \"{$var2}\";//외부에 선언되었더라도 global 키워드가 없으면 함수 내부로 갖고 올수 없다 global $var2; echo \"{$var2}\" //출력됨 } myfunc2(); echo \"{$var2}\"; ?&gt; . echo \"$var2 임 &lt;br&gt;\"과 echo \"{$var2} 임&lt;br&gt;“의 차이 . | 둘다 화면에 출력값은 같다 | echo \"$var2 임 &lt;br&gt;\" 처럼 변수명 뒤에 다른 문자가 나오면, PHP 파서는 “$var”라는 변수의 이름을 찾는 대신 “$var임”이라는 이름을 가진 변수를 찾는다. | echo \"{$var2} 임&lt;br&gt; 같이 변수명을 중괄호로 감싸야 PHP 파서가 변수명을 정확히 인식할 수 있다. | . 02-4 정적변수 . 함수 내부에서 static 키워드로 선언한 변수 함수의 호출이 종료되어도 메모리상에 존재함. 지역 변수처럼 해당 함수 내부에서만 접근가능. &lt;hr&gt; &lt;h2&gt;정적변수&lt;/h2&gt; `static` &lt;?php function increment() { global $count; $count= 0; echo \"{$count}&lt;br/&gt;\"; $count++; } increment(); increment(); increment(); ?&gt; . 실행화면 - 정적변수로 선언시 함수의 호출 이후에도 변수값이 증가함 . 실행화면-전역변수로 선언시 함수의 호출 이후에도 변수값이 불변함 . ",
     "url": "/book01/docs/php/04-func/#02-variable",
     "relUrl": "/docs/php/04-func/#02-variable"
-  },"76": {
+  },"80": {
     "doc": "04-함수와 변수",
     "title": "04-함수와 변수",
     "content": ". | 01 function . | 문법 | 01-1 : 함수 | 01-2 : 활용 | 01-3 배열의 값을 출력하는 함수 [plus] | 01-4 | . | 02 variable . | 02-1 | 02-2 | 02-3 전역변수 | 02-4 정적변수 | . | . php . ",
     "url": "/book01/docs/php/04-func/",
     "relUrl": "/docs/php/04-func/"
-  },"77": {
+  },"81": {
     "doc": "04-탭UI(인덱스활용)",
     "title": "1-인덱스 번호를 활용한 탭UI",
     "content": "jQuery . javascript . ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#1-%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EB%B2%88%ED%98%B8%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%ED%83%ADui",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#1-인덱스-번호를-활용한-탭ui"
-  },"78": {
+  },"82": {
     "doc": "04-탭UI(인덱스활용)",
     "title": "2-정말 쉬운 탭",
     "content": "&lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 탭: 클릭한것만 보이기(나머지 감추기) --&gt; &lt;/head&gt; &lt;body&gt; &lt;ul&gt; &lt;li class=\"b1\"&gt;btn1&lt;/li&gt; &lt;li class=\"b2\"&gt;btn2&lt;/li&gt; &lt;li class=\"b3\"&gt;btn3&lt;/li&gt; &lt;/ul&gt; &lt;div&gt; &lt;h3 class=\"h1\"&gt;para1&lt;/h3&gt; &lt;h3 class=\"h2\"&gt;para2&lt;/h3&gt; &lt;h3 class=\"h3\"&gt;para3&lt;/h3&gt; &lt;/div&gt; &lt;!-- vanilla JS --&gt; &lt;script&gt; var h1=document.querySelector(\".h1\"); var h2=document.querySelector(\".h2\"); var h3=document.querySelector(\".h3\"); var b1=document.querySelector(\".b1\"); var b2=document.querySelector(\".b2\"); var b3=document.querySelector(\".b3\"); b1.onclick=function(){ h1.style.display=\"block\"; h2.style.display=\"none\"; h3.style.display=\"none\"; } b2.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"block\"; h3.style.display=\"none\"; } b3.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"none\"; h3.style.display=\"block\"; } &lt;/script&gt; &lt;!-- JQuery --&gt; &lt;script src='https://code.jquery.com/jquery-3.6.0.min.js'&gt;&lt;/script&gt; &lt;script&gt; /* $('h3').hide(); $('.h1').show(); $('.b2').click(function () { $('.h1').hide(); $('.h2').show(); }) */ &lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . var h1=document.querySelector(\".h1\"); var h2=document.querySelector(\".h2\"); var h3=document.querySelector(\".h3\"); var b1=document.querySelector(\".b1\"); var b2=document.querySelector(\".b2\"); var b3=document.querySelector(\".b3\"); h2.style.display = \"none\"; h3.style.display = \"none\"; b1.onclick=function(){ h1.style.display=\"block\"; h2.style.display=\"none\"; h3.style.display=\"none\"; } b2.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"block\"; h3.style.display=\"none\"; } b3.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"none\"; h3.style.display=\"block\"; } . $('h3').hide(); $('.h1').show(); $('.b1').click(function () { $('.h1').show(); $('.h2').hide(); $('.h3').hide(); }) $('.b2').click(function () { $('.h1').hide(); $('.h2').show(); $('.h3').hide(); }) $('.b3').click(function () { $('.h1').hide(); $('.h2').hide(); $('.h3').show(); }) . ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#2-%EC%A0%95%EB%A7%90-%EC%89%AC%EC%9A%B4-%ED%83%AD",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#2-정말-쉬운-탭"
-  },"79": {
+  },"83": {
     "doc": "04-탭UI(인덱스활용)",
     "title": "04-탭UI(인덱스활용)",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/"
-  },"80": {
+  },"84": {
     "doc": "04-크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | .height() | 높이 | . | .innerHeight() | 요소의 padding을 포함한 높이 | . | .outerHeight() | 요소의 border, padding 포함한 높이 | . | .outerHeight(true) | 요소의 margin, border, padding 포함한 높이 | . ",
     "url": "/book01/docs/jQuery/04/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/jQuery/04/#01-요소-크기-알아내기"
-  },"81": {
+  },"85": {
     "doc": "04-크기알아내기",
     "title": "04-크기알아내기",
     "content": " ",
     "url": "/book01/docs/jQuery/04/",
     "relUrl": "/docs/jQuery/04/"
-  },"82": {
+  },"86": {
     "doc": "05-include",
     "title": "01 Include",
     "content": "공통으로 쓰는 파일을 외부에 불러와서 쓸수 있다. html 문서의 header, footer 같은 반복되는 영역을 외부에 저장 해 놓고 불러와서 사용하는 것 . 01-1 문서분리 . | functions.php -&gt; 다른이름으로 저장 -&gt; home.php | 표시된 부분을 반복영역으로 간주하고 진행한다 . | . | 표시된 부분의 코드를 잘라낸다 . | . | vscode 에 inc 폴더를 생성하고 하위에 header.php 를 만든다. | | . | 잘라낸 코드를 header.php 에 붙여넣는다. | | 편집완료스샷 | | . | . 01-2 변수설정 . | header.php 수정 . | 삽입한 페이지의 제목을 출력할수 있도록 title을 변수처리 | . | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;&lt;?= $title; ?&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;&lt;?= $title; ?&gt;&lt;/h1&gt; . 01-3 header . | home.php 수정 | . &lt;?php $title='home'; include('inc/header.php'); ?&gt; ... | ` $title=’home’; -&gt; inc/header.php`에 전달할 title 변수값 | include('inc/header.php'); -&gt; include 함수는 삽입할 파일의 경로를 작성하면 된다. | home.php 를 실행하여 탭 제목과 h1의 변수값이 변경되었는지 확인한다 실행 . | 개발자도구에서 변수값이 적용된것을 확인한다. | . header.php 만 단독으로 실행할 경우 에러발생 home.php 의 $title 변수를 include 함수 이후에 초기화 할 경우 에러발생 . 01-4 응용 . title 변수에 값을 확인하여 없으면 에러대신 빈값 출력시키기 . &lt;?php if(!isset($title)){ $title=''; } &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; ... ?&gt; . | header.php 의 최상단에 작성 | isset 함수를 활용하여 변수의 상태를 확인한다. $title 변수가 준비되지 않았을경우 true 이므로 $title변수에 빈값을 저장한다. | 이제 header.php 만 실행해도 오류가 발생하지 않는다 | . 실행 . | 주석처리 후 계속 진행 | . 01-5 footer . | home.php 편집 | &lt;/body&gt;&lt;/html&gt;를 잘라낸다 | 문서의 하단에 아래의 코드를 작성한다. | ... &lt;?php include('inc/footer.php') ?&gt; . | inc/footer.php 를 생성후 잘라낸 코드를 붙여넣는다 . | 실행하여 결과를 확인 &lt;/body&gt;&lt;/html&gt;가 추가된것 확인 . | . ",
     "url": "/book01/docs/php/05-include/#01-include",
     "relUrl": "/docs/php/05-include/#01-include"
-  },"83": {
+  },"87": {
     "doc": "05-include",
     "title": "02 Require",
     "content": "함수를 include 해보자 . 02-1 . | inc/functions.php 생성 | home.php의 함수의 호출문만 functions.php는 함수의 실행문 만 으로 분리한다. | . home.php &lt;?php $title = '망고홈'; include('inc/header.php'); require('inc/functions.php'); ?&gt; &lt;pre&gt; function 함수이름 (매개변수1,매개변수2){ ...실행문 } 함수이름(); function func_add(){ } &lt;/pre&gt; &lt;h2&gt;SUM&lt;/h2&gt; &lt;?php echo sum(50, 20); ?&gt; &lt;hr&gt; &lt;?php $fruits = ['apple', 'mango', 'banana', 'orange']; output($fruits) ?&gt; &lt;hr&gt; &lt;?php $result = sum1(10, 20); echo $result; ?&gt; &lt;hr&gt; &lt;h2&gt;지역변수 전역변수&lt;/h2&gt; &lt;?php myfunc(); ?&gt; &lt;hr&gt; &lt;h2&gt;전역변수&lt;/h2&gt; &lt;?php $var2 = 20; myfunc2(); echo \"{$var2} 임&lt;br&gt;\"; ?&gt; &lt;hr&gt; &lt;h2&gt;정적변수&lt;/h2&gt; &lt;?php increment(); increment(); increment(); ?&gt; &lt;?php include('inc/footer.php') ?&gt; . function.php &lt;?php function sum($x, $y) { return $x + $y; } function output($value) { echo '&lt;pre&gt;'; print_r($value); echo '&lt;/pre&gt;'; } function sum1($x, $y) { $result = $x + $y; //지역변수(local variable) return $result; } function myfunc() { $var = 10; echo \"{$var}\"; } function myfunc2() { global $var2; //global echo \"$var2 임 &lt;br&gt;\"; //출력됨 } function increment() { static $count; $count++; echo \"$count&lt;br/&gt;\"; } . home.php에서 sum 함수의 인자를 변경해서 실행해본다 . 모든 함수가 오류없이 실행되는지 확인 . ",
     "url": "/book01/docs/php/05-include/#02-require",
     "relUrl": "/docs/php/05-include/#02-require"
-  },"84": {
+  },"88": {
     "doc": "05-include",
     "title": "03 Include VS Require",
     "content": "home.php 의 include 문장을 변경 . &lt;?php $title = '망고홈'; include('inc/headers.php'); //없는 경로 include('inc/functions.php'); //include로 수정 ?&gt; . 오류출력 후 그대로 실행 . home.php 의 include 문장을 변경 . &lt;?php $title = '망고홈'; require('inc/headers.php'); require('inc/functions.php'); ?&gt; . 오류출력 실행안함 . Include : 단순히 구조를 반복할때 Require: 오류발생시 치명적인 상황일때 (데이터베이스와의 연동…) . ",
     "url": "/book01/docs/php/05-include/#03-include-vs-require",
     "relUrl": "/docs/php/05-include/#03-include-vs-require"
-  },"85": {
+  },"89": {
     "doc": "05-include",
     "title": "04 _once",
     "content": ". | include를 반복해보자 | . include('inc/header.php'); include('inc/header.php'); require('inc/header.php'); require('inc/header.php'); . | 두번씩 반복 적용된다. | . | _once 를 사용해보자 | . &lt;?php $title = '망고홈'; include('inc/header.php'); include_once('inc/header.php'); //once를 붙이면 한번만됨 require('inc/header.php'); require_once('inc/header.php'); //once를 붙이면 한번만됨 require_once('inc/functions.php'); ?&gt; . ",
     "url": "/book01/docs/php/05-include/#04-_once",
     "relUrl": "/docs/php/05-include/#04-_once"
-  },"86": {
+  },"90": {
     "doc": "05-include",
     "title": "05-include",
     "content": ". | 01 Include . | 01-1 문서분리 | 01-2 변수설정 | 01-3 header | 01-4 응용 | 01-5 footer | . | 02 Require . | 02-1 | . | 03 Include VS Require | 04 _once | . 🔗php 공식문서 . ",
     "url": "/book01/docs/php/05-include/",
     "relUrl": "/docs/php/05-include/"
-  },"87": {
+  },"91": {
     "doc": "05-fullPage",
     "title": "01 풀페이지",
     "content": "풀페이지 공식문서 . 파일다운로드 . ** id=\"fullpage 를 최상위 요소에 꼭 넣어야 한다 ** . | 3 버전 이후로 유료화 되었으므로 2버전 으로 추가한다. | . html . &lt;header&gt; &lt;nav&gt; &lt;ul&gt; &lt;li data-menuanchor=\"section1\"&gt;&lt;a href=\"#section1\"&gt;section1&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section2\"&gt;&lt;a href=\"#section2\"&gt;section2&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section3\"&gt;&lt;a href=\"#section3\"&gt;section3&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section4\"&gt;&lt;a href=\"#section4\"&gt;section4&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section5\"&gt;&lt;a href=\"#section5\"&gt;section5&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;/header&gt; &lt;main id=\"fullpage\"&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 1&lt;/h2&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 01&lt;/h3&gt; &lt;/div&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 02&lt;/h3&gt; &lt;/div&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 03&lt;/h3&gt; &lt;/div&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 3&lt;/h2&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 4&lt;/h2&gt; &lt;/section&gt; &lt;footer class=\"section fp-auto-height\"&gt; &lt;h2&gt;footer&lt;/h2&gt; &lt;/footer&gt; &lt;/main&gt; . script . $(function () { $(\"#fullpage\").fullpage({ //options here anchors: [\"section1\", \"section2\", \"section3\", \"section4\", \"section5\"],//앵커 navigation: true, // 네비게이션 navigationPosition: \"right\", //네비게이션 위치 sectionsColor: [\"#ccc\", \"#bbb\", \"#ddd\", \"#eee\", \"#fff\"],//섹션색상 afterLoad: function (anchorLink, index) { // 섹션이동후 실행 콜백함수 console.log(\"현재 섹션 번호는 \" + index); // if(index == 5){ // alert('마지막입니다.'); // } }, afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { //슬라이드 실행후 콜백함수 console.log(\"현재 슬라이드 번호는\" + slideIndex); }, }); }); . ",
     "url": "/book01/docs/jQuery/05/#01-%ED%92%80%ED%8E%98%EC%9D%B4%EC%A7%80",
     "relUrl": "/docs/jQuery/05/#01-풀페이지"
-  },"88": {
+  },"92": {
     "doc": "05-fullPage",
     "title": "05-fullPage",
     "content": ". ",
     "url": "/book01/docs/jQuery/05/",
     "relUrl": "/docs/jQuery/05/"
-  },"89": {
+  },"93": {
     "doc": "06-form",
     "title": "01 form.php",
     "content": "이번 예제에서는 데이터가 어떤 방식으로 전송이 되는지 흐름을 파악하도록 한다. 데이터조작은 추후 진행한다. 간단한 회원가입 입력 폼을 제작해보자. 01-1 form.php . | form.php 문서 생성후 코드 작성 | . &lt;?php $title='login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; . | . | form.php 작성 . | . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; /* action=\"서버주소\" method=\"전송방법 \"*/ &lt;form action=\"request.php\" method=\"get\"&gt; &lt;p&gt; &lt;label for=\"userName\"&gt;Name&lt;/label&gt; /* type=\"데이터형식\" name=\"필드명\" id=\"아이디\" */ &lt;input type=\"text\" name=\"userName\" id=\"userName\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"userEmail\"&gt;Email&lt;/label&gt; &lt;input type=\"email\" name=\"userEmail\" id=\"userEmail\"&gt; &lt;/p&gt; &lt;p&gt; &lt;input type=\"submit\" value=\"로그인\"&gt; &lt;/p&gt; . 실행화면 . 01-2 request.php . $_GET[userName] [super globals variable : 모든 범위에서 사용 가능한 내장 변수] . HTTP 프로토콜의 GET 방식을 통해 사용자가 서버에 요청하였을 때 URL을 통해 전송된 데이터를 각각의 원소로 가지는 배열 변수. &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;?php $name = $_GET[\"userName\"]; //form.php의 name=\"userName\" 속성의 값을 전달받는다. $email = $_GET[\"userEmail\"];//form.php의 name=\"userEmail\" 속성의 값을 전달받는다. echo $name . '님의 입력한 이메일은' . $email . '입니다'; ?&gt; &lt;?php include('inc/footer.php'); ?&gt; . | login.php 에 회원정보 입력후 로그인 클릭 | request.php의 주소표시줄과 화면출력 내용 확인 | . http://localhost/request.php?userName=+%EA%B9%80%EB%A7%9D%EA%B3%A0&amp;userEmail=asdf%40gflgi.com . 🔑 get 방식은 사용자가 입력한 정보가 주소표시줄에 노출됨 . 01-3 post . post 방식으로 바꿔보자 . form.php . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;!-- &lt;form action=\"request.php\" method=\"get\"&gt; --&gt; &lt;form action=\"request.php\" method=\"post\"&gt; &lt;p&gt; &lt;label for=\"userName\"&gt;Name&lt;/label&gt; &lt;input type=\"text\" name=\"userName\" id=\"userName\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"userEmail\"&gt;Email&lt;/label&gt; &lt;input type=\"email\" name=\"userEmail\" id=\"userEmail\"&gt; &lt;/p&gt; &lt;p&gt; &lt;input type=\"submit\" value=\"로그인\"&gt; &lt;/p&gt; &lt;/form&gt; . request.php . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;?php //$name = $_GET[\"userName\"]; //$email = $_GET[\"userEmail\"]; $name = $_POST[\"userName\"]; $email = $_POST[\"userEmail\"]; echo $name . '님의 입력한 이메일은' . $email . '입니다'; ?&gt; &lt;?php include('inc/footer.php'); ?&gt; . 실행 . 🔑post방식은 주소표시줄에 노출되지 않음 . ",
     "url": "/book01/docs/php/06-form/#01-formphp",
     "relUrl": "/docs/php/06-form/#01-formphp"
-  },"90": {
+  },"94": {
     "doc": "06-form",
     "title": "02 정리",
     "content": "Http 프로토콜을 사용하여 get 과 post 방식으로 데이터의 요청/응답을 작성해보았다. 두가지 방식을 정리해보자 . | GET 요청은 캐시( Cache : 자주 접근하는 데이터를 복사 해놓는 임시 저장소)가 가능하다. | GET 요청은 브라우저 히스토리에 남는다. | GET 요청은 길이 제한이 있다. | GET 요청은 중요한 정보를 다루면 안된다. | . | POST 요청은 캐시되지 않는다. | POST 요청은 브라우저 히스토리에 남지 않는다. | POST 요청은 데이터 길이에 제한이 없다. | . 🔑CTRL + F5 를 누르면 캐시가 삭제된다 . ",
     "url": "/book01/docs/php/06-form/#02-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/php/06-form/#02-정리"
-  },"91": {
+  },"95": {
     "doc": "06-form",
     "title": "06-form",
     "content": ". | 01 form.php . | 01-1 form.php | 01-2 request.php | 01-3 post | . | 02 정리 | . 🔗php GET 🔗php SuperGlobals . ",
     "url": "/book01/docs/php/06-form/",
     "relUrl": "/docs/php/06-form/"
-  },"92": {
+  },"96": {
     "doc": "06-BXslider",
     "title": "01 BXslider",
     "content": "BXslider 공식문서 . 가장 유명한 jQuery 캐로셀 플러그인 . 파일다운로드 . 기본슬라이드 . 좌우컨트롤 . 멀티플 . 옵션활용 . 애니메이션 활용 . 동영상 . &lt;div class=\"slideWrap\"&gt; &lt;div class=\"video_slides\"&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; .slideWrap{ max-width: 960px; width:90%; margin:2em auto; position: relative; } . $('.video_slides').bxSlider({ video: true, onSliderLoad:function(currentIndex){ $('.video_slides div').eq(currentIndex + 1).find('video').get(0).play(); }, onSlideAfter:function($slideElement){ $slideElement.siblings().find('video').get(0).pause(); $slideElement.find('video').get(0).play(); } }); . ",
     "url": "/book01/docs/jQuery/06/#01-bxslider",
     "relUrl": "/docs/jQuery/06/#01-bxslider"
-  },"93": {
+  },"97": {
     "doc": "06-BXslider",
     "title": "06-BXslider",
     "content": ". ",
     "url": "/book01/docs/jQuery/06/",
     "relUrl": "/docs/jQuery/06/"
-  },"94": {
+  },"98": {
     "doc": "07-form-validator",
     "title": "01 form.php",
     "content": "검색창에 php를 검색해보자 주소표시줄에 search?q 라는 낱말 뒤에 우리가 입력한 단어가 보인다. q는 Query 의 표시로 Query란 (질의문:저장되어져 있는 정보를 골라내기 위한 질문) 이다 . 위의 그림은 http GET 방식으로 데이터를 요청한 예시이다. 직접 만들어보자 . 01-1 . | 07/get-input.php 생성 | . &lt;?php ?&gt; &lt;h1&gt;get input&lt;/h1&gt; . 실행 . | 브라우저 주소창에 쿼리문과 파라미터를 작성후 엔터를 쳐본다 당연히 데이터가 없으니 아무것도 안나올 것이다. | . | php 작성 | . &lt;?php $product_id=$_GET['productid']; ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; . 실행 . get 방식의 요청으로 들어온 매개변수 값을 취득하여 화면에 출력 . 01-2 . 매개변수 2개 . &lt;?php $product = $_GET['product']; //superGlobals php문서 어디서나 사용가능 $limit = $_GET['limit']; //limit 추가 ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt;-👍Limit &lt;?= $limit;?&gt; //출력 &lt;/p&gt; . 실행 . 🔑파라미터를 연결할때는 &amp; 를 작성 . | 매개변수 두개의 값이 잘 전달된것을 확인 | . ",
     "url": "/book01/docs/php/07-validator/#01-formphp",
     "relUrl": "/docs/php/07-validator/#01-formphp"
-  },"95": {
+  },"99": {
     "doc": "07-form-validator",
     "title": "02 filter",
     "content": "사용자가 악의적으로 주소창을 통해 위험한 데이터를 전송할수 있다. filter 를 사용하여 데이터를 골라내자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); if($product == false || $limit == false){ die();//멈춰 } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; -👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . | 매개변수를 글자로 보내면 실행안됨 | . | 숫자로 보내면 실행됨 | . 02-1 . 필터에 해당되지 않을경우 기본값을 출력하자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); //if($product == false || $limit == false){ // die();//멈춰 //} if($product == false){ //변수 product 가 false 이면 $product = 10; // product에 10할당 } if($limit == false){ $limit = 10; } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; - 👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . 🔑 위의 코드 처럼 작성하면 빈 화면이 출력되지 않겠죠? . ",
     "url": "/book01/docs/php/07-validator/#02-filter",
     "relUrl": "/docs/php/07-validator/#02-filter"
-  },"96": {
+  },"100": {
     "doc": "07-form-validator",
     "title": "07-form-validator",
     "content": ". | 01 form.php . | 01-1 | 01-2 | . | 02 filter . | 02-1 | . | . 🔗php filter . ",
     "url": "/book01/docs/php/07-validator/",
     "relUrl": "/docs/php/07-validator/"
-  },"97": {
+  },"101": {
     "doc": "08-Cookie,Session",
     "title": "00 쿠키와 세션",
     "content": ". | 쿠키:클라이언트(브라우저) 로컬에 저장 되는 키와 값이 들어있는 데이터 파일 . | 쿠키의 구성 . | 이름 : 쿠키를 구별하는데 사용된다. | 값 : 쿠키의 이름과 mapping된 값이다. | 유효시간 : 쿠키의 유지시간이다. | 도메인 : 쿠키를 전송할 도메인 정보이다. | 경로 : 쿠키를 전송할 요청 경로이다. | . | . | 세션: 사용자 정보 파일을 서버에 저장 . | session은 cookie를 사용해서 session ID 만을 저장 | . | cache : 이미지나 CSS, JS 파일등을 브라우저나 서버의 앞 단에 저장해놓고 사용하는 것 | . ",
     "url": "/book01/docs/php/08-cookie/#00-%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98",
     "relUrl": "/docs/php/08-cookie/#00-쿠키와-세션"
-  },"98": {
+  },"102": {
     "doc": "08-Cookie,Session",
     "title": "01 Cookie 생성",
     "content": "xmapp/htdoc/cookie/cookie_test.php 파일생성 . | php 에 접속하여 cookie 를 검색해보자 | setcookie 클릭 | 설명을 본다. | | 첫번째 값으로는 문자로 이름, 두번째 값으로 문자로 값, 세번째로는 배열로 옵션을 작성한다. | name(이름),value(값),expires_or_options(만기일),path(경로) 을 작성해야한다. | . | cookie_test.php 파일작성 $_COOKIE $_COOKIE 는 쿠키의 이름을 불러서 값을 호출할수 있는 superGlobals 입니다. | . &lt;?php $cookieName = \"city\"; //쿠키의 이름 $cookieValue = \"seoul\"; //쿠키의 값 //setcookie 함수에 인자전달() setcookie($cookieName, $cookieValue, time() + 60, \"/\");//time() + 600 만료시간: 현재부터 600초 이후 만료 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;쿠키테스트&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;새로고침(f5) 하면 생성된 쿠키를 확인할 수 있습니다.&lt;/p&gt; &lt;?php if(!isset($_COOKIE[$cookieName])){ //$cookieName 변수가 세팅되지 않으면 true echo \"{$cookieName}라는 이름의 쿠키는 생성이 되지 않았습니다.\"; }else{ echo \"{$cookieName}라는 이름의 쿠키는 생성되었고, 값은 \".$_COOKIE[$cookieName].\"입니다.\"; } ?&gt; &lt;/body&gt; &lt;/html&gt; . time() + 60 에 지정한 60초가 지나면 쿠키가 생성되고 브라우저 새로고침하면 메시지는 else 문의 내용이 출력된다 . 실행화면 — . ",
     "url": "/book01/docs/php/08-cookie/#01-cookie-%EC%83%9D%EC%84%B1",
     "relUrl": "/docs/php/08-cookie/#01-cookie-생성"
-  },"99": {
+  },"103": {
     "doc": "08-Cookie,Session",
     "title": "02 Cookie 삭제",
     "content": "xmapp/htdoc/cookie/cookie_del.php 파일생성 . 🔑쿠키의 삭제는 만기일을 현재보다 이전으로 설정하면 된다 . &lt;?php $cookieName = \"city\"; $cookieValue = \"seoul\"; setcookie($cookieName, $cookieValue, time() - 60, \"/\"); ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;title&gt;쿠키삭제&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo $cookieName . '의 쿠키가 삭제 되었습니다.'; echo '생성된 값은 '.$_COOKIE[$cookieName] . '입니다.'; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . 쿠키가 생성되자마자 삭제되었으므로 삭제 메시지와 함께 오류출력 . ",
     "url": "/book01/docs/php/08-cookie/#02-cookie-%EC%82%AD%EC%A0%9C",
     "relUrl": "/docs/php/08-cookie/#02-cookie-삭제"
-  },"100": {
+  },"104": {
     "doc": "08-Cookie,Session",
     "title": "03 Session",
     "content": "브라우저가 해당 사이트에서 벗어나면 세션종료 사이트 접속후 30분이상 상호작용이 없으면 세션종료 . {: .new }[#1] . htdoc/session/session.php 생성 . 🔑 세션은 사용자의 정보를 서버에 저장하는것 . &lt;?php session_start(); //세션시작 $_SESSION[\"city\"]= \"seoul\"; $_SESSION[\"gu\"] = \"gangnam\"; ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo \"세션 변수가 등록되었습니다.\"; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . htdoc/session/session_set.php 생성 . &lt;?php session_start();//세션시작 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php if(!isset($_SESSION[\"city\"])){ //city이름의 세션이 없으면 true echo \"해당 세션변수가 등록되지 않았습니다.\"; }else{ echo \"나의 도시는 {$_SESSION['city']}.입니다.&lt;br/&gt;\"; echo \"{$_SESSION['gu']}구에 있습니다&lt;br/&gt;\"; print_r($_SESSION);//세션의 모든 정보를 보여줘(모든 세션의 정보를 연관배열형태로 출력) } ?&gt; &lt;/body&gt; &lt;/html&gt; . session.php에서 등록한 세션값이 저장되어 출력되는것을 볼수있다. 03-1 session 찾아보기 . | xmapp 설치폴더 에서 php.ini 를 찾아본다 | xmapp/php/php.ini-development 파일을 vscode로 연다 | xmapp/php/php.ini 로 저장한다. | ctrl+F 를 눌러 session.save_path 를 검색한다. | . | 우리가 사용중인 프로그램이 포터블 이므로 C드라이브로 가야한다 | C:\\Users\\Administrator\\AppData\\Local\\Temp\\ 폴더로 이동한다. | . | 해당 폴더에서 파일명이 sess_~ 로 시작하는 파일을 vscode로 열어본다 - | 세션정보를 확인할수 있다 | . ",
     "url": "/book01/docs/php/08-cookie/#03-session",
     "relUrl": "/docs/php/08-cookie/#03-session"
-  },"101": {
+  },"105": {
     "doc": "08-Cookie,Session",
     "title": "04 seisson 지우기",
     "content": "htdoc/session/session_del.php 생성 . 세션은 두가지 방법으로 지울수 있다. &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session delete&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php session_unset(); //모든 세션 변수의 등록을 해지한다. session_destroy(); //세션 아이디 삭제 echo \"모든 세션 변수가 등록 해지되었고, 세션 아이디도 삭제됨\"; print_r($_SESSION); ?&gt; &lt;/body&gt; &lt;/html&gt; . ",
     "url": "/book01/docs/php/08-cookie/#04-seisson-%EC%A7%80%EC%9A%B0%EA%B8%B0",
     "relUrl": "/docs/php/08-cookie/#04-seisson-지우기"
-  },"102": {
+  },"106": {
     "doc": "08-Cookie,Session",
     "title": "08-Cookie,Session",
     "content": ". | 00 쿠키와 세션 | 01 Cookie 생성 | 02 Cookie 삭제 | 03 Session . | 03-1 session 찾아보기 | . | 04 seisson 지우기 | . 🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/08-cookie/",
     "relUrl": "/docs/php/08-cookie/"
-  },"103": {
+  },"107": {
     "doc": "09-board",
     "title": "관련링크",
     "content": "🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/09-board/#%EA%B4%80%EB%A0%A8%EB%A7%81%ED%81%AC",
     "relUrl": "/docs/php/09-board/#관련링크"
-  },"104": {
+  },"108": {
     "doc": "09-board",
     "title": "01 SQL 을 활용한 게시판을 만들어보자",
     "content": "😺 SQL 이란? . 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어 . 😺 게시판구현을 위해 알아야 할것 . create, read, update, delete (생성), (조회),(수정), (삭제) . 😺 필요한 개발환경 서버를 설치 하고 데이터 베이스를 생성 할 테이블 생성 (xmapp) (mango_board) . 01-1:테이블생성 . | xmapp control-panel열기 . | . | | . ",
     "url": "/book01/docs/php/09-board/#01-sql-%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/php/09-board/#01-sql-을-활용한-게시판을-만들어보자"
-  },"105": {
+  },"109": {
     "doc": "09-board",
     "title": "09-board",
     "content": ". | 관련링크 | 01 SQL 을 활용한 게시판을 만들어보자 . | 01-1:테이블생성 | . | . ",
     "url": "/book01/docs/php/09-board/",
     "relUrl": "/docs/php/09-board/"
-  },"106": {
-    "doc": "01-Dooosan-시작",
-    "title": "프로젝트 - 기업사이트",
-    "content": "두산클론 . 230113(금) 수업 . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0\" /&gt; &lt;link rel=\"stylesheet\" href=\"css/reset.css\"&gt; &lt;link rel=\"stylesheet\" href=\"css/style.css\"&gt; &lt;link rel=\"stylesheet\" href=\"css/media.css\"&gt; &lt;style&gt; #layer { display: block; } #layer { display: none; } &lt;/style&gt; &lt;script src=\"https://code.jquery.com/jquery-1.12.0.min.js\"&gt;&lt;/script&gt; &lt;script src=\"js/script.js\"&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;header id=\"header\"&gt; &lt;div class=\"header_cover cf\"&gt; &lt;h1 class=\"logo fl\"&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/logo.png\" alt=\"두산그룹 로고\" /&gt;&lt;/a&gt; &lt;/h1&gt; &lt;a href=\"#\" class=\"mo\"&gt;&lt;span class=\"material-symbols-outlined\"&gt; menu &lt;/span&gt;&lt;/a&gt; &lt;ul class=\"nav fl\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;회사소개 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;투자정보 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;미디어센터 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class=\"mo_menu\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;회사소개 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;목표와 핵심가치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;경영전략&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;리더쉽&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;기술과 혁신&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;계열사&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개요&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;윤리경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;상생협력&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;EHS&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회공헌&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;투자정보 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;IR자료&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;거버넌스&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;보고서&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;공시&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;전자공고&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;미디어센터 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;캠페인 &amp;amp; PR영상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;메뉴얼 브로슈어&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용 &lt;div class=\"line\"&gt;&lt;/div&gt;&lt;/a&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 인재,두산인&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;커리어두산&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- //.mo_menu --&gt; &lt;div class=\"pc full_menu\"&gt; &lt;div class=\"full_cover\"&gt; &lt;ul&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;목표와 핵심가치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;경영전략&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;리더쉽&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;기술과 혁신&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;계열사&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개요&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;윤리경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;상생협력&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;EHS&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회공헌&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;IR자료&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;거버넌스&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;보고서&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;공시&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;전자공고&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;캠페인 &amp;amp; PR영상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;메뉴얼 브로슈어&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;li&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 인재,두산인&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;커리어두산&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt;&lt;!-- //dep1 --&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;ul class=\"gnb fr\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;한국어&lt;/a&gt;&lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/ico_search.png\" alt=\"\" class=\"leave\"&gt;&lt;img src=\"./images/ico_search_on.png\" alt=\"\" class=\"hover\"&gt;&lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt;&lt;img src=\"./images/btn_gnb_right_menu.png\" alt=\"\" class=\"leave\" /&gt;&lt;img src=\"./images/btn_gnb_right_menu_ov.png\" alt=\"\" class=\"hover\" /&gt;&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/header&gt; &lt;section id=\"main_slide\"&gt; &lt;!-- .slide_cover&gt;ul&gt;li&gt;a&gt;img+p --&gt; &lt;div class=\"slide_cover\"&gt; &lt;ul&gt; &lt;!-- 한장의 슬라이드그룹 --&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main1.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main1_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box1\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main2.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main2_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box2\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/main3.jpg\" alt=\"\" class=\"pc\"&gt;&lt;img src=\"./images/main3_mo.jpg\" alt=\"\" class=\"mo\"&gt; &lt;h2 class=\"img_logo\"&gt;두산은 지금&lt;br&gt;내일을 준비합니다&lt;/h2&gt; &lt;span class=\"box box3\"&gt;&lt;/span&gt; &lt;p class=\"img_text\"&gt;세계 곳곳에서 인류의 더 나은 삶을 위해 두산은 지금 미래를 준비합니다.&lt;/p&gt; &lt;span class=\"white_box\"&gt;&lt;/span&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt;&lt;!-- //.slide_cover --&gt; &lt;div class=\"slide_btn\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color on\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;&lt;span class=\"color\"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div class=\"reset\"&gt; &lt;div class=\"pause_btn off\"&gt;&lt;img src=\"./images/ico_kv_pause.png\" alt=\"\"&gt;&lt;/div&gt; &lt;div class=\"start_btn on\"&gt;&lt;img src=\"./images/ico_kv_play.png\" alt=\"\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=\"main_cursor cf\"&gt; &lt;div class=\"cursor_left\"&gt;&lt;/div&gt; &lt;div class=\"cursor_right\"&gt;&lt;/div&gt; &lt;div class=\"cursor\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/section&gt; &lt;!-- //#main_slide --&gt; &lt;section id=\"content\"&gt; &lt;/section&gt; &lt;!-- //#content --&gt; &lt;section id=\"media_center\"&gt;&lt;/section&gt; &lt;!-- //#media_center --&gt; &lt;section id=\"find\"&gt;&lt;/section&gt; &lt;!-- //#find --&gt; &lt;footer id=\"footer\"&gt;&lt;/footer&gt; &lt;/body&gt; &lt;/html&gt; . css . @charset \"utf-8\"; .cf:after { content: \"\"; display: block; clear: both; } /* layout */ [class*=\"_cover\"] { width: 100%; max-width: 1400px; margin: auto; } /* link 스타일 정의 */ a { font-size: 1.6rem; } /* layer popup */ #layer { position: fixed; width: 500px; height: 500px; background: #ccc; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 999999999; font-size: 2.4em; padding: 3em; box-sizing: border-box; line-height: 2; top: 50px; left: 150px; } #layer button { position: absolute; cursor: pointer; padding: 10px 20px; right: 0; top: 0; background-color: #222; color: #fff; } /* #header */ #header { width: 100%; height: 90px; position: relative; font-size: 1.3rem; background: #fff; } #header .logo { width: 10%; height: 100%; } /* 140px, 90px */ .logo a { display: block; width: 100%; height: 100%; } .logo a img { display: block; width: 80%; margin: auto; padding-top: 17px; } #header .nav { width: 50%; margin: 0 10%; display: flex; } .nav li { width: 20%; text-align: center; line-height: 90px; } .nav a { display: block; width: 100%; height: 100%; color: #000; font-weight: 700; position: relative; } .nav .line { width: 0%; height: 2px; background: #1634db; position: absolute; left: 0; bottom: 0; transition: width 0.8s; } .nav a:hover .line { width: 100%; } /* .mo_menu */ #header .mo { float: right; padding-right: 20px; display: none; line-height: 90px; } .mo span { font-size: 3rem; } .mo_menu { position: absolute; width: 100%; background-color: white; left: 0; top: 100%; z-index: 99999; display: none; } .mo_menu ul { display: flex; flex-direction: column; width: 100%; max-width: 50%; margin: auto; } /* .pc.full_menu */ #header .full_menu { position: absolute; left: 0; width: 100%; height: 450px; border-top: 1px solid #c1c1c1; box-sizing: border-box; background-color: #fff; top: 100%; z-index: 999999999; /* display: none; */ } .full_menu .full_cover &gt; ul { display: flex; width: 60%; height: 100%; margin-left: 20%; } .full_menu .full_cover &gt; ul &gt; li { width: 20%; max-width: 140px; height: 450px; border-left: 1px solid #c1c1c1; box-sizing: border-box; } .full_menu .full_cover &gt; ul &gt; li:last-child { border-right: 1px solid #c1c1c1; } .full_menu .full_cover &gt; ul ul { width: 100%; } .full_menu .full_cover &gt; ul ul li { width: 100%; line-height: 50px; text-align: center; } .full_menu .full_cover &gt; ul ul li a { position: relative; color: #000; } .full_menu .full_cover &gt; ul ul li a:after { content: \"\"; position: absolute; background-color: #1634db; transition: all 0.5s; left: 0; width: 0; height: 1px; bottom: -5px; } .full_menu .full_cover &gt; ul ul li a:hover:after { width: 100%; } /* gnb */ #header .gnb { width: 20%; display: flex; } .gnb li { font-size: 1.4rem; width: 100%; } .gnb li:nth-child(1) a { background: url(../images/ico_lang.png) no-repeat 0 50% /30%; } .gnb li a { display: block; width: 100%; height: 100%; line-height: 90px; text-align: center; color: #000; } .gnb li a img { width: 40px; vertical-align: middle; } .gnb li a img.leave { display: inline-block; } .gnb li a img.hover { display: none; } .gnb li a:hover img.leave { display: none; } .gnb li a:hover img.hover { display: inline-block; transform: scale(1.1); } /* #main_slide */ #main_slide { position: relative; width: 100%; height: 800px; overflow: hidden; } #main_slide &gt; .slide_cover { position: relative; width: 90%; height: 100%; max-width: none; } #main_slide &gt; .slide_cover ul { position: relative; width: 100%; height: 100%; } /*90%*/ #main_slide &gt; .slide_cover ul li { position: absolute; width: 100%; height: 100%; overflow: hidden; } #main_slide &gt; .slide_cover ul li.on { z-index: 6; } #main_slide &gt; .slide_cover ul li a { position: relative; display: block; width: 100%; height: 100%; } #main_slide &gt; .slide_cover ul li a h2.img_logo { position: absolute; top: 15%; left: 10%; color: #fff; font-size: 6rem; width: 480px; word-break: keep-all; opacity: 0; transition: all 2s; letter-spacing: -2.5px; } #main_slide &gt; .slide_cover ul li a h2.img_logo.on { top: 10%; opacity: 1; } #main_slide &gt; .slide_cover ul li a p.img_text { position: absolute; bottom: 0; right: 10%; color: #fff; font-size: 2.4rem; width: 400px; opacity: 0; transition: all 2s; } #main_slide &gt; .slide_cover ul li a p.img_text.on { bottom: 15%; opacity: 1; } #main_slide &gt; .slide_cover ul li a .box { position: absolute; bottom: 10%; left: 55%; width: 0; height: 250px; transition: all 1.5s; } #main_slide &gt; .slide_cover ul li a .box.box1.on { background-color: #0d28bd; } #main_slide &gt; .slide_cover ul li a .box.box2.on { background-color: #0088ce; } #main_slide &gt; .slide_cover ul li a .box.box3.on { background-color: #00ad83; } #main_slide &gt; .slide_cover ul li a .box.on { width: 250px; animation: rotate 15s infinite linear; } @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(45deg); } } #main_slide &gt; .slide_cover ul li a .white_box { position: absolute; top: 0; left: -100%; width: 100%; height: 100%; z-index: 7; background-color: #fff; } .slide_cover ul li a img { display: block; width: 100%; height: auto; transition: all 5s; } .slide_cover ul li a img.mo { display: none; } .slide_cover ul li a img.on { transform: scale(1.1); } /* .slide_btn */ .slide_btn { position: absolute; bottom: 100px; left: 200px; width: 300px; height: 10px; z-index: 11; } .slide_btn ul { display: flex; } .slide_btn ul li { position: relative; width: 90px; height: 10px; margin-left: 15px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; } .slide_btn ul li:nth-child(1) { margin-left: 0; } .slide_btn ul li a { position: relative; display: block; width: 100%; } .slide_btn ul li a .color { position: absolute; top: 0; left: 0; z-index: 2; width: 0%; height: 10px; background-color: rgba(255, 255, 255, 0.8); } .slide_btn ul li a .color.on { animation: width 7s linear forwards; } @keyframes width { 0% { width: 0; } 100% { width: 100%; } } .slide_btn .reset { position: absolute; top: 50%; right: -40px; transform: translateY(-50%); width: 30px; height: 30px; cursor: pointer; } .slide_btn .reset .off { display: block; } .slide_btn .reset .on { display: none; } .slide_btn .reset img { display: block; width: 100%; height: auto; } /* .main_cursor */ .main_cursor { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 9; } .main_cursor .cursor { position: absolute; top: 0; left: 0; transform: translate(-50%, -50%); width: 60px; height: 60px; background: no-repeat center/contain; pointer-events: none; } .main_cursor .cursor:before{ content:''; display:block; position: absolute; top:0; left:0; width:60px; height:60px; background-image: url(\"../images/main_cursor_l.svg\"); opacity: 0; } .main_cursor .cursor:after{ content:''; display:block; position: absolute; top:0; left:0; width:60px; height:60px; background-image: url(\"../images/main_cursor_r.svg\"); opacity: 0; } .main_cursor .cursor_left{ position: absolute; top:0; left:0; width:50%; height: 100%; cursor: none; cursor: default; } .main_cursor .cursor_right{ position: absolute; top:0; right:0; width:50%; height: 100%; cursor: none; cursor: default; } .main_cursor .cursor_left:hover ~ .cursor::before{opacity:1;} .main_cursor .cursor_left:hover ~ .cursor::after{opacity:0;} .main_cursor .cursor_right:hover ~ .cursor::before{opacity:0;} .main_cursor .cursor_right:hover ~ .cursor::after{opacity:1;} . jQuery . $(function () { gnb(); function gnb() { $(\".full_menu, .nav li\").mouseover(function () { $(\".full_menu\").stop().slideDown(600); }); $(\".full_menu, .nav li\").mouseleave(function () { $(\".full_menu\").stop().slideUp(600); }); $(\".full_cover&gt;ul&gt;li\").mouseover(function () { var i = $(this).index(); $(\".nav li\").eq(i).find(\".line\").css(\"width\", \"100%\"); }); $(\".full_cover&gt;ul&gt;li\").mouseleave(function () { var i = $(this).index(); $(\".nav li\").eq(i).find(\".line\").css(\"width\", \"0%\"); }); $(\".nav li\").mouseover(function () { $(this).find(\".line\").css(\"width\", \"100%\"); }); $(\".nav li\").mouseleave(function () { $(this).find(\".line\").css(\"width\", \"0%\"); }); $(\"#header .mo\").click(function () { $(\".mo_menu\").stop().slideToggle(\"fast\"); $(\"#header .mo\").css(\"color\", \"red\"); }); } var i = 0; //current var k = null; //prev var n = null; //next var mainInterval; //setIntervalID var speed = 2000; //반복시간 /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { i++; k = i - 1; if (i == 3) { i = 0; } slide(); }, speed); } function slide() { $(\".slide_btn ul li\").off(\"click\"); $(\".cursor_left, .cursor_right\").off(\"click\"); $(\".reset\").off(\"click\", reset); clearInterval(mainInterval); $(\".slide_cover ul li\") .find(\".white_box\") .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { $(\".white_box\").stop().animate({ left: \"100%\" }, 1000); $(\".slide_cover ul li\").eq(i).addClass(\"on\"); $(\".slide_cover ul li\").eq(k).removeClass(\"on\"); /* 추가 */ $(\".color, .img_logo, .img_text, .box\").removeClass(\"on\"); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".img_logo\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".img_text\").addClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\".box\").addClass(\"on\"); $(\".slide_cover ul li a img\").removeClass(\"on\"); $(\".slide_cover ul li\").eq(i).find(\"a img\").addClass(\"on\"); }); $(\".slide_cover ul li\") .eq(k) .animate({ left: 0 }, 2000, function () { setTimeout(function () { //trigger $(\".slide_cover ul li\").on(\"click\", click_slide); $(\".cursor_left\").on(\"click\", left_click); $(\".cursor_right\").on(\"click\", right_click); var pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); $(\".color\").removeClass(\"on\"); } else { timer(); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); } }, 1000); }); n = i; } /** * click_slide * pager 함수 * * **/ function click_slide() { i = $(this).index(); if (i == n) return; k = n; console.log(i, n, k); slide(); $(\".color\").removeClass(\"on\"); } /** * left_click * left 커서함수 * * **/ function left_click() { i--; if (i == -1) i = 2; if (i == n) return; k = n; slide(); $(\".color\").removeClass(\"on\"); } /** * right_click * right 커서함수 * * ***/ function right_click() { i++; if (i == 3) i = 0; if (i == n) return; k = n; slide(); $(\".color\").removeClass(\"on\"); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { var pause_css = $(\".pause_btn\").css(\"display\"); var start_css = $(\".start_btn\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); $(\".color\").removeClass(\"on\"); } else { timer(); $(\".slide_btn ul li\").eq(i).find(\".color\").addClass(\"on\"); } } /**이벤트 핸들러 */ $(\".reset\").click(function () { reset(); }); $(\".reset .pause_btn\").click(function () { $(\".pause_btn\").css(\"display\", \"none\"); $(\".start_btn\").css(\"display\", \"block\"); }); $(\".reset .start_btn\").click(function () { $(\".pause_btn\").css(\"display\", \"block\"); $(\".start_btn\").css(\"display\", \"none\"); }); $(\".slide_btn ul li\").on(\"click\", click_slide); $(\".cursor_left\").on(\"click\", left_click); $(\".cursor_right\").on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY; $(\".cursor\").css({ left: x, top: y, }); }); /*** * Resize * * */ $(window).resize(function () { var w_width = $(window).width(); var img_height = $(\".slide_cover ul li img.pc\").height(); var img_height_mo = $(\".slide_cover ul li img.mo\").height(); if (w_width &gt; 1330) { $(\"#main_slide .slide_cover\").height(img_height); } else { $(\"#main_slide .slide_cover\").height(img_height_mo); $(\".slide_cover ul li img.pc\").css(\"display\", \"none\"); $(\".slide_cover ul li img.mo\").css(\"display\", \"block\"); } }); $(window).trigger(\"resize\"); }); //jQuery . ",
-    "url": "/book01/docs/Projects/2023-01-06-corp/#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8---%EA%B8%B0%EC%97%85%EC%82%AC%EC%9D%B4%ED%8A%B8",
-    "relUrl": "/docs/Projects/2023-01-06-corp/#프로젝트---기업사이트"
-  },"107": {
-    "doc": "01-Dooosan-시작",
-    "title": "01-Dooosan-시작",
-    "content": ". ",
-    "url": "/book01/docs/Projects/2023-01-06-corp/",
-    "relUrl": "/docs/Projects/2023-01-06-corp/"
-  },"108": {
-    "doc": "03-Dooosan-반응형",
-    "title": "03-Dooosan-반응형",
-    "content": ". | HTML | . &lt;div id=\"content\"&gt; &lt;div class=\"content_cover\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"계열사\"&gt; &lt;img src=\"./images/ico_int_1.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_1_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"두산뉴스룸\"&gt; &lt;img src=\"./images/ico_int_2.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_2_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"브랜드 활약상\"&gt; &lt;img src=\"./images/ico_int_3.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_3_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"사업장 위치\"&gt; &lt;img src=\"./images/ico_int_4.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_4_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .content_cover --&gt; &lt;/div&gt; &lt;!-- #content --&gt; &lt;div id=\"media_center\"&gt; &lt;div class=\"media_cover\"&gt; &lt;h1 class=\"title\"&gt;미디어센터&lt;/h1&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/0dc4e114-18c5-4730-a6f5-b562cf92c806.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산인프라코어, 드론측량부터 장비 운용까지...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/7fe5a7e3-f03e-42bd-9ab6-952c0708aab0.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산중공업, 시노펙스와 손잡고 친환경 수처리&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/8cfd1b42-e65e-4f32-b7ad-0cbe695e741c.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산,'파워젠 인터내셔널 2019' 참가&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/18dfd093-6a9d-48f6-9da4-f9af62fcd702.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산밥캣, 미국 미네소타에 글로벌 협업센터 설립...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/47950c97-c3d7-45ff-be02-410a04d16d65.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산, 인도네이사 현지에서 단독으로'두산테크데스크'&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/be2914e1-6eb0-4041-a39b-7be3052ec239.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] (주)두산, 3개 은행과 함께 동반성장펀드 조성&lt;/p&gt; &lt;div class=\"arrow\"&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .media_cover --&gt; &lt;/div&gt; &lt;!-- #media_center --&gt; &lt;div id=\"find\"&gt; &lt;div class=\"find_cover cf\"&gt; &lt;div class=\"find_left fl\"&gt; &lt;h1 class=\"what_find\"&gt;무엇을 찾으시나요?&lt;/h1&gt; &lt;form action=\"#\" method=\"post\"&gt; &lt;input type=\"text\" name=\"search\" id=\"search\" value=\"\" placeholder=\"검색어를 입력하세요.\" /&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/btn_search_arrow_black.png\" alt=\"\" /&gt; &lt;/a&gt; &lt;/form&gt; &lt;/div&gt; &lt;div class=\"find_right fl\"&gt; &lt;div class=\"right_cover\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;CI&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업영역&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산연강재단&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;굴착기&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산인프라코어&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;인재상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용공고&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산 스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산모빌리티이노베이션&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .find_cover --&gt; &lt;/div&gt; &lt;!-- #find --&gt; &lt;div id=\"footer\"&gt; &lt;div class=\"footer_cover cf\"&gt; &lt;div class=\"foot_left\"&gt; &lt;h1 class=\"f_logo cf\"&gt; &lt;img src=\"./images/logo_gnb.png\" alt=\"\" /&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" class=\"on\" /&gt; &lt;span&gt;&amp;copy; 2019 (주)두산중공업&lt;/span&gt; &lt;/h1&gt; &lt;/div&gt; &lt;div class=\"foot_center\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;Contact is&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업장 위치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;법적고지&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;이용약관&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사이트맵&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=\"foot_right\"&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .footer_cover --&gt; &lt;/div&gt; &lt;!-- #footer --&gt; . | css | . @media screen and (max-width: 1500px) { .find_cover { width: 90%; padding: 0; } } /* 1400px */ @media screen and (max-width: 1400px) { #header .header_cover { width: 90%; } .full_menu .full_cover { width: 90%; } .media_cover { width: 90%; } #content .content_cover { width: 90%; } .find_cover { width: 90%; padding: 0; } .footer_cover { width: 90%; } .find_cover .find_left form #search { width: 90%; margin: 0 0 0 5%; } .find_cover .find_left .what_find { margin-left: 5%; } .find_cover .find_left form a { right: 50px; } } /* 1330px */ @media screen and (max-width: 1330px) { #header { height: auto; } .full_menu { display: none; } .header_cover .logo { float: none; margin: 0 auto; padding: 20px 0; } .header_cover .logo a img { padding: 0; } .header_cover .nav { display: none; } .header_cover .logo + .mo { display: block; } .header_cover .gnb { display: none; } .slide_cover ul li a p.img_text { width: auto; right: auto; left: 50%; transform: translate(-50%, -50%); font-size: 18px; text-align: center; word-break: keep-all; } .slide_btn { left: 50%; bottom: 20px; transform: translate(-50%, -50%); } .slide_cover ul li a .box { left: 15%; bottom: 13%; height: 100px; } .slide_cover ul li a .box.on { width: 100px; } .slide_cover ul li a h1.img_logo { width: auto; font-size: 30px; left: 5%; } .slide_cover ul li a h1.img_logo.on { top: 5%; } .slide_cover ul li a img.pc { display: none; } .slide_cover ul li a img.mo { display: block; } #find { height: auto; } .find_cover { padding: 0; } .find_cover .fl { float: none; width: 100%; height: auto; margin-top: 50px; } .find_cover .find_left .what_find { padding: 30px 0 0 30px; box-sizing: border-box; } .find_cover .find_left form #search { width: 90%; margin-left: 5%; } .find_cover .find_left form a { right: 8%; } .find_cover .find_right { float: none; width: 100%; } .footer_cover .foot_left { float: none; width: 90%; margin: 0 auto; text-align: center; } .footer_cover .foot_center { float: none; width: 100%; } .footer_cover .foot_right { float: none; width: 10%; } .footer_cover .foot_left img { float: none; display: inline-block; width: 10%; } .footer_cover .foot_left img.on { display: inline-block; width: 8%; margin-left: 10px; } .footer_cover .foot_left span { display: none; } .footer_cover .foot_right { display: none; } } @media screen and (max-width: 1200px) { .media_cover ul { margin-top: 50px; } .media_cover ul li { width: 49.5%; margin: 0; height: 200px; } .media_cover ul li:nth-child(3n + 1) { margin: 0; } .media_cover ul li:nth-child(2n) { margin-left: 1%; margin-top: 1%; } .media_cover ul li:nth-child(2n + 1) { margin-top: 1%; } .media_cover ul li a .text { font-size: 14px; } .media_cover .title { font-size: 24px; } #content .content_cover ul li { width: 50%; line-height: normal; height: auto; margin-top: 20px; } #content .content_cover ul li a { color: transparent; height: auto; line-height: normal; } #content .content_cover ul li a img { position: static; transform: none; } #content .content_cover ul li a:after { content: attr(data-text); display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #000; } } . ",
-    "url": "/book01/docs/Projects/2023-01-06-responsive/",
-    "relUrl": "/docs/Projects/2023-01-06-responsive/"
-  },"109": {
-    "doc": "02-Dooosan-스크립트",
-    "title": "02-Dooosan-스크립트",
-    "content": "슬라이드 설명 이미지 . | 객체와 변수 선언 var current = 0; //current var prev = null; //prev var next = null; //next let mainInterval; //setIntervalID var speed = 4000; //반복시간 var pause_css; var slides = $(\".slide_cover ul li\"); var obj = { \"btn\": $(\".slide_btn ul li\"), \"btn-ani\": $(\".color\"), \"left\": $(\".cursor_left\"), \"right\": $(\".cursor_right\"), \"wbox\": $(\".white_box\"), \"cbox\": $(\".box\"), \"logo\": $(\".img_logo\"), \"text\": $(\".img_text\"), \"reset\": $(\".reset\"), \"pause\": $(\".pause_btn\"), \"play\": $(\".play_btn\"), } . | 슬라이드 함수 작성 | . /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { current++; prev = current - 1; if (current == 3) { current = 0; } slide(); }, speed); } function remove(x) { x.removeClass(\"on\"); } function add(x) { x.addClass(\"on\"); } function slide() { obj.btn.off(\"click\"); obj.left.off(\"click\"); obj.right.off(\"click\"); obj.reset.off(\"click\", reset); clearInterval(mainInterval); slides .find(obj.wbox) .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { obj.wbox.stop().animate({ left: \"100%\" }, 1000); add(slides.eq(current)); // remove(slides.eq(prev)); remove(obj.pager); remove(obj.logo); remove(obj.text); remove(obj.cbox); add(obj.btn.eq(current).find(obj.pager)); add(slides.eq(current).find(obj.logo)); add(slides.eq(current).find(obj.text)); add(slides.eq(current).find(obj.cbox)); remove(slides.find(\"a img\")); console.log(slides.eq(current)); add(slides.eq(current).find(\"a img\")); }); slides.eq(prev).animate({ left: 0 }, 2000, function () { setTimeout(function () { obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { add(obj.btn.eq(current).find(obj.pager)); timer(); } }, 1000); }); next = current; } /** * click_slide * pager 함수 * * **/ function click_slide() { current = $(this).index(); if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * left_click * left 커서함수 * * **/ function left_click() { current--; if (current == -1) current = 2; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * right_click * right 커서함수 * * ***/ function right_click() { current++; if (current == 3) current = 0; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { pause_css = obj.pause.css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { timer(); add(obj.btn.eq(current).find(obj.pager)); } } /**이벤트 핸들러 */ obj.reset.click(function () { reset(); }); obj.pause.click(function () { obj.pause.css(\"display\", \"none\"); obj.play.css(\"display\", \"block\"); }); obj.play.click(function () { obj.pause.css(\"display\", \"block\"); obj.play.css(\"display\", \"none\"); }); obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY - 80; $(\".cursor\").css({ left: x, top: y, }); }); . ",
-    "url": "/book01/docs/Projects/2023-01-06-slide/",
-    "relUrl": "/docs/Projects/2023-01-06-slide/"
   },"110": {
     "doc": "ajax",
     "title": "Table of contents",
@@ -695,17 +695,17 @@
     "url": "/book01/docs/javascript/getComputedStyle/",
     "relUrl": "/docs/javascript/getComputedStyle/"
   },"116": {
+    "doc": "jQuery",
+    "title": "jQuery",
+    "content": " ",
+    "url": "/book01/docs/jQuery/",
+    "relUrl": "/docs/jQuery/"
+  },"117": {
     "doc": "Javascript",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/docs/javascript/",
     "relUrl": "/docs/javascript/"
-  },"117": {
-    "doc": "Jekyll",
-    "title": "Jekyll",
-    "content": " ",
-    "url": "/book01/docs/Jekyll/",
-    "relUrl": "/docs/Jekyll/"
   },"118": {
     "doc": "Miscellaneous",
     "title": "Miscellaneous",
@@ -713,77 +713,77 @@
     "url": "/book01/docs/miscellaneous/",
     "relUrl": "/docs/miscellaneous/"
   },"119": {
-    "doc": "Javascript+JQuery",
-    "title": "Javascript+JQuery",
-    "content": " ",
-    "url": "/book01/docs/javascript+jQuery/",
-    "relUrl": "/docs/javascript+jQuery/"
-  },"120": {
-    "doc": "jQuery",
-    "title": "jQuery",
-    "content": " ",
-    "url": "/book01/docs/jQuery/",
-    "relUrl": "/docs/jQuery/"
-  },"121": {
-    "doc": "PHP",
-    "title": "PHP",
-    "content": " ",
-    "url": "/book01/docs/php/",
-    "relUrl": "/docs/php/"
-  },"122": {
-    "doc": "Projects",
-    "title": "Projects",
-    "content": " ",
-    "url": "/book01/docs/Projects/",
-    "relUrl": "/docs/Projects/"
-  },"123": {
     "doc": "Home",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/#javascript",
     "relUrl": "/#javascript"
-  },"124": {
+  },"120": {
     "doc": "Home",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/#jquery",
     "relUrl": "/#jquery"
-  },"125": {
+  },"121": {
     "doc": "Home",
     "title": "Javascript+jQuery",
     "content": " ",
     "url": "/book01/#javascriptjquery",
     "relUrl": "/#javascriptjquery"
-  },"126": {
+  },"122": {
     "doc": "Home",
     "title": "PHP",
     "content": " ",
     "url": "/book01/#php",
     "relUrl": "/#php"
-  },"127": {
+  },"123": {
     "doc": "Home",
     "title": "Projects",
     "content": " ",
     "url": "/book01/#projects",
     "relUrl": "/#projects"
-  },"128": {
+  },"124": {
     "doc": "Home",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/#jekyll",
     "relUrl": "/#jekyll"
-  },"129": {
+  },"125": {
     "doc": "Home",
     "title": "Miscellaneous",
     "content": " ",
     "url": "/book01/#miscellaneous",
     "relUrl": "/#miscellaneous"
-  },"130": {
+  },"126": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/book01/",
     "relUrl": "/"
+  },"127": {
+    "doc": "Jekyll",
+    "title": "Jekyll",
+    "content": " ",
+    "url": "/book01/docs/Jekyll/",
+    "relUrl": "/docs/Jekyll/"
+  },"128": {
+    "doc": "PHP",
+    "title": "PHP",
+    "content": " ",
+    "url": "/book01/docs/php/",
+    "relUrl": "/docs/php/"
+  },"129": {
+    "doc": "Javascript+JQuery",
+    "title": "Javascript+JQuery",
+    "content": " ",
+    "url": "/book01/docs/javascript+jQuery/",
+    "relUrl": "/docs/javascript+jQuery/"
+  },"130": {
+    "doc": "Projects",
+    "title": "Projects",
+    "content": " ",
+    "url": "/book01/docs/Projects/",
+    "relUrl": "/docs/Projects/"
   },"131": {
     "doc": "시간표시",
     "title": "01 시간표시하기",
