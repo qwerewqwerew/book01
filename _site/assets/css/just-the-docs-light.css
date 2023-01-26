@@ -1781,7 +1781,7 @@ h6,
   color: #fff;
   text-transform: uppercase;
   vertical-align: middle;
-  background-color: #2869e6;
+  background-color: #79a1ed;
   font-size: 11px !important;
   border-radius: 12px;
 }
@@ -2533,7 +2533,7 @@ code.language-mermaid {
 }
 
 .text-blue-100 {
-  color: #2869e6 !important;
+  color: #79a1ed !important;
 }
 
 .text-blue-200 {
@@ -2649,7 +2649,7 @@ code.language-mermaid {
 }
 
 .bg-blue-100 {
-  background-color: #2869e6 !important;
+  background-color: #79a1ed !important;
 }
 
 .bg-blue-200 {
