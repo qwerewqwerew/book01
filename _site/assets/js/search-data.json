@@ -217,7 +217,7 @@
   },"36": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-돔조작, 이벤트, 아코디언",
-    "content": "이전 예제 링크 . javascript01 . javascript02 . javascript03 . javascript04 . javascript05 . javascript06 . javascript07 . javascript08 . javascript09 . 자바스크립트 설명 그림 . ",
+    "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/"
   },"37": {
@@ -545,32 +545,32 @@
     "url": "/book01/docs/php/05-include/",
     "relUrl": "/docs/php/05-include/"
   },"91": {
-    "doc": "05-Scss",
+    "doc": "05-Sass/Scss",
     "title": "개요",
     "content": ". css 파일을 조금 더 구조적으로 작성할 수 있는 언어 . css 전처리기라고도 불림 . 종류는 sass(scss), less, stylus ⇒ css 전처리기 . 웹에서 해석할수 없으므로 번역기(컴파일러) 가 필요함 . ",
     "url": "/book01/docs/miscellaneous/05-scss/#%EA%B0%9C%EC%9A%94",
     "relUrl": "/docs/miscellaneous/05-scss/#개요"
   },"92": {
-    "doc": "05-Scss",
+    "doc": "05-Sass/Scss",
     "title": "01 scss 워크스페이스 환경설정",
     "content": ". | 컴파일해주는 놈이 livescss  | scss 웹에서 해석X 작성후 css컴파일을 해야한다.  | livescss는 해석한 파일(css)을 환경설정에서 세팅한 경로의 폴더에 저장해준다. | livescss는 해석할때 워크스페이스 단위로 번역한다. |  즉 livescss는 워크스페이스 내의 환경설정에서 세팅한 경로로 css 파일을 저장함. |  환경설정은 워크스페이스 내에 .vscode/settings.json 에 들어있다 | . ",
     "url": "/book01/docs/miscellaneous/05-scss/#01-scss-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95",
     "relUrl": "/docs/miscellaneous/05-scss/#01-scss-워크스페이스-환경설정"
   },"93": {
-    "doc": "05-Scss",
+    "doc": "05-Sass/Scss",
     "title": "02. 워크스페이스 설정하기",
     "content": ". | pc에 프로젝트 단위의 폴더를 만든다 . | VSCode 실행하여 워크스페이스 생성 . | vscode : ctrl+shift+p . | . { \"liveSassCompile.settings.formats\":[ // This is Default. { \"format\": \"expanded\", \"extensionName\": \".css\", \"savePath\": \"~/../css\" }, { \"format\": \"compressed\", \"extensionName\": \".min.css\", \"savePath\": \"~/../dist/css\" }, ] } . vscode는 사용자환경설정과 프로젝트 단위별 환경설정을 별도로 할수 있다. ",
     "url": "/book01/docs/miscellaneous/05-scss/#02-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0",
     "relUrl": "/docs/miscellaneous/05-scss/#02-워크스페이스-설정하기"
   },"94": {
-    "doc": "05-Scss",
+    "doc": "05-Sass/Scss",
     "title": "03. scss basic",
     "content": "css . html { font-size: 18px; } body { margin: 20px; background-color: #fff4c1; } div { color: #333; padding: 20px; } a { display: inline-block; margin: 10px 0; } #box1 { font-size: 40px; background-color: #ffcccc; border-radius: 20px; border: 3px solid #f00; -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); } #box1 &gt; a { color: #a22; text-decoration: none; } #box1 &gt; a:hover { background-color: #ccc; } #box1 #box2 { font-size: 20px; background-color: #e9e9e9; border-radius: 20px; border: 3px solid #f00; -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); } #box1 #box2 &gt; a { color: #ee6633; text-decoration: none; } #box1 #box2 &gt; a:hover { color: #a22; text-decoration: none; } . **html** . &lt;div id=\"box1\"&gt; &lt;div id=\"box1-title\"&gt;box1&lt;/div&gt; &lt;a href=\"#\"&gt;button1&lt;/a&gt; &lt;div id=\"box2\"&gt; box2 &lt;br&gt; &lt;a href=\"#\"&gt;button2&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=\"box1\"&gt; &lt;div class=\"box2\"&gt; &lt;div class=\"box3\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . ",
     "url": "/book01/docs/miscellaneous/05-scss/#03-scss-basic",
     "relUrl": "/docs/miscellaneous/05-scss/#03-scss-basic"
   },"95": {
-    "doc": "05-Scss",
-    "title": "05-Scss",
+    "doc": "05-Sass/Scss",
+    "title": "05-Sass/Scss",
     "content": ". ## . | 개요 | 01 scss 워크스페이스 환경설정 | 02. 워크스페이스 설정하기 | 03. scss basic | . 🔗scss공식사이트 . ",
     "url": "/book01/docs/miscellaneous/05-scss/",
     "relUrl": "/docs/miscellaneous/05-scss/"
@@ -617,300 +617,342 @@
     "url": "/book01/docs/php/06-form/",
     "relUrl": "/docs/php/06-form/"
   },"103": {
+    "doc": "06-Git",
+    "title": "브랜치",
+    "content": "브랜치란 : 소스의 버전 소스에 여러 버전을 추가 다양한 기능을 테스트 할수 있다 . ",
+    "url": "/book01/docs/miscellaneous/06-git/#%EB%B8%8C%EB%9E%9C%EC%B9%98",
+    "relUrl": "/docs/miscellaneous/06-git/#브랜치"
+  },"104": {
+    "doc": "06-Git",
+    "title": "만들기",
+    "content": "git branch new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-git/#%EB%A7%8C%EB%93%A4%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-git/#만들기"
+  },"105": {
+    "doc": "06-Git",
+    "title": "바꾸기",
+    "content": "브랜치를 만들었다고 해서 사용하고 있는것이 아니다. 빈 폴더만 만든 상태와 같다. 브랜치를 바꿔야 새 브랜치에서 작업 할수있다. git switch new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-git/#%EB%B0%94%EA%BE%B8%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-git/#바꾸기"
+  },"106": {
+    "doc": "06-Git",
+    "title": "만들면서바꾸기",
+    "content": "git switch -c new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-git/#%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C%EB%B0%94%EA%BE%B8%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-git/#만들면서바꾸기"
+  },"107": {
+    "doc": "06-Git",
+    "title": "복원",
+    "content": "워킹 트리 파일 복원 . ",
+    "url": "/book01/docs/miscellaneous/06-git/#%EB%B3%B5%EC%9B%90",
+    "relUrl": "/docs/miscellaneous/06-git/#복원"
+  },"108": {
+    "doc": "06-Git",
+    "title": "restore",
+    "content": "-수정전으로 가고싶다 . git restore 파일명 . | 작업하다 망친 코드를 원복할때 쓴다 | . ",
+    "url": "/book01/docs/miscellaneous/06-git/#restore",
+    "relUrl": "/docs/miscellaneous/06-git/#restore"
+  },"109": {
+    "doc": "06-Git",
+    "title": "06-Git",
+    "content": ". ## . | 브랜치 . | 만들기 | 바꾸기 | 만들면서바꾸기 | . | 복원 . | restore | . | . 🔗원숭이도 이해하는 깃브랜치 . ",
+    "url": "/book01/docs/miscellaneous/06-git/",
+    "relUrl": "/docs/miscellaneous/06-git/"
+  },"110": {
     "doc": "06-BXslider",
     "title": "01 BXslider",
     "content": "BXslider 공식문서 . 가장 유명한 jQuery 캐로셀 플러그인 . 파일다운로드 . 기본슬라이드 . 좌우컨트롤 . 멀티플 . 옵션활용 . 애니메이션 활용 . 동영상 . &lt;div class=\"slideWrap\"&gt; &lt;div class=\"video_slides\"&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; .slideWrap{ max-width: 960px; width:90%; margin:2em auto; position: relative; } . $('.video_slides').bxSlider({ video: true, onSliderLoad:function(currentIndex){ $('.video_slides div').eq(currentIndex + 1).find('video').get(0).play(); }, onSlideAfter:function($slideElement){ $slideElement.siblings().find('video').get(0).pause(); $slideElement.find('video').get(0).play(); } }); . ",
     "url": "/book01/docs/jQuery/06/#01-bxslider",
     "relUrl": "/docs/jQuery/06/#01-bxslider"
-  },"104": {
+  },"111": {
     "doc": "06-BXslider",
     "title": "06-BXslider",
     "content": ". ",
     "url": "/book01/docs/jQuery/06/",
     "relUrl": "/docs/jQuery/06/"
-  },"105": {
+  },"112": {
     "doc": "07-form-validator",
     "title": "01 form.php",
     "content": "검색창에 php를 검색해보자 주소표시줄에 search?q 라는 낱말 뒤에 우리가 입력한 단어가 보인다. q는 Query 의 표시로 Query란 (질의문:저장되어져 있는 정보를 골라내기 위한 질문) 이다 . 위의 그림은 http GET 방식으로 데이터를 요청한 예시이다. 직접 만들어보자 . 01-1 . | 07/get-input.php 생성 | . &lt;?php ?&gt; &lt;h1&gt;get input&lt;/h1&gt; . 실행 . | 브라우저 주소창에 쿼리문과 파라미터를 작성후 엔터를 쳐본다 당연히 데이터가 없으니 아무것도 안나올 것이다. | . | php 작성 | . &lt;?php $product_id=$_GET['productid']; ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; . 실행 . get 방식의 요청으로 들어온 매개변수 값을 취득하여 화면에 출력 . 01-2 . 매개변수 2개 . &lt;?php $product = $_GET['product']; //superGlobals php문서 어디서나 사용가능 $limit = $_GET['limit']; //limit 추가 ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt;-👍Limit &lt;?= $limit;?&gt; //출력 &lt;/p&gt; . 실행 . 🔑파라미터를 연결할때는 &amp; 를 작성 . | 매개변수 두개의 값이 잘 전달된것을 확인 | . ",
     "url": "/book01/docs/php/07-validator/#01-formphp",
     "relUrl": "/docs/php/07-validator/#01-formphp"
-  },"106": {
+  },"113": {
     "doc": "07-form-validator",
     "title": "02 filter",
     "content": "사용자가 악의적으로 주소창을 통해 위험한 데이터를 전송할수 있다. filter 를 사용하여 데이터를 골라내자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); if($product == false || $limit == false){ die();//멈춰 } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; -👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . | 매개변수를 글자로 보내면 실행안됨 | . | 숫자로 보내면 실행됨 | . 02-1 . 필터에 해당되지 않을경우 기본값을 출력하자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); //if($product == false || $limit == false){ // die();//멈춰 //} if($product == false){ //변수 product 가 false 이면 $product = 10; // product에 10할당 } if($limit == false){ $limit = 10; } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; - 👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . 🔑 위의 코드 처럼 작성하면 빈 화면이 출력되지 않겠죠? . ",
     "url": "/book01/docs/php/07-validator/#02-filter",
     "relUrl": "/docs/php/07-validator/#02-filter"
-  },"107": {
+  },"114": {
     "doc": "07-form-validator",
     "title": "07-form-validator",
     "content": ". | 01 form.php . | 01-1 | 01-2 | . | 02 filter . | 02-1 | . | . 🔗php filter . ",
     "url": "/book01/docs/php/07-validator/",
     "relUrl": "/docs/php/07-validator/"
-  },"108": {
+  },"115": {
     "doc": "08-Cookie,Session",
     "title": "00 쿠키와 세션",
     "content": ". | 쿠키:클라이언트(브라우저) 로컬에 저장 되는 키와 값이 들어있는 데이터 파일 . | 쿠키의 구성 . | 이름 : 쿠키를 구별하는데 사용된다. | 값 : 쿠키의 이름과 mapping된 값이다. | 유효시간 : 쿠키의 유지시간이다. | 도메인 : 쿠키를 전송할 도메인 정보이다. | 경로 : 쿠키를 전송할 요청 경로이다. | . | . | 세션: 사용자 정보 파일을 서버에 저장 . | session은 cookie를 사용해서 session ID 만을 저장 | . | cache : 이미지나 CSS, JS 파일등을 브라우저나 서버의 앞 단에 저장해놓고 사용하는 것 | . ",
     "url": "/book01/docs/php/08-cookie/#00-%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98",
     "relUrl": "/docs/php/08-cookie/#00-쿠키와-세션"
-  },"109": {
+  },"116": {
     "doc": "08-Cookie,Session",
     "title": "01 Cookie 생성",
     "content": "xmapp/htdoc/cookie/cookie_test.php 파일생성 . | php 에 접속하여 cookie 를 검색해보자 | setcookie 클릭 | 설명을 본다. | | 첫번째 값으로는 문자로 이름, 두번째 값으로 문자로 값, 세번째로는 배열로 옵션을 작성한다. | name(이름),value(값),expires_or_options(만기일),path(경로) 을 작성해야한다. | . | cookie_test.php 파일작성 $_COOKIE $_COOKIE 는 쿠키의 이름을 불러서 값을 호출할수 있는 superGlobals 입니다. | . &lt;?php $cookieName = \"city\"; //쿠키의 이름 $cookieValue = \"seoul\"; //쿠키의 값 //setcookie 함수에 인자전달() setcookie($cookieName, $cookieValue, time() + 60, \"/\");//time() + 600 만료시간: 현재부터 600초 이후 만료 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;쿠키테스트&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;새로고침(f5) 하면 생성된 쿠키를 확인할 수 있습니다.&lt;/p&gt; &lt;?php if(!isset($_COOKIE[$cookieName])){ //$cookieName 변수가 세팅되지 않으면 true echo \"{$cookieName}라는 이름의 쿠키는 생성이 되지 않았습니다.\"; }else{ echo \"{$cookieName}라는 이름의 쿠키는 생성되었고, 값은 \".$_COOKIE[$cookieName].\"입니다.\"; } ?&gt; &lt;/body&gt; &lt;/html&gt; . time() + 60 에 지정한 60초가 지나면 쿠키가 생성되고 브라우저 새로고침하면 메시지는 else 문의 내용이 출력된다 . 실행화면 — . ",
     "url": "/book01/docs/php/08-cookie/#01-cookie-%EC%83%9D%EC%84%B1",
     "relUrl": "/docs/php/08-cookie/#01-cookie-생성"
-  },"110": {
+  },"117": {
     "doc": "08-Cookie,Session",
     "title": "02 Cookie 삭제",
     "content": "xmapp/htdoc/cookie/cookie_del.php 파일생성 . 🔑쿠키의 삭제는 만기일을 현재보다 이전으로 설정하면 된다 . &lt;?php $cookieName = \"city\"; $cookieValue = \"seoul\"; setcookie($cookieName, $cookieValue, time() - 60, \"/\"); ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;title&gt;쿠키삭제&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo $cookieName . '의 쿠키가 삭제 되었습니다.'; echo '생성된 값은 '.$_COOKIE[$cookieName] . '입니다.'; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . 쿠키가 생성되자마자 삭제되었으므로 삭제 메시지와 함께 오류출력 . ",
     "url": "/book01/docs/php/08-cookie/#02-cookie-%EC%82%AD%EC%A0%9C",
     "relUrl": "/docs/php/08-cookie/#02-cookie-삭제"
-  },"111": {
+  },"118": {
     "doc": "08-Cookie,Session",
     "title": "03 Session",
     "content": "브라우저가 해당 사이트에서 벗어나면 세션종료 사이트 접속후 30분이상 상호작용이 없으면 세션종료 . {: .new }[#1] . htdoc/session/session.php 생성 . 🔑 세션은 사용자의 정보를 서버에 저장하는것 . &lt;?php session_start(); //세션시작 $_SESSION[\"city\"]= \"seoul\"; $_SESSION[\"gu\"] = \"gangnam\"; ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo \"세션 변수가 등록되었습니다.\"; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . htdoc/session/session_set.php 생성 . &lt;?php session_start();//세션시작 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php if(!isset($_SESSION[\"city\"])){ //city이름의 세션이 없으면 true echo \"해당 세션변수가 등록되지 않았습니다.\"; }else{ echo \"나의 도시는 {$_SESSION['city']}.입니다.&lt;br/&gt;\"; echo \"{$_SESSION['gu']}구에 있습니다&lt;br/&gt;\"; print_r($_SESSION);//세션의 모든 정보를 보여줘(모든 세션의 정보를 연관배열형태로 출력) } ?&gt; &lt;/body&gt; &lt;/html&gt; . session.php에서 등록한 세션값이 저장되어 출력되는것을 볼수있다. 03-1 session 찾아보기 . | xmapp 설치폴더 에서 php.ini 를 찾아본다 | xmapp/php/php.ini-development 파일을 vscode로 연다 | xmapp/php/php.ini 로 저장한다. | ctrl+F 를 눌러 session.save_path 를 검색한다. | . | 우리가 사용중인 프로그램이 포터블 이므로 C드라이브로 가야한다 | C:\\Users\\Administrator\\AppData\\Local\\Temp\\ 폴더로 이동한다. | . | 해당 폴더에서 파일명이 sess_~ 로 시작하는 파일을 vscode로 열어본다 - | 세션정보를 확인할수 있다 | . ",
     "url": "/book01/docs/php/08-cookie/#03-session",
     "relUrl": "/docs/php/08-cookie/#03-session"
-  },"112": {
+  },"119": {
     "doc": "08-Cookie,Session",
     "title": "04 seisson 지우기",
     "content": "htdoc/session/session_del.php 생성 . 세션은 두가지 방법으로 지울수 있다. &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session delete&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php session_unset(); //모든 세션 변수의 등록을 해지한다. session_destroy(); //세션 아이디 삭제 echo \"모든 세션 변수가 등록 해지되었고, 세션 아이디도 삭제됨\"; print_r($_SESSION); ?&gt; &lt;/body&gt; &lt;/html&gt; . ",
     "url": "/book01/docs/php/08-cookie/#04-seisson-%EC%A7%80%EC%9A%B0%EA%B8%B0",
     "relUrl": "/docs/php/08-cookie/#04-seisson-지우기"
-  },"113": {
+  },"120": {
     "doc": "08-Cookie,Session",
     "title": "08-Cookie,Session",
     "content": ". | 00 쿠키와 세션 | 01 Cookie 생성 | 02 Cookie 삭제 | 03 Session . | 03-1 session 찾아보기 | . | 04 seisson 지우기 | . 🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/08-cookie/",
     "relUrl": "/docs/php/08-cookie/"
-  },"114": {
+  },"121": {
     "doc": "09-board",
     "title": "관련링크",
     "content": "🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/09-board/#%EA%B4%80%EB%A0%A8%EB%A7%81%ED%81%AC",
     "relUrl": "/docs/php/09-board/#관련링크"
-  },"115": {
+  },"122": {
     "doc": "09-board",
     "title": "01 SQL 을 활용한 게시판을 만들어보자",
     "content": "😺 SQL 이란? . 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어 . 😺 게시판구현을 위해 알아야 할것 . create, read, update, delete (생성), (조회),(수정), (삭제) . 😺 필요한 개발환경 서버를 설치 하고 데이터 베이스를 생성 할 테이블 생성 (xmapp) (mango_board) . 01-1 DB 구축 . 우리가 만들 테이블의 정보는 아래와 같다 . | 서버 : xmapp | 데이터베이스명 : mango_board | . | xmapp control-panel열기 . | . | phpMyAdmin 에 로그인한다 . | . | 사용자추가 . | . | 아래의 이미지를 보고 체크된 부분처럼 기재한다. 비밀번호는 쉬운걸로 하자 . | . | . 테이블의 구조를 살펴보자 . | 테이블명 : free_board | 컬럼(필드)명: number - INT : 자동으로 숫자를 올리는 auto_increment PK | 컬럼(필드)명: name - varchar(100) : 글쓴이 | 컬럼(필드)명: message - varchar(255) : 메시지 | . 01-2 테이블생성 . | create new table 클릭 . | 이미지의 표시된 정보를 입력후 실행 클릭 -&gt; 오류메시지 출력시 모두 무시 클릭 . | 이미지의 표시된 부분만 해당 정보를 입력한다. 나머지는 그냥둠 . | 3 단계에서 primary 선택시 아래와 같은 화면이 뜨면 실행을 누르면 된다. | sql 미리보기 클릭 . | 설정값 확인후 저장클릭 . | 설정값 확인후 저장클릭 . | . ",
     "url": "/book01/docs/php/09-board/#01-sql-%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/php/09-board/#01-sql-을-활용한-게시판을-만들어보자"
-  },"116": {
+  },"123": {
     "doc": "09-board",
     "title": "02 서버만들기",
     "content": "| Structure of a server | . htdocs/ └── board/ ├── index.php(글조회,검색,삭제) ├── view.php(글보기) ├── write.php(글작성) ├── insert.php(글입력) ├── delete.php(글삭제) ├── search.php(검색) └── list.php(글목록) . 02-1 index.php . | xmapp/htdocs/board 생성 | board/index.php 생성 후 코드작성 . | 글쓰기 링크 클릭시 write.php 문서로 이동 ```php &lt;!DOCTYPE html&gt; | . | . 망고네 자유 게시판 . ",
     "url": "/book01/docs/php/09-board/#02-%EC%84%9C%EB%B2%84%EB%A7%8C%EB%93%A4%EA%B8%B0",
     "relUrl": "/docs/php/09-board/#02-서버만들기"
-  },"117": {
+  },"124": {
     "doc": "09-board",
     "title": "자유 게시판",
     "content": " ",
     "url": "/book01/docs/php/09-board/",
     "relUrl": "/docs/php/09-board/"
-  },"118": {
+  },"125": {
     "doc": "09-board",
     "title": "글 목록",
     "content": ". 글쓰기 . 2. 작성후 localehost/board 에서 확인 ![](/book01/assets/img/php110.jpg ) --- ### 02-2 write.php 1. board/write.php 생성 1. 글작성을 하는 페이지이다. form 태그와 input 의 속성들이 실제 동작하는것을 확인하면서 코딩한다. `form action =\"전송할 파일,폴더의 주소\"` `input name =\"db field name\"` ```php &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;글쓰기&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;글쓰기&lt;/h1&gt; &lt;!-- action=전송할 주소 --&gt; &lt;form action=\"insert.php\" method=\"post\"&gt; &lt;p&gt; &lt;label for=\"name\"&gt;작성자:&lt;/label&gt; &lt;!-- name=테이블의 필드명 --&gt; &lt;input type=\"text\" id=\"name\" name=\"name\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"message\"&gt;메시지:&lt;/label&gt; &lt;textarea name=\"message\" id=\"message\" cols=\"30\" rows=\"10\"&gt;&lt;/textarea&gt; &lt;/p&gt; &lt;!-- submit 버튼을 클릭하면 form 의 액션 값의 주소로 데이터가 전송된다 --&gt; &lt;input type=\"submit\" value=\"글쓰기\"&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; . | index.php 에서 글쓰기 클릭시 write.php로 이동하는지 확인한다 | . 02-4 delete.php . | board/delete.php 생성 | . ",
     "url": "/book01/docs/php/09-board/",
     "relUrl": "/docs/php/09-board/"
-  },"119": {
+  },"126": {
     "doc": "09-board",
     "title": "09-board",
     "content": ". | 관련링크 | 01 SQL 을 활용한 게시판을 만들어보자 . | 01-1 DB 구축 | 01-2 테이블생성 | . | 02 서버만들기 . | 02-1 index.php | 02-4 delete.php | . | . ",
     "url": "/book01/docs/php/09-board/",
     "relUrl": "/docs/php/09-board/"
-  },"120": {
+  },"127": {
     "doc": "ajax",
     "title": "Table of contents",
     "content": ". | ajax2 | . (XMLHttpRequest)[https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest] . const url = \"https://dummyjson.com/products\"; const req = new XMLHttpRequest(); let div = document.querySelector(\"div\"); req.onload = (e) =&gt; { const datas = req.response; // not responseText for (data of datas.products) { let { brand, parent } = data; div.innerHTML += `brand: ${brand}, &lt;br&gt; parent: ${parent}&lt;br&gt;&lt;hr&gt;`; console.log(brand, parent); } }; req.open(\"GET\", url); req.responseType = \"json\"; req.send(); . ajax2 . ",
     "url": "/book01/docs/javascript/ajax/#table-of-contents",
     "relUrl": "/docs/javascript/ajax/#table-of-contents"
-  },"121": {
+  },"128": {
     "doc": "ajax",
     "title": "ajax",
     "content": " ",
     "url": "/book01/docs/javascript/ajax/",
     "relUrl": "/docs/javascript/ajax/"
-  },"122": {
+  },"129": {
     "doc": "event-bubbling",
     "title": "event-bubbling",
     "content": ". | 버블링과 캡쳐링의 그림설명 | 01 이벤트 버블링 | 예제 | 설명 | 02 이벤트 캡쳐링 | 예제 | 03 이벤트 위임 | 예제 | 04 버블링 막기 | 05 버블링과 캡쳐링 둘다 막기 | 예제 | . – . 모던자바스크립트 . 버블링과 캡쳐링의 그림설명 . 01 이벤트 버블링 . ** 이벤트가 상위 요소로 전파 ** . event.currentTarget : 이벤트를 등록해 놓은 요소를 반환 . event.target : 이벤트가 발생한 요소를 반환 . 예제 . 설명 . three 요소를 클릭하면 상위요소까지 출력된다. 02 이벤트 캡쳐링 . ** 이벤트가 하위 요소로 전파 ** . 예제 . 03 이벤트 위임 . ** 이벤트 버블링을 활용함 ** 모던자바스크립트 elem.closest(selector) 메서드는 elem의 상위 요소 중 selector와 일치하는 가장 근접한 조상 요소를 반환합니다. 위 코드에선 이벤트가 발생한 요소부터 시작해 위로 올라가며 가장 가까운 &lt;td&gt; 요소를 찾습니다. event.target이 &lt;td&gt;안에 있지 않으면 그 즉시 null을 반환하므로 아무 작업도 일어나지 않습니다. 중첩 테이블이 있는 경우 event.target은 현재 테이블 바깥에 있는 &lt;td&gt;가 될 수도 있습니다. 이런 경우를 처리하기 위해 &lt;td&gt;가 팔괘도 안에 있는지를 확인합니다. 이제 진짜 td를 강조해 줍니다. 예제 . 04 버블링 막기 . 최초로 이벤트가 발생되는 엘리먼트의 이벤트 핸들러에event.stopPropagation()라는 API 를 추가 . &lt;body onclick=\"alert(`버블링은 여기까지 도달하지 못합니다.`)\"&gt; &lt;button onclick=\"event.stopPropagation()\"&gt;클릭해 주세요.&lt;/button&gt; &lt;/body&gt; . 모든 이벤트 버블링을 멈추고 싶은 경우에는 event.stopImmediatePropagation() API 추가 . 05 버블링과 캡쳐링 둘다 막기 . ` e.stopPropagation()` . 예제 . ",
     "url": "/book01/docs/javascript/event/",
     "relUrl": "/docs/javascript/event/"
-  },"123": {
+  },"130": {
     "doc": "function",
     "title": "function",
     "content": ". | 01 return | 오류 | 수정 | 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . | 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 | . | . – . 01 return . [return 명령문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/return) 은 함수 실행을 종료하고, 주어진 값을 함수 호출 지점으로 반환한다. 함수의 실행문 내부에 묵시적으로 정의되어 있다. 오류 . 수정 . 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . 아래의 함수는 두개의 숫자와 연산자를 입력받아 값을 반환하는 계산기 프로그램이다 함수의 중복을 고차함수로 작성하여 제거해보자 . 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 . !(/assets/js03.jpg) . !(/assets/js04.jpg) . ",
     "url": "/book01/docs/javascript/function/",
     "relUrl": "/docs/javascript/function/"
-  },"124": {
+  },"131": {
     "doc": "getComputedStyle",
     "title": "01 getComputedStyle",
     "content": "문법 . getComputedStyle var style = window.getComputedStyle(element[, pseudoElt]); . 매개변수 . | element 속성값을 얻으려하는 Element | pseudoElt (선택) 일치시킬 의사요소(pseudo element)를 지정하는 문자열. 보통의 요소들에 대해서는 생략되거나 null이어야 함. | . 호환성 . getComputedStyle은 IE9 이상의 브라우저에서 지원됩니다. — . ",
     "url": "/book01/docs/javascript/getComputedStyle/#01-getcomputedstyle",
     "relUrl": "/docs/javascript/getComputedStyle/#01-getcomputedstyle"
-  },"125": {
+  },"132": {
     "doc": "getComputedStyle",
     "title": "getComputedStyle",
     "content": ". | 01 getComputedStyle . | 문법 | 매개변수 | 호환성 | . | . – . ",
     "url": "/book01/docs/javascript/getComputedStyle/",
     "relUrl": "/docs/javascript/getComputedStyle/"
-  },"126": {
-    "doc": "Miscellaneous",
-    "title": "Miscellaneous",
-    "content": " ",
-    "url": "/book01/docs/miscellaneous/",
-    "relUrl": "/docs/miscellaneous/"
-  },"127": {
-    "doc": "Jekyll",
-    "title": "Jekyll",
-    "content": " ",
-    "url": "/book01/docs/Jekyll/",
-    "relUrl": "/docs/Jekyll/"
-  },"128": {
-    "doc": "Javascript",
-    "title": "Javascript",
-    "content": " ",
-    "url": "/book01/docs/javascript/",
-    "relUrl": "/docs/javascript/"
-  },"129": {
-    "doc": "Javascript+JQuery",
-    "title": "Javascript+JQuery",
-    "content": " ",
-    "url": "/book01/docs/javascript+jQuery/",
-    "relUrl": "/docs/javascript+jQuery/"
-  },"130": {
+  },"133": {
     "doc": "PHP",
     "title": "PHP",
     "content": " ",
     "url": "/book01/docs/php/",
     "relUrl": "/docs/php/"
-  },"131": {
+  },"134": {
+    "doc": "Javascript+JQuery",
+    "title": "Javascript+JQuery",
+    "content": "이전 예제 링크 . javascript01 . javascript02 . javascript03 . javascript04 . javascript05 . javascript06 . javascript07 . javascript08 . javascript09 . 자바스크립트 설명 그림 . ",
+    "url": "/book01/docs/javascript+jQuery/",
+    "relUrl": "/docs/javascript+jQuery/"
+  },"135": {
+    "doc": "Jekyll",
+    "title": "Jekyll",
+    "content": " ",
+    "url": "/book01/docs/Jekyll/",
+    "relUrl": "/docs/Jekyll/"
+  },"136": {
+    "doc": "Miscellaneous",
+    "title": "Miscellaneous",
+    "content": " ",
+    "url": "/book01/docs/miscellaneous/",
+    "relUrl": "/docs/miscellaneous/"
+  },"137": {
     "doc": "Projects",
     "title": "Projects",
     "content": " ",
     "url": "/book01/docs/Projects/",
     "relUrl": "/docs/Projects/"
-  },"132": {
+  },"138": {
+    "doc": "Javascript",
+    "title": "Javascript",
+    "content": " ",
+    "url": "/book01/docs/javascript/",
+    "relUrl": "/docs/javascript/"
+  },"139": {
     "doc": "jQuery",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/docs/jQuery/",
     "relUrl": "/docs/jQuery/"
-  },"133": {
+  },"140": {
     "doc": "Home",
     "title": "Javascript",
     "content": " ",
     "url": "/book01/#javascript",
     "relUrl": "/#javascript"
-  },"134": {
+  },"141": {
     "doc": "Home",
     "title": "jQuery",
     "content": " ",
     "url": "/book01/#jquery",
     "relUrl": "/#jquery"
-  },"135": {
+  },"142": {
     "doc": "Home",
     "title": "Javascript+jQuery",
     "content": " ",
     "url": "/book01/#javascriptjquery",
     "relUrl": "/#javascriptjquery"
-  },"136": {
+  },"143": {
     "doc": "Home",
     "title": "PHP",
     "content": " ",
     "url": "/book01/#php",
     "relUrl": "/#php"
-  },"137": {
+  },"144": {
     "doc": "Home",
     "title": "Projects",
     "content": " ",
     "url": "/book01/#projects",
     "relUrl": "/#projects"
-  },"138": {
+  },"145": {
     "doc": "Home",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/#jekyll",
     "relUrl": "/#jekyll"
-  },"139": {
+  },"146": {
     "doc": "Home",
     "title": "Miscellaneous",
     "content": " ",
     "url": "/book01/#miscellaneous",
     "relUrl": "/#miscellaneous"
-  },"140": {
+  },"147": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/book01/",
     "relUrl": "/"
-  },"141": {
+  },"148": {
     "doc": "시간표시",
     "title": "01 시간표시하기",
     "content": " ",
     "url": "/book01/docs/javascript/javascript/#01-%EC%8B%9C%EA%B0%84%ED%91%9C%EC%8B%9C%ED%95%98%EA%B8%B0",
     "relUrl": "/docs/javascript/javascript/#01-시간표시하기"
-  },"142": {
+  },"149": {
     "doc": "시간표시",
     "title": "01-01 toLocaleTimeString() : 현지시간으로 표시",
     "content": "toLocaleTimeString() 메서드는 Date 객체의 날짜의 시간 부분을 지역에 맞는 언어 포맷으로 반환 . 문법: StringdateStringtoLocaleTimeString([Stringlocales[, Objectoptions]]) . 예시: . /* 시간을 표시하기 */ var now = new Date(); var display = now.toLocaleTimeString(); console.log(display); //var time=setInterval(display,1000) document.write(\"현재 시각은 \" + display); . 출력: . ",
     "url": "/book01/docs/javascript/javascript/#01-01-tolocaletimestring--%ED%98%84%EC%A7%80%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%ED%91%9C%EC%8B%9C",
     "relUrl": "/docs/javascript/javascript/#01-01-tolocaletimestring--현지시간으로-표시"
-  },"143": {
+  },"150": {
     "doc": "시간표시",
     "title": "01-02 Date()",
     "content": "문법: new Date(year, month, date, hours, minutes, seconds, ms) . | year는 반드시 네 자리 숫자로 작성 | month는 0(1월)부터 11(12월) 사이의 숫자로 작성 | date는 일을 나타내는데, 값이 없는 경우엔 1일로 처리됨 | hours/minutes/seconds/ms에 값이 없는 경우엔 0으로 처리됨 | . 예제: . var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); console.log(`${hour} 시 ${minute}분 ${second} 초 ${milliSecond}`) . 실행: . 날짜를 설정할땐 . setFullYear(year, [month], [date]) setMonth(month, [date]) setDate(date) setHours(hour, [min], [sec], [ms]) setMinutes(min, [sec], [ms]) setSeconds(sec, [ms]) setMilliseconds(ms) setTime(milliseconds) (1970년 1월 1일 00:00:00 UTC부터 밀리초 이후를 나타내는 날짜를 설정) . 날짜를 얻어올땐 . getFullYear(year, [month], [date]) getMonth(month, [date]) getDate(date) getHours(hour, [min], [sec], [ms]) getMinutes(min, [sec], [ms]) getSeconds(sec, [ms]) getMilliseconds(ms) getTime(milliseconds) . 현재 시간을 알려주는 Date.now() . 1970년 1월 1일 0시 0분 0초부터 현재까지의 시간을 밀리초(millisecond) 단위의 정수로 반환 . ",
     "url": "/book01/docs/javascript/javascript/#01-02-date",
     "relUrl": "/docs/javascript/javascript/#01-02-date"
-  },"144": {
+  },"151": {
     "doc": "시간표시",
     "title": "01-03 RGB 시계",
     "content": "사용할 이미지 . | | | . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;sample5&lt;/title&gt; &lt;script src=\"clock(vanilla).js\" defer&gt;&lt;/script&gt; &lt;style&gt; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=\"clock\"&gt; &lt;img alt=\"clock\" src=\"clock.png\"/&gt; &lt;img alt=\"hour\" src=\"h.png\" class=\"hour\"/&gt; &lt;img alt=\"min\" src=\"m.png\" class=\"min\"/&gt; &lt;div class=\"sec\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=\"digital\"&gt;&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; . css . *{margin:0;padding:0} #clock{position:relative;width:300px;height:300px;margin:100px auto 0} #clock img{position:absolute;top:0;left:0;display:block} .sec{width:3px;height:140px;transform-origin:50% 100%;position:absolute;right:50%;top:3%} . js . function clock() { var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); if (hour &gt; 11) hour -= 12; var degreeOfSecond = second * 6 + (milliSecond * 6) / 1000; var degreeOfMinute = minute * 6 + degreeOfSecond / 60; var degreeOfHour = hour * 30 + degreeOfMinute / 12; var redNeedle = 0; var greenNeedle = 0; var blueNeedle = 0; if (degreeOfSecond &lt; 90) { redNeedle = Math.round((255 * degreeOfSecond) / 90); } else if (90 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 180) { redNeedle = Math.round(255 - 255 * ((degreeOfSecond - 90) / 90)); greenNeedle = Math.round((255 * (degreeOfSecond - 90)) / 90); } else if (180 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 270) { greenNeedle = Math.round(255 - (255 * (degreeOfSecond - 180)) / 90); blueNeedle = Math.round((255 * (degreeOfSecond - 180)) / 90); } else { blueNeedle = Math.round(255 - (255 * (degreeOfSecond - 270)) / 90); } var needles = Array.apply(null, document.querySelector(\"#clock\").children); needles[1].style.transform = \"rotate(\" + degreeOfHour + \"deg)\"; needles[2].style.transform = \"rotate(\" + degreeOfMinute + \"deg)\"; needles[3].style.transform = \"rotate(\" + degreeOfSecond + \"deg)\"; needles[3].style.backgroundColor = \"rgb(\" + redNeedle + \",\" + greenNeedle + \",\" + blueNeedle + \")\"; } setInterval(clock, 1000 / 60); . 실행 . ",
     "url": "/book01/docs/javascript/javascript/#01-03-rgb-%EC%8B%9C%EA%B3%84",
     "relUrl": "/docs/javascript/javascript/#01-03-rgb-시계"
-  },"145": {
+  },"152": {
     "doc": "시간표시",
     "title": "시간표시",
     "content": ". | 01 시간표시하기 . | 01-01 toLocaleTimeString() : 현지시간으로 표시 | 01-02 Date() . | 날짜를 설정할땐 | 날짜를 얻어올땐 | 현재 시간을 알려주는 Date.now() | . | 01-03 RGB 시계 . | 사용할 이미지 | html | css | js | 실행 | . | . | . – . ",
     "url": "/book01/docs/javascript/javascript/",
     "relUrl": "/docs/javascript/javascript/"
-  },"146": {
+  },"153": {
     "doc": "onMediaQueryChange",
     "title": "01 미디어쿼리가 변할때 실행하는 함수",
     "content": "onMediaQueryChange . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;샘플&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;main class=\"centering\"&gt; &lt;div class=\"rectangle\"&gt;&lt;/div&gt; &lt;/main&gt; &lt;/body&gt; &lt;/html&gt; .rectangle { background-image: linear-gradient(-135deg, #00aaff, #5500ff); } .rectangle.big-size { background-image: linear-gradient(-135deg, red, #ff00a2); } .rectangle { width: 100%; height: calc(100% - 50px); transition: 300ms ease-in-out all; } . const rectAngle = document.querySelector('.rectangle'); // 미디어쿼리 정보 const mediaQueryList = matchMedia('(min-width: 600px)'); // 미디어쿼리 변화 시점에 따라 처리 mediaQueryList.addListener(onMediaQueryChange); /** * 미디어쿼리 변화 시점에 따라 실행되는 함수 */ function onMediaQueryChange(mediaQueryList) { if (mediaQueryList.matches === true) { rectAngle.classList.add('big-size'); console.log('윈도우 창의 크기가 600px 이상입니다.'); } else { rectAngle.classList.remove('big-size'); console.log('윈도우 창의 크기가 600px 미만입니다.'); } } // 화면 표시 시점에 onMediaQueryChange( ) 1회 실행 onMediaQueryChange(mediaQueryList); . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/#01-%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC%EA%B0%80-%EB%B3%80%ED%95%A0%EB%95%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%ED%95%A8%EC%88%98",
     "relUrl": "/docs/javascript/onMediaQueryChange/#01-미디어쿼리가-변할때-실행하는-함수"
-  },"147": {
+  },"154": {
     "doc": "onMediaQueryChange",
     "title": "onMediaQueryChange",
     "content": ". | 01 미디어쿼리가 변할때 실행하는 함수 | . – . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/",
     "relUrl": "/docs/javascript/onMediaQueryChange/"
-  },"148": {
+  },"155": {
     "doc": "scrollAmountJS",
     "title": "01 스크롤양 얻기",
     "content": "함수종류 . | 종류 | 설명 | . | document.documentElement.scrollTop / scrollLeft | document.querySelector(‘html’).scrollTop; 요소의 수직 스크롤 반환 | . | window.pageYOffset / pageXOffset | scrollY의 다른 이름으로, 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환 (IE ○) | . | window.scrollY / scrollX | 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환(IE X) | . 예제 . ",
     "url": "/book01/docs/javascript/scrollAmountJS/#01-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%96%91-%EC%96%BB%EA%B8%B0",
     "relUrl": "/docs/javascript/scrollAmountJS/#01-스크롤양-얻기"
-  },"149": {
+  },"156": {
     "doc": "scrollAmountJS",
     "title": "scrollAmountJS",
     "content": ". | 01 스크롤양 얻기 . | 함수종류 | 예제 | . | . – . ",
     "url": "/book01/docs/javascript/scrollAmountJS/",
     "relUrl": "/docs/javascript/scrollAmountJS/"
-  },"150": {
+  },"157": {
     "doc": "크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | clientHeight | padding을 포함한 높이 | . | scrollHeight | padding을 포함한 화면 상에 표시되지 않은 콘텐츠를 포함한 높이 | . | offsetHeight | border, padding, 스크롤 바를 포함한 높이 | . ",
     "url": "/book01/docs/javascript/size/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#01-요소-크기-알아내기"
-  },"151": {
+  },"158": {
     "doc": "크기알아내기",
     "title": "02 윈도우의 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | window.innerWidth | 스크롤 바를 포함하지 않는 창 너비 | . | window.innerHeight | 스크롤 바를 포함하지 않은 창 높이 | . | window.outerWidth | 스크롤 바를 포함, 창의 너비 | . | window.outerHeight | 스크롤 바를 포함한 창의 높이 | . ",
     "url": "/book01/docs/javascript/size/#02-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#02-윈도우의-크기-알아내기"
-  },"152": {
+  },"159": {
     "doc": "크기알아내기",
     "title": "크기알아내기",
     "content": ". | 01 요소 크기 알아내기 . | 함수종류 | . | 02 윈도우의 크기 알아내기 . | 함수종류 | . | . – . ",

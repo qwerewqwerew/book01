@@ -1,0 +1,58 @@
+---
+title: 06-Git
+layout: default
+parent: Miscellaneous
+tags: [git, branch]
+---
+ 
+---
+ ## Table of contents
+ {: .no_toc .text-delta }
+
+ 1. TOC
+{:toc}
+
+---
+
+🔗[원숭이도 이해하는 깃브랜치]({{'https://backlog.com/git-tutorial/kr/stepup/stepup2_2.html'| relative_url}} ){: .anc}
+
+---
+
+
+# 브랜치
+
+{: .note }
+> 브랜치란 : 소스의 버전
+> 소스에 여러 버전을 추가 다양한 기능을 테스트 할수 있다
+>
+
+## 만들기
+`git branch new-branch`
+
+## 바꾸기
+{: .note }
+>브랜치를 만들었다고 해서 사용하고 있는것이 아니다. 빈 폴더만 만든 상태와 같다.
+브랜치를 바꿔야 새 브랜치에서 작업 할수있다.
+
+`git switch new-branch`
+
+## 만들면서바꾸기
+
+`git switch -c new-branch`
+
+---
+
+
+# 복원
+
+{: .note }
+> 워킹 트리 파일 복원
+>
+
+## restore
+
+-수정전으로 가고싶다
+
+`git restore 파일명`
+
+* 작업하다 망친 코드를 원복할때 쓴다

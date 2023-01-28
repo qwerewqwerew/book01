@@ -1230,6 +1230,10 @@ code {
   font-size: 0.95em;
 }
 
+#main-content-wrap #main-content h1 {
+  font-weight: 100;
+  color: #381885;
+}
 #main-content-wrap #main-content h2 {
   color: #7253ed;
 }
@@ -7971,6 +7975,10 @@ code {
   font-size: 0.95em;
 }
 
+#main-content-wrap #main-content h1 {
+  font-weight: 100;
+  color: #381885;
+}
 #main-content-wrap #main-content h2 {
   color: #7253ed;
 }

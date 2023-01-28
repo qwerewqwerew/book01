@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 05-Scss
+title: 05-Sass/Scss
 parent: Miscellaneous
-tags: [scss , css ]
+tags: [scss , css ,sass]
 ---
  
 ---
