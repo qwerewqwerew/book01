@@ -485,21 +485,21 @@
     "url": "/book01/docs/php/04-func/",
     "relUrl": "/docs/php/04-func/"
   },"81": {
-    "doc": "04-탭UI(인덱스활용)",
-    "title": "인덱스 번호를 활용한 탭UI",
-    "content": "jQuery . javascript . ",
-    "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#%EC%9D%B8%EB%8D%B1%EC%8A%A4-%EB%B2%88%ED%98%B8%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%ED%83%ADui",
-    "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#인덱스-번호를-활용한-탭ui"
+    "doc": "04-탭UI",
+    "title": "탭UI 01",
+    "content": "인덱스 번호활용 . jQuery . javascript . ",
+    "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#%ED%83%ADui-01",
+    "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#탭ui-01"
   },"82": {
-    "doc": "04-탭UI(인덱스활용)",
-    "title": "정말 쉬운 탭",
+    "doc": "04-탭UI",
+    "title": "탭UI 02 진짜쉽다!",
     "content": "탭 UI 는 버튼 클릭시 해당 패널이 보이는 것을 의미한다. 그러므로 간단히 생각하면 버튼을 선택하고 패널을 선택후 보이게 하면 된다 . 02-1 . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 탭: 클릭한것만 보이기(나머지 감추기) --&gt; &lt;/head&gt; &lt;body&gt; &lt;ul&gt; &lt;li class=\"b1\"&gt;btn1&lt;/li&gt; &lt;li class=\"b2\"&gt;btn2&lt;/li&gt; &lt;li class=\"b3\"&gt;btn3&lt;/li&gt; &lt;/ul&gt; &lt;div&gt; &lt;h3 class=\"h1\"&gt;para1&lt;/h3&gt; &lt;h3 class=\"h2\"&gt;para2&lt;/h3&gt; &lt;h3 class=\"h3\"&gt;para3&lt;/h3&gt; &lt;/div&gt; &lt;script src='https://code.jquery.com/jquery-3.6.0.min.js'&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . javascript . var h1=document.querySelector(\".h1\"); var h2=document.querySelector(\".h2\"); var h3=document.querySelector(\".h3\"); var b1=document.querySelector(\".b1\"); var b2=document.querySelector(\".b2\"); var b3=document.querySelector(\".b3\"); h2.style.display = \"none\"; h3.style.display = \"none\"; b1.onclick=function(){ //버튼1을 클릭하면 h1.style.display=\"block\"; //패널1이 보인다 h2.style.display=\"none\"; //다른패널은 숨긴다 h3.style.display=\"none\"; } b2.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"block\"; h3.style.display=\"none\"; } b3.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"none\"; h3.style.display=\"block\"; } . JQuery . $('h3').hide(); $('.h1').show(); $('.b1').click(function () { $('.h1').show(); $('.h2').hide(); $('.h3').hide(); }) $('.b2').click(function () { $('.h1').hide(); $('.h2').show(); $('.h3').hide(); }) $('.b3').click(function () { $('.h1').hide(); $('.h2').hide(); $('.h3').show(); }) . 02-2 . Refactoring 😺 1. 반복되는 요소를 변수로 저장하자 😺 2. 반복되는 기능을 함수로 묶고 변하는 부분을 매개변수로 바꿔보자 😺 3. 1번과 2번에서 작성한 함수와 변수를 사용하여 코드를 바꿔보자 😺 4. 3번에서 바꿔본 코드의 반복되는 부분을 줄여보자 . JQuery . const btn = $('ul&gt;li'), panel = $('h3'); hidden(panel); visible(panel.eq(0)); btn.each(function (i, o) { btn.eq(i).click(function () { hidden(panel); visible(panel.eq(i)); }) }) function visible(obj) { obj.show(); } function hidden(obj) { obj.hide(); } . ",
-    "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#%EC%A0%95%EB%A7%90-%EC%89%AC%EC%9A%B4-%ED%83%AD",
-    "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#정말-쉬운-탭"
+    "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#%ED%83%ADui-02-%EC%A7%84%EC%A7%9C%EC%89%BD%EB%8B%A4",
+    "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#탭ui-02-진짜쉽다"
   },"83": {
-    "doc": "04-탭UI(인덱스활용)",
-    "title": "04-탭UI(인덱스활용)",
-    "content": ". ## 목차 . | TOC | . ",
+    "doc": "04-탭UI",
+    "title": "04-탭UI",
+    "content": ". ## 목차 . | 탭UI 01 . | jQuery | javascript | . | 탭UI 02 진짜쉽다! . | 02-1 | 02-2 | . | . ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/"
   },"84": {

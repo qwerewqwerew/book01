@@ -3,7 +3,7 @@ layout: default
 title: Javascript+JQuery
 nav_order: 3
 has_children: true
-nav_exclude: true
+nav_exclude: false
 ---
 
 

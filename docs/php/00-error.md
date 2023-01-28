@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 00-에러
-date: 2023-01-10
 parent: PHP
 ---
 
