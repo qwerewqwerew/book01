@@ -1210,6 +1210,7 @@ body {
 
 img {
   display: block;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .close {
@@ -1229,8 +1230,26 @@ code {
   font-size: 0.95em;
 }
 
-#main-content-wrap h2 {
+#main-content-wrap #main-content h2 {
   color: #7253ed;
+}
+#main-content-wrap #main-content h3 {
+  color: #44434d;
+  left: 1rem;
+}
+#main-content-wrap #main-content h3:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #7253ed;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(55deg);
+}
+#main-content-wrap #main-content #markdown-toc ol a {
+  color: #5c5962;
+  font-size: 14px;
 }
 
 .main-content {
@@ -7932,6 +7951,7 @@ blockquote.warning-title > p:last-child {
 
 img {
   display: block;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .close {
@@ -7951,8 +7971,26 @@ code {
   font-size: 0.95em;
 }
 
-#main-content-wrap h2 {
+#main-content-wrap #main-content h2 {
   color: #7253ed;
+}
+#main-content-wrap #main-content h3 {
+  color: #44434d;
+  left: 1rem;
+}
+#main-content-wrap #main-content h3:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #7253ed;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(55deg);
+}
+#main-content-wrap #main-content #markdown-toc ol a {
+  color: #5c5962;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=just-the-docs-light.css.map */

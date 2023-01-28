@@ -34,7 +34,7 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
-   - _site/
+   
  # specific to the theme website:
   
 
