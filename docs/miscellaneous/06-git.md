@@ -32,7 +32,7 @@ tags: [git, branch]
 ## 바꾸기
 {: .note }
 >브랜치를 만들었다고 해서 사용하고 있는것이 아니다. 빈 폴더만 만든 상태와 같다.
-브랜치를 바꿔야 새 브랜치에서 작업 할수있다.
+>브랜치를 바꿔야 새 브랜치에서 작업 할수있다.
 
 `git switch new-branch`
 
@@ -40,16 +40,17 @@ tags: [git, branch]
 
 `git switch -c new-branch`
 
+## 지우기
+
+`git branch -D new-branch`
+
 ---
 
 
 # 복원
 
-{: .note }
-> 워킹 트리 파일 복원
->
-
 ## restore
+
 
 -수정전으로 가고싶다
 

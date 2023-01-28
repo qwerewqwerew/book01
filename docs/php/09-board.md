@@ -67,29 +67,29 @@ tags: [ Cookie,Session ]
 ### 01-2 테이블생성
 
 1. create new table 클릭 
-  ![]({{'/assets/img/pnp102.jpg'| relative_url}} )
+  ![]({{'/assets/img/php102.jpg'| relative_url}} )
 
 1. 이미지의 표시된 정보를 입력후 실행 클릭 -> 오류메시지 출력시 모두 무시 클릭
-  ![]({{'/assets/img/pnp102.jpg'| relative_url}} )
+  ![]({{'/assets/img/php102.jpg'| relative_url}} )
 
 
 1. 이미지의 표시된 부분만 해당 정보를 입력한다. 나머지는 그냥둠
-  ![]({{'/assets/img/pnp104.jpg'| relative_url}} )
+  ![]({{'/assets/img/php104.jpg'| relative_url}} )
 
 1. 3 단계에서 primary 선택시 아래와 같은 화면이 뜨면 실행을 누르면 된다.
-  ![]({{'/assets/img/pnp105.jpg'| relative_url}} )
+  ![]({{'/assets/img/php105.jpg'| relative_url}} )
 
 
 1. sql 미리보기 클릭
-  ![]({{'/assets/img/pnp107.jpg'| relative_url}} )
+  ![]({{'/assets/img/php107.jpg'| relative_url}} )
 
 
 1. 설정값 확인후 저장클릭
-  ![]({{'/assets/img/pnp106.jpg'| relative_url}} )
+  ![]({{'/assets/img/php106.jpg'| relative_url}} )
 
 
 1. 설정값 확인후 저장클릭
-  ![]({{'/assets/img/pnp108.jpg'| relative_url}} )
+  ![]({{'/assets/img/php108.jpg'| relative_url}} )
 
 ---
 
