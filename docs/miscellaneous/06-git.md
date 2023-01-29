@@ -57,3 +57,20 @@ tags: [git, branch]
 `git restore 파일명`
 
 * 작업하다 망친 코드를 원복할때 쓴다
+
+# A 브랜치의 HEAD 를 B 브랜치로 덮어씌우기
+
+```
+git checkout A
+git reset —hard B
+git push -f origin A
+
+```
+# 커밋 정보확인
+
+ `git show`
+
+
+# (END) 해결 
+
+`q` 누름
