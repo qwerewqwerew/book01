@@ -60,32 +60,37 @@
       <li>채용정보</li>
     </ul>
     <div class="tab_list">
-      <h3>dddddddd</h3>
-      <h3>aaaaaaaaaa</h3>
-      <h3>eeeeeeeeeeee</h3>
-      <h3>4444444444</h3>
+      <h3>공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항공지사항</h3>
+      <h3>알림마당알림마당알림마당알림마당알림마당</h3>
+      <h3>보도자료보도자료보도자료보도자료보도자료채용정보</h3>
+      <h3>채용정보</h3>
       <h3>lolooo</h3>
     </div>
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script>
       const btn = document.querySelectorAll('ul>li'), panel = document.querySelectorAll('h3');
+
       hidden(panel);
       visible(panel[0]);
-/*       btn.each(function (i, o) {
-        btn.eq(i).click(function () {
-          hidden(panel);
-          visible(panel.eq(i));
+      btn.forEach((el, i) => {
+        el.addEventListener("click", function () {
+          hidden(panel)
+          visible(panel[i])
         })
-      }) */
+
+      });
+
       function visible(obj) {
-        obj.foreach((o) => {
-          o.style.display = 'block';
-        })
+        obj.length == undefined ? obj.style.display = 'block' :
+          obj.foreach((o) => {
+            o.style.display = 'block';
+          })
       }
+
       function hidden(obj) {
-        for (o of obj) {
-          o.style.display = 'none';
-        }
+        obj.length == undefined ? obj.style.display = 'none' : obj.forEach((o) => {
+          o.style.display = 'none'
+        })
       }
     </script>
 </body>
