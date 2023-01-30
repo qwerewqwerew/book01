@@ -21,6 +21,9 @@ parent: PHP
   + php 포트번호 변경
 1. ![]({{'/assets/img/php48.png'| relative_url}} )
 
+1. htttpd.conf 열고 80 -> 8088
+1. htttpd-ssl.conf 열고 443 -> 4433
+1. xmapp 컨트롤 패널 우측의 config 버튼을 클릭하여 그부분도 수정
 
 
 ---
@@ -37,3 +40,7 @@ parent: PHP
 ```
 
 > 삭제후 재설치
+
+1. my.ini 열고 port 번호 3400 로 수정
+1. xmapp 컨트롤 패널 우측의 config 버튼을 클릭하여 그부분도 수정
+1. [stackoverflow](https://stackoverflow.com/questions/18022809/how-to-solve-error-mysql-shutdown-unexpectedly)

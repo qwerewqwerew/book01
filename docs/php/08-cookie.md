@@ -5,11 +5,15 @@ parent: PHP
 tags: [ Cookie,Session ]
 ---
  
+---
 
 1. TOC
 {:toc}
 
 ---
+
+관련링크
+{: .label .label-purple }
 
 >[🔗php_setcookie](https://www.php.net/manual/en/function.setcookie.php){: .anc}
 >[🔗php_$_COOKIE](https://www.php.net/manual/en/reserved.variables.cookies.php){: .anc}

@@ -52,8 +52,9 @@ parent: PHP
    <img src='{{ "/assets/img/Untitled.png" | relative_url }}'>
    <img src='{{ "/assets/img/php1.png" | relative_url }}'>
 
-3. 123456 비밀번호는 6자리 적어놓는다<br>
-   이후에 데이터베이스 관련한 수업할 때 이 비번을 이용하므로 꼭 기억해놓는다
+3. <del>123456 비밀번호는 6자리 적어놓는다</del><br>
+   <del>이후에 데이터베이스 관련한 수업할 때 이 비번을 이용하므로 꼭 기억해놓는다</del><br/>
+   XMAPP 는 비번없음 
    <img src='{{ "/assets/img/php2.png" | relative_url }}'>
 
 4. 중간에 방화벽으로 차단이 나올경우 모두 엑세스 허용해준다.
