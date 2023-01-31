@@ -2,6 +2,7 @@
 @import "./vendor/normalize.scss/normalize";
 
 // Modules
+@import "./support/support";
 @import "./base";
 @import "./layout";
 @import "./custom/custom";
@@ -13,7 +14,6 @@
 @import "./search";
 @import "./tables";
 @import "./code";
-@import "./support/support";
 @import "./utilities/utilities";
 @import "./print";
 @import "./skiptomain";
