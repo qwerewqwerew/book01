@@ -77,3 +77,10 @@ code {
     }
   }
 }
+div.highlighter-rouge,
+div.listingblock > div.content,
+figure.highlight{background: #ebe8fd !important;}
+
+p.warning::before, blockquote.warning::before{
+  content:‼;
+}
