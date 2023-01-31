@@ -33,7 +33,6 @@ exclude:
  # specific to the theme website:
   
 
-asset_url: _site/assets
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"

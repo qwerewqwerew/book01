@@ -23,11 +23,11 @@ tags: [Cookie, Session, mysqli_connect]
 >
 > [🔗php_session_unset](https://www.php.net/manual/en/function.session-unset.php){: .anc}
 >
-> 🔗 #mySql (https://mysql.com/)
-> {: .anc}
+> [🔗mySql](https://mysql.com/){: .anc}
+> 
 >
-> 🔗 #mySql_statements (https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html)
-> {: .anc}
+> [🔗mySql_statements](https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html){: .anc}
+> 
 
 ---
 
