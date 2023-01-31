@@ -115,940 +115,1078 @@
   },"19": {
     "doc": "01-SNSLogin",
     "title": "01 naver",
-    "content": " ",
+    "content": "🔗네이버개발자 . 🔗 네이버로그인 API가이드 . | 아래의 동영상 가이드를 보면서 따라한다. 🔗 동영상 가이드 . | 네이버로그인 API가이드 의 예제를 복사하여 vscode 에 붙여넣고 수정후 서버에 올린다. | 꼭 서버환경에 업로드 하여 테스트 해본다 . | . ",
     "url": "/book01/docs/javascript/01-snsLogin/#01-naver",
     "relUrl": "/docs/javascript/01-snsLogin/#01-naver"
   },"20": {
     "doc": "01-SNSLogin",
-    "title": "01-1 네이버로그인 API",
-    "content": "🔗네이버개발자 . 🔗 네이버로그인 API가이드 . | 아래의 동영상 가이드를 보면서 따라한다. 🔗 동영상 가이드 . | 네이버로그인 API가이드 의 예제를 복사하여 vscode 에 붙여넣고 수정후 서버에 올린다. | 꼭 서버환경에 업로드 하여 테스트 해본다 . | . ",
-    "url": "/book01/docs/javascript/01-snsLogin/#01-1-%EB%84%A4%EC%9D%B4%EB%B2%84%EB%A1%9C%EA%B7%B8%EC%9D%B8-api",
-    "relUrl": "/docs/javascript/01-snsLogin/#01-1-네이버로그인-api"
-  },"21": {
-    "doc": "01-SNSLogin",
     "title": "02 kakao",
-    "content": ". | 🔗카카오개발자 카카오에서 인증키를 발급받아야 한다 | . &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;Document&lt;/title&gt; &lt;script src=\"https://developers.kakao.com/sdk/js/kakao.js\"&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;a id=\"custom-login-btn\" href=\"javascript:kakaoLogin()\"&gt; &lt;img src=\"//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg\" width=\"222\" /&gt; &lt;/a&gt; &lt;button id=\"logout-btn\" style=\"display: none\" onclick=\"kakaoLogout();\"&gt; 로그아웃 &lt;/button&gt; &lt;script&gt; Kakao.init(\"5e953dddfcae9a00c14179f3e355c90b\"); //발급 받은 앱키 function kakaoLogin() { Kakao.Auth.login({ scope: \"profile_nickname,account_email\", //동의항목에서 설정한 ID와 반드시 일치해야 함 success: function () { //로그인 성공 Kakao.API.request({ //사용자 정보를 가져오기 위한 API url: \"/v2/user/me\", success: (res) =&gt; { //사용자 정보를 가져오는데 성공 const kakaoAccount = res.kakao_account; //사용자 계정 정보 console.log(kakaoAccount); document.getElementById(\"custom-login-btn\").style.display = \"none\"; //로그인 버튼 숨기기 document.getElementById(\"logout-btn\").style.display = \"\"; //로그아웃 버튼 보이기 }, }); }, fail: function (error) { //로그인 실패 console.log(error); }, }); } function kakaoLogout() { if (!Kakao.Auth.getAccessToken()) { //로그인을 했으면 Access Token 이 발급되어져 있음. 없으면 아직 로그인을 안한 것임. console.log(\"Not logged in.\"); return; } Kakao.Auth.logout((res) =&gt; { //로그아웃 함수 호출 console.log(window.Kakao.Auth.getAccessToken()); console.log(res); document.getElementById(\"custom-login-btn\").style.display = \"\"; //로그인 버튼 보이기 document.getElementById(\"logout-btn\").style.display = \"none\"; //로그아웃 버튼 숨기기 }); } &lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . ",
+    "content": ". | 🔗카카오개발자 카카오에서 인증키를 발급받아야 한다 | . html . &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;Document&lt;/title&gt; &lt;script src=\"https://developers.kakao.com/sdk/js/kakao.js\"&gt;&lt;/script&gt; &lt;/head&gt; &lt;body&gt; &lt;a id=\"custom-login-btn\" href=\"javascript:kakaoLogin()\"&gt; &lt;img src=\"//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg\" width=\"222\" /&gt; &lt;/a&gt; &lt;button id=\"logout-btn\" style=\"display: none\" onclick=\"kakaoLogout();\"&gt; 로그아웃 &lt;/button&gt; &lt;script&gt; Kakao.init(\"5e953dddfcae9a00c14179f3e355c90b\"); //발급 받은 앱키 function kakaoLogin() { Kakao.Auth.login({ scope: \"profile_nickname,account_email\", //동의항목에서 설정한 ID와 반드시 일치해야 함 success: function () { //로그인 성공 Kakao.API.request({ //사용자 정보를 가져오기 위한 API url: \"/v2/user/me\", success: (res) =&gt; { //사용자 정보를 가져오는데 성공 const kakaoAccount = res.kakao_account; //사용자 계정 정보 console.log(kakaoAccount); document.getElementById(\"custom-login-btn\").style.display = \"none\"; //로그인 버튼 숨기기 document.getElementById(\"logout-btn\").style.display = \"\"; //로그아웃 버튼 보이기 }, }); }, fail: function (error) { //로그인 실패 console.log(error); }, }); } function kakaoLogout() { if (!Kakao.Auth.getAccessToken()) { //로그인을 했으면 Access Token 이 발급되어져 있음. 없으면 아직 로그인을 안한 것임. console.log(\"Not logged in.\"); return; } Kakao.Auth.logout((res) =&gt; { //로그아웃 함수 호출 console.log(window.Kakao.Auth.getAccessToken()); console.log(res); document.getElementById(\"custom-login-btn\").style.display = \"\"; //로그인 버튼 보이기 document.getElementById(\"logout-btn\").style.display = \"none\"; //로그아웃 버튼 숨기기 }); } &lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . ",
     "url": "/book01/docs/javascript/01-snsLogin/#02-kakao",
     "relUrl": "/docs/javascript/01-snsLogin/#02-kakao"
-  },"22": {
+  },"21": {
     "doc": "01-SNSLogin",
     "title": "01-SNSLogin",
-    "content": ". | 01 naver . | 01-1 네이버로그인 API | . | 02 kakao | . – . SNS 로그인 기능을 구현해보자 . ",
+    "content": ". | 01 naver | 02 kakao | . – . 네이버와 카카오 API 를 연동하여 SNS 로그인 기능을 구현해보자 . ",
     "url": "/book01/docs/javascript/01-snsLogin/",
     "relUrl": "/docs/javascript/01-snsLogin/"
-  },"23": {
+  },"22": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01 DOM 조작",
     "content": "DocumentObjectModel 을 탐색하고 조작하는 명령어를 알아보자 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-dom-%EC%A1%B0%EC%9E%91",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-dom-조작"
-  },"24": {
+  },"23": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-1 Js",
     "content": "함수종류 . | 종류 | 설명 | . | Element.innerText | 요소내 포함 된 text 을 가져오거나 설정숨긴글씨제외 | . | Element.innerHTML | 요소내 포함 된 HTML 을 가져오거나 설정 | . | Element.textContent | 요소내 포함 된 text 을 가져오거나 설정숨긴글씨포함 | . | Element.insertAdjacentHTML() | 특정 위치에 DOM tree 안에 원하는 node들을 추가함 | . | 🔗mdn | 'beforebegin' element 앞에 | . |   | 'afterbegin' element 안에 가장 첫번째 child | . |   | 'beforeend' element 안에 가장 지막 child | . |   | 'afterend' element 뒤에 | . | Element.getAttribute() | 태그의 속성을 얻어옴 | . | Element.setAttribute() | 태그의 속성을 변경함 | . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-1-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-1-js"
-  },"25": {
+  },"24": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-2 JQ",
     "content": "함수종류 . | 종류 | 설명 | . | $(“ele”).text(“”); | text 요소 취득,수정,치환 | . | $(“ele”).html(“”); | html 요소 취득,수정,치환 | . | $(“selector”).append(“”); | 요소를 막내로 추가 | . | $(“selector”).prepend(“”); | 요소를 첫째로 추가 | . | $(“selector”).before(“”); | 요소를 앞에 추가 | . | $(“selector”).after(“”); | 요소를 뒤에 추가 | . $(\"ele\").text(\"\")/html(\"\") 은 인자를 몇개 전달하는지만 기억하자 . $(\"ele\").text/html( ): 가져와 . $(\"ele\").text/html(\"\") : 비워 . $(\"ele\").text/html(\"\",\"\"):바꿔 . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-2-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#01-2-jq"
-  },"26": {
+  },"25": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02 EVENT",
     "content": "웹 브라우저에서 버튼을 클릭한다거나 mouse를 움직이거나 하는 모든 행위를 ‘이벤트’라고 합니다. 그리고 이벤트발생 시 함수의 실행문이 수행되도록 이벤트를 지정하는 것을 이벤트 핸들러라고 합니다. 이벤트 발생시 관련 정보를 가지고 있는 이벤트 객체를 전달받을수 있습니다. ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-event",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-event"
-  },"27": {
+  },"26": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-1 Js",
     "content": "함수종류 . | 이벤트 객체의 속성 | 설명 | 예시 | . | 일반 | — | — | . | type | 이벤트 종류 | event.type =&gt; click 등 | . | target | 이벤트를 발생시킨 요소 | event.target.id :이벤트를 발생시킨 요소의 id 값을 나타냄 | . | 좌표 | — | — | . | screenX,screenY | 사용자 모니터 화면을 기준으로 한 좌표 |   | . | pageX ,pageY | 전체 문서를 기준으로 한 좌표(스크롤포함) |   | . | clientX,clientY | 브라우저에서 사용자에게 웹페이지가 보여지는 영역을 기준(스크롤무시) |   | . | offsetX,offsetY | 이벤트 대상 객체(좌표를 출력하도록 하는 이벤트가 걸려있는 DOM node를 기준)에서의 상대 좌표 |   | . | 키보드,마우스 | — | — | . | mouse | 마우스 눌러진 버튼 (좌측 버튼 : 0, 가운데 : 1, 우측 : 2) |   | . | key | 눌린 키의 값 |   | . | keyCode | 눌린 키의코드) |   | . | altKey | Alt 키 눌려진 여부 (true : 눌려짐, false : 안 눌려짐) |   | . | ctrlKey | Ctrl 키 눌려진 여부 |   | . | shiftKey | 시프트 키 눌려진 여부 |   | . | touchstart | 스크린에 손가락이 닿을때 |   | . | touchmove | 스크린에 손가락이 닿을채로 움직일때 |   | . | touchend | 스크린에 손가락을 뗄때 |   | . | 메소드 | — | — | . | preventDefault() | 이벤트에 대한웹브라우저의 기본동작 취소하기 | +. | . | stopPropagation() | 이벤트 버블링의 정지 |   | . | stopimmediatePropagation() | 이벤트 버블링의 즉시 정지-같은 요소의 다른이벤트 리스너 실행까지도 멈춤) |   | . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-1-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-1-js"
-  },"28": {
+  },"27": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-2 JQ",
     "content": "함수종류 . 🔗jQuery . | 종류 | 설명 | . | $(“ele”).text(“”); | text 요소 취득,수정,치환 | . | $(“ele”).html(“”); | html 요소 취득,수정,치환 | . | $(“selector”).append(“”); | 요소를 막내로 추가 | . | $(“selector”).prepend(“”); | 요소를 첫째로 추가 | . | $(“selector”).before(“”); | 요소를 앞에 추가 | . | $(“selector”).after(“”); | 요소를 뒤에 추가 | . $(\"ele\").text(\"\")/html(\"\") 은 인자를 몇개 전달하는지만 기억하자 . $(\"ele\").text/html( ): 가져와 . $(\"ele\").text/html(\"\") : 비워 . $(\"ele\").text/html(\"aaa\"):바꿔 . 예제 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq"
-  },"29": {
+  },"28": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03 Accrodian",
     "content": "아코디언 UI를 만들어보자 . 선택된 요소만 펼쳐지는 형태인 아코디언 UI를 구현해 보자. 선택된 요소만 on 시키는 두가지 방법 . | 모두 off 선택된 것 만 on | 조건을 비교해서 모두 off 선택된 것 만 on | . 1단계 . CSS 없이 기능만 제작한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-accrodian",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-accrodian"
-  },"30": {
+  },"29": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-1 Js",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-js"
-  },"31": {
+  },"30": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-1 JQ",
     "content": "2단계 . CSS 를 넣어 UI를 완성한다 전부 off 후 클릭한것만 on 한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-1-jq"
-  },"32": {
+  },"31": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-2 Js",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-js"
-  },"33": {
+  },"32": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "02-2 JQ",
     "content": "3단계 . 조건을 비교하여 전부 off 후 클릭한것만 on 한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq-1",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#02-2-jq-1"
-  },"34": {
+  },"33": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-3 Js",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-js",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-js"
-  },"35": {
+  },"34": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "03-3 JQ",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-jq",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#03-3-jq"
-  },"36": {
+  },"35": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "버그수정",
     "content": "높이를 고정으로 주었더니 4번째 메뉴가 안보인다. 높이를 요소에서 가져와서 조작하자 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#%EB%B2%84%EA%B7%B8%EC%88%98%EC%A0%95",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#버그수정"
-  },"37": {
+  },"36": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "04 토글구현",
     "content": "javascript 에서 .hasClass(“on”) 은 classList.contains(‘on’) 으로 작성한다 . ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#04-%ED%86%A0%EA%B8%80%EA%B5%AC%ED%98%84",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/#04-토글구현"
-  },"38": {
+  },"37": {
     "doc": "01-돔조작, 이벤트, 아코디언",
     "title": "01-돔조작, 이벤트, 아코디언",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/",
     "relUrl": "/docs/javascript+jQuery/01-%EB%8F%94%EC%A1%B0%EC%9E%91,%20%EC%9D%B4%EB%B2%A4%ED%8A%B8,%20%EC%95%84%EC%BD%94%EB%94%94%EC%96%B8/"
-  },"39": {
+  },"38": {
     "doc": "01-지킬설치",
     "title": "| 컨텐츠를 구성하는 가장 기본적인 요소",
     "content": "04. 구조 . ├── about.md # =&gt; http://example.com/about.html ├── index.html # =&gt; http://example.com/ └── contact.html # =&gt; http://example.com/contact.html . | 페이지가 많을 경우 하위 폴더로 정리할수 있다. 사이트 빌드 시, 사이트 소스에서 페이지를 그룹지을 때 사용한 하위 폴더가 동일한 형태로 _site 폴더 안에 생성됩니다. 하지만, 페이지의 | 머리말에 다른 고유주소가 설정되어 있으면, _site 의 하위 폴더는 이에 맞게 변형됩니다. | 04-1 하위폴더 생성시 구조 | . ├── about.md # =&gt; http://example.com/about.html ├── documentation # 페이지가 들어있는 폴더 │ └── doc1.md # =&gt; http://example.com/documentation/doc1.html ├── design # 페이지가 들어있는 폴더 │ └── draft.md # =&gt; http://example.com/design/draft.html . 📌 디렉토리 구조 원문 링크 . 05. 깃허브 빌드시 테마가 깨질때 . | 원인: github에 업로드한 테마파일의 경로가 로컬환경과 달라져서 그렇다. | 해결: _config.yml 의 url 과 baseurl 값을 변경한다 | . url: 'https://qwerewqwerew.github.io' # 내 깃블로그 주소 baseurl: '/book01' # 깃페이지 경로 . ",
     "url": "/book01/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/#-%EC%BB%A8%ED%85%90%EC%B8%A0%EB%A5%BC-%EA%B5%AC%EC%84%B1%ED%95%98%EB%8A%94-%EA%B0%80%EC%9E%A5-%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%EC%9A%94%EC%86%8C",
     "relUrl": "/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/#-컨텐츠를-구성하는-가장-기본적인-요소"
-  },"40": {
+  },"39": {
     "doc": "01-지킬설치",
     "title": "01-지킬설치",
     "content": ". | 00. 도움말 링크 | 01. 지킬설치 . | 01-1 루비설치 | . | 01-2 지킬 구성파일 설치 | 01-3 지킬 블로그 생성 | 01-4 블로그 실행 | 02. 이미지 넣기 | 03. 페이지 | | 컨텐츠를 구성하는 가장 기본적인 요소 . | 04. 구조 | 05. 깃허브 빌드시 테마가 깨질때 | . | . – . 00. 도움말 링크 . 지킬공식사이트 . 리퀴드문법정리 . 리퀴드변수정리 . 지킬메뉴얼한국어블로그 . 망고는코딩대장 레파지토리 . 깃블로그 단계별 설치가이드 . [깃페이지설명서] (https://pages.github.com) . [깃테마] (https://pages.github.com/themes) . [지킬북테마] (https://github.com/sighingnow/jekyll-gitbook/fork) . just-the-docs . just-the-docs . 01. 지킬설치 . 01-1 루비설치 . ** 지킬을 사용하려면 루비를 설치해야한다. ** . | Ruby 설치: RubyInstaller 파일 다운로드 후 실행 (ruby -v으로 설치 확인) 루비다운로드 . | 프로그램 설치후 PC 재부팅 한다. | . 01-2 지킬 구성파일 설치 . | 윈도우 시작버튼 누르고 cmd입력 . | Jekyll 설치: 터미널에 gem install bundler jekyll . | . 01-3 지킬 블로그 생성 . | 블로그 생성: jekyll new my-blog . | 현재 디렉토리 하위에 my-blog 라는 폴더가 생성되며 지킬블로그 테마가 설치된다. | 테마를 다운로드 했을경우 bundle install 을 실행한다. | . 01-4 블로그 실행 . | 터미널 실행 : cd my-blog . | bundle exec jekyll serve . | http://localhost:4000으로 접속 . | . 02. 이미지 넣기 . | HTML 문법으로 넣기 | . | Absolute URL (절대 경로): url과 baseurl을 앞에 붙여준다. | . &lt;img src='/book01/assets/img/image.png' &gt; &lt;!-- result : http://blog.mango.io/my-baseurl/assets/img/image.png --&gt; . | 아래의 이미지처럼 해보세요 | . 03. 페이지 . ",
     "url": "/book01/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/",
     "relUrl": "/docs/Jekyll/01-%EC%A7%80%ED%82%AC%EC%84%A4%EC%B9%98/"
-  },"41": {
+  },"40": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "01 nodeJS 설치",
     "content": "NodeJS 16 버전 설치 EXPO 개발시 v18 충돌남 . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-nodejs-%EC%84%A4%EC%B9%98",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-nodejs-설치"
-  },"42": {
+  },"41": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "01 bootstrap 인스톨",
     "content": ". | bootstrap 폴더 생성 . | npm init -y . | . | pacakage.json 파일생성 | . | npm i bootstrap | npm i bootstrap-icons | . | 위의 과정 진행후 node_modules 폴더를 열면 bootstrap 폴더가 보인다 | . | index.html 파일생성 | scss 폴더 생성 | scss / main.scss 파일생성 | livescsscompiler 세팅 | . | | | . | scss 환경설정 | . \"liveSassCompile.settings.formats\": [ { \"format\": \"expanded\", \"extensionName\": \".css\", \"savePath\": \"~../css\", \"savePathReplacementPairs\": null }, { \"format\": \"compressed\", \"extensionName\": \".min.css\", \"savePath\": \"~../css\", \"savePathReplacementPairs\": null } ], . | index.html 작성 | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;bootstrap&lt;/title&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt; . | main.scss 작성 | . @import \"../node_modules/bootstrap/scss/bootstrap.scss\"; . | vscode 하단의 watch scss 를 클릭하면 프로젝트 폴더에 css 폴더와 함께 컴파일된 css 생성 | . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-bootstrap-%EC%9D%B8%EC%8A%A4%ED%86%A8",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#01-bootstrap-인스톨"
-  },"43": {
+  },"42": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "02",
     "content": ". | 모듈링크 | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;bootstrap&lt;/title&gt; &lt;link rel=\"stylesheet\" href=\"css/main.min.css\" /&gt; &lt;/head&gt; &lt;body class=\"bg-primary\"&gt; &lt;script src=\"node_modules/bootstrap/dist/js/bootstrap.js\"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . | 실행화면 배경색이 primary-color 인지 확인 . | 버튼추가 . &lt;button type=\"button\" class=\"btn-light btn\"&gt;전송&lt;/button&gt; . &lt;button type=\"button\" class=\"btn-outline-light btn\"&gt;전송&lt;/button&gt; . | . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#02",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#02"
-  },"44": {
+  },"43": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "03",
     "content": ". | main.scss | 변수를 변경하여 수정해본다 | . $primary:pink; $light:gray; @import \"../node_modules/bootstrap/scss/bootstrap.scss\"; . &lt;body&gt; &lt;button type=\"button\" class=\"btn-light btn\"&gt;전송&lt;/button&gt; &lt;button type=\"button\" class=\"btn-outline-light btn\"&gt;전송&lt;/button&gt; &lt;button type=\"button\" class=\"btn-primary btn\"&gt;전송&lt;/button&gt; &lt;button type=\"button\" class=\"btn-outline-primary btn\"&gt;전송&lt;/button&gt; &lt;script src=\"node_modules/bootstrap/dist/js/bootstrap.js\"&gt;&lt;/script&gt; &lt;/body&gt; . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#03",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#03"
-  },"45": {
+  },"44": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "04",
     "content": ". | 아이콘 넣기 | . &lt;img src=\"node_modules/bootstrap-icons/icons/alarm.svg\" alt=\"\"&gt; &lt;img src=\"node_modules/bootstrap-icons/icons/phone-fill.svg\" alt=\"\"&gt; . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#04",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/#04"
-  },"46": {
+  },"45": {
     "doc": "02-bootstrap scss 개발하기",
     "title": "02-bootstrap scss 개발하기",
     "content": ". | TOC . | . ",
     "url": "/book01/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/",
     "relUrl": "/docs/miscellaneous/02-bootstrap%20scss%20%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0/"
-  },"47": {
+  },"46": {
     "doc": "02-Dooosan-스크립트",
     "title": "02-Dooosan-스크립트",
     "content": "슬라이드 설명 이미지 . | 객체와 변수 선언 var current = 0; //current var prev = null; //prev var next = null; //next let mainInterval; //setIntervalID var speed = 4000; //반복시간 var pause_css; var slides = $(\".slide_cover ul li\"); var obj = { \"btn\": $(\".slide_btn ul li\"), \"btn-ani\": $(\".color\"), \"left\": $(\".cursor_left\"), \"right\": $(\".cursor_right\"), \"wbox\": $(\".white_box\"), \"cbox\": $(\".box\"), \"logo\": $(\".img_logo\"), \"text\": $(\".img_text\"), \"reset\": $(\".reset\"), \"pause\": $(\".pause_btn\"), \"play\": $(\".play_btn\"), } . | 슬라이드 함수 작성 | . /** * 시간마다 인덱스 계산, slide함수 호출함 * * */ timer(); function timer() { mainInterval = setInterval(function () { current++; prev = current - 1; if (current == 3) { current = 0; } slide(); }, speed); } function remove(x) { x.removeClass(\"on\"); } function add(x) { x.addClass(\"on\"); } function slide() { obj.btn.off(\"click\"); obj.left.off(\"click\"); obj.right.off(\"click\"); obj.reset.off(\"click\", reset); clearInterval(mainInterval); slides .find(obj.wbox) .css(\"left\", \"-100%\") .stop() .animate({ left: \"0%\" }, 1000, function () { obj.wbox.stop().animate({ left: \"100%\" }, 1000); add(slides.eq(current)); // remove(slides.eq(prev)); remove(obj.pager); remove(obj.logo); remove(obj.text); remove(obj.cbox); add(obj.btn.eq(current).find(obj.pager)); add(slides.eq(current).find(obj.logo)); add(slides.eq(current).find(obj.text)); add(slides.eq(current).find(obj.cbox)); remove(slides.find(\"a img\")); console.log(slides.eq(current)); add(slides.eq(current).find(\"a img\")); }); slides.eq(prev).animate({ left: 0 }, 2000, function () { setTimeout(function () { obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); pause_css = $(\".pause_css\").css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { add(obj.btn.eq(current).find(obj.pager)); timer(); } }, 1000); }); next = current; } /** * click_slide * pager 함수 * * **/ function click_slide() { current = $(this).index(); if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * left_click * left 커서함수 * * **/ function left_click() { current--; if (current == -1) current = 2; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * right_click * right 커서함수 * * ***/ function right_click() { current++; if (current == 3) current = 0; if (current == next) return; prev = next; slide(); remove(obj.pager); } /** * reset * play,stop * * ***/ /* 비동기 함수 */ function reset() { pause_css = obj.pause.css(\"display\"); if (pause_css == \"none\") { clearInterval(mainInterval); remove(obj.pager); } else { timer(); add(obj.btn.eq(current).find(obj.pager)); } } /**이벤트 핸들러 */ obj.reset.click(function () { reset(); }); obj.pause.click(function () { obj.pause.css(\"display\", \"none\"); obj.play.css(\"display\", \"block\"); }); obj.play.click(function () { obj.pause.css(\"display\", \"block\"); obj.play.css(\"display\", \"none\"); }); obj.btn.on(\"click\", click_slide); obj.left.on(\"click\", left_click); obj.right.on(\"click\", right_click); $(\".main_cursor\").mousemove(function (e) { var x = e.clientX; var y = e.clientY - 80; $(\".cursor\").css({ left: x, top: y, }); }); . ",
     "url": "/book01/docs/Projects/02-slide/",
     "relUrl": "/docs/Projects/02-slide/"
-  },"48": {
+  },"47": {
     "doc": "02-기초문법",
     "title": "01 index.php",
     "content": ". | vscode를 실행한다. | 새문서를 만든다. | C\\xmapp\\htdocs 폴더의 index.php 파일을 모두 지우고 아래의 코드로 수정한다. | . &lt;?php echo '망고안녕~~'; ?&gt; . | C\\xmapp\\xampp-control.exe를 실행하여 서버실행 | 작성한 문서를 서버환경에서 확인한다. | . ",
     "url": "/book01/docs/php/02-syntax/#01-indexphp",
     "relUrl": "/docs/php/02-syntax/#01-indexphp"
-  },"49": {
+  },"48": {
     "doc": "02-기초문법",
     "title": "02 php 의 기본 문법",
     "content": "&lt;?php 로 시작해서 . ?&gt; 로 끝남 . ",
     "url": "/book01/docs/php/02-syntax/#02-php-%EC%9D%98-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95",
     "relUrl": "/docs/php/02-syntax/#02-php-의-기본-문법"
-  },"50": {
+  },"49": {
     "doc": "02-기초문법",
     "title": "03 다른 언어와 사용",
     "content": "&lt;?php echo \"&lt;h1&gt;망고는 코딩대장&lt;/h1&gt;\" ?&gt; . &lt;h1&gt; &lt;?php echo \"망고는 코딩대장\" ?&gt; &lt;/h1&gt; . ",
     "url": "/book01/docs/php/02-syntax/#03-%EB%8B%A4%EB%A5%B8-%EC%96%B8%EC%96%B4%EC%99%80-%EC%82%AC%EC%9A%A9",
     "relUrl": "/docs/php/02-syntax/#03-다른-언어와-사용"
-  },"51": {
+  },"50": {
     "doc": "02-기초문법",
     "title": "04 오류찾기",
     "content": "04-01 주석 . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;타이틀&lt;/h1&gt; &lt;?php //echo 문자열 출력함수 echo '망고대장' /* 여러줄 주석 */ #한줄주석 ?&gt; &lt;/body&gt; &lt;/html&gt; . 04-02 변수 . $변수명=값 . &lt;?php $name=\"망고\"; echo $name.'대장'; # 문자열과 연결할때는 . echo \"$name 대장\"; # 문자열이 쌍따옴표로 묶여있으면 . 없어도 됨 ?&gt; . + . ",
     "url": "/book01/docs/php/02-syntax/#04-%EC%98%A4%EB%A5%98%EC%B0%BE%EA%B8%B0",
     "relUrl": "/docs/php/02-syntax/#04-오류찾기"
-  },"52": {
+  },"51": {
     "doc": "02-기초문법",
     "title": "에러",
     "content": "&lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;에러&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php $name=\"망고\"; echo $name'대장'; echo \"🥇 $name 대장\"; echo \"🥇 $myname 대장\"; ?&gt; &lt;/body&gt; &lt;/html&gt; . | 영어명 | 한국어명 | 여는 태그 | 닫는 태그 | 설명 | . | standard tag | 표준 태그, 긴 태그 | &lt;?php | ?&gt; | 항상 사용 가능 | . | short open tag | 짧은 여는 태그, 짧은 태그[2] | &lt;? | ?&gt; | 기본값은 사용불가. short_open_tag=On 적용하면 사용가능. 권장하지 않음. | . | echo shortcut | 단축 태그 | &lt;?= | ? | 항상 사용 가능. &lt;?php echo 내용; ?&gt;의 축약형 | . ",
     "url": "/book01/docs/php/02-syntax/#%EC%97%90%EB%9F%AC",
     "relUrl": "/docs/php/02-syntax/#에러"
-  },"53": {
+  },"52": {
     "doc": "02-기초문법",
     "title": "02-기초문법",
     "content": ". | 01 index.php | 02 php 의 기본 문법 | 03 다른 언어와 사용 | 04 오류찾기 . | 04-01 주석 | 04-02 변수 | . | 에러 | . – . ",
     "url": "/book01/docs/php/02-syntax/",
     "relUrl": "/docs/php/02-syntax/"
-  },"54": {
-    "doc": "01-SNSLogin",
-    "title": "01-SNSLogin",
-    "content": "– . SNS 로그인 기능을 구현해보자 . ",
-    "url": "/book01/docs/javascript/02-%EA%B0%9D%EC%B2%B4%EC%9D%98%EB%B9%84%EA%B5%90/",
-    "relUrl": "/docs/javascript/02-%EA%B0%9D%EC%B2%B4%EC%9D%98%EB%B9%84%EA%B5%90/"
-  },"55": {
+  },"53": {
     "doc": "02-스크롤 애니메이션",
     "title": "1-Progress Indicator",
     "content": "| 현재 진행율을 표시하는 UI 만들어보자. (progress indicator) | . | progress indicator 를 제작하려면 2가지 값이 필요하다 | . | 1. 요소(문서)의 높이 | . | 2. 브라우저의 스크롤 양 | . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#1-progress-indicator",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#1-progress-indicator"
-  },"56": {
+  },"54": {
     "doc": "02-스크롤 애니메이션",
     "title": "01 요소(문서)의 높이(크기) 를 알아보자",
     "content": "01-1 Js . 함수종류 . 01-2 JQ . 함수종류 . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#01-%EC%9A%94%EC%86%8C%EB%AC%B8%EC%84%9C%EC%9D%98-%EB%86%92%EC%9D%B4%ED%81%AC%EA%B8%B0-%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#01-요소문서의-높이크기-를-알아보자"
-  },"57": {
+  },"55": {
     "doc": "02-스크롤 애니메이션",
     "title": "02 스크롤 양을 얻어보자",
     "content": "02-1 Js . 함수종류 . 02-2 JQ . 함수종류 . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#02-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%96%91%EC%9D%84-%EC%96%BB%EC%96%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#02-스크롤-양을-얻어보자"
-  },"58": {
+  },"56": {
     "doc": "02-스크롤 애니메이션",
     "title": "03 제작해보자",
     "content": "백분율구하기 공식 🔞 최고 난이도의 수학문제 . (부분/전체) X 100 . 03-1 JS . 03-2 JQ . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#03-%EC%A0%9C%EC%9E%91%ED%95%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#03-제작해보자"
-  },"59": {
+  },"57": {
     "doc": "02-스크롤 애니메이션",
     "title": "2 - 섹션별 애니메이트",
     "content": "03-1 JS . 03-2 JQ . ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#2---%EC%84%B9%EC%85%98%EB%B3%84-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%ED%8A%B8",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/#2---섹션별-애니메이트"
-  },"60": {
+  },"58": {
     "doc": "02-스크롤 애니메이션",
     "title": "02-스크롤 애니메이션",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/",
     "relUrl": "/docs/javascript+jQuery/02-%EC%8A%A4%ED%81%AC%EB%A1%A4%20%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98/"
-  },"61": {
+  },"59": {
     "doc": "02-지킬 permalink",
     "title": "지킬캐시삭제",
     "content": "jekyll clean . ",
     "url": "/book01/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/#%EC%A7%80%ED%82%AC%EC%BA%90%EC%8B%9C%EC%82%AD%EC%A0%9C",
     "relUrl": "/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/#지킬캐시삭제"
-  },"62": {
+  },"60": {
     "doc": "02-지킬 permalink",
     "title": "02-지킬 permalink",
     "content": ". | 지킬캐시삭제 | . – . 커스터마이징 - 고유 주소(Permalink) . 고유 주소(Permalink) . 참고 위키백과의 Permalink . 고유 주소는 포스트, 페이지, 컬렉션의 도메인명과 디렉토리를 제외한 URL을 나타낸다. Jekyll은 date처럼 다양한 템플릿 변수를 활용하거나 이 템플릿 변수의 패턴을 자동으로 사용하는 기능을 내장하고 있으며 사용자가 스타일을 작성하여 사용할 수 도 있는 유연함 또한 가지고 있다. 콜론과 동적인 요소로 이루어진 키워드(템플릿 변수)로 표시되는 템플릿 URL을 생성하여 고유 주소로 사용하며, 템플릿 고유주소의 기본값은 /:categories/:year/:month/:day/:title.html로 되어 있다. 고유 주소 구성 고유 주소는 _config.yml 환경 설정 파일이나 각 포스트, 페이지, 컬렉션이 가지고 있는 YAML 머리말에서 구성할 수 있다. _config.yml 파일에서 아래와 같이 고유 주소를 설정하면 프로젝트 전체에 해당 설정이 적용된다. 1 permalink: /:categories/:year/:month/:day/:title.html 위의 설정값은 기본값이므로 고유 주소에 대한 설정을 하지 않으면 위에 패턴으로 적용된다. 고유 주소 스타일 설정 . 고유 주소는 Jekyll에 내장되어 있는 스타일을 사용하여 설정할 수도 있다. 1 permalink : date 위의 date는 :categories/:year/:month/:day/:title.html과 동일하다. 기본 내장된 고유 주소 스타일 목록은 아래에서 다시 다루겠다. YAML 머리말 . 포스트, 페이지, 컬렉션의 머리말에 고유 주소를 설정하면 모든 전역 설정이 재정의 된다. 1 2 3 4 — title: My page title permalink: /mypageurl/ — _config.yml에 아래와 같이 정의되어 있더라도 . 1 permalink : date 이 페이지의 고유 주소 URL은 http://somedomain.com/mypageurl/로 설정된다. 흔히 pretty URL 이라고 부르는 .html 파일 확장자를 생략한 고유 주소를 사용하면 아래처럼 페이지명과 동일한 폴더를 생성하고 그 폴더 안에 index.html 파일을 작성한다. 1 ├─ mypageurl 2 │ └─── index.html 고유 주소로 /mypageurl/를 사용하면 Jekyll이 생성해준 대로 mypageurl 폴더 내의 index.html 파일을 불러오므로 http://somedomain.com/mypageurl/의 주소로 접근하면 mypageurl/index.html 파일을 렌더링해준다. 고유 주소의 템플릿 변수 _config.yml 파일에서 사용할 수 있는 고유 주소의 템플릿 변수들을 소개한다. | 변수 | 설명 | . | year | 포스트의 파일명 기준 연도 | . | month | 포스트의 파일명 기준 월 | . | i_month | 0을 제외한 포스트의 파일명 기준 월(10미만에서 09 -&gt; 9) | . | day | 포스트의 파일명 기준 일 | . | i_day | 0을 제외한 포스트의 파일명 기준 일(10미만에서 09 -&gt; 9) | . | short_year | 포스트의 파일명 기준 두 자리 게시 연도 | . | hour | 포스트의 파일명 기준 시간 (24시간제, 00..23 형식) | . | minute | 포스트의 파일명 기준 분 (00..59 형식) | . | second | 포스트의 파일명 기준 초 (00..60 형식)) | . | title 포스트의 파일명 기준 문서 제목 |   | . | 머리말의 slug로 값을 덮어쓸 수 있음 |   | . | slug | 포스트의 파일명 기준으로 영어와 숫자가 아닌 모든 문자를 하이픈(-)으로 변경한 문서 제목 | . | categories | 해당 포스트에 지정된 카테고리들 | . | :——– | 카테고리가 2개 이상이면 계층구조로 URL이 생성 | . | :——– | 카테고리가 하나도 없으면 무시됨 | . | :——– | 위의 시간 또는 카테고리와 관련된 모든 템플릿 변수는 포스트에만 사용할 수 있다. | . | :——– | 기본 내장 고유 주소 스타일 | . | :——– | 템플릿 변수를 사용하여 고유 주소의 패턴을 지정할 수도 있지만 기본 내장된 스타일도 제공한다. | . 기본 내장 고유 주소 스타일 . 스타일명 URL 템플릿 date /:categories/:year/:month/:day/:title.html pretty /:categories/:year/:month/:day/:title/ ordinal /:categories/:year/:y_day/:title.html none /:categories/:title.html 참고 YAML 머리말의 고유 주소 지정 기본 내장 고유 주소 스타일은 YAML 머리말에선 인식되지않는다. 포스트의 고유 주소 예시 고유 주소의 스타일이 포스트에 적용되는 방식의 몇 가지 예시를 아래의 표를 통해 알아보자. 스타일을 적용할 포스트의 파일명은 /2009-04-29-slap-chop.md 이다. 스타일명 URL 템플릿 미지정 혹은 date /2009/04/29/slap-chop.html pretty /2009/04/29/slap-chop/ /:month-:day-:year/:title.html /04-29-2009/slap-chop.html /blog/:year/:month/:day/:title/ /blog/2009/04/29/slap-chop/ /:year/:month/:title /2009/04/slap-chop 페이지와 컬렉션의 고유 주소 설정 위에서 언급했듯 _config.yml 환경설정 파일에서 고유 주소를 설정하면 포스트, 페이지, 컬렉션에 고유 주소 스타일을 전역으로 지정한다. 하지만 포스트와는 달리 페이지와 컬렉션은 시간 이나 범주 가 없기 때문에 고유 주소 스타일을 지정해도 무시된다. 아래의 예시를 보자. 고유 주소 스타일 /:parent/:year/:month/:day/:title.html의 경우 . 포스트 : /:parent/:year/:month/:day/:title.html 페이지나 컬렉션 : /:title.html 고유 주소 스타일 pretty의 경우(/:categories/:year/:month/:day/:title/과 동일) . 포스트 : /:parent/:year/:month/:day/:title 페이지나 컬렉션 : /:title/ 파일 확장명을 포함하는 고유 주소 스타일 date의 경우 . 포스트 : /:year/:month/:day/:title.html 페이지나 컬렉션 : /:title.html 고유 주소와 기본 경로 포스트, 페이지, 컬렉션마다 생성된 사이트의 포스트, 페이지의 경로가 다르다. 아래 종류별로 차이점을 기술한다. 포스트 _posts 디렉토리에서 포스트를 작성했을 경우 _posts의 하위 디렉토리는 고유 주소에 포함되지 않는다.html 파일 확장명을 생략하는 pretty와 같은 고유 주소 스타일을 사용할 경우 각 포스트는 포스트명과 동일한 폴더를 생성한 뒤 해당 폴더에 index.html 파일을 생성하여 렌더링한다. 예시 : parentname/2016/12/01/mypostname/index.html . 페이지 고유 주소의 스타일에 따라 변동되는 포스트와는 달리 페이지는 디렉토리 구조를 그대로 가져다가 쓴다. 단 예외적으로 특정 페이지의 YAML 머리말에 고유 주소가 선언된 경우 고유 주소의 설정대로 생성한다. 포스트와 마찬가지로 .html 파일 확장명을 생략하는 pretty와 같은 고유 주소 스타일을 사용할 경우 각 페이지는 페이지명과 동일한 폴더를 생성한 뒤 해당 폴더에 index.html 파일을 생성하여 렌더링한다. 예시 : mypage/index.html . 컬렉션 컬렉션은 컬렉션명에 접두사가 있는 경우를 제외하고는 _site 디렉토리와 유사한 구조로 생성된다. 예시 : collectionname/mypage.html .html 파일 확장명을 생략하는 pretty와 같은 고유 주소 스타일을 사용할 경우 고유 주소의 경로는 llection_name/mypage/index.html로 설정된다. 빌드시 _site의 페이지 병합 사이트를 생성할 때 _site 디렉토리의 페이지를 병합하려면 경로가 지정되지 않은 상태에서 각 페이지의 YAML 머리말에 permalink 변수를 이용해 고유 주소를 추가하자. 다시 풀어서 설명하면 이렇다. 페이지를 폴더별로 구분한 상태에서 사이트를 생성한다면 각 폴더명을 포함하여 고유 주소가 생성될 것이다. 폴더의 계층 구조가 복잡할수록 깔끔하지않은 고유 주소를 생성하게 될 것이고 이를 방지하기 위해선 각 페이지마다 고유 주소를 할당하여 사이트를 생성하는 것이다. 조금 번거롭겠지만 www.yoursite.com/mypageurl.html과 같은 깔끔한 고유 주소를 생성할 수 있을 것이다. 아래와 같이 추가하여 고유 주소를 설정해주면 된다. 1 2 3 4 — title: My page permalink: mypageurl.html — 끝에 /가 없는 고유 주소 Jekyll에선 URL 끝에 /나 파일의 확장자도 포함하지 않는 고유 주소를 지원한다. 하지만 고유 주소를 지정한다고 해서 생성되는 파일이 확장자가 없는 것은 아니므로 웹 서버를 이용할 시 추가적인 지원이 필요하다. 추가적인 지원이란 URL에 확장자없이 요청되는 경우 해당 파일을 연결하도록 작업해야 함을 말한다. 단 Github와 Jekyll에 내장된 WEBrick 서버는 추가 작업없이 동작한다. ",
     "url": "/book01/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/",
     "relUrl": "/docs/Jekyll/02-%EC%A7%80%ED%82%AC%20permalink/"
-  },"63": {
+  },"61": {
     "doc": "02-팁",
     "title": "01 사용중인 jQuery 버전확인",
     "content": "크롬 화면에서 F12를 누른 후 $().jquery . ",
     "url": "/book01/docs/jQuery/02/#01-%EC%82%AC%EC%9A%A9%EC%A4%91%EC%9D%B8-jquery-%EB%B2%84%EC%A0%84%ED%99%95%EC%9D%B8",
     "relUrl": "/docs/jQuery/02/#01-사용중인-jquery-버전확인"
-  },"64": {
+  },"62": {
     "doc": "02-팁",
     "title": "02-팁",
     "content": ". ",
     "url": "/book01/docs/jQuery/02/",
     "relUrl": "/docs/jQuery/02/"
-  },"65": {
+  },"63": {
     "doc": "03-조건문,반복문",
     "title": "01 conditions.php",
     "content": "01-1 참과 거짓 . | C\\xmapp\\htdocs 폴더에 conditions.php 파일생성 | . &lt;?php $result = 1 &lt; 3; echo $result; ?&gt; . | localhost:8080/conditions.php 의 결과를 확인한다. | . &lt;?php $result = 1 &gt; 3; echo $result; ?&gt; . | localhost:8080/condition.php 의 결과를 확인한다. | true는 1 이므로 이전의 결과는 1이 출력되었으나 false 는 화면에 아무것도 나오지 않는다. | ` echo $result; 를 주석처리 후 조건문을 echo $result2 == false;` 로 변경해본다 | 화면에 1이 출력된다. | . 01-2 대소문자의 구분 . $first_name = 'mango'; $last_name = 'kim'; if($first_name == 'Mango'){ echo '진실입니다'; } else{ echo '거짓입니다'; } . | $first_name = 'mango'; 와 $first_name == 'Mango' 를 다르게 판단하여 거짓입니다'; 가 출력된다 . | if($first_name == 'Mango' &amp;&amp; $last_name='kim') 으로 조건을 변경해본다. | 둘다 참이어야 참으로 판단되므로 거짓이 나온다. | if($first_name == 'Mango' || $last_name='kim') 으로 조건을 변경해본다. | 둘중 하나만 참이면 참으로 판단되므로 진실이 나온다 | if($first_name == 'Mango' and $last_name='kim') 으로 조건을 변경해본다. | php 에서만 사용되는 조건식으로 둘다 참이어야 한다 | if($first_name == 'Mango' or $last_name='kim') 으로 조건을 변경해본다. | php 에서만 사용되는 조건식으로 둘다 참이어야 한다 | if($first_name == 'Mango' xor $last_name='kim') 으로 조건을 변경해본다. | php 에서만 사용되는 조건식으로 두개가 서로 다르면 참이다 | . ",
     "url": "/book01/docs/php/03-conditions/#01-conditionsphp",
     "relUrl": "/docs/php/03-conditions/#01-conditionsphp"
-  },"66": {
+  },"64": {
     "doc": "03-조건문,반복문",
     "title": "02. array.php",
     "content": ". | array.php 생성 배열의 문법 $배열이름 = array(); 배열을 생성하고 값 넣기 . | . 02-1 배열의 생성 . &lt;?php $fruits=array(); $fruits[0]=\"사과\"; $fruits[1]=\"바나나\"; $fruits[2]=\"한라봉\"; echo $fruits ?&gt; . | 아래와 같은 에러가 출력된다 | 자바스크립트와 마찬가지로 배열의 값은 원소 단위로 꺼내어야 한다. echo $fruits[0] 으로 작성하거나 반복문을 이용한다. | echo 를 주석처리한다. | . 02-2 isset . | isset 으로 확인해보자 isset . isset( $var1, $var2, … ); 변수 설정 여부 확인 (준비되었는지) $var가 설정되었는지 확인하고, 설정되었으면 TRUE, 설정되지 않았으면 FALSE를 반환 . | ... //echo $fruits if (isset($fruits[3])) { echo $fruits[3]; } else { echo '과일 배열에는 3번째 값이 없다'; } . 02-3 배열의 조작 . count() . 배열의 개수를 반환 count($test) . &lt;?php $fruits = array('apple', 'banana', 'orange'); for($i=0; $i&lt;count($fruits); $i++){ echo $fruits[$i].'&lt;br/&gt;'; } ?&gt; . ",
     "url": "/book01/docs/php/03-conditions/#02-arrayphp",
     "relUrl": "/docs/php/03-conditions/#02-arrayphp"
-  },"67": {
+  },"65": {
     "doc": "03-조건문,반복문",
     "title": "연관배열 Associative Array",
     "content": "02-4 foreach . &lt;?php foreach($fruits as $item){ echo $item.'&lt;br/&gt;'; } ?&gt; . &lt;?php $prices = array(); $prices['apple'] = 1000; $prices['banana'] = 2000; $prices['orange'] = 1500; foreach ($prices as $key =&gt; $price) { echo $key . \"_\" . $price . \"&lt;/br&gt;\"; } ?&gt; . $key는 배열의 요소를 의미하고 $price 는 값을 하나씩 의미한다 . 02-5 . 위의 배열을 줄여보기 아래처럼 한줄로 줄일수 있다. // $array[\"apple\"] = 1000; // 연관 배열 요소 추가 // $array[\"banana\"] = 2000; // $array[\"orange\"] = 1500; $array = array('apple' =&gt; 1000, 'banana' =&gt; 2000, 'orange' =&gt; 1500); foreach ($array as $key =&gt; $price) { echo $key . \"::\" . $price . \"&lt;/br&gt;\"; } . 이전까지는 배열의 인덱스 번호를 활용하여 선언후 키에 할당하였으나 문자열에 직접 할당함 . ",
     "url": "/book01/docs/php/03-conditions/#%EC%97%B0%EA%B4%80%EB%B0%B0%EC%97%B4-associative-array",
     "relUrl": "/docs/php/03-conditions/#연관배열-associative-array"
-  },"68": {
+  },"66": {
     "doc": "03-조건문,반복문",
     "title": "03 Loop",
     "content": "03-1 while . while(조건식){ 실행문 } . &lt;h1&gt;Loop&lt;/h1&gt; &lt;h2&gt;while&lt;/h2&gt; &lt;?php $i = 0; while ($i &lt; 5) { //i가5미만일때 까지 실행 echo ($i++) . \"&lt;br/&gt;\"; //i=i+1 } ?&gt; . 실행 . 03-2 do/while . while(조건식){ 실행문 } . &lt;h2&gt;do/while&lt;/h2&gt; &lt;?php $j = 0; do { echo ($j++) . \"&lt;br/&gt;\"; } while ($j &lt; 5); ?&gt; . 실행 . 03-3 for . for(초기값;조건;증감식){실행문} . &lt;h2&gt;for&lt;/h2&gt; &lt;?php for ($k = 0; $k &lt; 5; $k++) { echo $k . '&lt;br/&gt;'; echo \"{$k}&lt;br/&gt;\"; //쌍따옴표 작성시 변수명과 문자열을 묶어서 출력할수 있다 } ?&gt; . 실행 . 03-4 foreach . foreach(배열 as 변수){실행문} . &lt;?php $results = array(0, 5, 6, 7, 8); //5개의 값이있는 배열 생성 foreach ($results as $result) { echo \"변수 \\$result의 값은 {$result} 입니다. &lt;br/&gt;\"; } ?&gt; . 실행 - 배열의 요소들을 하나씩 출력함 . 03-5 foreach(associative array) . 키와 값이 있는 배열 . &lt;?php $scores = array( \"국어\" =&gt; 80, \"영어\" =&gt; 90, \"수학\" =&gt; 100, \"과학\" =&gt; 95, ); foreach ($scores as $key =&gt; $score) { echo \"배열 \\$scores에서 키값 '{$key}'에 대한 값은 {$score}입니다.&lt;br&gt;\"; } ?&gt; . 출력 — . 문제 . | 배열을 이용해 과목성적의 합계와 평균 구하기 | . &lt;?php //배열을 이용하여 합계, 평균 구하기 ,원소는 0부터 시작 //과목별 점수 $eng=99; $computer=80; $program=85; //과목별 점수를 배열에 할당 $score[0]=90; $score[1]=80; $score[2]=85; $sum =0 ; for($a=0; $a&lt;=2; $a++){ $sum+=$score[$a]; } $avg=$sum/3; echo \"과목점수: $score[0],$score[1],$score[2], &lt;br&gt;\"; echo \"합계: $sum,평균:$avg &lt;br&gt;\"; ?&gt; . | 출력 | . ",
     "url": "/book01/docs/php/03-conditions/#03-loop",
     "relUrl": "/docs/php/03-conditions/#03-loop"
-  },"69": {
+  },"67": {
     "doc": "03-조건문,반복문",
     "title": "03-조건문,반복문",
     "content": ". | 01 conditions.php . | 01-1 참과 거짓 | 01-2 대소문자의 구분 | . | 02. array.php . | 02-1 배열의 생성 | 02-2 isset . | isset | . | 02-3 배열의 조작 . | count() | . | . | 연관배열 Associative Array . | 02-4 foreach | 02-5 | . | 03 Loop . | 03-1 while | 03-2 do/while | 03-3 for | 03-4 foreach | 03-5 foreach(associative array) | 문제 | . | . – . ",
     "url": "/book01/docs/php/03-conditions/",
     "relUrl": "/docs/php/03-conditions/"
-  },"70": {
+  },"68": {
     "doc": "03-Higher-Order-Function",
     "title": "03-Higher-Order-Function",
     "content": "– . ",
-    "url": "/book01/docs/javascript/03-higherOrderFunc/",
-    "relUrl": "/docs/javascript/03-higherOrderFunc/"
-  },"71": {
+    "url": "/book01/docs/javascript/03-higherOrderFunc%20copy/",
+    "relUrl": "/docs/javascript/03-higherOrderFunc%20copy/"
+  },"69": {
     "doc": "03-Dooosan-반응형",
     "title": "03-Dooosan-반응형",
     "content": ". | HTML | . &lt;div id=\"content\"&gt; &lt;div class=\"content_cover\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"계열사\"&gt; &lt;img src=\"./images/ico_int_1.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_1_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"두산뉴스룸\"&gt; &lt;img src=\"./images/ico_int_2.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_2_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"브랜드 활약상\"&gt; &lt;img src=\"./images/ico_int_3.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_3_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\" data-text=\"사업장 위치\"&gt; &lt;img src=\"./images/ico_int_4.png\" alt=\"\" class=\"leave\" /&gt; &lt;img src=\"./images/ico_int_4_on.gif\" alt=\"\" class=\"hover\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .content_cover --&gt; &lt;/div&gt; &lt;!-- #content --&gt; &lt;div id=\"media_center\"&gt; &lt;div class=\"media_cover\"&gt; &lt;h1 class=\"title\"&gt;미디어센터&lt;/h1&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/0dc4e114-18c5-4730-a6f5-b562cf92c806.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산인프라코어, 드론측량부터 장비 운용까지...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/7fe5a7e3-f03e-42bd-9ab6-952c0708aab0.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산중공업, 시노펙스와 손잡고 친환경 수처리&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/8cfd1b42-e65e-4f32-b7ad-0cbe695e741c.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산,'파워젠 인터내셔널 2019' 참가&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/18dfd093-6a9d-48f6-9da4-f9af62fcd702.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산밥캣, 미국 미네소타에 글로벌 협업센터 설립...&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/47950c97-c3d7-45ff-be02-410a04d16d65.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] 두산, 인도네이사 현지에서 단독으로'두산테크데스크'&lt;/p&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" class=\"arrow\" /&gt; &lt;/a&gt; &lt;/li&gt; &lt;li&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/be2914e1-6eb0-4041-a39b-7be3052ec239.jpg\" alt=\"\" class=\"c_img\" /&gt; &lt;p class=\"text\"&gt;[보도자료] (주)두산, 3개 은행과 함께 동반성장펀드 조성&lt;/p&gt; &lt;div class=\"arrow\"&gt; &lt;img src=\"./images/ico_over_arrow.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;!-- .media_cover --&gt; &lt;/div&gt; &lt;!-- #media_center --&gt; &lt;div id=\"find\"&gt; &lt;div class=\"find_cover cf\"&gt; &lt;div class=\"find_left fl\"&gt; &lt;h1 class=\"what_find\"&gt;무엇을 찾으시나요?&lt;/h1&gt; &lt;form action=\"#\" method=\"post\"&gt; &lt;input type=\"text\" name=\"search\" id=\"search\" value=\"\" placeholder=\"검색어를 입력하세요.\" /&gt; &lt;a href=\"#\"&gt; &lt;img src=\"./images/btn_search_arrow_black.png\" alt=\"\" /&gt; &lt;/a&gt; &lt;/form&gt; &lt;/div&gt; &lt;div class=\"find_right fl\"&gt; &lt;div class=\"right_cover\"&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산의 활약상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;CI&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업영역&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산연강재단&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;굴착기&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산인프라코어&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사회책임경영&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;주가정보&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산뉴스룸&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;인재상&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;채용공고&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산 스토리&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;두산모빌리티이노베이션&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .find_cover --&gt; &lt;/div&gt; &lt;!-- #find --&gt; &lt;div id=\"footer\"&gt; &lt;div class=\"footer_cover cf\"&gt; &lt;div class=\"foot_left\"&gt; &lt;h1 class=\"f_logo cf\"&gt; &lt;img src=\"./images/logo_gnb.png\" alt=\"\" /&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" class=\"on\" /&gt; &lt;span&gt;&amp;copy; 2019 (주)두산중공업&lt;/span&gt; &lt;/h1&gt; &lt;/div&gt; &lt;div class=\"foot_center\"&gt; &lt;ul class=\"cf\"&gt; &lt;li&gt;&lt;a href=\"#\"&gt;Contact is&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사업장 위치&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;법적고지&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;이용약관&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"#\"&gt;사이트맵&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;div class=\"foot_right\"&gt; &lt;img src=\"./images/ico_youtube.png\" alt=\"\" /&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- .footer_cover --&gt; &lt;/div&gt; &lt;!-- #footer --&gt; . | css | . @media screen and (max-width: 1500px) { .find_cover { width: 90%; padding: 0; } } /* 1400px */ @media screen and (max-width: 1400px) { #header .header_cover { width: 90%; } .full_menu .full_cover { width: 90%; } .media_cover { width: 90%; } #content .content_cover { width: 90%; } .find_cover { width: 90%; padding: 0; } .footer_cover { width: 90%; } .find_cover .find_left form #search { width: 90%; margin: 0 0 0 5%; } .find_cover .find_left .what_find { margin-left: 5%; } .find_cover .find_left form a { right: 50px; } } /* 1330px */ @media screen and (max-width: 1330px) { #header { height: auto; } .full_menu { display: none; } .header_cover .logo { float: none; margin: 0 auto; padding: 20px 0; } .header_cover .logo a img { padding: 0; } .header_cover .nav { display: none; } .header_cover .logo + .mo { display: block; } .header_cover .gnb { display: none; } .slide_cover ul li a p.img_text { width: auto; right: auto; left: 50%; transform: translate(-50%, -50%); font-size: 18px; text-align: center; word-break: keep-all; } .slide_btn { left: 50%; bottom: 20px; transform: translate(-50%, -50%); } .slide_cover ul li a .box { left: 15%; bottom: 13%; height: 100px; } .slide_cover ul li a .box.on { width: 100px; } .slide_cover ul li a h1.img_logo { width: auto; font-size: 30px; left: 5%; } .slide_cover ul li a h1.img_logo.on { top: 5%; } .slide_cover ul li a img.pc { display: none; } .slide_cover ul li a img.mo { display: block; } #find { height: auto; } .find_cover { padding: 0; } .find_cover .fl { float: none; width: 100%; height: auto; margin-top: 50px; } .find_cover .find_left .what_find { padding: 30px 0 0 30px; box-sizing: border-box; } .find_cover .find_left form #search { width: 90%; margin-left: 5%; } .find_cover .find_left form a { right: 8%; } .find_cover .find_right { float: none; width: 100%; } .footer_cover .foot_left { float: none; width: 90%; margin: 0 auto; text-align: center; } .footer_cover .foot_center { float: none; width: 100%; } .footer_cover .foot_right { float: none; width: 10%; } .footer_cover .foot_left img { float: none; display: inline-block; width: 10%; } .footer_cover .foot_left img.on { display: inline-block; width: 8%; margin-left: 10px; } .footer_cover .foot_left span { display: none; } .footer_cover .foot_right { display: none; } } @media screen and (max-width: 1200px) { .media_cover ul { margin-top: 50px; } .media_cover ul li { width: 49.5%; margin: 0; height: 200px; } .media_cover ul li:nth-child(3n + 1) { margin: 0; } .media_cover ul li:nth-child(2n) { margin-left: 1%; margin-top: 1%; } .media_cover ul li:nth-child(2n + 1) { margin-top: 1%; } .media_cover ul li a .text { font-size: 14px; } .media_cover .title { font-size: 24px; } #content .content_cover ul li { width: 50%; line-height: normal; height: auto; margin-top: 20px; } #content .content_cover ul li a { color: transparent; height: auto; line-height: normal; } #content .content_cover ul li a img { position: static; transform: none; } #content .content_cover ul li a:after { content: attr(data-text); display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #000; } } . ",
     "url": "/book01/docs/Projects/03-responsive/",
     "relUrl": "/docs/Projects/03-responsive/"
-  },"72": {
+  },"70": {
     "doc": "03-tip",
     "title": "03-tip",
     "content": ". | TOC . | . 01. 배치파일 만들기 . 배치파일(batch file)은 윈도우의 명령 프롬프트(cmd)에서 순서대로 실행할 명령어들을 한번에 일괄로 실행되도록 하기 위해 작성한 명령어 . | 메모장 열기. | 메모장을 사용해서 텍스트 파일로 코드를 생성한 후 배치파일로 저장할 수 있다 | . | 간단한 배치파일 명령어 배우기. | 배치 파일은 여러 도스 명령어로 실행되기 때문에, 배치 파일의 명령어도 도스 명령어와 비슷하다. 몇가지 중요한 명령어를 살펴보자: | . | . | ECHO – 화면에 텍스트 출력 | @ECHO OFF –출력되는 텍스트 감추기 | START – 기본 프로그램으로 파일 실행 | REM – 프로그램에 글자 입력 | MKDIR/RMDIR –디렉토리를 생성하거나 삭제 | DEL – 파일 삭제 | COPY – 파일 복사 | XCOPY – 추가 기능에 따라 파일 복사 | FOR/IN/DO –파일 지정. | TITLE- 현재 창 이름 편집. 3. 확장자 .bat 로 저장 . | . 02 외장드라이브에서 지킬서버 실행하는 bat 만들기 . | 윈도우 메모장 실행 | 아래의 코드에서 경로수정후 메모장에 붙여넣기 | cd /d k:\\ 의 k:\\는 본인의 외장하드 경로로 변경해야 한다. | serve.bat 파일명으로 저장 | 더블클릭해서 파일 실행 | . cd /d k:\\ cd Jekyll cd book01 bundle exec jekyll serve pause . 03 유닉스타임변환기 . 유닉스타임변환기 . ",
     "url": "/book01/docs/miscellaneous/03-tip/",
     "relUrl": "/docs/miscellaneous/03-tip/"
-  },"73": {
+  },"71": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "마우스포인터를 변경해보자",
     "content": "| 마우스 좌표값을 이용하여 DOM 요소와 애니메이션을 구현한다. | . | 알아야 할 것 | . | 1. 마우스 좌표값 (브라우저, 화면에서 포인터의 위치정보 얻어오기) | . | 2. 애니메이트 시킬 대상의 좌표 (움직일 대상도 위치정보가 있어야 한다.) | . 사용할 이미지 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#%EB%A7%88%EC%9A%B0%EC%8A%A4%ED%8F%AC%EC%9D%B8%ED%84%B0%EB%A5%BC-%EB%B3%80%EA%B2%BD%ED%95%B4%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#마우스포인터를-변경해보자"
-  },"74": {
+  },"72": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "01 요소(문서)의 높이(크기) 를 알아보자",
     "content": "01-1 Js . 함수종류 . 01-2 JQ . 함수종류 . 02 스크롤 양을 얻어보자 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#01-%EC%9A%94%EC%86%8C%EB%AC%B8%EC%84%9C%EC%9D%98-%EB%86%92%EC%9D%B4%ED%81%AC%EA%B8%B0-%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#01-요소문서의-높이크기-를-알아보자"
-  },"75": {
+  },"73": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "02-1 Js",
     "content": "함수종류 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-1-js",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-1-js"
-  },"76": {
+  },"74": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "02-2 JQ",
     "content": "함수종류 . 03 제작해보자 . JS . JQ . 04 키티 3D 회전 . #m3 { width: 100px; height: 100px; position: absolute; z-index: 999999; top: 50px; left: 30px; transition: all 0.5s ease-in-out; } #m3{ animation: rotate 2.5s infinite alternate; animation-play-state:paused; /* animation-play-state:running; */ } @keyframes rotate{ 0%{transform:perspective(200px) rotateY(0deg)} 50%{transform:perspective(200px) rotateY(-180deg)} 100%{transform:perspective(200px) rotateY(-360deg)} } . perspective . 요소를 3D 공간에 배치함 perspective(거리) 거리값이 클수록 먼 거리에서 보는것과 같은 효과 . ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-2-jq",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/#02-2-jq"
-  },"77": {
+  },"75": {
     "doc": "03-마우스 포인터 변경하기",
     "title": "03-마우스 포인터 변경하기",
     "content": " ",
     "url": "/book01/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/",
     "relUrl": "/docs/javascript+jQuery/03-%EB%A7%88%EC%9A%B0%EC%8A%A4%20%ED%8F%AC%EC%9D%B8%ED%84%B0%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
-  },"78": {
-    "doc": 3,
+  },"76": {
+    "doc": "03-스크롤",
     "title": "01 스크롤양 얻기",
     "content": "함수종류 . | 종류 | 설명 | . | $(“element”).scrollTop() / scrollLeft() | 요소의 수직/수평 스크롤 양 반환 | . 예제 . ",
     "url": "/book01/docs/jQuery/03/#01-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%96%91-%EC%96%BB%EA%B8%B0",
     "relUrl": "/docs/jQuery/03/#01-스크롤양-얻기"
-  },"79": {
-    "doc": 3,
-    "title": 3,
+  },"77": {
+    "doc": "03-스크롤",
+    "title": "03-스크롤",
     "content": ". ",
     "url": "/book01/docs/jQuery/03/",
     "relUrl": "/docs/jQuery/03/"
+  },"78": {
+    "doc": "04-데이터 다루기",
+    "title": "01-배열정의",
+    "content": " ",
+    "url": "/book01/docs/javascript/04-data/#01-%EB%B0%B0%EC%97%B4%EC%A0%95%EC%9D%98",
+    "relUrl": "/docs/javascript/04-data/#01-배열정의"
+  },"79": {
+    "doc": "04-데이터 다루기",
+    "title": "Syntax",
+    "content": "| 구문 | 의미 | . | [ ] | 배열정의 | . | 배열[인덱스] | 배열의 인덱스요소 가져오기 | . //arr 배열을 선언하고 값을 초기화 const arr = [1,\"가\",6]; //arr배열의 0번째를 콘솔에 출력 console.log(arr[0]); //arr 출력 console.log(arr); . ",
+    "url": "/book01/docs/javascript/04-data/#syntax",
+    "relUrl": "/docs/javascript/04-data/#syntax"
   },"80": {
+    "doc": "04-데이터 다루기",
+    "title": "01-배열요소 부분 변환",
+    "content": "배열내의 요소를 일부 변환 하자 . ",
+    "url": "/book01/docs/javascript/04-data/#01-%EB%B0%B0%EC%97%B4%EC%9A%94%EC%86%8C-%EB%B6%80%EB%B6%84-%EB%B3%80%ED%99%98",
+    "relUrl": "/docs/javascript/04-data/#01-배열요소-부분-변환"
+  },"81": {
+    "doc": "04-데이터 다루기",
+    "title": "splice",
+    "content": " ",
+    "url": "/book01/docs/javascript/04-data/#splice",
+    "relUrl": "/docs/javascript/04-data/#splice"
+  },"82": {
+    "doc": "04-데이터 다루기",
+    "title": "04-데이터 다루기",
+    "content": ". | 01-배열정의 . | Syntax | . | 01-배열요소 부분 변환 . | splice | . | . – . ",
+    "url": "/book01/docs/javascript/04-data/",
+    "relUrl": "/docs/javascript/04-data/"
+  },"83": {
     "doc": "04-figma",
     "title": "Resizing 옵션",
     "content": ". | Fixed : 고정크기 | Hug content : 컨텐츠 감싸기 (내용기준) | Fill container : 컨테이너 채우기 (부모기준) | . ",
     "url": "/book01/docs/miscellaneous/04-figma/#resizing-%EC%98%B5%EC%85%98",
     "relUrl": "/docs/miscellaneous/04-figma/#resizing-옵션"
-  },"81": {
+  },"84": {
+    "doc": "04-figma",
+    "title": "부트스트랩 디자인시스템 템플릿",
+    "content": " ",
+    "url": "/book01/docs/miscellaneous/04-figma/#%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%EB%94%94%EC%9E%90%EC%9D%B8%EC%8B%9C%EC%8A%A4%ED%85%9C-%ED%85%9C%ED%94%8C%EB%A6%BF",
+    "relUrl": "/docs/miscellaneous/04-figma/#부트스트랩-디자인시스템-템플릿"
+  },"85": {
     "doc": "04-figma",
     "title": "04-figma",
     "content": "예제파일1 . 교안링크 . ",
     "url": "/book01/docs/miscellaneous/04-figma/",
     "relUrl": "/docs/miscellaneous/04-figma/"
-  },"82": {
+  },"86": {
     "doc": "04-함수와 변수",
     "title": "01 function",
     "content": "문법 . function 함수이름 (매개변수1,매개변수2){ …실행문 } 함수이름(); . 함수네이밍규칙 - 영문소문자로 시작 , 특수문자는 _ 만 가능 . 01-1 : 함수 . | xmapp/htdoc/func.php 생성 | . html &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;function&lt;/h1&gt; &lt;pre&gt; function 함수이름 (매개변수1,매개변수2){ ...실행문 } 함수이름(); function func_add(){ } &lt;/pre&gt; &lt;/body&gt; &lt;/html&gt; . 01-2 : 활용 . | 간단한 덧셈함수를 만들어 보자 | . php &lt;?php function sum($x, $y) { return $x + $y; } echo sum(10, 20) ?&gt; . 실행화면 : . 01-3 배열의 값을 출력하는 함수 [plus] . print_r 변수의 정보를 출력해주는 함수 . PHP에서 변수는 배열(Array)과 객체(Object)도 포함 . | 예제 | . php &lt;?php $fruits=['apple','mango','banana','orange']; echo '&lt;pre&gt;'; print_r($fruits); echo '&lt;/pre&gt;'; ?&gt; . 실행화면 . | $fruits 의 정보가 출력된다 배열의 각 인덱스 번호에 해당하는 값을 출력해줌 . | print_r 의 위, 아래에 echo와 함께 pre 태그를 출력 . | . 01-4 . pre 태그를 추가해주는 것을 함수로 작성 . php &lt;?php $fruits = ['apple', 'mango', 'banana', 'orange']; // echo '&lt;pre&gt;'; // print_r($fruits); // echo '&lt;/pre&gt;'; function output($value) { echo '&lt;pre&gt;'; print_r($value); echo '&lt;/pre&gt;'; } output($fruits) ?&gt; . 출력: . ",
     "url": "/book01/docs/php/04-func/#01-function",
     "relUrl": "/docs/php/04-func/#01-function"
-  },"83": {
+  },"87": {
     "doc": "04-함수와 변수",
     "title": "02 variable",
     "content": "02-1 . 더하기 함수 변형 plus . php . function sum1($x, $y) { $result=$x+$y; //$result 지역변수 선언 return $result; //$result 변수 리턴 } $result= sum1(10, 20);//$result 전역변수에 sum1(10,20) 호출 echo $result; . 출력 . | 전역변수 $result 에 주석처리후 실행 | . | 지역변수 $result는 함수 밖으로 꺼내올수 없으므로 에러 | . 02-2 . | 지역변수를 알아보자 | . &lt;hr&gt; &lt;h2&gt;지역변수 전역변수&lt;/h2&gt; &lt;?php function myfunc() { $var = 10; echo \"{$var}\"; //지역변수로써 함수 외부에서 출력안됨 } myfunc(); echo \"{$var}\"; ?&gt; . | $var 의 스코프는 myfunc 함수의 바디영역이므로 실행오류 발생 | . 02-3 전역변수 . | 전역변수를 알아보자 | . &lt;hr&gt; &lt;h2&gt;전역변수&lt;/h2&gt; &lt;?php $var2 = 20; function myfunc2() { echo \"{$var2}\";//외부에 선언되었더라도 global 키워드가 없으면 함수 내부로 갖고 올수 없다 global $var2; echo \"{$var2}\" //출력됨 } myfunc2(); echo \"{$var2}\"; ?&gt; . echo \"$var2 임 &lt;br&gt;\"과 echo \"{$var2} 임&lt;br&gt;“의 차이 . | 둘다 화면에 출력값은 같다 | echo \"$var2 임 &lt;br&gt;\" 처럼 변수명 뒤에 다른 문자가 나오면, PHP 파서는 “$var”라는 변수의 이름을 찾는 대신 “$var임”이라는 이름을 가진 변수를 찾는다. | echo \"{$var2} 임&lt;br&gt; 같이 변수명을 중괄호로 감싸야 PHP 파서가 변수명을 정확히 인식할 수 있다. | . 02-4 정적변수 . 함수 내부에서 static 키워드로 선언한 변수 함수의 호출이 종료되어도 메모리상에 존재함. 지역 변수처럼 해당 함수 내부에서만 접근가능. &lt;hr&gt; &lt;h2&gt;정적변수&lt;/h2&gt; `static` &lt;?php function increment() { global $count; $count= 0; echo \"{$count}&lt;br/&gt;\"; $count++; } increment(); increment(); increment(); ?&gt; . 실행화면 - 정적변수로 선언시 함수의 호출 이후에도 변수값이 증가함 . 실행화면-전역변수로 선언시 함수의 호출 이후에도 변수값이 불변함 . ",
     "url": "/book01/docs/php/04-func/#02-variable",
     "relUrl": "/docs/php/04-func/#02-variable"
-  },"84": {
+  },"88": {
     "doc": "04-함수와 변수",
     "title": "04-함수와 변수",
     "content": ". | 01 function . | 문법 | 01-1 : 함수 | 01-2 : 활용 | 01-3 배열의 값을 출력하는 함수 [plus] | 01-4 | . | 02 variable . | 02-1 | 02-2 | 02-3 전역변수 | 02-4 정적변수 | . | . php . ",
     "url": "/book01/docs/php/04-func/",
     "relUrl": "/docs/php/04-func/"
-  },"85": {
+  },"89": {
     "doc": "04-탭UI",
     "title": "탭UI 01",
     "content": "인덱스 번호활용 . jQuery . javascript . ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#%ED%83%ADui-01",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#탭ui-01"
-  },"86": {
+  },"90": {
     "doc": "04-탭UI",
     "title": "탭UI 02 진짜쉽다!",
     "content": "탭 UI 는 버튼 클릭시 해당 패널이 보이는 것을 의미한다. 그러므로 간단히 생각하면 버튼을 선택하고 패널을 선택후 보이게 하면 된다 . 02-1 . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 탭: 클릭한것만 보이기(나머지 감추기) --&gt; &lt;/head&gt; &lt;body&gt; &lt;ul&gt; &lt;li class=\"b1\"&gt;btn1&lt;/li&gt; &lt;li class=\"b2\"&gt;btn2&lt;/li&gt; &lt;li class=\"b3\"&gt;btn3&lt;/li&gt; &lt;/ul&gt; &lt;div&gt; &lt;h3 class=\"h1\"&gt;para1&lt;/h3&gt; &lt;h3 class=\"h2\"&gt;para2&lt;/h3&gt; &lt;h3 class=\"h3\"&gt;para3&lt;/h3&gt; &lt;/div&gt; &lt;script src='https://code.jquery.com/jquery-3.6.0.min.js'&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; . javascript . var h1=document.querySelector(\".h1\"); var h2=document.querySelector(\".h2\"); var h3=document.querySelector(\".h3\"); var b1=document.querySelector(\".b1\"); var b2=document.querySelector(\".b2\"); var b3=document.querySelector(\".b3\"); h2.style.display = \"none\"; h3.style.display = \"none\"; b1.onclick=function(){ //버튼1을 클릭하면 h1.style.display=\"block\"; //패널1이 보인다 h2.style.display=\"none\"; //다른패널은 숨긴다 h3.style.display=\"none\"; } b2.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"block\"; h3.style.display=\"none\"; } b3.onclick=function(){ h1.style.display=\"none\"; h2.style.display=\"none\"; h3.style.display=\"block\"; } . JQuery . $('h3').hide(); $('.h1').show(); $('.b1').click(function () { $('.h1').show(); $('.h2').hide(); $('.h3').hide(); }) $('.b2').click(function () { $('.h1').hide(); $('.h2').show(); $('.h3').hide(); }) $('.b3').click(function () { $('.h1').hide(); $('.h2').hide(); $('.h3').show(); }) . 02-2 . Refactoring 😺 1. 반복되는 요소를 변수로 저장하자 😺 2. 반복되는 기능을 함수로 묶고 변하는 부분을 매개변수로 바꿔보자 😺 3. 1번과 2번에서 작성한 함수와 변수를 사용하여 코드를 바꿔보자 😺 4. 3번에서 바꿔본 코드의 반복되는 부분을 줄여보자 . JQuery . const btn = $('ul&gt;li'), panel = $('h3'); hidden(panel); visible(panel.eq(0)); btn.each(function (i, o) { btn.eq(i).click(function () { hidden(panel); visible(panel.eq(i)); }) }) function visible(obj) { obj.show(); } function hidden(obj) { obj.hide(); } . javascript . const btn = document.querySelectorAll('ul&gt;li'), panel = document.querySelectorAll('h3'); hidden(panel); visible(panel[0]); btn.forEach((el, i) =&gt; { el.addEventListener(\"click\", function () { hidden(panel) visible(panel[i]) }) }); function visible(obj) { obj.length == undefined ? obj.style.display = 'block' : obj.foreach((o) =&gt; { o.style.display = 'block'; }) } function hidden(obj) { obj.length == undefined ? obj.style.display = 'none' : obj.forEach((o) =&gt; { o.style.display = 'none' }) } . ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#%ED%83%ADui-02-%EC%A7%84%EC%A7%9C%EC%89%BD%EB%8B%A4",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/#탭ui-02-진짜쉽다"
-  },"87": {
+  },"91": {
     "doc": "04-탭UI",
     "title": "04-탭UI",
     "content": ". ## 목차 . | 탭UI 01 . | jQuery | javascript | . | 탭UI 02 진짜쉽다! . | 02-1 | 02-2 | . | . ",
     "url": "/book01/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/",
     "relUrl": "/docs/javascript+jQuery/04-%ED%83%ADUI(%EC%9D%B8%EB%8D%B1%EC%8A%A4%ED%99%9C%EC%9A%A9)/"
-  },"88": {
+  },"92": {
     "doc": "04-크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | .height() | 높이 | . | .innerHeight() | 요소의 padding을 포함한 높이 | . | .outerHeight() | 요소의 border, padding 포함한 높이 | . | .outerHeight(true) | 요소의 margin, border, padding 포함한 높이 | . ",
     "url": "/book01/docs/jQuery/04/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/jQuery/04/#01-요소-크기-알아내기"
-  },"89": {
+  },"93": {
     "doc": "04-크기알아내기",
     "title": "04-크기알아내기",
     "content": " ",
     "url": "/book01/docs/jQuery/04/",
     "relUrl": "/docs/jQuery/04/"
-  },"90": {
+  },"94": {
     "doc": "05-01-Basic",
     "title": "개요",
     "content": ". css 파일을 조금 더 구조적으로 작성할 수 있는 언어 . css 전처리기라고도 불림 . 종류는 sass(scss), less, stylus ⇒ css 전처리기 . 웹에서 해석할수 없으므로 번역기(컴파일러) 가 필요함 . ",
     "url": "/book01/docs/miscellaneous/05-01-scss/#%EA%B0%9C%EC%9A%94",
     "relUrl": "/docs/miscellaneous/05-01-scss/#개요"
-  },"91": {
+  },"95": {
     "doc": "05-01-Basic",
     "title": "01 scss 워크스페이스 환경설정",
     "content": ". | 컴파일해주는 놈이 livescss  | scss 웹에서 해석X 작성후 css컴파일을 해야한다.  | livescss는 해석한 파일(css)을 환경설정에서 세팅한 경로의 폴더에 저장해준다. | livescss는 해석할때 워크스페이스 단위로 번역한다. |  즉 livescss는 워크스페이스 내의 환경설정에서 세팅한 경로로 css 파일을 저장함. |  환경설정은 워크스페이스 내에 .vscode/settings.json 에 들어있다 | . ",
     "url": "/book01/docs/miscellaneous/05-01-scss/#01-scss-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95",
     "relUrl": "/docs/miscellaneous/05-01-scss/#01-scss-워크스페이스-환경설정"
-  },"92": {
+  },"96": {
     "doc": "05-01-Basic",
     "title": "02. 워크스페이스 설정하기",
     "content": ". | pc에 프로젝트 단위의 폴더를 만든다 . | VSCode 실행하여 워크스페이스 생성 . | vscode : ctrl+shift+p . | . { \"liveSassCompile.settings.formats\":[ // This is Default. { \"format\": \"expanded\", \"extensionName\": \".css\", \"savePath\": \"~/../css\" }, { \"format\": \"compressed\", \"extensionName\": \".min.css\", \"savePath\": \"~/../dist/css\" }, ] } . vscode는 사용자환경설정과 프로젝트 단위별 환경설정을 별도로 할수 있다. ",
     "url": "/book01/docs/miscellaneous/05-01-scss/#02-%EC%9B%8C%ED%81%AC%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0",
     "relUrl": "/docs/miscellaneous/05-01-scss/#02-워크스페이스-설정하기"
-  },"93": {
+  },"97": {
     "doc": "05-01-Basic",
     "title": "03. scss basic",
     "content": "css . html { font-size: 18px; } body { margin: 20px; background-color: #fff4c1; } div { color: #333; padding: 20px; } a { display: inline-block; margin: 10px 0; } #box1 { font-size: 40px; background-color: #ffcccc; border-radius: 20px; border: 3px solid #f00; -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); } #box1 &gt; a { color: #a22; text-decoration: none; } #box1 &gt; a:hover { background-color: #ccc; } #box1 #box2 { font-size: 20px; background-color: #e9e9e9; border-radius: 20px; border: 3px solid #f00; -webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.75); } #box1 #box2 &gt; a { color: #ee6633; text-decoration: none; } #box1 #box2 &gt; a:hover { color: #a22; text-decoration: none; } . html . &lt;div id=\"box1\"&gt; &lt;div id=\"box1-title\"&gt;box1&lt;/div&gt; &lt;a href=\"#\"&gt;button1&lt;/a&gt; &lt;div id=\"box2\"&gt; box2 &lt;br&gt; &lt;a href=\"#\"&gt;button2&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=\"box1\"&gt; &lt;div class=\"box2\"&gt; &lt;div class=\"box3\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . ",
     "url": "/book01/docs/miscellaneous/05-01-scss/#03-scss-basic",
     "relUrl": "/docs/miscellaneous/05-01-scss/#03-scss-basic"
-  },"94": {
+  },"98": {
     "doc": "05-01-Basic",
     "title": "04 Preprocessing",
     "content": "🔗link . | scss 프로젝트 폴더 생성 . | basic.scss 파일 생성 . | basic.html 을 열고 head 태그 사이에 &lt;link rel=\"stylesheet\" href=\"css/basic.css\" /&gt; 추가 . | basic.scss 파일을 편집후 컴파일한다. | . ",
     "url": "/book01/docs/miscellaneous/05-01-scss/#04-preprocessing",
     "relUrl": "/docs/miscellaneous/05-01-scss/#04-preprocessing"
-  },"95": {
+  },"99": {
     "doc": "05-01-Basic",
     "title": "05-01-Basic",
-    "content": ". ## . | 개요 | 01 scss 워크스페이스 환경설정 | 02. 워크스페이스 설정하기 | 03. scss basic | 04 Preprocessing | . 🔗scss공식사이트 . ",
+    "content": ". ## . | 개요 | 01 scss 워크스페이스 환경설정 | 02. 워크스페이스 설정하기 | 03. scss basic | 04 Preprocessing | . 🔗scss공식사이트 . 🔗scss튜토리얼 . ",
     "url": "/book01/docs/miscellaneous/05-01-scss/",
     "relUrl": "/docs/miscellaneous/05-01-scss/"
-  },"96": {
+  },"100": {
+    "doc": "05-02-var",
+    "title": "01 variables",
+    "content": "CSS의 값을 변수로 저장해서 사용할수 있다. //변수명은 $ 와 영문으로 시작한다. $font-stack: Helvetica, sans-serif; $primary-color: #333; body { //사용은 변수명을 속성값에 작성한다. font: 100% $font-stack; color: $primary-color; } . ",
+    "url": "/book01/docs/miscellaneous/05-02-scss/#01-variables",
+    "relUrl": "/docs/miscellaneous/05-02-scss/#01-variables"
+  },"101": {
+    "doc": "05-02-var",
+    "title": "02 calc",
+    "content": "css의 calc()를 사용할수 있다 . $width: calc(400px + 10%); .sidebar { width: $width; padding-left: calc($width / 4); } . ",
+    "url": "/book01/docs/miscellaneous/05-02-scss/#02-calc",
+    "relUrl": "/docs/miscellaneous/05-02-scss/#02-calc"
+  },"102": {
+    "doc": "05-02-var",
+    "title": "03 mixin",
+    "content": "속성은 같은데 값이 다를때 하나의 코드블록으로 정의해서 재사용할수 있는것이 믹스인 . //선언 @mixin 사용자정의명 (매개변수){실행문} @mixin theme($theme: DarkGray) { background: $theme; box-shadow: 0 0 1px rgba($theme, .25); color: #fff; } //호출 @include 사용자정의명; .info { @include theme; } .alert { @include theme($theme: DarkRed); } .success { @include theme($theme: DarkGreen); } . ",
+    "url": "/book01/docs/miscellaneous/05-02-scss/#03-mixin",
+    "relUrl": "/docs/miscellaneous/05-02-scss/#03-mixin"
+  },"103": {
+    "doc": "05-02-var",
+    "title": "05-02-var",
+    "content": ". ## . | 01 variables | 02 calc | 03 mixin | . 🔗scss공식메뉴얼 . 🔗scss공식메뉴얼 . ",
+    "url": "/book01/docs/miscellaneous/05-02-scss/",
+    "relUrl": "/docs/miscellaneous/05-02-scss/"
+  },"104": {
+    "doc": "05-geolocation",
+    "title": "01-경도,위도 찾기",
+    "content": " ",
+    "url": "/book01/docs/javascript/05-geolocation/#01-%EA%B2%BD%EB%8F%84%EC%9C%84%EB%8F%84-%EC%B0%BE%EA%B8%B0",
+    "relUrl": "/docs/javascript/05-geolocation/#01-경도위도-찾기"
+  },"105": {
+    "doc": "05-geolocation",
+    "title": "05-geolocation",
+    "content": ". | 01-경도,위도 찾기 | . – . ",
+    "url": "/book01/docs/javascript/05-geolocation/",
+    "relUrl": "/docs/javascript/05-geolocation/"
+  },"106": {
     "doc": "05-include",
     "title": "01 Include",
     "content": "공통으로 쓰는 파일을 외부에 불러와서 쓸수 있다. html 문서의 header, footer 같은 반복되는 영역을 외부에 저장 해 놓고 불러와서 사용하는 것 . 01-1 문서분리 . | functions.php -&gt; 다른이름으로 저장 -&gt; home.php | 표시된 부분을 반복영역으로 간주하고 진행한다 . | . | 표시된 부분의 코드를 잘라낸다 . | . | vscode 에 inc 폴더를 생성하고 하위에 header.php 를 만든다. | | . | 잘라낸 코드를 header.php 에 붙여넣는다. | | 편집완료스샷 | | . | . 01-2 변수설정 . | header.php 수정 . | 삽입한 페이지의 제목을 출력할수 있도록 title을 변수처리 | . | . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;&lt;?= $title; ?&gt;&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;&lt;?= $title; ?&gt;&lt;/h1&gt; . 01-3 header . | home.php 수정 | . &lt;?php $title='home'; include('inc/header.php'); ?&gt; ... | ` $title=’home’; -&gt; inc/header.php`에 전달할 title 변수값 | include('inc/header.php'); -&gt; include 함수는 삽입할 파일의 경로를 작성하면 된다. | home.php 를 실행하여 탭 제목과 h1의 변수값이 변경되었는지 확인한다 실행 . | 개발자도구에서 변수값이 적용된것을 확인한다. | . header.php 만 단독으로 실행할 경우 에러발생 home.php 의 $title 변수를 include 함수 이후에 초기화 할 경우 에러발생 . 01-4 응용 . title 변수에 값을 확인하여 없으면 에러대신 빈값 출력시키기 . &lt;?php if(!isset($title)){ $title=''; } &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; ... ?&gt; . | header.php 의 최상단에 작성 | isset 함수를 활용하여 변수의 상태를 확인한다. $title 변수가 준비되지 않았을경우 true 이므로 $title변수에 빈값을 저장한다. | 이제 header.php 만 실행해도 오류가 발생하지 않는다 | . 실행 . | 주석처리 후 계속 진행 | . 01-5 footer . | home.php 편집 | &lt;/body&gt;&lt;/html&gt;를 잘라낸다 | 문서의 하단에 아래의 코드를 작성한다. | ... &lt;?php include('inc/footer.php') ?&gt; . | inc/footer.php 를 생성후 잘라낸 코드를 붙여넣는다 . | 실행하여 결과를 확인 &lt;/body&gt;&lt;/html&gt;가 추가된것 확인 . | . ",
     "url": "/book01/docs/php/05-include/#01-include",
     "relUrl": "/docs/php/05-include/#01-include"
-  },"97": {
+  },"107": {
     "doc": "05-include",
     "title": "02 Require",
     "content": "함수를 include 해보자 . 02-1 . | inc/functions.php 생성 | home.php의 함수의 호출문만 functions.php는 함수의 실행문 만 으로 분리한다. | . home.php &lt;?php $title = '망고홈'; include('inc/header.php'); require('inc/functions.php'); ?&gt; &lt;pre&gt; function 함수이름 (매개변수1,매개변수2){ ...실행문 } 함수이름(); function func_add(){ } &lt;/pre&gt; &lt;h2&gt;SUM&lt;/h2&gt; &lt;?php echo sum(50, 20); ?&gt; &lt;hr&gt; &lt;?php $fruits = ['apple', 'mango', 'banana', 'orange']; output($fruits) ?&gt; &lt;hr&gt; &lt;?php $result = sum1(10, 20); echo $result; ?&gt; &lt;hr&gt; &lt;h2&gt;지역변수 전역변수&lt;/h2&gt; &lt;?php myfunc(); ?&gt; &lt;hr&gt; &lt;h2&gt;전역변수&lt;/h2&gt; &lt;?php $var2 = 20; myfunc2(); echo \"{$var2} 임&lt;br&gt;\"; ?&gt; &lt;hr&gt; &lt;h2&gt;정적변수&lt;/h2&gt; &lt;?php increment(); increment(); increment(); ?&gt; &lt;?php include('inc/footer.php') ?&gt; . function.php &lt;?php function sum($x, $y) { return $x + $y; } function output($value) { echo '&lt;pre&gt;'; print_r($value); echo '&lt;/pre&gt;'; } function sum1($x, $y) { $result = $x + $y; //지역변수(local variable) return $result; } function myfunc() { $var = 10; echo \"{$var}\"; } function myfunc2() { global $var2; //global echo \"$var2 임 &lt;br&gt;\"; //출력됨 } function increment() { static $count; $count++; echo \"$count&lt;br/&gt;\"; } . home.php에서 sum 함수의 인자를 변경해서 실행해본다 . 모든 함수가 오류없이 실행되는지 확인 . ",
     "url": "/book01/docs/php/05-include/#02-require",
     "relUrl": "/docs/php/05-include/#02-require"
-  },"98": {
+  },"108": {
     "doc": "05-include",
     "title": "03 Include VS Require",
     "content": "home.php 의 include 문장을 변경 . &lt;?php $title = '망고홈'; include('inc/headers.php'); //없는 경로 include('inc/functions.php'); //include로 수정 ?&gt; . 오류출력 후 그대로 실행 . home.php 의 include 문장을 변경 . &lt;?php $title = '망고홈'; require('inc/headers.php'); require('inc/functions.php'); ?&gt; . 오류출력 실행안함 . Include : 단순히 구조를 반복할때 Require: 오류발생시 치명적인 상황일때 (데이터베이스와의 연동…) . ",
     "url": "/book01/docs/php/05-include/#03-include-vs-require",
     "relUrl": "/docs/php/05-include/#03-include-vs-require"
-  },"99": {
+  },"109": {
     "doc": "05-include",
     "title": "04 _once",
     "content": ". | include를 반복해보자 | . include('inc/header.php'); include('inc/header.php'); require('inc/header.php'); require('inc/header.php'); . | 두번씩 반복 적용된다. | . | _once 를 사용해보자 | . &lt;?php $title = '망고홈'; include('inc/header.php'); include_once('inc/header.php'); //once를 붙이면 한번만됨 require('inc/header.php'); require_once('inc/header.php'); //once를 붙이면 한번만됨 require_once('inc/functions.php'); ?&gt; . ",
     "url": "/book01/docs/php/05-include/#04-_once",
     "relUrl": "/docs/php/05-include/#04-_once"
-  },"100": {
+  },"110": {
     "doc": "05-include",
     "title": "05-include",
     "content": ". | 01 Include . | 01-1 문서분리 | 01-2 변수설정 | 01-3 header | 01-4 응용 | 01-5 footer | . | 02 Require . | 02-1 | . | 03 Include VS Require | 04 _once | . 🔗php 공식문서 . ",
     "url": "/book01/docs/php/05-include/",
     "relUrl": "/docs/php/05-include/"
-  },"101": {
+  },"111": {
     "doc": "05-Sass/Scss",
     "title": "05-Sass/Scss",
     "content": " ",
     "url": "/book01/docs/miscellaneous/05-scss/",
     "relUrl": "/docs/miscellaneous/05-scss/"
-  },"102": {
+  },"112": {
     "doc": "05-fullPage",
     "title": "01 풀페이지",
     "content": "풀페이지 공식문서 . 파일다운로드 . ** id=\"fullpage 를 최상위 요소에 꼭 넣어야 한다 ** . | 3 버전 이후로 유료화 되었으므로 2버전 으로 추가한다. | . html . &lt;header&gt; &lt;nav&gt; &lt;ul&gt; &lt;li data-menuanchor=\"section1\"&gt;&lt;a href=\"#section1\"&gt;section1&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section2\"&gt;&lt;a href=\"#section2\"&gt;section2&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section3\"&gt;&lt;a href=\"#section3\"&gt;section3&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section4\"&gt;&lt;a href=\"#section4\"&gt;section4&lt;/a&gt;&lt;/li&gt; &lt;li data-menuanchor=\"section5\"&gt;&lt;a href=\"#section5\"&gt;section5&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;/header&gt; &lt;main id=\"fullpage\"&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 1&lt;/h2&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 01&lt;/h3&gt; &lt;/div&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 02&lt;/h3&gt; &lt;/div&gt; &lt;div class=\"slide\"&gt; &lt;h3&gt;slide 03&lt;/h3&gt; &lt;/div&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 3&lt;/h2&gt; &lt;/section&gt; &lt;section class=\"section\"&gt; &lt;h2&gt;section 4&lt;/h2&gt; &lt;/section&gt; &lt;footer class=\"section fp-auto-height\"&gt; &lt;h2&gt;footer&lt;/h2&gt; &lt;/footer&gt; &lt;/main&gt; . script . $(function () { $(\"#fullpage\").fullpage({ //options here anchors: [\"section1\", \"section2\", \"section3\", \"section4\", \"section5\"],//앵커 navigation: true, // 네비게이션 navigationPosition: \"right\", //네비게이션 위치 sectionsColor: [\"#ccc\", \"#bbb\", \"#ddd\", \"#eee\", \"#fff\"],//섹션색상 afterLoad: function (anchorLink, index) { // 섹션이동후 실행 콜백함수 console.log(\"현재 섹션 번호는 \" + index); // if(index == 5){ // alert('마지막입니다.'); // } }, afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) { //슬라이드 실행후 콜백함수 console.log(\"현재 슬라이드 번호는\" + slideIndex); }, }); }); . ",
     "url": "/book01/docs/jQuery/05/#01-%ED%92%80%ED%8E%98%EC%9D%B4%EC%A7%80",
     "relUrl": "/docs/jQuery/05/#01-풀페이지"
-  },"103": {
+  },"113": {
     "doc": "05-fullPage",
     "title": "05-fullPage",
     "content": ". ",
     "url": "/book01/docs/jQuery/05/",
     "relUrl": "/docs/jQuery/05/"
-  },"104": {
+  },"114": {
     "doc": "05-lightBox",
     "title": "01 lightBox",
     "content": "라이트박스를 만들어보자 . jQuery . js . ",
     "url": "/book01/docs/javascript+jQuery/05/#01-lightbox",
     "relUrl": "/docs/javascript+jQuery/05/#01-lightbox"
-  },"105": {
+  },"115": {
     "doc": "05-lightBox",
     "title": "05-lightBox",
     "content": ". ",
     "url": "/book01/docs/javascript+jQuery/05/",
     "relUrl": "/docs/javascript+jQuery/05/"
-  },"106": {
+  },"116": {
+    "doc": "06-01-Git 브랜치",
+    "title": "브랜치",
+    "content": "브랜치란 : 소스의 버전 소스에 여러 버전을 추가 다양한 기능을 테스트 할수 있다 . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EB%B8%8C%EB%9E%9C%EC%B9%98",
+    "relUrl": "/docs/miscellaneous/06-01-git/#브랜치"
+  },"117": {
+    "doc": "06-01-Git 브랜치",
+    "title": "만들기",
+    "content": "git branch new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EB%A7%8C%EB%93%A4%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-01-git/#만들기"
+  },"118": {
+    "doc": "06-01-Git 브랜치",
+    "title": "바꾸기",
+    "content": "브랜치를 만들었다고 해서 사용하고 있는것이 아니다. 빈 폴더만 만든 상태와 같다. 브랜치를 바꿔야 새 브랜치에서 작업 할수있다. git switch new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EB%B0%94%EA%BE%B8%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-01-git/#바꾸기"
+  },"119": {
+    "doc": "06-01-Git 브랜치",
+    "title": "만들면서바꾸기",
+    "content": "git switch -c new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C%EB%B0%94%EA%BE%B8%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-01-git/#만들면서바꾸기"
+  },"120": {
+    "doc": "06-01-Git 브랜치",
+    "title": "지우기",
+    "content": "git branch -D new-branch . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EC%A7%80%EC%9A%B0%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-01-git/#지우기"
+  },"121": {
+    "doc": "06-01-Git 브랜치",
+    "title": "복원",
+    "content": " ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EB%B3%B5%EC%9B%90",
+    "relUrl": "/docs/miscellaneous/06-01-git/#복원"
+  },"122": {
+    "doc": "06-01-Git 브랜치",
+    "title": "restore",
+    "content": "-수정전으로 가고싶다 . git restore 파일명 . | 작업하다 망친 코드를 원복할때 쓴다 | . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#restore",
+    "relUrl": "/docs/miscellaneous/06-01-git/#restore"
+  },"123": {
+    "doc": "06-01-Git 브랜치",
+    "title": "A 브랜치의 HEAD 를 B 브랜치로 덮어씌우기",
+    "content": "git checkout A git reset —hard B git push -f origin A . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#a-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%9D%98-head-%EB%A5%BC-b-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A1%9C-%EB%8D%AE%EC%96%B4%EC%94%8C%EC%9A%B0%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-01-git/#a-브랜치의-head-를-b-브랜치로-덮어씌우기"
+  },"124": {
+    "doc": "06-01-Git 브랜치",
+    "title": "커밋 정보확인",
+    "content": "git show . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#%EC%BB%A4%EB%B0%8B-%EC%A0%95%EB%B3%B4%ED%99%95%EC%9D%B8",
+    "relUrl": "/docs/miscellaneous/06-01-git/#커밋-정보확인"
+  },"125": {
+    "doc": "06-01-Git 브랜치",
+    "title": "(END) 해결",
+    "content": "q 누름 . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/#end-%ED%95%B4%EA%B2%B0",
+    "relUrl": "/docs/miscellaneous/06-01-git/#end-해결"
+  },"126": {
+    "doc": "06-01-Git 브랜치",
+    "title": "06-01-Git 브랜치",
+    "content": ". ## . | 브랜치 . | 만들기 | 바꾸기 | 만들면서바꾸기 | 지우기 | . | 복원 . | restore | . | A 브랜치의 HEAD 를 B 브랜치로 덮어씌우기 | 커밋 정보확인 | (END) 해결 | . 🔗원숭이도 이해하는 깃브랜치 . ",
+    "url": "/book01/docs/miscellaneous/06-01-git/",
+    "relUrl": "/docs/miscellaneous/06-01-git/"
+  },"127": {
+    "doc": "06-02-Git 협업",
+    "title": "협업하기",
+    "content": "–global 옵션을 생략하고 사용자 등록을 수행한다. ",
+    "url": "/book01/docs/miscellaneous/06-02-git/#%ED%98%91%EC%97%85%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/miscellaneous/06-02-git/#협업하기"
+  },"128": {
+    "doc": "06-02-Git 협업",
+    "title": "01 팀장용: 공동작업자 추가",
+    "content": ". | 팀장의 깃허브 계정에 프로젝트 Repository 를 생성한다. | 아래의 이미지 순서대로 [Settings] – [Collabrators] 클릭 . | 팀원의 깃허브 아이디나 메일 주소를 입력하고 [Add Collabrator] 클릭 . | . 진행중간에 인증창나오면 로그인해서 인증후 진행한다 . | . &lt;/details&gt; . | | . | 팀원이메일 등록 완료 화면 | . | | . ",
+    "url": "/book01/docs/miscellaneous/06-02-git/#01-%ED%8C%80%EC%9E%A5%EC%9A%A9-%EA%B3%B5%EB%8F%99%EC%9E%91%EC%97%85%EC%9E%90-%EC%B6%94%EA%B0%80",
+    "relUrl": "/docs/miscellaneous/06-02-git/#01-팀장용-공동작업자-추가"
+  },"129": {
+    "doc": "06-02-Git 협업",
+    "title": "02 팀원용: 공동작업자 수락",
+    "content": ". | 팀원은 개인 이메일이나 깃허브 계정에 등록된 이메일로 로그인하여 초대메일을 수신한다. | 7일 안에 응해야 하므로 당장 클릭한다. | 초대수락 버튼을 클릭하면 깃허브 로그인창으로 이동하고 . | 로그인을 클릭하면 본인확인 창이 뜬다. 등록된 방법으로 본인확인 번호를 수신하여 인증번호를 입력후 인증버튼을 클릭한다 | 인증이 완료 되면 수락하기 버튼을 클릭한다. | 우리팀의 깃허브 레파지토리가 보인다. | . ",
+    "url": "/book01/docs/miscellaneous/06-02-git/#02-%ED%8C%80%EC%9B%90%EC%9A%A9-%EA%B3%B5%EB%8F%99%EC%9E%91%EC%97%85%EC%9E%90-%EC%88%98%EB%9D%BD",
+    "relUrl": "/docs/miscellaneous/06-02-git/#02-팀원용-공동작업자-수락"
+  },"130": {
+    "doc": "06-02-Git 협업",
+    "title": "03. 전원: 공동 작업환경 구성",
+    "content": ". | 모두 자신의 pc에 착석 ``` git init teamPJ cd teamPJ git config user.name “내이름” git config user.email “내메일주소” | . 🔑 `--global` 옵션을 사용하지 않는다 &lt;details closed markdown='block'&gt; &lt;summary&gt; config 명령 &lt;/summary&gt; . 확인 git config user.email git config user.name 삭제 git config --unset user.name git config --unset user.email 전역삭제 git config --global --unset &lt;이름&gt; ``` . &lt;/details&gt; . ",
+    "url": "/book01/docs/miscellaneous/06-02-git/#03-%EC%A0%84%EC%9B%90-%EA%B3%B5%EB%8F%99-%EC%9E%91%EC%97%85%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1",
+    "relUrl": "/docs/miscellaneous/06-02-git/#03-전원-공동-작업환경-구성"
+  },"131": {
+    "doc": "06-02-Git 협업",
+    "title": "04. 팀장",
+    "content": ". | text.text 파일을 생성후 push한다 | . ",
+    "url": "/book01/docs/miscellaneous/06-02-git/#04-%ED%8C%80%EC%9E%A5",
+    "relUrl": "/docs/miscellaneous/06-02-git/#04-팀장"
+  },"132": {
+    "doc": "06-02-Git 협업",
+    "title": "05. 팀원",
+    "content": ". | 작업진행전 원격저장소의 파일을 clone 후 작업한다. 🔑 항상 최신 커밋을 pull 한 다음 push한다. | . ",
+    "url": "/book01/docs/miscellaneous/06-02-git/#05-%ED%8C%80%EC%9B%90",
+    "relUrl": "/docs/miscellaneous/06-02-git/#05-팀원"
+  },"133": {
+    "doc": "06-02-Git 협업",
+    "title": "06-02-Git 협업",
+    "content": ". ## . | 협업하기 . | 01 팀장용: 공동작업자 추가 | 02 팀원용: 공동작업자 수락 | 03. 전원: 공동 작업환경 구성 | 04. 팀장 | 05. 팀원 | . | . ",
+    "url": "/book01/docs/miscellaneous/06-02-git/",
+    "relUrl": "/docs/miscellaneous/06-02-git/"
+  },"134": {
+    "doc": "06-effects",
+    "title": "01 Effect",
+    "content": "제이쿼리와 자바스크립트로 효과를 구현해보자 . jquery . javascript . ",
+    "url": "/book01/docs/javascript+jQuery/06-effect/#01-effect",
+    "relUrl": "/docs/javascript+jQuery/06-effect/#01-effect"
+  },"135": {
+    "doc": "06-effects",
+    "title": "02 animate",
+    "content": "jquery . javascript . ",
+    "url": "/book01/docs/javascript+jQuery/06-effect/#02-animate",
+    "relUrl": "/docs/javascript+jQuery/06-effect/#02-animate"
+  },"136": {
+    "doc": "06-effects",
+    "title": "06-effects",
+    "content": ". ",
+    "url": "/book01/docs/javascript+jQuery/06-effect/",
+    "relUrl": "/docs/javascript+jQuery/06-effect/"
+  },"137": {
     "doc": "06-form",
     "title": "01 form.php",
     "content": "이번 예제에서는 데이터가 어떤 방식으로 전송이 되는지 흐름을 파악하도록 한다. 데이터조작은 추후 진행한다. 간단한 회원가입 입력 폼을 제작해보자. 01-1 form.php . | form.php 문서 생성후 코드 작성 | . &lt;?php $title='login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; . | . | form.php 작성 . | . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; /* action=\"서버주소\" method=\"전송방법 \"*/ &lt;form action=\"request.php\" method=\"get\"&gt; &lt;p&gt; &lt;label for=\"userName\"&gt;Name&lt;/label&gt; /* type=\"데이터형식\" name=\"필드명\" id=\"아이디\" */ &lt;input type=\"text\" name=\"userName\" id=\"userName\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"userEmail\"&gt;Email&lt;/label&gt; &lt;input type=\"email\" name=\"userEmail\" id=\"userEmail\"&gt; &lt;/p&gt; &lt;p&gt; &lt;input type=\"submit\" value=\"로그인\"&gt; &lt;/p&gt; . 실행화면 . 01-2 request.php . $_GET[userName] [super globals variable : 모든 범위에서 사용 가능한 내장 변수] . HTTP 프로토콜의 GET 방식을 통해 사용자가 서버에 요청하였을 때 URL을 통해 전송된 데이터를 각각의 원소로 가지는 배열 변수. &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;?php $name = $_GET[\"userName\"]; //form.php의 name=\"userName\" 속성의 값을 전달받는다. $email = $_GET[\"userEmail\"];//form.php의 name=\"userEmail\" 속성의 값을 전달받는다. echo $name . '님의 입력한 이메일은' . $email . '입니다'; ?&gt; &lt;?php include('inc/footer.php'); ?&gt; . | login.php 에 회원정보 입력후 로그인 클릭 | request.php의 주소표시줄과 화면출력 내용 확인 | . http://localhost/request.php?userName=+%EA%B9%80%EB%A7%9D%EA%B3%A0&amp;userEmail=asdf%40gflgi.com . 🔑 get 방식은 사용자가 입력한 정보가 주소표시줄에 노출됨 . 01-3 post . post 방식으로 바꿔보자 . form.php . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;!-- &lt;form action=\"request.php\" method=\"get\"&gt; --&gt; &lt;form action=\"request.php\" method=\"post\"&gt; &lt;p&gt; &lt;label for=\"userName\"&gt;Name&lt;/label&gt; &lt;input type=\"text\" name=\"userName\" id=\"userName\"&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"userEmail\"&gt;Email&lt;/label&gt; &lt;input type=\"email\" name=\"userEmail\" id=\"userEmail\"&gt; &lt;/p&gt; &lt;p&gt; &lt;input type=\"submit\" value=\"로그인\"&gt; &lt;/p&gt; &lt;/form&gt; . request.php . &lt;?php $title = 'login'; include_once('inc/header.php'); require_once('inc/functions.php'); ?&gt; &lt;?php //$name = $_GET[\"userName\"]; //$email = $_GET[\"userEmail\"]; $name = $_POST[\"userName\"]; $email = $_POST[\"userEmail\"]; echo $name . '님의 입력한 이메일은' . $email . '입니다'; ?&gt; &lt;?php include('inc/footer.php'); ?&gt; . 실행 . 🔑post방식은 주소표시줄에 노출되지 않음 . ",
     "url": "/book01/docs/php/06-form/#01-formphp",
     "relUrl": "/docs/php/06-form/#01-formphp"
-  },"107": {
+  },"138": {
     "doc": "06-form",
     "title": "02 정리",
     "content": "Http 프로토콜을 사용하여 get 과 post 방식으로 데이터의 요청/응답을 작성해보았다. 두가지 방식을 정리해보자 . | GET 요청은 캐시( Cache : 자주 접근하는 데이터를 복사 해놓는 임시 저장소)가 가능하다. | GET 요청은 브라우저 히스토리에 남는다. | GET 요청은 길이 제한이 있다. | GET 요청은 중요한 정보를 다루면 안된다. | . | POST 요청은 캐시되지 않는다. | POST 요청은 브라우저 히스토리에 남지 않는다. | POST 요청은 데이터 길이에 제한이 없다. | . 🔑CTRL + F5 를 누르면 캐시가 삭제된다 . ",
     "url": "/book01/docs/php/06-form/#02-%EC%A0%95%EB%A6%AC",
     "relUrl": "/docs/php/06-form/#02-정리"
-  },"108": {
+  },"139": {
     "doc": "06-form",
     "title": "06-form",
     "content": ". | 01 form.php . | 01-1 form.php | 01-2 request.php | 01-3 post | . | 02 정리 | . 🔗php GET 🔗php SuperGlobals . ",
     "url": "/book01/docs/php/06-form/",
     "relUrl": "/docs/php/06-form/"
-  },"109": {
-    "doc": "06-Git",
-    "title": "브랜치",
-    "content": "브랜치란 : 소스의 버전 소스에 여러 버전을 추가 다양한 기능을 테스트 할수 있다 . ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EB%B8%8C%EB%9E%9C%EC%B9%98",
-    "relUrl": "/docs/miscellaneous/06-git/#브랜치"
-  },"110": {
-    "doc": "06-Git",
-    "title": "만들기",
-    "content": "git branch new-branch . ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EB%A7%8C%EB%93%A4%EA%B8%B0",
-    "relUrl": "/docs/miscellaneous/06-git/#만들기"
-  },"111": {
-    "doc": "06-Git",
-    "title": "바꾸기",
-    "content": "브랜치를 만들었다고 해서 사용하고 있는것이 아니다. 빈 폴더만 만든 상태와 같다. 브랜치를 바꿔야 새 브랜치에서 작업 할수있다. git switch new-branch . ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EB%B0%94%EA%BE%B8%EA%B8%B0",
-    "relUrl": "/docs/miscellaneous/06-git/#바꾸기"
-  },"112": {
-    "doc": "06-Git",
-    "title": "만들면서바꾸기",
-    "content": "git switch -c new-branch . ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C%EB%B0%94%EA%BE%B8%EA%B8%B0",
-    "relUrl": "/docs/miscellaneous/06-git/#만들면서바꾸기"
-  },"113": {
-    "doc": "06-Git",
-    "title": "지우기",
-    "content": "git branch -D new-branch . ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EC%A7%80%EC%9A%B0%EA%B8%B0",
-    "relUrl": "/docs/miscellaneous/06-git/#지우기"
-  },"114": {
-    "doc": "06-Git",
-    "title": "복원",
-    "content": " ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EB%B3%B5%EC%9B%90",
-    "relUrl": "/docs/miscellaneous/06-git/#복원"
-  },"115": {
-    "doc": "06-Git",
-    "title": "restore",
-    "content": "-수정전으로 가고싶다 . git restore 파일명 . | 작업하다 망친 코드를 원복할때 쓴다 | . ",
-    "url": "/book01/docs/miscellaneous/06-git/#restore",
-    "relUrl": "/docs/miscellaneous/06-git/#restore"
-  },"116": {
-    "doc": "06-Git",
-    "title": "A 브랜치의 HEAD 를 B 브랜치로 덮어씌우기",
-    "content": "git checkout A git reset —hard B git push -f origin A . ",
-    "url": "/book01/docs/miscellaneous/06-git/#a-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%9D%98-head-%EB%A5%BC-b-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%A1%9C-%EB%8D%AE%EC%96%B4%EC%94%8C%EC%9A%B0%EA%B8%B0",
-    "relUrl": "/docs/miscellaneous/06-git/#a-브랜치의-head-를-b-브랜치로-덮어씌우기"
-  },"117": {
-    "doc": "06-Git",
-    "title": "커밋 정보확인",
-    "content": "git show . ",
-    "url": "/book01/docs/miscellaneous/06-git/#%EC%BB%A4%EB%B0%8B-%EC%A0%95%EB%B3%B4%ED%99%95%EC%9D%B8",
-    "relUrl": "/docs/miscellaneous/06-git/#커밋-정보확인"
-  },"118": {
-    "doc": "06-Git",
-    "title": "(END) 해결",
-    "content": "q 누름 . ",
-    "url": "/book01/docs/miscellaneous/06-git/#end-%ED%95%B4%EA%B2%B0",
-    "relUrl": "/docs/miscellaneous/06-git/#end-해결"
-  },"119": {
+  },"140": {
     "doc": "06-Git",
     "title": "06-Git",
-    "content": ". ## . | 브랜치 . | 만들기 | 바꾸기 | 만들면서바꾸기 | 지우기 | . | 복원 . | restore | . | A 브랜치의 HEAD 를 B 브랜치로 덮어씌우기 | 커밋 정보확인 | (END) 해결 | . 🔗원숭이도 이해하는 깃브랜치 . ",
+    "content": ". ## . ",
     "url": "/book01/docs/miscellaneous/06-git/",
     "relUrl": "/docs/miscellaneous/06-git/"
-  },"120": {
+  },"141": {
+    "doc": "06-무한스크롤",
+    "title": "06-무한스크롤",
+    "content": "– . 검색기능이 추가된 무한 스크롤을 구현해보자 . html/css . API 를 연동하여 데이터를 서버에서 받는다 데이터의 일부만 화면에 출력하고 스크롤이 내려가면 데이터를 추가로 출력한다. ",
+    "url": "/book01/docs/javascript/06-%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4/",
+    "relUrl": "/docs/javascript/06-%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4/"
+  },"142": {
     "doc": "06-BXslider",
     "title": "01 BXslider",
     "content": "BXslider 공식문서 . 가장 유명한 jQuery 캐로셀 플러그인 . 파일다운로드 . 기본슬라이드 . 좌우컨트롤 . 멀티플 . 옵션활용 . 애니메이션 활용 . 동영상 . &lt;div class=\"slideWrap\"&gt; &lt;div class=\"video_slides\"&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;div&gt;&lt;video src=\"video/video.mp4\"&gt;&lt;/video&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; .slideWrap{ max-width: 960px; width:90%; margin:2em auto; position: relative; } . $('.video_slides').bxSlider({ video: true, onSliderLoad:function(currentIndex){ $('.video_slides div').eq(currentIndex + 1).find('video').get(0).play(); }, onSlideAfter:function($slideElement){ $slideElement.siblings().find('video').get(0).pause(); $slideElement.find('video').get(0).play(); } }); . ",
     "url": "/book01/docs/jQuery/06/#01-bxslider",
     "relUrl": "/docs/jQuery/06/#01-bxslider"
-  },"121": {
+  },"143": {
     "doc": "06-BXslider",
     "title": "06-BXslider",
     "content": ". ",
     "url": "/book01/docs/jQuery/06/",
     "relUrl": "/docs/jQuery/06/"
-  },"122": {
+  },"144": {
     "doc": "07-form-validator",
     "title": "01 form.php",
     "content": "검색창에 php를 검색해보자 주소표시줄에 search?q 라는 낱말 뒤에 우리가 입력한 단어가 보인다. q는 Query 의 표시로 Query란 (질의문:저장되어져 있는 정보를 골라내기 위한 질문) 이다 . 위의 그림은 http GET 방식으로 데이터를 요청한 예시이다. 직접 만들어보자 . 01-1 . | 07/get-input.php 생성 | . &lt;?php ?&gt; &lt;h1&gt;get input&lt;/h1&gt; . 실행 . | 브라우저 주소창에 쿼리문과 파라미터를 작성후 엔터를 쳐본다 당연히 데이터가 없으니 아무것도 안나올 것이다. | . | php 작성 | . &lt;?php $product_id=$_GET['productid']; ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; . 실행 . get 방식의 요청으로 들어온 매개변수 값을 취득하여 화면에 출력 . 01-2 . 매개변수 2개 . &lt;?php $product = $_GET['product']; //superGlobals php문서 어디서나 사용가능 $limit = $_GET['limit']; //limit 추가 ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;?= $product; ?&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt;-👍Limit &lt;?= $limit;?&gt; //출력 &lt;/p&gt; . 실행 . 🔑파라미터를 연결할때는 &amp; 를 작성 . | 매개변수 두개의 값이 잘 전달된것을 확인 | . ",
     "url": "/book01/docs/php/07-validator/#01-formphp",
     "relUrl": "/docs/php/07-validator/#01-formphp"
-  },"123": {
+  },"145": {
     "doc": "07-form-validator",
     "title": "02 filter",
     "content": "사용자가 악의적으로 주소창을 통해 위험한 데이터를 전송할수 있다. filter 를 사용하여 데이터를 골라내자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); if($product == false || $limit == false){ die();//멈춰 } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; -👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . | 매개변수를 글자로 보내면 실행안됨 | . | 숫자로 보내면 실행됨 | . 02-1 . 필터에 해당되지 않을경우 기본값을 출력하자 . &lt;?php $product = filter_input(INPUT_GET,'product',FILTER_VALIDATE_INT); //FILTER_VALIDATE_INT 정수는 true 아니면 false $limit = filter_input(INPUT_GET,'limit',FILTER_VALIDATE_INT); //if($product == false || $limit == false){ // die();//멈춰 //} if($product == false){ //변수 product 가 false 이면 $product = 10; // product에 10할당 } if($limit == false){ $limit = 10; } ?&gt; &lt;h1&gt;get input&lt;/h1&gt; &lt;p&gt; 진열상품리스트:&lt;?= $product; ?&gt; - 👍Limit &lt;?= $limit; ?&gt; &lt;/p&gt; . 🔑 위의 코드 처럼 작성하면 빈 화면이 출력되지 않겠죠? . ",
     "url": "/book01/docs/php/07-validator/#02-filter",
     "relUrl": "/docs/php/07-validator/#02-filter"
-  },"124": {
+  },"146": {
     "doc": "07-form-validator",
     "title": "07-form-validator",
     "content": ". | 01 form.php . | 01-1 | 01-2 | . | 02 filter . | 02-1 | . | . 🔗php filter . ",
     "url": "/book01/docs/php/07-validator/",
     "relUrl": "/docs/php/07-validator/"
-  },"125": {
+  },"147": {
     "doc": "08-Cookie,Session",
     "title": "00 쿠키와 세션",
     "content": ". | 쿠키:클라이언트(브라우저) 로컬에 저장 되는 키와 값이 들어있는 데이터 파일 . | 쿠키의 구성 . | 이름 : 쿠키를 구별하는데 사용된다. | 값 : 쿠키의 이름과 mapping된 값이다. | 유효시간 : 쿠키의 유지시간이다. | 도메인 : 쿠키를 전송할 도메인 정보이다. | 경로 : 쿠키를 전송할 요청 경로이다. | . | . | 세션: 사용자 정보 파일을 서버에 저장 . | session은 cookie를 사용해서 session ID 만을 저장 | . | cache : 이미지나 CSS, JS 파일등을 브라우저나 서버의 앞 단에 저장해놓고 사용하는 것 | . ",
     "url": "/book01/docs/php/08-cookie/#00-%EC%BF%A0%ED%82%A4%EC%99%80-%EC%84%B8%EC%85%98",
     "relUrl": "/docs/php/08-cookie/#00-쿠키와-세션"
-  },"126": {
+  },"148": {
     "doc": "08-Cookie,Session",
     "title": "01 Cookie 생성",
     "content": "xmapp/htdoc/cookie/cookie_test.php 파일생성 . | php 에 접속하여 cookie 를 검색해보자 | setcookie 클릭 | 설명을 본다. | | 첫번째 값으로는 문자로 이름, 두번째 값으로 문자로 값, 세번째로는 배열로 옵션을 작성한다. | name(이름),value(값),expires_or_options(만기일),path(경로) 을 작성해야한다. | . | cookie_test.php 파일작성 $_COOKIE $_COOKIE 는 쿠키의 이름을 불러서 값을 호출할수 있는 superGlobals 입니다. | . &lt;?php $cookieName = \"city\"; //쿠키의 이름 $cookieValue = \"seoul\"; //쿠키의 값 //setcookie 함수에 인자전달() setcookie($cookieName, $cookieValue, time() + 60, \"/\");//time() + 600 만료시간: 현재부터 600초 이후 만료 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt; &lt;title&gt;쿠키테스트&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;p&gt;새로고침(f5) 하면 생성된 쿠키를 확인할 수 있습니다.&lt;/p&gt; &lt;?php if(!isset($_COOKIE[$cookieName])){ //$cookieName 변수가 세팅되지 않으면 true echo \"{$cookieName}라는 이름의 쿠키는 생성이 되지 않았습니다.\"; }else{ echo \"{$cookieName}라는 이름의 쿠키는 생성되었고, 값은 \".$_COOKIE[$cookieName].\"입니다.\"; } ?&gt; &lt;/body&gt; &lt;/html&gt; . time() + 60 에 지정한 60초가 지나면 쿠키가 생성되고 브라우저 새로고침하면 메시지는 else 문의 내용이 출력된다 . 실행화면 — . ",
     "url": "/book01/docs/php/08-cookie/#01-cookie-%EC%83%9D%EC%84%B1",
     "relUrl": "/docs/php/08-cookie/#01-cookie-생성"
-  },"127": {
+  },"149": {
     "doc": "08-Cookie,Session",
     "title": "02 Cookie 삭제",
     "content": "xmapp/htdoc/cookie/cookie_del.php 파일생성 . 🔑쿠키의 삭제는 만기일을 현재보다 이전으로 설정하면 된다 . &lt;?php $cookieName = \"city\"; $cookieValue = \"seoul\"; setcookie($cookieName, $cookieValue, time() - 60, \"/\"); ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\"&gt; &lt;title&gt;쿠키삭제&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo $cookieName . '의 쿠키가 삭제 되었습니다.'; echo '생성된 값은 '.$_COOKIE[$cookieName] . '입니다.'; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . 쿠키가 생성되자마자 삭제되었으므로 삭제 메시지와 함께 오류출력 . ",
     "url": "/book01/docs/php/08-cookie/#02-cookie-%EC%82%AD%EC%A0%9C",
     "relUrl": "/docs/php/08-cookie/#02-cookie-삭제"
-  },"128": {
+  },"150": {
     "doc": "08-Cookie,Session",
     "title": "03 Session",
     "content": "브라우저가 해당 사이트에서 벗어나면 세션종료 사이트 접속후 30분이상 상호작용이 없으면 세션종료 . {: .new }[#1] . htdoc/session/session.php 생성 . 🔑 세션은 사용자의 정보를 서버에 저장하는것 . &lt;?php session_start(); //세션시작 $_SESSION[\"city\"]= \"seoul\"; $_SESSION[\"gu\"] = \"gangnam\"; ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php echo \"세션 변수가 등록되었습니다.\"; ?&gt; &lt;/body&gt; &lt;/html&gt; . 실행 . htdoc/session/session_set.php 생성 . &lt;?php session_start();//세션시작 ?&gt; &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php if(!isset($_SESSION[\"city\"])){ //city이름의 세션이 없으면 true echo \"해당 세션변수가 등록되지 않았습니다.\"; }else{ echo \"나의 도시는 {$_SESSION['city']}.입니다.&lt;br/&gt;\"; echo \"{$_SESSION['gu']}구에 있습니다&lt;br/&gt;\"; print_r($_SESSION);//세션의 모든 정보를 보여줘(모든 세션의 정보를 연관배열형태로 출력) } ?&gt; &lt;/body&gt; &lt;/html&gt; . session.php에서 등록한 세션값이 저장되어 출력되는것을 볼수있다. 03-1 session 찾아보기 . | xmapp 설치폴더 에서 php.ini 를 찾아본다 | xmapp/php/php.ini-development 파일을 vscode로 연다 | xmapp/php/php.ini 로 저장한다. | ctrl+F 를 눌러 session.save_path 를 검색한다. | . | 우리가 사용중인 프로그램이 포터블 이므로 C드라이브로 가야한다 | C:\\Users\\Administrator\\AppData\\Local\\Temp\\ 폴더로 이동한다. | . | 해당 폴더에서 파일명이 sess_~ 로 시작하는 파일을 vscode로 열어본다 - | 세션정보를 확인할수 있다 | . ",
     "url": "/book01/docs/php/08-cookie/#03-session",
     "relUrl": "/docs/php/08-cookie/#03-session"
-  },"129": {
+  },"151": {
     "doc": "08-Cookie,Session",
     "title": "04 seisson 지우기",
     "content": "htdoc/session/session_del.php 생성 . 세션은 두가지 방법으로 지울수 있다. &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;session delete&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;?php session_unset(); //모든 세션 변수의 등록을 해지한다. session_destroy(); //세션 아이디 삭제 echo \"모든 세션 변수가 등록 해지되었고, 세션 아이디도 삭제됨\"; print_r($_SESSION); ?&gt; &lt;/body&gt; &lt;/html&gt; . ",
     "url": "/book01/docs/php/08-cookie/#04-seisson-%EC%A7%80%EC%9A%B0%EA%B8%B0",
     "relUrl": "/docs/php/08-cookie/#04-seisson-지우기"
-  },"130": {
+  },"152": {
     "doc": "08-Cookie,Session",
     "title": "08-Cookie,Session",
     "content": ". | 00 쿠키와 세션 | 01 Cookie 생성 | 02 Cookie 삭제 | 03 Session . | 03-1 session 찾아보기 | . | 04 seisson 지우기 | . 관련링크 . 🔗php_setcookie 🔗php_$_COOKIE 🔗php_session_destroy 🔗php_session_unset . ",
     "url": "/book01/docs/php/08-cookie/",
     "relUrl": "/docs/php/08-cookie/"
-  },"131": {
+  },"153": {
     "doc": "09-board",
     "title": "01 SQL로 게시판 만들기(DB생성)",
     "content": "😺 SQL 이란? 데이터를 관리하기 위해 설계된 특수 목적의 프로그래밍 언어 . ◾ 게시판구현을 위해 알아야 할것 . ◾Create(생성), Read(조회), Update(수정), Delete(삭제) . ◾ 필요한 개발환경 서버(xmapp)를 설치하고 데이터 베이스(mango_board)를 생성 할 테이블(free_board)생성 . ",
     "url": "/book01/docs/php/09-board/#01-sql%EB%A1%9C-%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0db%EC%83%9D%EC%84%B1",
     "relUrl": "/docs/php/09-board/#01-sql로-게시판-만들기db생성"
-  },"132": {
+  },"154": {
     "doc": "09-board",
     "title": "01-1 DB 구축",
-    "content": "우리가 만들 테이블의 정보는 아래와 같다 . | 서버 : xmapp | 데이터베이스명 : mango_board | 테이블명 : free_board | . | xmapp control-panel열기 . | . | phpMyAdmin 에 로그인한다 . | . | 사용자추가 . | . | 아래의 이미지를 보고 체크된 부분처럼 기재한다. 비밀번호는 쉬운걸로 하자 . | . | . 테이블의 구조를 살펴보자 . | 테이블명 : free_board | 컬럼(필드)명: number - INT : 자동으로 숫자를 올리는 auto_increment PK | 컬럼(필드)명: name - varchar(100) : 글쓴이 | 컬럼(필드)명: message - varchar(255) : 메시지 | . ",
+    "content": "우리가 만들 테이블의 정보는 아래와 같다 . | 서버 : xmapp | 데이터베이스명 : mango_board | 테이블명 : free_board | . | xmapp control-panel열기 . | . | phpMyAdmin 에 로그인한다 . | . | 사용자추가 . | . | 아래의 이미지를 보고 체크된 부분처럼 기재한다. 비밀번호는 쉬운걸로 하자 . | . | . ",
     "url": "/book01/docs/php/09-board/#01-1-db-%EA%B5%AC%EC%B6%95",
     "relUrl": "/docs/php/09-board/#01-1-db-구축"
-  },"133": {
+  },"155": {
     "doc": "09-board",
     "title": "01-2 테이블생성",
-    "content": ". | create new table 클릭 . | 이미지의 표시된 정보를 입력후 실행 클릭 -&gt; 오류메시지 출력시 모두 무시 클릭 . | 이미지의 표시된 부분만 해당 정보를 입력한다. 나머지는 그냥둠 . | 3 단계에서 primary 선택시 아래와 같은 화면이 뜨면 실행을 누르면 된다. | sql 미리보기 클릭 . | 설정값 확인후 저장클릭 . | 설정값 확인후 저장클릭 . | . ",
+    "content": "생성할 테이블의 구조는 아래와 같다 . | 종류 | 이름 | 설명 |   | . | 테이블명 | free_board |   |   | . | 컬럼(필드)명 | number | INT | 자동으로 숫자를 올리는 auto_increment PK | . |   | name | varchar(100) | 글쓴이 | . |   | message | varchar(255) | 메시지 | . 만들어보자 . | create new table 클릭 . | 이미지의 표시된 정보를 입력후 실행 클릭 -&gt; 오류메시지 출력시 모두 무시 클릭 . | 이미지의 표시된 부분만 해당 정보를 입력한다. 나머지는 그냥둠 . | 3 단계에서 primary 선택시 아래와 같은 화면이 뜨면 실행을 누르면 된다. | sql 미리보기 클릭 . | 설정값 확인후 저장클릭 . | 설정값 확인후 저장클릭 . | . ",
     "url": "/book01/docs/php/09-board/#01-2-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%83%9D%EC%84%B1",
     "relUrl": "/docs/php/09-board/#01-2-테이블생성"
-  },"134": {
+  },"156": {
     "doc": "09-board",
     "title": "02 서버만들기",
     "content": "Structure of a server . htdocs/ └── board/ ├── index.php(글조회,검색,삭제) ├── view.php(글보기) ├── write.php(글작성) ├── insert.php(글입력) ├── delete.php(글삭제) ├── search.php(검색) └── list.php(글목록) . ",
     "url": "/book01/docs/php/09-board/#02-%EC%84%9C%EB%B2%84%EB%A7%8C%EB%93%A4%EA%B8%B0",
     "relUrl": "/docs/php/09-board/#02-서버만들기"
-  },"135": {
+  },"157": {
     "doc": "09-board",
     "title": "02-1 index.php",
     "content": ". | xmapp/htdocs/board 생성 | board/index.php 생성 후 코드작성 | . | 글쓰기 링크 클릭시 write.php 문서로 이동 | . index.php . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;망고네 자유 게시판&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;자유 게시판&lt;/h1&gt; &lt;h2&gt;글 목록&lt;/h2&gt; &lt;hr /&gt; &lt;p&gt;&lt;a href=\"write.php\"&gt;글쓰기&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;/body&gt; &lt;/html&gt; . | 작성후 localehost/board 에서 확인 | . ",
     "url": "/book01/docs/php/09-board/#02-1-indexphp",
     "relUrl": "/docs/php/09-board/#02-1-indexphp"
-  },"136": {
+  },"158": {
     "doc": "09-board",
     "title": "02-2 write.php",
     "content": ". | board/write.php 생성 . | 글작성을 하는 페이지이다. form 태그와 input 의 속성들이 실제 동작하는것을 확인하면서 코딩한다. | . form action =\"전송할 파일,폴더의 주소\" . input name =\"db field name\" . write.php . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;글쓰기&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;글쓰기&lt;/h1&gt; &lt;!-- action=전송할 주소 --&gt; &lt;form action=\"insert.php\" method=\"post\"&gt; &lt;p&gt; &lt;label for=\"name\"&gt;작성자:&lt;/label&gt; &lt;!-- name=테이블의 필드명 --&gt; &lt;input type=\"text\" id=\"name\" name=\"name\" /&gt; &lt;/p&gt; &lt;p&gt; &lt;label for=\"message\"&gt;메시지:&lt;/label&gt; &lt;textarea name=\"message\" id=\"message\" cols=\"30\" rows=\"10\"&gt;&lt;/textarea&gt; &lt;/p&gt; &lt;!-- submit 버튼을 클릭하면 form 의 액션 값의 주소로 데이터가 전송된다 --&gt; &lt;input type=\"submit\" value=\"글쓰기\" /&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; . | index.php 에서 글쓰기 클릭시 write.php로 이동하는지 확인한다 | . ",
     "url": "/book01/docs/php/09-board/#02-2-writephp",
     "relUrl": "/docs/php/09-board/#02-2-writephp"
-  },"137": {
+  },"159": {
     "doc": "09-board",
     "title": "02-3 insert.php",
     "content": "🔗공식사이트 . 🔑 DB와 연동해서 작동할 페이지 . | view.php . | insert.php . | delete.php . | search.php . | list.php . | search.php . | . 위의 파일들은 mango_board DB에 접근하여 freeboard 테이블 내용을 조회할수 있어여 한다 . mysqli_connect 함수 . | 함수명 | 문법 | 설명 | . | mysqli_connect | mysqli_connect( 서버주소, mysql사용자아이디, mysql사용자비밀번호, 데이터베이스이름,(옵션: port, socket) ); | MySQL server 나 MariaDB Server에 연결 | . mysqli_connect 함수는 MySQL server에 연결해주는 함수로 db에 접근해야 할 경우 문서의 최상단에 작성을 해야한다. insert.php . &lt;?php //변수 conn 에 mysqli_connect(서버주소, mysql사용자아이디, mysql사용자비밀번호, 데이터베이스이름) 할당 $conn=mysqli_connect(\"localhost\",\"root\",\"\",\"mango_board\"); if(!$conn){ //변수conn 이 false 일경우 echo 'db에 연결하지 못했습니다.'. mysqli_connect_error(); //문자열과 함께 에러메시지 출력함수 실행 } else{ echo 'db에 접속했습니다'; //성공시 출력할 문자열 } mysqli_close($conn); //접속을 끊는다 print \"&lt;hr/&gt;&lt;a href='index.php'&gt;메인화면으로 이동하기&lt;/a&gt;\"; // 메인화면으로 이동할수 있는 링크 출력 ?&gt; . 여기까지 sql 서버에 연결이 되고 메시지를 출력하는지 확인해본다 . ",
     "url": "/book01/docs/php/09-board/#02-3-insertphp",
     "relUrl": "/docs/php/09-board/#02-3-insertphp"
-  },"138": {
+  },"160": {
     "doc": "09-board",
     "title": "02-4 insert.php 이어서 작성",
     "content": ". | 사용자가 write.php에 작성한 글을 전송하면 insert.php에서 값을 저장하여 DB에 추가하는 역할을 한다. | 사용자가 전달하는 데이터를 저장하는지 확인해보는 코드를 작성하자 2-1. mysqli_close($conn); 접속을 끊는 함수 이전에 작성한다. | . insert.php . $user_name = $_POST['name']; $user_msg = $_POST['message']; print $user_name; print $user_msg; . 여기까지 확인해본다 . | write.php 에서 글 작성후 글쓰기 클릭 | insert.php 에서 내용 확인 | . ",
     "url": "/book01/docs/php/09-board/#02-4-insertphp-%EC%9D%B4%EC%96%B4%EC%84%9C-%EC%9E%91%EC%84%B1",
     "relUrl": "/docs/php/09-board/#02-4-insertphp-이어서-작성"
-  },"139": {
+  },"161": {
     "doc": "09-board",
     "title": "02-5",
     "content": "데이터베이스 조작어 &gt; Create, Read, Update, Delete 관련 명령이 가장 기본이다 . INSERT Statement ,mysqli_query . INSERT Statement 테이블에 새로운 레코드(행)을 추가하는 명령어 . 공식 사이트의 가이드를 보면 아래 그램과 같은 예시를 확인할수 있다. 간단한 문법 insert into 테이블명(컬럼1, 컬럼2) values (컬럼1, 컬럼2) . | 이전의 print 명령은 삭제후 insert문을 작성한다 . | mysqli_query(([연결 객체], [쿼리]) 는 mysqli_connect 로 연결된 객체를 반환한다 | 이 함수는 해당 구문의 실행에 실패하면 FALSE를 반환한다 | . insert.php . // print $user_name; // print $user_msg; //변수sql = 추가(테이블free_board (컬럼name=$user_name,message=$user_msg)) $sql = \"INSERT INTO free_board (name, message) VALUES ('$user_name', '$user_msg')\"; //result= mysqli_connect 객체와 INSERT 문으로 추가된 데이터가 저장됨 $result = mysqli_query($conn, $sql); if($result === false){ //result 반환값이 false이면 echo '저장 실패'; error_log(mysqli_error($conn));//에러 로그 기록 }else{ echo '저장 성공'; } mysqli_close($conn); //연결종료 print \"&lt;hr/&gt;&lt;a href='index.php'&gt;메인화면으로 이동하기&lt;/a&gt;\"; . | 실행화면을 확인해본다 . | phpMyAdmin 에 저장된 DB도 확인해본다 . | 글을 몇개 더 올려보자 . | . ",
     "url": "/book01/docs/php/09-board/#02-5",
     "relUrl": "/docs/php/09-board/#02-5"
-  },"140": {
+  },"162": {
     "doc": "09-board",
     "title": "03 저장된 글목록 출력",
     "content": " ",
     "url": "/book01/docs/php/09-board/#03-%EC%A0%80%EC%9E%A5%EB%90%9C-%EA%B8%80%EB%AA%A9%EB%A1%9D-%EC%B6%9C%EB%A0%A5",
     "relUrl": "/docs/php/09-board/#03-저장된-글목록-출력"
-  },"141": {
+  },"163": {
     "doc": "09-board",
-    "title": "03-1",
-    "content": ". | insert.php 의 sqlconnect 부분을 복사해서 index.php에 붙여넣는다 | . index.php . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"UTF-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;망고네 자유 게시판&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;자유 게시판&lt;/h1&gt; &lt;h2&gt;글 목록&lt;/h2&gt; &lt;ul&gt; &lt;?php $conn = mysqli_connect(\"localhost\", \"root\", \"\", \"mango_board\"); if (!$conn) { echo 'db에 연결하지 못했습니다.' . mysqli_connect_error(); } else { echo 'db에 접속했습니다!!!'; } //free_board 테이블에서 글 조회 // SELECT * FROM 테이블명 $sql = \"SELECT * FROM free_board\"; $result = mysqli_query($conn, $sql); $list = ''; while ($row = mysqli_fetch_array($result)) { $list = $list . \"&lt;li&gt;{$row['number']}: &lt;a href=\\\"view.php?number={$row['number']}\\\"&gt;{$row['name']}&lt;/a&gt;&lt;/li&gt;\"; } echo $list; ?&gt; &lt;/ul&gt; &lt;hr /&gt; &lt;p&gt;&lt;a href=\"write.php\"&gt;글쓰기&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;/body&gt; &lt;/html&gt; . ",
-    "url": "/book01/docs/php/09-board/#03-1",
-    "relUrl": "/docs/php/09-board/#03-1"
-  },"142": {
+    "title": "03-1 글목록 생성",
+    "content": ". | insert.php 의 sqlconnect 부분을 복사해서 index.php에 붙여넣는다 . | $sql 은 글의 목록을 조회하는 내용으로 변경한다. | $sql = \"INSERT INTO free_board (name, message) VALUES ('$user_name', '$user_msg')\"; | $sql = \"SELECT * FROM free_board\"; | 🔑테이블의 데이터를 조회하는 함수: SELECT * FROM 테이블명 {: .text-red-300} . | . | 다양한 방법으로 결과 출력하기 . | $result 의 결과를 출력해보면 아래의 이미지와 같다 | | 함수명 | 기능 | . | echo | 값을 그대로 출력 | . | print | 값을 그대로 출력 | . | print_r() | 배열, 객체의 모양을 그대로 출력 | . | var_dump() | 배열, 객체를 자세히 출력 | . | . | . index.php . &lt;body&gt; &lt;h1&gt;자유 게시판&lt;/h1&gt; &lt;h2&gt;글 목록&lt;/h2&gt; &lt;ul&gt; &lt;?php $conn = mysqli_connect(\"localhost\", \"root\", \"\", \"mango_board\"); if (!$conn) { echo 'db에 연결하지 못했습니다.' . mysqli_connect_error(); } else { echo 'db에 접속했습니다!!!'; } // free_board 테이블에서 글 조회 SELECT * FROM 테이블명 $sql = \"SELECT * FROM free_board\"; //$result 결과 저장 $result = mysqli_query($conn, $sql); //결과를 반복문으로 동적요소 생성 ?&gt; &lt;/ul&gt; &lt;hr /&gt; &lt;p&gt;&lt;a href=\"write.php\"&gt;글쓰기&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;/body&gt; . ",
+    "url": "/book01/docs/php/09-board/#03-1-%EA%B8%80%EB%AA%A9%EB%A1%9D-%EC%83%9D%EC%84%B1",
+    "relUrl": "/docs/php/09-board/#03-1-글목록-생성"
+  },"164": {
+    "doc": "09-board",
+    "title": "03-2 글목록 출력",
+    "content": ". | $result 의 값을 동적요소로 생성하여 html 문서에 출력하자 | 동적요소 생성순서 . | 전역변수로 빈 문자열을 준비한다. | 반복문으로 동적요소를 반복 생성 한다 | 전역변수에 반복생성된 요소를 추가한다. | . | 생성할 요소는 아래의 그림과 같다 | . 🔑요소를 추가하기 var list=\"\" var li=\"li\" list+=li list+=li . index.php . &lt;ul&gt; &lt;?php $sql = \"SELECT * FROM msg_board\"; $result = mysqli_query($conn, $sql); // 전역변수로 빈 문자열을 준비 $list = ''; //반복문시작 while($row = mysqli_fetch_array($result)){ $list = $list.\"&lt;li&gt;{$row['number']}: &lt;a href=\\\"view.php?number={$row['number']}\\\"&gt;{$row['name']}&lt;/a&gt;&lt;/li&gt;\"; } echo $list; ?&gt; &lt;/ul&gt; . | $row = mysqli_fetch_array($result)🔗link | . | mysqli_fetch_array: mysqli_query를 통해 얻은 result에서 데이터(레코드)를 1개씩 리턴해주는 함수 | . 출력 . ",
+    "url": "/book01/docs/php/09-board/#03-2-%EA%B8%80%EB%AA%A9%EB%A1%9D-%EC%B6%9C%EB%A0%A5",
+    "relUrl": "/docs/php/09-board/#03-2-글목록-출력"
+  },"165": {
     "doc": "09-board",
     "title": "09-board",
-    "content": ". | 01 SQL로 게시판 만들기(DB생성) . | 01-1 DB 구축 | 01-2 테이블생성 | . | 02 서버만들기 . | 02-1 index.php | 02-2 write.php | 02-3 insert.php . | mysqli_connect 함수 | . | 02-4 insert.php 이어서 작성 | 02-5 . | INSERT Statement ,mysqli_query | . | . | 03 저장된 글목록 출력 . | 03-1 | . | . 관련링크 . 🔗php_setcookie . 🔗php_$_COOKIE . 🔗php_session_destroy . 🔗php_session_unset . 🔗 #mySql (https://mysql.com/) . 🔗 #mySql_statements (https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html) . ",
+    "content": ". | 01 SQL로 게시판 만들기(DB생성) . | 01-1 DB 구축 | 01-2 테이블생성 | . | 02 서버만들기 . | 02-1 index.php | 02-2 write.php | 02-3 insert.php . | mysqli_connect 함수 | . | 02-4 insert.php 이어서 작성 | 02-5 . | INSERT Statement ,mysqli_query | . | . | 03 저장된 글목록 출력 . | 03-1 글목록 생성 | 03-2 글목록 출력 | . | . 관련링크 . 🔗php_setcookie . 🔗php_$_COOKIE . 🔗php_session_destroy . 🔗php_session_unset . 🔗 #mySql (https://mysql.com/) . 🔗 #mySql_statements (https://dev.mysql.com/doc/refman/8.0/en/sql-data-manipulation-statements.html) . ",
     "url": "/book01/docs/php/09-board/",
     "relUrl": "/docs/php/09-board/"
-  },"143": {
+  },"166": {
     "doc": "ajax",
     "title": "Table of contents",
     "content": ". | ajax2 | . (XMLHttpRequest)[https://developer.mozilla.org/ko/docs/Web/API/XMLHttpRequest] . const url = \"https://dummyjson.com/products\"; const req = new XMLHttpRequest(); let div = document.querySelector(\"div\"); req.onload = (e) =&gt; { const datas = req.response; // not responseText for (data of datas.products) { let { brand, parent } = data; div.innerHTML += `brand: ${brand}, &lt;br&gt; parent: ${parent}&lt;br&gt;&lt;hr&gt;`; console.log(brand, parent); } }; req.open(\"GET\", url); req.responseType = \"json\"; req.send(); . ajax2 . ",
     "url": "/book01/docs/javascript/ajax/#table-of-contents",
     "relUrl": "/docs/javascript/ajax/#table-of-contents"
-  },"144": {
+  },"167": {
     "doc": "ajax",
     "title": "ajax",
     "content": " ",
     "url": "/book01/docs/javascript/ajax/",
     "relUrl": "/docs/javascript/ajax/"
-  },"145": {
+  },"168": {
     "doc": "event-bubbling",
     "title": "event-bubbling",
     "content": ". | 버블링과 캡쳐링의 그림설명 | 01 이벤트 버블링 | 예제 | 설명 | 02 이벤트 캡쳐링 | 예제 | 03 이벤트 위임 | 예제 | 04 버블링 막기 | 05 버블링과 캡쳐링 둘다 막기 | 예제 | . – . 모던자바스크립트 . 버블링과 캡쳐링의 그림설명 . 01 이벤트 버블링 . ** 이벤트가 상위 요소로 전파 ** . event.currentTarget : 이벤트를 등록해 놓은 요소를 반환 . event.target : 이벤트가 발생한 요소를 반환 . 예제 . 설명 . three 요소를 클릭하면 상위요소까지 출력된다. 02 이벤트 캡쳐링 . ** 이벤트가 하위 요소로 전파 ** . 예제 . 03 이벤트 위임 . ** 이벤트 버블링을 활용함 ** 모던자바스크립트 elem.closest(selector) 메서드는 elem의 상위 요소 중 selector와 일치하는 가장 근접한 조상 요소를 반환합니다. 위 코드에선 이벤트가 발생한 요소부터 시작해 위로 올라가며 가장 가까운 &lt;td&gt; 요소를 찾습니다. event.target이 &lt;td&gt;안에 있지 않으면 그 즉시 null을 반환하므로 아무 작업도 일어나지 않습니다. 중첩 테이블이 있는 경우 event.target은 현재 테이블 바깥에 있는 &lt;td&gt;가 될 수도 있습니다. 이런 경우를 처리하기 위해 &lt;td&gt;가 팔괘도 안에 있는지를 확인합니다. 이제 진짜 td를 강조해 줍니다. 예제 . 04 버블링 막기 . 최초로 이벤트가 발생되는 엘리먼트의 이벤트 핸들러에event.stopPropagation()라는 API 를 추가 . &lt;body onclick=\"alert(`버블링은 여기까지 도달하지 못합니다.`)\"&gt; &lt;button onclick=\"event.stopPropagation()\"&gt;클릭해 주세요.&lt;/button&gt; &lt;/body&gt; . 모든 이벤트 버블링을 멈추고 싶은 경우에는 event.stopImmediatePropagation() API 추가 . 05 버블링과 캡쳐링 둘다 막기 . ` e.stopPropagation()` . 예제 . ",
     "url": "/book01/docs/javascript/event/",
     "relUrl": "/docs/javascript/event/"
-  },"146": {
+  },"169": {
     "doc": "function",
     "title": "function",
     "content": ". | 01 return | 오류 | 수정 | 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . | 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 | . | . – . 01 return . [return 명령문](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/return) 은 함수 실행을 종료하고, 주어진 값을 함수 호출 지점으로 반환한다. 함수의 실행문 내부에 묵시적으로 정의되어 있다. 오류 . 수정 . 02 고차함수 (High order Function) 함수를 인자로 전달받거나 함수를 결과로 반환하는 함수 . 아래의 함수는 두개의 숫자와 연산자를 입력받아 값을 반환하는 계산기 프로그램이다 함수의 중복을 고차함수로 작성하여 제거해보자 . 02-1 중복되는 부분은 함수로 변하는 부분은 매개변수로 만들자 . !(/assets/js03.jpg) . !(/assets/js04.jpg) . ",
     "url": "/book01/docs/javascript/function/",
     "relUrl": "/docs/javascript/function/"
-  },"147": {
+  },"170": {
     "doc": "getComputedStyle",
     "title": "01 getComputedStyle",
     "content": "문법 . getComputedStyle var style = window.getComputedStyle(element[, pseudoElt]); . 매개변수 . | element 속성값을 얻으려하는 Element | pseudoElt (선택) 일치시킬 의사요소(pseudo element)를 지정하는 문자열. 보통의 요소들에 대해서는 생략되거나 null이어야 함. | . 호환성 . getComputedStyle은 IE9 이상의 브라우저에서 지원됩니다. — . ",
     "url": "/book01/docs/javascript/getComputedStyle/#01-getcomputedstyle",
     "relUrl": "/docs/javascript/getComputedStyle/#01-getcomputedstyle"
-  },"148": {
+  },"171": {
     "doc": "getComputedStyle",
     "title": "getComputedStyle",
     "content": ". | 01 getComputedStyle . | 문법 | 매개변수 | 호환성 | . | . – . ",
     "url": "/book01/docs/javascript/getComputedStyle/",
     "relUrl": "/docs/javascript/getComputedStyle/"
-  },"149": {
-    "doc": "jQuery",
-    "title": "jQuery",
-    "content": " ",
-    "url": "/book01/docs/jQuery/",
-    "relUrl": "/docs/jQuery/"
-  },"150": {
+  },"172": {
     "doc": "Jekyll",
     "title": "Jekyll",
     "content": " ",
     "url": "/book01/docs/Jekyll/",
     "relUrl": "/docs/Jekyll/"
-  },"151": {
-    "doc": "Miscellaneous",
-    "title": "Miscellaneous",
-    "content": " ",
-    "url": "/book01/docs/miscellaneous/",
-    "relUrl": "/docs/miscellaneous/"
-  },"152": {
-    "doc": "Javascript",
-    "title": "Javascript",
-    "content": " ",
-    "url": "/book01/docs/javascript/",
-    "relUrl": "/docs/javascript/"
-  },"153": {
-    "doc": "Javascript+JQuery",
-    "title": "Javascript+JQuery",
-    "content": "이전 예제 링크 . javascript01 . javascript02 . javascript03 . javascript04 . javascript05 . javascript06 . javascript07 . javascript08 . javascript09 . 자바스크립트 설명 그림 . ",
-    "url": "/book01/docs/javascript+jQuery/",
-    "relUrl": "/docs/javascript+jQuery/"
-  },"154": {
-    "doc": "Home",
-    "title": "Javascript",
-    "content": " ",
-    "url": "/book01/#javascript",
-    "relUrl": "/#javascript"
-  },"155": {
-    "doc": "Home",
-    "title": "jQuery",
-    "content": " ",
-    "url": "/book01/#jquery",
-    "relUrl": "/#jquery"
-  },"156": {
-    "doc": "Home",
-    "title": "Javascript+jQuery",
-    "content": " ",
-    "url": "/book01/#javascriptjquery",
-    "relUrl": "/#javascriptjquery"
-  },"157": {
-    "doc": "Home",
-    "title": "PHP",
-    "content": " ",
-    "url": "/book01/#php",
-    "relUrl": "/#php"
-  },"158": {
-    "doc": "Home",
-    "title": "Projects",
-    "content": " ",
-    "url": "/book01/#projects",
-    "relUrl": "/#projects"
-  },"159": {
-    "doc": "Home",
-    "title": "Jekyll",
-    "content": " ",
-    "url": "/book01/#jekyll",
-    "relUrl": "/#jekyll"
-  },"160": {
-    "doc": "Home",
-    "title": "Miscellaneous",
-    "content": " ",
-    "url": "/book01/#miscellaneous",
-    "relUrl": "/#miscellaneous"
-  },"161": {
-    "doc": "Home",
-    "title": "Home",
-    "content": " ",
-    "url": "/book01/",
-    "relUrl": "/"
-  },"162": {
-    "doc": "Projects",
-    "title": "Projects",
-    "content": " ",
-    "url": "/book01/docs/Projects/",
-    "relUrl": "/docs/Projects/"
-  },"163": {
+  },"173": {
     "doc": "PHP",
     "title": "PHP",
     "content": " ",
     "url": "/book01/docs/php/",
     "relUrl": "/docs/php/"
-  },"164": {
+  },"174": {
+    "doc": "Miscellaneous",
+    "title": "Miscellaneous",
+    "content": " ",
+    "url": "/book01/docs/miscellaneous/",
+    "relUrl": "/docs/miscellaneous/"
+  },"175": {
+    "doc": "Javascript",
+    "title": "Javascript",
+    "content": " ",
+    "url": "/book01/docs/javascript/",
+    "relUrl": "/docs/javascript/"
+  },"176": {
+    "doc": "Javascript+JQuery",
+    "title": "Javascript+JQuery",
+    "content": "이전 예제 링크 . javascript01 . javascript02 . javascript03 . javascript04 . javascript05 . javascript06 . javascript07 . javascript08 . javascript09 . 자바스크립트 설명 그림 . ",
+    "url": "/book01/docs/javascript+jQuery/",
+    "relUrl": "/docs/javascript+jQuery/"
+  },"177": {
+    "doc": "jQuery",
+    "title": "jQuery",
+    "content": " ",
+    "url": "/book01/docs/jQuery/",
+    "relUrl": "/docs/jQuery/"
+  },"178": {
+    "doc": "Projects",
+    "title": "Projects",
+    "content": " ",
+    "url": "/book01/docs/Projects/",
+    "relUrl": "/docs/Projects/"
+  },"179": {
+    "doc": "Home",
+    "title": "Javascript",
+    "content": " ",
+    "url": "/book01/#javascript",
+    "relUrl": "/#javascript"
+  },"180": {
+    "doc": "Home",
+    "title": "jQuery",
+    "content": " ",
+    "url": "/book01/#jquery",
+    "relUrl": "/#jquery"
+  },"181": {
+    "doc": "Home",
+    "title": "Javascript+jQuery",
+    "content": " ",
+    "url": "/book01/#javascriptjquery",
+    "relUrl": "/#javascriptjquery"
+  },"182": {
+    "doc": "Home",
+    "title": "PHP",
+    "content": " ",
+    "url": "/book01/#php",
+    "relUrl": "/#php"
+  },"183": {
+    "doc": "Home",
+    "title": "Projects",
+    "content": " ",
+    "url": "/book01/#projects",
+    "relUrl": "/#projects"
+  },"184": {
+    "doc": "Home",
+    "title": "Jekyll",
+    "content": " ",
+    "url": "/book01/#jekyll",
+    "relUrl": "/#jekyll"
+  },"185": {
+    "doc": "Home",
+    "title": "Miscellaneous",
+    "content": " ",
+    "url": "/book01/#miscellaneous",
+    "relUrl": "/#miscellaneous"
+  },"186": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/book01/",
+    "relUrl": "/"
+  },"187": {
     "doc": "시간표시",
     "title": "01 시간표시하기",
     "content": " ",
     "url": "/book01/docs/javascript/javascript/#01-%EC%8B%9C%EA%B0%84%ED%91%9C%EC%8B%9C%ED%95%98%EA%B8%B0",
     "relUrl": "/docs/javascript/javascript/#01-시간표시하기"
-  },"165": {
+  },"188": {
     "doc": "시간표시",
     "title": "01-01 toLocaleTimeString() : 현지시간으로 표시",
     "content": "toLocaleTimeString() 메서드는 Date 객체의 날짜의 시간 부분을 지역에 맞는 언어 포맷으로 반환 . 문법: StringdateStringtoLocaleTimeString([Stringlocales[, Objectoptions]]) . 예시: . /* 시간을 표시하기 */ var now = new Date(); var display = now.toLocaleTimeString(); console.log(display); //var time=setInterval(display,1000) document.write(\"현재 시각은 \" + display); . 출력: . ",
     "url": "/book01/docs/javascript/javascript/#01-01-tolocaletimestring--%ED%98%84%EC%A7%80%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C-%ED%91%9C%EC%8B%9C",
     "relUrl": "/docs/javascript/javascript/#01-01-tolocaletimestring--현지시간으로-표시"
-  },"166": {
+  },"189": {
     "doc": "시간표시",
     "title": "01-02 Date()",
     "content": "문법: new Date(year, month, date, hours, minutes, seconds, ms) . | year는 반드시 네 자리 숫자로 작성 | month는 0(1월)부터 11(12월) 사이의 숫자로 작성 | date는 일을 나타내는데, 값이 없는 경우엔 1일로 처리됨 | hours/minutes/seconds/ms에 값이 없는 경우엔 0으로 처리됨 | . 예제: . var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); console.log(`${hour} 시 ${minute}분 ${second} 초 ${milliSecond}`) . 실행: . 날짜를 설정할땐 . setFullYear(year, [month], [date]) setMonth(month, [date]) setDate(date) setHours(hour, [min], [sec], [ms]) setMinutes(min, [sec], [ms]) setSeconds(sec, [ms]) setMilliseconds(ms) setTime(milliseconds) (1970년 1월 1일 00:00:00 UTC부터 밀리초 이후를 나타내는 날짜를 설정) . 날짜를 얻어올땐 . getFullYear(year, [month], [date]) getMonth(month, [date]) getDate(date) getHours(hour, [min], [sec], [ms]) getMinutes(min, [sec], [ms]) getSeconds(sec, [ms]) getMilliseconds(ms) getTime(milliseconds) . 현재 시간을 알려주는 Date.now() . 1970년 1월 1일 0시 0분 0초부터 현재까지의 시간을 밀리초(millisecond) 단위의 정수로 반환 . ",
     "url": "/book01/docs/javascript/javascript/#01-02-date",
     "relUrl": "/docs/javascript/javascript/#01-02-date"
-  },"167": {
+  },"190": {
     "doc": "시간표시",
     "title": "01-03 RGB 시계",
     "content": "사용할 이미지 . | | | . html . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\"&gt; &lt;title&gt;sample5&lt;/title&gt; &lt;script src=\"clock(vanilla).js\" defer&gt;&lt;/script&gt; &lt;style&gt; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div id=\"clock\"&gt; &lt;img alt=\"clock\" src=\"clock.png\"/&gt; &lt;img alt=\"hour\" src=\"h.png\" class=\"hour\"/&gt; &lt;img alt=\"min\" src=\"m.png\" class=\"min\"/&gt; &lt;div class=\"sec\"&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=\"digital\"&gt;&lt;/div&gt; &lt;/body&gt; &lt;/html&gt; . css . *{margin:0;padding:0} #clock{position:relative;width:300px;height:300px;margin:100px auto 0} #clock img{position:absolute;top:0;left:0;display:block} .sec{width:3px;height:140px;transform-origin:50% 100%;position:absolute;right:50%;top:3%} . js . function clock() { var today = new Date(); var hour = today.getHours(); var minute = today.getMinutes(); var second = today.getSeconds(); var milliSecond = today.getMilliseconds(); if (hour &gt; 11) hour -= 12; var degreeOfSecond = second * 6 + (milliSecond * 6) / 1000; var degreeOfMinute = minute * 6 + degreeOfSecond / 60; var degreeOfHour = hour * 30 + degreeOfMinute / 12; var redNeedle = 0; var greenNeedle = 0; var blueNeedle = 0; if (degreeOfSecond &lt; 90) { redNeedle = Math.round((255 * degreeOfSecond) / 90); } else if (90 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 180) { redNeedle = Math.round(255 - 255 * ((degreeOfSecond - 90) / 90)); greenNeedle = Math.round((255 * (degreeOfSecond - 90)) / 90); } else if (180 &lt;= degreeOfSecond &amp;&amp; degreeOfSecond &lt; 270) { greenNeedle = Math.round(255 - (255 * (degreeOfSecond - 180)) / 90); blueNeedle = Math.round((255 * (degreeOfSecond - 180)) / 90); } else { blueNeedle = Math.round(255 - (255 * (degreeOfSecond - 270)) / 90); } var needles = Array.apply(null, document.querySelector(\"#clock\").children); needles[1].style.transform = \"rotate(\" + degreeOfHour + \"deg)\"; needles[2].style.transform = \"rotate(\" + degreeOfMinute + \"deg)\"; needles[3].style.transform = \"rotate(\" + degreeOfSecond + \"deg)\"; needles[3].style.backgroundColor = \"rgb(\" + redNeedle + \",\" + greenNeedle + \",\" + blueNeedle + \")\"; } setInterval(clock, 1000 / 60); . 실행 . ",
     "url": "/book01/docs/javascript/javascript/#01-03-rgb-%EC%8B%9C%EA%B3%84",
     "relUrl": "/docs/javascript/javascript/#01-03-rgb-시계"
-  },"168": {
+  },"191": {
     "doc": "시간표시",
     "title": "시간표시",
     "content": ". | 01 시간표시하기 . | 01-01 toLocaleTimeString() : 현지시간으로 표시 | 01-02 Date() . | 날짜를 설정할땐 | 날짜를 얻어올땐 | 현재 시간을 알려주는 Date.now() | . | 01-03 RGB 시계 . | 사용할 이미지 | html | css | js | 실행 | . | . | . – . ",
     "url": "/book01/docs/javascript/javascript/",
     "relUrl": "/docs/javascript/javascript/"
-  },"169": {
+  },"192": {
     "doc": "onMediaQueryChange",
     "title": "01 미디어쿼리가 변할때 실행하는 함수",
     "content": "onMediaQueryChange . &lt;!DOCTYPE html&gt; &lt;html lang=\"ko\"&gt; &lt;head&gt; &lt;meta charset=\"utf-8\" /&gt; &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /&gt; &lt;title&gt;샘플&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;main class=\"centering\"&gt; &lt;div class=\"rectangle\"&gt;&lt;/div&gt; &lt;/main&gt; &lt;/body&gt; &lt;/html&gt; .rectangle { background-image: linear-gradient(-135deg, #00aaff, #5500ff); } .rectangle.big-size { background-image: linear-gradient(-135deg, red, #ff00a2); } .rectangle { width: 100%; height: calc(100% - 50px); transition: 300ms ease-in-out all; } . const rectAngle = document.querySelector('.rectangle'); // 미디어쿼리 정보 const mediaQueryList = matchMedia('(min-width: 600px)'); // 미디어쿼리 변화 시점에 따라 처리 mediaQueryList.addListener(onMediaQueryChange); /** * 미디어쿼리 변화 시점에 따라 실행되는 함수 */ function onMediaQueryChange(mediaQueryList) { if (mediaQueryList.matches === true) { rectAngle.classList.add('big-size'); console.log('윈도우 창의 크기가 600px 이상입니다.'); } else { rectAngle.classList.remove('big-size'); console.log('윈도우 창의 크기가 600px 미만입니다.'); } } // 화면 표시 시점에 onMediaQueryChange( ) 1회 실행 onMediaQueryChange(mediaQueryList); . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/#01-%EB%AF%B8%EB%94%94%EC%96%B4%EC%BF%BC%EB%A6%AC%EA%B0%80-%EB%B3%80%ED%95%A0%EB%95%8C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%ED%95%A8%EC%88%98",
     "relUrl": "/docs/javascript/onMediaQueryChange/#01-미디어쿼리가-변할때-실행하는-함수"
-  },"170": {
+  },"193": {
     "doc": "onMediaQueryChange",
     "title": "onMediaQueryChange",
     "content": ". | 01 미디어쿼리가 변할때 실행하는 함수 | . – . ",
     "url": "/book01/docs/javascript/onMediaQueryChange/",
     "relUrl": "/docs/javascript/onMediaQueryChange/"
-  },"171": {
+  },"194": {
     "doc": "scrollAmountJS",
     "title": "01 스크롤양 얻기",
     "content": "함수종류 . | 종류 | 설명 | . | document.documentElement.scrollTop / scrollLeft | document.querySelector(‘html’).scrollTop; 요소의 수직 스크롤 반환 | . | window.pageYOffset / pageXOffset | scrollY의 다른 이름으로, 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환 (IE ○) | . | window.scrollY / scrollX | 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환(IE X) | . 예제 . ",
     "url": "/book01/docs/javascript/scrollAmountJS/#01-%EC%8A%A4%ED%81%AC%EB%A1%A4%EC%96%91-%EC%96%BB%EA%B8%B0",
     "relUrl": "/docs/javascript/scrollAmountJS/#01-스크롤양-얻기"
-  },"172": {
+  },"195": {
     "doc": "scrollAmountJS",
     "title": "scrollAmountJS",
     "content": ". | 01 스크롤양 얻기 . | 함수종류 | 예제 | . | . – . ",
     "url": "/book01/docs/javascript/scrollAmountJS/",
     "relUrl": "/docs/javascript/scrollAmountJS/"
-  },"173": {
+  },"196": {
     "doc": "크기알아내기",
     "title": "01 요소 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | clientHeight | padding을 포함한 높이 | . | scrollHeight | padding을 포함한 화면 상에 표시되지 않은 콘텐츠를 포함한 높이 | . | offsetHeight | border, padding, 스크롤 바를 포함한 높이 | . ",
     "url": "/book01/docs/javascript/size/#01-%EC%9A%94%EC%86%8C-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#01-요소-크기-알아내기"
-  },"174": {
+  },"197": {
     "doc": "크기알아내기",
     "title": "02 윈도우의 크기 알아내기",
     "content": "함수종류 . | 종류 | 설명 | . | window.innerWidth | 스크롤 바를 포함하지 않는 창 너비 | . | window.innerHeight | 스크롤 바를 포함하지 않은 창 높이 | . | window.outerWidth | 스크롤 바를 포함, 창의 너비 | . | window.outerHeight | 스크롤 바를 포함한 창의 높이 | . ",
     "url": "/book01/docs/javascript/size/#02-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%9D%98-%ED%81%AC%EA%B8%B0-%EC%95%8C%EC%95%84%EB%82%B4%EA%B8%B0",
     "relUrl": "/docs/javascript/size/#02-윈도우의-크기-알아내기"
-  },"175": {
+  },"198": {
     "doc": "크기알아내기",
     "title": "크기알아내기",
     "content": ". | 01 요소 크기 알아내기 . | 함수종류 | . | 02 윈도우의 크기 알아내기 . | 함수종류 | . | . – . ",

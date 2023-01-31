@@ -9,13 +9,12 @@ layout: default
 --
 
 {: .new }
+> 네이버와 카카오 API 를 연동하여
 > SNS 로그인 기능을 구현해보자
 >
 >{: .fs-3 .fw-400}
 
 # 01 naver
-
-## 01-`1 네이버로그인 API`
 
 [🔗네이버개발자](https://developers.naver.com/)
 
@@ -39,7 +38,12 @@ layout: default
 
 # 02 kakao
 
-1. 🔗[카카오개발자]({{https://developers.kakao.com/'| relative_url}} ){: .anc} 카카오에서 인증키를 발급받아야 한다
+1. 🔗[카카오개발자]({{'https://developers.kakao.com/'| relative_url}} ){: .anc} 카카오에서 인증키를 발급받아야 한다
+
+
+html
+{: .label .label-purple }
+
 
 ```html
 <!DOCTYPE html>

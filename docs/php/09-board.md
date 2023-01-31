@@ -47,8 +47,7 @@ tags: [Cookie, Session, mysqli_connect]
 > >
 > > {: .fs-3 .fw-400}
 
----
-
+{:.pt-8}
 
 ## 01-1 DB 구축
 
@@ -70,18 +69,23 @@ tags: [Cookie, Session, mysqli_connect]
 
 ---
 
-> 테이블의 구조를 살펴보자
 
-1. 테이블명 : free_board
-1. 컬럼(필드)명: number - INT : 자동으로 숫자를 올리는 auto_increment PK
-1. 컬럼(필드)명: name - varchar(100) : 글쓴이
-1. 컬럼(필드)명: message - varchar(255) : 메시지
-
----
-
----
-
+{:.pt-8}
 ## 01-2 테이블생성
+
+{: .note }
+> 생성할 테이블의 구조는 아래와 같다
+
+|  종류        | 이름        | 설명 |
+|:-------------|-------------|------|
+|  테이블명    | free_board                                                      |||
+| 컬럼(필드)명 |  number  |INT              |자동으로 숫자를 올리는 auto_increment PK|
+|              |  name    | varchar(100)   |글쓴이|
+|              |  message |  varchar(255)  |메시지|
+
+
+만들어보자
+{: .text-purple-200}
 
 1. create new table 클릭
    ![]({{'/assets/img/php102.jpg'| relative_url}} )
@@ -114,13 +118,13 @@ Structure of a server
 ```markdown
 htdocs/
 └── board/
-├── index.php(글조회,검색,삭제)
-├── view.php(글보기)
-├── write.php(글작성)
-├── insert.php(글입력)
-├── delete.php(글삭제)
-├── search.php(검색)
-└── list.php(글목록)
+    ├── index.php(글조회,검색,삭제)
+    ├── view.php(글보기)
+    ├── write.php(글작성)
+    ├── insert.php(글입력)
+    ├── delete.php(글삭제)
+    ├── search.php(검색)
+    └── list.php(글목록)
 ```
 
 ## 02-1 index.php
@@ -360,23 +364,31 @@ print "<hr/><a href='index.php'>메인화면으로 이동하기</a>";
 
 # 03 저장된 글목록 출력
 
-## 03-1
+## 03-1 글목록 생성
 
 1. `insert.php` 의 sqlconnect 부분을 복사해서 `index.php`에 붙여넣는다
   ![]({{'/assets/img/php116.jpg'| relative_url}} )
 
+2.  $sql 은 글의 목록을 조회하는 내용으로 변경한다.
+   - <del class="text-grey-dk-000">`$sql = "INSERT INTO free_board (name, message) VALUES ('$user_name', '$user_msg')";`</del>  
+   - `$sql = "SELECT * FROM free_board";`    
+   -   > 🔑테이블의 데이터를 조회하는 함수:  `SELECT * FROM 테이블명` 
+        {: .text-red-300}
+
+3. 다양한 방법으로 결과 출력하기
+  - $result 의 결과를 출력해보면 아래의 이미지와 같다
+    ![]({{'/assets/img/php117.jpg'| relative_url}} )    
+  -  | 함수명        | 기능     | 
+    |:-------------|:------------------|
+    | `echo`       | 값을 그대로 출력 | 
+    | `print`      | 값을 그대로 출력  | 
+    | `print_r()`  | 배열, 객체의 모양을 그대로 출력    | 
+    | `var_dump()`|  배열, 객체를 자세히 출력 | 
+
 index.php
 {: .label .label-purple }
 
-```html
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>망고네 자유 게시판</title>
-</head>
+```php
 
 <body>
   <h1>자유 게시판</h1>
@@ -390,16 +402,11 @@ index.php
     } else {
       echo 'db에 접속했습니다!!!';
     }
-    //free_board 테이블에서 글 조회
-    // SELECT * FROM 테이블명
-    $sql = "SELECT * FROM free_board";
+    // free_board 테이블에서 글 조회 SELECT * FROM 테이블명
+    $sql = "SELECT * FROM free_board"; 
+    //$result 결과 저장
     $result = mysqli_query($conn, $sql);
-    $list = '';
-
-    while ($row = mysqli_fetch_array($result)) {
-      $list = $list . "<li>{$row['number']}: <a href=\"view.php?number={$row['number']}\">{$row['name']}</a></li>";
-    }
-    echo $list;
+    //결과를 반복문으로 동적요소 생성
     ?>
   </ul>
   <hr />
@@ -407,6 +414,66 @@ index.php
   <hr />
 </body>
 
-</html>
+```
+## 03-2 글목록 출력
+
+4. `$result` 의 값을 동적요소로 생성하여 html 문서에 출력하자
+5. 동적요소 생성순서
+  + 전역변수로 빈 문자열을 준비한다.
+  + 반복문으로 동적요소를 반복 생성 한다
+  + 전역변수에 반복생성된 요소를 추가한다.
+6. 생성할 요소는 아래의 그림과 같다
+  ![]({{'/assets/img/php118.jpg'| relative_url}} )
+
+ {: .pb-8}
+
+<details close markdown='block'>
+  <summary class="text-red-100">
+    🔑요소를 추가하기
+  </summary>
+```javascript
+var list=""
+var li="li"
+list+=li
+list+=li
 
 ```
+![]({{'/assets/img/add.jpg'| relative_url}} )
+
+  {: .text-delta }
+</details>
+
+
+index.php
+{: .label .label-purple }
+
+```php
+<ul>
+<?php
+$sql = "SELECT * FROM msg_board";
+$result = mysqli_query($conn, $sql);
+// 전역변수로 빈 문자열을 준비
+$list = '';
+
+//반복문시작
+while($row = mysqli_fetch_array($result)){
+  $list = $list."<li>{$row['number']}: <a href=\"view.php?number={$row['number']}\">{$row['name']}</a></li>";           
+}
+echo $list;
+?>
+</ul>
+
+```
+
+{: .mt-8}
+
+
+* $row = mysqli_fetch_array($result)🔗[link]({{'https://www.tutorialspoint.com/php/php_function_mysqli_fetch_array.htm'| relative_url}} ){: .anc}
+ {: .bg-yellow-000}  
+  + mysqli_fetch_array: mysqli_query를 통해 얻은 result에서 데이터(레코드)를 1개씩 리턴해주는 함수
+
+출력
+![]({{'/assets/img/php119.jpg'| relative_url}} )
+
+---
+
