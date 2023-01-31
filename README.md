@@ -27,4 +27,4 @@ git pull origin teams
 
 
 
-teams
+🔗[머지조건설정]({{'https://kth990303.tistory.com/317'| relative_url}} ){: .anc}
