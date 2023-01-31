@@ -23,7 +23,7 @@ git pull origin teams
 
 ```
 
-
+🔗[브렌치전략]({{'https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B9%83%ED%97%99-PRPull-Request-%EB%B3%B4%EB%82%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-folk-issue#7._Merge_Pull_Request'| relative_url}} ){: .anc}
 
 
 
