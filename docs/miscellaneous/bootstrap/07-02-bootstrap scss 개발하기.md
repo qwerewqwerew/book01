@@ -1,7 +1,8 @@
 ---
 title: 02-bootstrap scss 개발하기
 layout: default
-parent: Miscellaneous
+parent: 07-Bootstrap
+grand_parent: Miscellaneous
 tags: [bootstrap,scss]
 ---
 

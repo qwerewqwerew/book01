@@ -66,6 +66,9 @@ code {
     }
 
     #markdown-toc {
+      li{
+        line-height: 1 !important;
+      }
       ol a {
         color: $grey-dk-100;
         font-size: $font-size-4;
