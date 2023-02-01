@@ -475,5 +475,33 @@ echo $list;
 출력
 ![]({{'/assets/img/php119.jpg'| relative_url}} )
 
----
 
+---
+{: .mb-10}
+ 
+# 04 view.php
+
+{: .note }
+> 글목록 클릭시 내용이 보이는 view를 작성한다
+>
+>
+
+
++ index.php의 내용을 다시 살펴보자
+{: .text-purple-200 .text-red-200 .bg-red-000}
+
+![]({{'/assets/img/php120.jpg'| relative_url}} )
+
+
++ index.php의 반복문의 일부분을 가져와서 수정하도록 한다
+{: .text-purple-200 .text-red-200 .bg-red-000}
+
++ view.php 에서는 모든 테이블의 글을 가져와야 하는것이 아니라 목록중에서 선택한 번호에 해당하는 글만 가져와야 한다.
+![]({{'/assets/img/php121.jpg'| relative_url}} )
+
+  🔗[13.2.13 SELECT Statement]({{'https://dev.mysql.com/doc/refman/8.0/en/select.html'| relative_url}} ){: .anc}
+
+![]({{'/assets/img/php123.jpg'| relative_url}} )
+
++ mysql 사이트의 조회문을 확인해보면 column명으로 조회하는 예시가 있다.
+  이것을 수정하자

@@ -66,16 +66,7 @@ code {
         transform: translateY(-50%) rotate(55deg);
       }
     }
-    #markdown-toc {
 
-      li{
-        line-height: 1 !important;
-      }
-      ol a {
-        color: $color-red-100;
-        font-size: $font-size-4;
-      }
-    }
     li{
       line-height: 1.6;
       padding-bottom: 1rem;
@@ -86,6 +77,3 @@ div.highlighter-rouge,
 div.listingblock > div.content,
 figure.highlight{background: #ebe8fd !important;}
 
-p.warning::before, blockquote.warning::before{
-  content:‼;
-}

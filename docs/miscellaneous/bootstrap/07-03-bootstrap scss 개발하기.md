@@ -1,5 +1,5 @@
 ---
-title: 02-bootstrap scss 개발하기
+title: 03-bootstrap scss 개발하기
 layout: default
 parent: 07-Bootstrap
 grand_parent: Miscellaneous
