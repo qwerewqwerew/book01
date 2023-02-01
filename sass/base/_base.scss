@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+
+*{margin:0; padding:0; box-sizing:border-box;}
+
+html{
+  font-size:62.5%;  //10px=1rem;
+  overflow-x:hidden;
+}
+body{
+  padding:3rem;
+  font-family:'Nanum Gothic',Lato,sans-serif;
+}
