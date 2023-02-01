@@ -2,7 +2,11 @@
 
 # 개발브랜치 : frontend
 
+## 특정브랜치 clone
 
+`git clone -b <branch명> <remote_repo 주소>`
+
+`git clone -b teams https://github.com/qwerewqwerew/book01`
 
 우리반 팀작업 연습하기
 ---
