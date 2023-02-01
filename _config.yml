@@ -1,4 +1,9 @@
-### https://just-the-docs.github.io/just-the-docs/docs/configuration/#mermaid-diagrams
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
@@ -33,6 +38,7 @@ exclude:
  # specific to the theme website:
   
 
+asset_url: _site/assets
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -81,9 +87,9 @@ mermaid:
 heading_anchors: true
 
 # Aux links for the upper right navigation
- aux_links:
-  "GitHub":
-  - "//github.com/qwerewqwerew/book01/"
+# aux_links:
+#  "GitHub":
+#  - "//github.com/qwerewqwerew/book01/"
 
 # Makes Aux links open in a new tab. Default is false
 # aux_links_new_tab: false
