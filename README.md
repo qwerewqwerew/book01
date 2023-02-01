@@ -38,3 +38,27 @@ git pull origin teams
 
 
 🔗[머지조건설정]({{'https://kth990303.tistory.com/317'| relative_url}} ){: .anc}
+
+---
+## scss 폴더구조
+
+```
+abstracts/
+    _mixin.scss
+    _varables.scss
+
+base/
+  _animations.scss
+  _base.scss
+  _typo.scss
+  _utilites.scss
+
+components/
+  _button.scss
+  _nav.scss
+
+layout/
+  _footer.scss
+  _header.scss
+  _main.scss
+```
