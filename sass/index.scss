@@ -1,0 +1,30 @@
+@import "abstracts/varables";
+@import "abstracts/mixins";
+@import "base/base";
+@import "base/typo";
+@import "base/animations";
+@import "base/utilites";
+@import "components/button";
+@import "components/nav";
+
+
+/*
+abstracts/
+    _mixin.scss
+    _varables.scss
+
+base/
+  _base.scss
+  _animations.scss
+  _typo.scss
+  _utilites.scss
+
+components/
+  _button.scss
+  _nav.scss
+
+layout/
+  _footer.scss
+  _header.scss
+  _main.scss
+*/
