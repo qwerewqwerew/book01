@@ -1,11 +1,10 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.6/static/pretendard.css);
 
 $pink-000: #f77ef1;
 $pink-100: #f967f1;
 $pink-200: #e94ee1;
 $pink-300: #dd2cd4;
 
-
+body{font-weight:500;}
 img {
   display: block;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5), 2px 2px 20px rgba(0, 0, 0, 0.25);
@@ -19,8 +18,48 @@ img {
   transform: translateX(-10%);
 }
 .anc {
-  color: $pink-000;
+  color: $pink-200;
 }
 code {
   font-size: 0.9em;
+}
+
+
+#main-content-wrap {
+  line-height: 1.8;
+  pre {
+    line-height: 1;
+    letter-spacing: -0.6px;
+  }
+  #main-content {
+    h1 {
+      font-weight: 200;
+      color: $purple-300;
+    }
+    h2 {
+      color: $purple-000;
+    }
+    h3 {
+      color: $grey-dk-200;
+      left: $sp-4;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: $purple-000;
+        left: -$sp-4;
+        top: 50%;
+        transform: translateY(-50%) rotate(55deg);
+      }
+    }
+
+    #markdown-toc {
+      ol a {
+        color: $grey-dk-100;
+        font-size: $font-size-4;
+      }
+    }
+
+  }
 }

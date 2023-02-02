@@ -2,13 +2,13 @@
 @import "./vendor/normalize.scss/normalize";
 
 // Modules
-@import "./custom/custom";
 @import "./base";
 @import "./layout";
 @import "./content";
 @import "./navigation";
 @import "./typography";
 @import "./labels";
+@import "./custom/custom";
 @import "./buttons";
 @import "./search";
 @import "./tables";
