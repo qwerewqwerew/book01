@@ -136,16 +136,16 @@ callouts:
   highlight:
     color: yellow
   important:
-    title: Important
+    title: ❗ Point
     color: blue
   new:
-    title: New
+    title: 😺 Comment
     color: green
   note:
-    title: Note
+    title: 👁‍🗨 Topic
     color: purple
   warning:
-    title: Warning
+    title: 🔑 Point
     color: red
 
 # Google Analytics Tracking (optional)
