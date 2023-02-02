@@ -1,0 +1,123 @@
+---
+layout: post
+title: 02-기초문법
+date: 2023-01-10
+parent: PHP
+---
+1. TOC
+{:toc}
+--
+
+
+## 01 index.php
+
+1. vscode를 실행한다.
+1. 새문서를 만든다.
+1. C\xmapp\htdocs 폴더의 index.php 파일을 모두 지우고 아래의 코드로 수정한다.
+
+```
+<?php
+   echo '망고안녕~~';
+?>
+```
+
+1. C\xmapp\xampp-control.exe를 실행하여 서버실행
+   <img src='{{ "/assets/img/php36.jpg" | relative_url }}'>
+1. 작성한 문서를 서버환경에서 확인한다.
+   <img src='{{ "/assets/img/php37.jpg"| relative_url }}'>
+
+## 02 php 의 기본 문법
+
+`<?php` 로 시작해서
+
+`?>` 로 끝남
+
+## 03 다른 언어와 사용
+
+```php
+
+   <?php echo "<h1>망고는 코딩대장</h1>" ?>
+   
+```
+
+```php
+
+<h1>
+   <?php echo "망고는 코딩대장" ?>
+</h1>
+
+```
+## 04 오류찾기
+
+### 04-01 주석
+```php
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>타이틀</h1>
+   <?php 
+      //echo 문자열 출력함수
+      echo '망고대장'
+      /* 여러줄 
+         주석
+      */
+      #한줄주석
+   ?>
+</body>
+</html>
+
+```
+
+### 04-02 변수
+
+`$변수명=값`
+
+```php
+
+   <?php 
+      $name="망고"; 
+      echo $name.'대장'; # 문자열과 연결할때는 . 
+      echo "$name 대장"; # 문자열이 쌍따옴표로 묶여있으면 . 없어도 됨
+   ?>
+
+```
+<img src='{{ "/assets/img/php38.jpg"| relative_url }}'>+
+
+## 에러
+
+```php
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>에러</title>
+</head>
+<body>
+   <?php 
+      $name="망고";
+      echo $name'대장'; 
+      echo "🥇 $name 대장";
+      echo "🥇 $myname 대장";
+   ?>
+</body>
+</html>
+
+```
+<img src='{{ "/assets/img/php39.jpg" | relative_url }}'>
+<img src='{{ "/assets/img/php40.jpg" | relative_url }}'>
+
+---
+
+|영어명|한국어명|여는 태그|닫는 태그|설명|
+|standard tag	|  표준 태그, 긴 태그	       |<?php|?>|항상 사용 가능|
+|short open tag|  짧은 여는 태그, 짧은 태그[2]|<?	|?>|기본값은 사용불가. short_open_tag=On 적용하면 사용가능. 권장하지 않음.|
+|echo shortcut	| 단축 태그                	 |<?=|?|항상 사용 가능. <?php echo 내용; ?>의 축약형|
