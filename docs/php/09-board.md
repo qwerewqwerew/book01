@@ -488,20 +488,148 @@ echo $list;
 
 
 + index.php의 내용을 다시 살펴보자
-{: .text-purple-200 .text-red-200 .bg-red-000}
+{: .text-red-200}
 
 ![]({{'/assets/img/php120.jpg'| relative_url}} )
 
 
 + index.php의 반복문의 일부분을 가져와서 수정하도록 한다
-{: .text-purple-200 .text-red-200 .bg-red-000}
+{: .text-red-200}
 
 + view.php 에서는 모든 테이블의 글을 가져와야 하는것이 아니라 목록중에서 선택한 번호에 해당하는 글만 가져와야 한다.
 ![]({{'/assets/img/php121.jpg'| relative_url}} )
 
   🔗[13.2.13 SELECT Statement]({{'https://dev.mysql.com/doc/refman/8.0/en/select.html'| relative_url}} ){: .anc}
 
-![]({{'/assets/img/php123.jpg'| relative_url}} )
+  ![]({{'/assets/img/php123.jpg'| relative_url}} )
 
 + mysql 사이트의 조회문을 확인해보면 column명으로 조회하는 예시가 있다.
   이것을 수정하자
+
++ 코드작성
+  - 글목록이 있는지를 확인하는 조건문 작성
+    
+  view.php
+  {: .label .label-purple }
+  ```html
+
+  <!--index.php 내용 붙여넣기-->
+    <?php
+            $conn = mysqli_connect("localhost", "root", "", "mango_board");
+
+            if(!$conn){
+                echo 'db에 연결하지 못했습니다.'. mysqli_connect_error(); 
+            } else{
+                echo 'db에 접속했습니다!!!';
+            }
+            <!-- -->
+            <!--free_board 테이블에서 글 조회-->
+            <!-- SELECT * FROM 테이블명-->
+
+            $view_num = $_GET['number'];
+            $sql = "SELECT * FROM free_board WHERE number = $view_num";
+            $result = mysqli_query($conn, $sql);        
+            
+    ?>
+
+  <!DOCTYPE html>
+  <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View-망고게시글</title>
+  </head>
+
+  <body>
+    <h1>자유 게시판</h1>
+    <h2>글 내용</h2>
+      <?php
+        $conn = mysqli_connect("localhost", "root", "", "mango_board");
+        if($row = mysqli_fetch_array($result)){
+
+      ?>
+    <h3>글번호: / 글쓴이:</h3>
+
+   <!--글내용출력-->
+    <div></div>
+     <?php  }  ?>
+  </body>
+
+  </html>
+  ```
+
++ 글내용 동적출력
+  - $row 에서 number 필드의 값을 글번호에 출력
+  - $row 에서 name 필드의 값을 글쓴이에 출력  
+  - $row 에서 message 필드의 값을 div에 출력  
+
+  ```php
+  <h3>글번호: <?= $row['number'] ?> / 글쓴이: <?= $row['name'] ?> </h3>
+  <div><?= $row['message'] ?> </div>
+   <?php  }  ?>
+  ```
+
+
+  ![]({{'/assets/img/php132.jpg'| relative_url}} )
+
++ 메인화면 이동링크 추가
+
+`<p><a href="index.php">메인화면으로 돌아가기</a></p>`
+
+<details close markdown='block'>
+  <summary>
+    전체코드
+  </summary>
+```
+<?php
+$conn = mysqli_connect("localhost", "root", "", "mango_board");
+
+if (!$conn) {
+  echo 'db에 연결하지 못했습니다.' . mysqli_connect_error();
+} else {
+  echo 'db에 접속했습니다!!!';
+}
+//free_board 테이블에서 글 조회
+// SELECT * FROM 테이블명
+
+$view_num = $_GET['number'];
+$sql = "SELECT * FROM free_board WHERE number = $view_num";
+$result = mysqli_query($conn, $sql);
+
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View-망고게시글</title>
+</head>
+
+<body>
+  <h1>자유 게시판</h1>
+  <h2>글 내용</h2>
+  <?php
+  $conn = mysqli_connect("localhost", "root", "", "mango_board");
+
+  if ($row = mysqli_fetch_array($result)) {
+  ?>
+    <h3>글번호: <?= $row['number'] ?> / 글쓴이: <?= $row['name'] ?> </h3>
+    <div></div>
+  <?php
+  }
+  ?>
+  <p><a href="index.php">메인화면으로 돌아가기</a></p>
+
+</body>
+
+</html>
+```
+</details>
+
+
+---
+{: .mb-10}
+ 
