@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.6/static/pretendard.css");
 @import url(https://cdnjs.cloudflbare.com/ajax/libs/pretendard/1.3.6/static/pretendard.css);
 .highlight .c {
   color: #586e75;
@@ -7617,14 +7618,14 @@ div.opaque {
 }
 
 p.highlight, blockquote.highlight {
-  background: rgba(231, 175, 6, 0.2);
-  border-left: 4px solid #ffeb82;
+  background: rgba(255, 235, 130, 0.2);
+  border-left: 4px solid #e7af06;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
 p.highlight > .highlight-title, blockquote.highlight > .highlight-title {
-  color: #ffeb82;
+  color: #e7af06;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7633,8 +7634,8 @@ p.highlight > .highlight-title, blockquote.highlight > .highlight-title {
 }
 
 p.highlight-title, blockquote.highlight-title {
-  background: rgba(231, 175, 6, 0.2);
-  border-left: 4px solid #ffeb82;
+  background: rgba(255, 235, 130, 0.2);
+  border-left: 4px solid #e7af06;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7642,7 +7643,7 @@ p.highlight-title, blockquote.highlight-title {
 p.highlight-title > p:first-child, blockquote.highlight-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ffeb82;
+  color: #e7af06;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7673,14 +7674,14 @@ blockquote.highlight-title > p:last-child {
 }
 
 p.important, blockquote.important {
-  background: rgba(24, 51, 133, 0.2);
-  border-left: 4px solid #2c84fa;
+  background: rgba(44, 132, 250, 0.2);
+  border-left: 4px solid #183385;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
 p.important::before, blockquote.important::before {
-  color: #2c84fa;
+  color: #183385;
   content: "❗ Note";
   display: block;
   font-weight: bold;
@@ -7689,7 +7690,7 @@ p.important::before, blockquote.important::before {
   padding-bottom: 0.125rem;
 }
 p.important > .important-title, blockquote.important > .important-title {
-  color: #2c84fa;
+  color: #183385;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7698,8 +7699,8 @@ p.important > .important-title, blockquote.important > .important-title {
 }
 
 p.important-title, blockquote.important-title {
-  background: rgba(24, 51, 133, 0.2);
-  border-left: 4px solid #2c84fa;
+  background: rgba(44, 132, 250, 0.2);
+  border-left: 4px solid #183385;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7707,7 +7708,7 @@ p.important-title, blockquote.important-title {
 p.important-title > p:first-child, blockquote.important-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #2c84fa;
+  color: #183385;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7738,14 +7739,14 @@ blockquote.important-title > p:last-child {
 }
 
 p.new, blockquote.new {
-  background: rgba(2, 110, 87, 0.2);
-  border-left: 4px solid #41d693;
+  background: rgba(65, 214, 147, 0.2);
+  border-left: 4px solid #026e57;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
 p.new::before, blockquote.new::before {
-  color: #41d693;
+  color: #026e57;
   content: "😺 Comment";
   display: block;
   font-weight: bold;
@@ -7754,7 +7755,7 @@ p.new::before, blockquote.new::before {
   padding-bottom: 0.125rem;
 }
 p.new > .new-title, blockquote.new > .new-title {
-  color: #41d693;
+  color: #026e57;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7763,8 +7764,8 @@ p.new > .new-title, blockquote.new > .new-title {
 }
 
 p.new-title, blockquote.new-title {
-  background: rgba(2, 110, 87, 0.2);
-  border-left: 4px solid #41d693;
+  background: rgba(65, 214, 147, 0.2);
+  border-left: 4px solid #026e57;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7772,7 +7773,7 @@ p.new-title, blockquote.new-title {
 p.new-title > p:first-child, blockquote.new-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #41d693;
+  color: #026e57;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7803,14 +7804,14 @@ blockquote.new-title > p:last-child {
 }
 
 p.note, blockquote.note {
-  background: rgba(56, 24, 133, 0.2);
-  border-left: 4px solid #7253ed;
+  background: rgba(114, 83, 237, 0.2);
+  border-left: 4px solid #381885;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
 p.note::before, blockquote.note::before {
-  color: #7253ed;
+  color: #381885;
   content: "👁‍🗨 Topic";
   display: block;
   font-weight: bold;
@@ -7819,7 +7820,7 @@ p.note::before, blockquote.note::before {
   padding-bottom: 0.125rem;
 }
 p.note > .note-title, blockquote.note > .note-title {
-  color: #7253ed;
+  color: #381885;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7828,8 +7829,8 @@ p.note > .note-title, blockquote.note > .note-title {
 }
 
 p.note-title, blockquote.note-title {
-  background: rgba(56, 24, 133, 0.2);
-  border-left: 4px solid #7253ed;
+  background: rgba(114, 83, 237, 0.2);
+  border-left: 4px solid #381885;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7837,7 +7838,7 @@ p.note-title, blockquote.note-title {
 p.note-title > p:first-child, blockquote.note-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #7253ed;
+  color: #381885;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7868,14 +7869,14 @@ blockquote.note-title > p:last-child {
 }
 
 p.warning, blockquote.warning {
-  background: rgba(221, 46, 46, 0.2);
-  border-left: 4px solid #f77e7e;
+  background: rgba(247, 126, 126, 0.2);
+  border-left: 4px solid #dd2e2e;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
 }
 p.warning::before, blockquote.warning::before {
-  color: #f77e7e;
+  color: #dd2e2e;
   content: "🔑 Point";
   display: block;
   font-weight: bold;
@@ -7884,7 +7885,7 @@ p.warning::before, blockquote.warning::before {
   padding-bottom: 0.125rem;
 }
 p.warning > .warning-title, blockquote.warning > .warning-title {
-  color: #f77e7e;
+  color: #dd2e2e;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -7893,8 +7894,8 @@ p.warning > .warning-title, blockquote.warning > .warning-title {
 }
 
 p.warning-title, blockquote.warning-title {
-  background: rgba(221, 46, 46, 0.2);
-  border-left: 4px solid #f77e7e;
+  background: rgba(247, 126, 126, 0.2);
+  border-left: 4px solid #dd2e2e;
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
   padding: 0.8rem;
@@ -7902,7 +7903,7 @@ p.warning-title, blockquote.warning-title {
 p.warning-title > p:first-child, blockquote.warning-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #f77e7e;
+  color: #dd2e2e;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
