@@ -15,7 +15,7 @@ tags: [부트스트랩 ,bootstrap ]
 ---
 
  
-# 01. 관련링크
+# 관련링크
 
 🔗[v4]({{'https://getbootstrap.com/docs/4.1/getting-started/introduction/'| relative_url}} ){: .anc}
 
@@ -62,7 +62,7 @@ tags: [부트스트랩 ,bootstrap ]
 {: .mb-10}
  
 
-##  col (레이아웃 규칙)
+## col (레이아웃 규칙)
 
 {: .note }
 >부트스트랩은 1행(.row)이 12개의 열(.col)로 구성
