@@ -74,14 +74,14 @@ tags: [부트스트랩 ,bootstrap ]
 
 1. .container 를 쓰면 미디어쿼리부터 전부 맞춰짐
 2. 약속된 접두사를 쓰면 레이아웃이 만들어짐
-    + 접두사 예시 : .row , .col, col-xd ...
-    + | col-화면크기-숫자:  지정한 화면 크기에서 col이 몇칸을 차지할것인지 설정
-    + | col-sm-숫자: 576px 이하면 세로배치  (휴대폰)
-    + | col-md-숫자: 768px 이하면 세로배치
-    + | col-lg-숫자: 992px 이하면 세로배치
-    + | col-xl-숫자: 1200px 이하면 세로배치
+    + 접두사 예시 : `.row` , `.col`, `.col-xd` ...
+    + <span class="text-red-300">col-화면크기-숫자</span>:  지정한 화면 크기에서 col이 몇칸을 차지할것인지 설정
+    + <span class="text-red-300">col-sm-숫자</span>: 576px 이하면 세로배치  (휴대폰)
+    + <span class="text-red-300">col-md-숫자</span>: 768px 이하면 세로배치
+    + <span class="text-red-300">col-lg-숫자</span>: 992px 이하면 세로배치
+    + <span class="text-red-300">col-xl-숫자</span>: 1200px 이하면 세로배치
 3. 구조는 `.container>.row>.col*12`  가 기본
-4. .row 에 col 은 총 12개까지 들어갈수 있음
+4. `.row` 에 `.col` 은 총 12개까지 들어갈수 있음
     + ![]({{'/assets/img/bootstrap1.png'| relative_url}} )
 5.<span class="text-red-300">full-width</span>레이아웃을 만들때는 `.container-fluid` 사용
 
@@ -92,9 +92,9 @@ tags: [부트스트랩 ,bootstrap ]
 ## 거터
 
 {: .note }
->
->ver 5에 추가된 속성
->컬럼사이의 여백으로 최대 **`1.5rem` (`24px`)  이다**
+> 😀 컬럼 사이의 여백
+> ver 5에 추가된 속성
+> 컬럼사이의 여백으로 최대 **`1.5rem` (`24px`)  이다**
 >
 
 ### 세로거터
@@ -169,7 +169,7 @@ html
 {: .warning }
 >
 > 거터가 없을경우 
-> `## .g-0`
+> `.g-0`
 >
 
 
@@ -181,10 +181,10 @@ html
 ### 여백의 종류
 {: .no_toc}
 
-**M/P**
+**m/p**
 
-- M : Margin
-- P : Padding
+- <span class="text-red-300">m</span> : Margin
+- <span class="text-red-300">p</span> : Padding
 
 
 ### 여백의 방향
@@ -192,12 +192,12 @@ html
 
 **t , b , l , r ,x , y**
 
-- t : top
-- b : bottom
-- l : left
-- r : right
-- s : Start -> left , right
-- e : End -> top , bottom
+- <span class="text-red-300">t</span> : top
+- <span class="text-red-300">b</span> : bottom
+- <span class="text-red-300">l</span> : left
+- <span class="text-red-300">r</span> : right
+- <span class="text-red-300">s</span> : Start -> left , right
+- <span class="text-red-300">e</span> : End -> top , bottom
 
 
 ### 여백의 크기
@@ -205,19 +205,19 @@ html
 
 **0, 1, 2, 3, 4, 5, auto**
 
-- 0 : 0
-- 1 : .25rem( font-size가 16px이면, 4px) 크기
-- 2 : .5rem( font-size가 16px이면, 8px) 크기
-- 3 : 1rem( font-size가 16px이면, 16px) 크기
-- 4 : 1.5rem( font-size가 16px이면, 24px) 크기
-- 5 : 3rem( font-size가 16px이면, 48px) 크기
-- auto : auto
+- <span class="text-red-300">0</span> : 0
+- <span class="text-red-300">1</span> : .25rem( font-size가 16px이면, 4px) 크기
+- <span class="text-red-300">2</span> : .5rem( font-size가 16px이면, 8px) 크기
+- <span class="text-red-300">3</span> : 1rem( font-size가 16px이면, 16px) 크기
+- <span class="text-red-300">4</span> : 1.5rem( font-size가 16px이면, 24px) 크기
+- <span class="text-red-300">5</span> : 3rem( font-size가 16px이면, 48px) 크기
+- <span class="text-red-300">auto</span> : auto
 
 **n1, n2, n3, n4, n5**
 
-- n : negative을 의미
-- n1 : -.25rem( font-size가 16px이면, -4px) 크기
-- n2 : -.5rem( font-size가 16px이면, -8px) 크기
-- n3 : -1rem( font-size가 16px이면, -16px) 크기
-- n4 : -1.5rem( font-size가 16px이면, -24px) 크기
-- n5 : -3rem( font-size가 16px이면, -48px) 크기
+- <span class="text-red-300">n</span> : negative을 의미
+- <span class="text-red-300">n1</span> : -.25rem( font-size가 16px이면, -4px) 크기
+- <span class="text-red-300">n2</span> : -.5rem( font-size가 16px이면, -8px) 크기
+- <span class="text-red-300">n3</span> : -1rem( font-size가 16px이면, -16px) 크기
+- <span class="text-red-300">n4</span> : -1.5rem( font-size가 16px이면, -24px) 크기
+- <span class="text-red-300">n5</span> : -3rem( font-size가 16px이면, -48px) 크기
