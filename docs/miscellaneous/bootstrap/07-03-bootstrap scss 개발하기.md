@@ -6,8 +6,10 @@ grand_parent: Miscellaneous
 tags: [bootstrap,scss]
 ---
 
-1. TOC
-   {:toc}
+
+ 1. TOC
+{:toc}
+
 ---
 
 ## 01 nodeJS 설치
