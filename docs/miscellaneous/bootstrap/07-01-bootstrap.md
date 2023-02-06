@@ -34,7 +34,9 @@ tags: [부트스트랩 ,bootstrap ]
 
 1. 🔗[테마모음]({{'https://themes.getbootstrap.com/'| relative_url}} ){: .anc}
 
-1. 🔗[설명서]({{'https://getbootstrap.com/docs/5.3/getting-started/introduction/'| relative_url}} ){: .anc}
+1. 🔗[5.3설명서]({{'https://getbootstrap.com/docs/5.3/getting-started/introduction/'| relative_url}} ){: .anc}
+
+1. 🔗[한글설명서]({{'http://bootstrapk.com/'| relative_url}} ){: .anc}
 
 1. 🔗[예제모음]({{'https://getbootstrap.com/docs/5.3/getting-started/introduction/'| relative_url}} ){: .anc}
 

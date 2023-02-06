@@ -1,5 +1,5 @@
 ---
-title: 03-bootstrap scss 개발하기
+title: 04-bootstrap scss 개발하기
 layout: default
 parent: 07-Bootstrap
 grand_parent: Miscellaneous
@@ -45,13 +45,13 @@ tags: [bootstrap,scss]
   {
     "format": "expanded",
     "extensionName": ".css",
-    "savePath": "~../css",
+    "savePath": "~/../css",
     "savePathReplacementPairs": null
   },
   {
     "format": "compressed",
     "extensionName": ".min.css",
-    "savePath": "~../css",
+    "savePath": "~/../css",
     "savePathReplacementPairs": null
   }
 ],
