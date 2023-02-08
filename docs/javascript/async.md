@@ -6,7 +6,6 @@ grand_parent:
 ---
 
 1. TOC
-
 {:toc}
 
 ---
@@ -23,8 +22,6 @@ grand_parent:
 
 
 # 콜백지옥
-
-## async / await
 
 <div class='box'>
   비동기적 처리를 할땐 콜백을 활용하게 되는데 하다보면 콜백 함수가 중첩되면서 콜백 지옥에 빠지게 된다.
