@@ -25,10 +25,17 @@ code {
 }
 
 .box{
+  margin:1rem .5rem;
+  padding:1rem;
   border:1px solid $grey-lt-300;
-  box-shadow: 0 0 10px $grey-lt-300;
+  box-shadow: 0 0 4px $grey-lt-300;
 }
-
+.box:before{
+  content:'🤓';
+  display:inline-block;
+  margin-right:.5rem;
+  
+}
 #main-content-wrap {
   line-height: 1.8;
   pre {

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 08-featch
+title: fetch
 parent: Javascript
 grand_parent:
 ---
@@ -12,7 +12,8 @@ grand_parent:
 
 ---
 
-# Promise
+# Promise 
+🔗[설명페이지]({{'/docs/javascript/fetch/#promise'| relative_url}} ){: .anc}
 
 {: .note }
 
@@ -30,7 +31,9 @@ promise 객체를 반환하는 대표적인 함수가 fetch 이다
 
 {: .mb-10}
 
-# Fetch
+# Fetch 
+🔗[설명페이지]({{'/docs/javascript/fetch/#fetch'| relative_url}} ){: .anc}
+
 
 🔗[mdn-fetch]({{'https://developer.mozilla.org/ko/docs/Web/API/Fetch_API'| relative_url}} ){: .anc}
 
