@@ -51,37 +51,3 @@ grand_parent:
   
   ![]({{'/assets/img/api7.jpg'| relative_url}} )
 4.
-## Inline code
-
-Code can be rendered inline by wrapping it in single back ticks.
-
-<div class="code-example" markdown="1">
-Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-## Heading with `<inline code snippet>` in it.
-{: .no_toc }
-</div>
-```markdown
-Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-## Heading with `<inline code snippet>` in it.
-```
-
----
-
-## Syntax highlighted code blocks
-
-Use Jekyll's built-in syntax highlighting with Rouge for code blocks by using three backticks, followed by the language name:
-
-<div class="code-example" markdown="1">
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-</div>
-{% highlight markdown %}
-
-
