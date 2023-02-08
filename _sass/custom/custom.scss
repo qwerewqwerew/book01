@@ -24,6 +24,10 @@ code {
   font-size: 0.9em;
 }
 
+.box{
+  border:1px solid $grey-lt-300;
+  box-shadow: 0 0 10px $grey-lt-300;
+}
 
 #main-content-wrap {
   line-height: 1.8;
@@ -34,6 +38,7 @@ code {
   }
   .main-content{
     font-weight: 300;
+    color:$grey-dk-300;
     line-height:1.8;
   }
   #main-content {
@@ -68,3 +73,5 @@ code {
 
   }
 }
+
+.highlight .c1{color:#8caf75;}
