@@ -181,7 +181,11 @@ parent: PHP
 
 ```php
 	"php.validate.enable": false,
-	"php.validate.executablePath": "C:\xampp\php\php.exe",
+	"php.validate.executablePath": "C:/xampp/php/php.exe",
 ```
+
+
+`/` 방향에 주의할것
+{: .text-red-200}
 
    ---

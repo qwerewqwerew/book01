@@ -221,3 +221,157 @@ showWeathers();
 | nx,ny  | (관측지즘) |
 
 
+
+---
+{: .mb-10}
+ 
+# 초단기실황 코드
+
+
+weather.html
+{: .label .label-purple }
+
+```html
+...
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+<div id="container">
+  <h1>기상청</h1>
+  <h2>오늘의날씨</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <td>날짜</td>
+        <td>시간</td>
+        <td>조회</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="weather-temp">기온</td>
+        <td id="RN1">시간</td>
+        <td class="weather-state-text">조회</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+...
+
+```
+
+weather.js
+{: .label .label-purple }
+
+
+```js
+let date = new Date();
+let year = String(date.getFullYear());
+let month = String(date.getMonth() + 1).padStart(2, "0")
+let day = String(date.getDate()).padStart(2, "0");
+let now = year + month + day;
+let datas, wether;
+const castBox = document.getElementById('container');
+let statusText,locText, rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-brightness-alt-high-fill"></i>', '<i class="bi bi-cloud-sun-fill"></i>', '<i class="bi bi-cloud-drizzle-fill"></i>',];
+
+let url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0';
+let params = {
+  getInfo: ['getUltraSrtNcst', 'getVilageFcst'],//0, 초단기실황, 1 단기예보
+  key: 'eRJMein3NmELUx%2FLuPHfoRdlohmVIL3MZGIGrRpkWdIm%2FnvpP%2FvML0v%2FvRtEDnylTAkvdh4qD7Iw19Op%2Fqmz8w%3D%3D',
+  pageNo: '1',
+  numOfRows: '1000',
+  dataType: 'JSON',
+  base_date: now,
+  base_time: '0600',
+  nx: '73',
+  ny: '134',
+}
+
+async function getcast() {
+  const res = await fetch(
+    `${url}/${params.getInfo[0]}?serviceKey=${params.key}&pageNo=${params.key}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.base_date}&base_time=${params.base_time}&nx=${params.nx}&ny=${params.ny}`
+  );
+  const data = await res.json();
+  return data;
+}
+
+// Show cast in DOM
+async function showcast() {
+  const cast = await getcast();
+  const datas = cast.response.body.items.item;
+
+  let cast = {
+    "baseDate": datas[0].baseDate,
+    "rain": datas[0].obsrValue,
+    "rainDesc": function () {
+      let info = this.rain;
+      if (info == 0) {
+        statusText = "맑음";
+        rainIcon = rainIcon[0];
+      } else {
+        if (info == 1) {
+          statusText = "비";
+          rainIcon = rainIcon[1];
+        } else if (info == 2) {
+          statusText = "비/눈";
+          rainIcon = rainIcon[2];
+        } else if (info == 3) {
+          statusText = "눈";
+          rainIcon = rainIcon[3];
+        }
+      }
+    },
+    "temperature": datas[3].obsrValue,
+    "windSpeed": datas[7].obsrValue,
+    "nx": datas[0].nx,
+    "ny": datas[0].ny,
+    "loc": function () {
+      let point = [this.nx, this.ny];
+      if (point[0] == 73 && point[1] == 134) {
+        return locText = "경기북부/강원";
+      }
+    }
+  };
+
+  cast.rainDesc();
+  cast.loc();
+
+  const castEl = document.createElement('table');
+  const tr = document.createElement('tr');
+  castEl.classList.add('table');
+  tr.innerHTML = `
+    <td class="number">오늘날짜: ${cast.baseDate}</td>
+    <td class="number">지역: ${locText}</td>
+    <td class="rain-state">강수형태:${statusText}${rainIcon}</td>
+    <td class="temp-state">기온:${cast.temperature}도</td>
+    <td class="temp-state">바람:${cast.windSpeed}ms</td>
+  `;
+  castEl.appendChild(tr);
+  castBox.appendChild(castEl);
+}
+
+function loc() {
+  document.querySelector('#location').addEventListener('change', function (e) {
+    const tg = this.value;
+    let changeLoc = tg.split(',');
+    _nx = changeLoc[0];
+    _ny = changeLoc[1];
+    console.log(_nx, _ny);
+  });
+
+}
+
+showcast();
+
+
+```
