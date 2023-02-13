@@ -74,11 +74,89 @@ HTML
 </html>
 ```
 
+
+---
+{: .mb-10}
+ 
+## Javascript01
+```js
+let win = window,
+	winSct,
+	sections = document.querySelectorAll(".section"),
+	gnb = document.querySelectorAll(".gnb li");
+
+const gnbOff = () => {
+	gnb.forEach((o) => {
+		o.classList.remove("on");
+	});
+};
+
+gnb.forEach((el, idx) => {
+	el.addEventListener("click", function (e) {
+		e.preventDefault();
+		document.querySelector(el.firstChild.getAttribute("href")).scrollIntoView({ behavior: "smooth", block: "center" });
+		gnbOff();
+		el.classList.add("on");
+	});
+});
+
+win.addEventListener("scroll", function () {
+	winSct = this.scrollY;
+	//스티키헤더
+	winSct >= 400 ? document.querySelector("nav").classList.add("sticky") : document.querySelector("nav").classList.remove("sticky");
+	scrollGnb(winSct);
+});
+//const section=Array.from(sections).map((section,idx)=> section.offsetTop)
+const scrollGnb = (sct) => {
+	console.log(winSct);
+	if (sct >= sections[0].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(1)").classList.add("on");
+	}
+	if (sct >= sections[1].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(2)").classList.add("on");
+	}
+	if (sct >= sections[2].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(3)").classList.add("on");
+	}
+	if (sct >= sections[3].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(4)").classList.add("on");
+	}
+	if (sct >= sections[4].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(5)").classList.add("on");
+	}
+	if (sct >= sections[5].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(6)").classList.add("on");
+	}
+	if (sct >= sections[6].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(7)").classList.add("on");
+	}
+	if (sct >= sections[7].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(8)").classList.add("on");
+	}
+	if (sct >= sections[8].offsetTop - 300) {
+		gnbOff();
+		document.querySelector(".gnb li:nth-child(9)").classList.add("on");
+	}
+};
+
+
+```
+
+
+
 ---
 
 {: .mb-10}
 
-## Javascript
+## Javascript02
 
 ```js
 const gnb = document.querySelectorAll(".gnb>li")
