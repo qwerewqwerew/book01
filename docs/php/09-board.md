@@ -464,16 +464,24 @@ echo $list;
 </ul>
 
 ```
+출력결과
+![]({{'/assets/img/php119.jpg'| relative_url}} )
+
 
 {: .mt-8}
 
+###  mysqli_fetch_array()
 
-* $row = mysqli_fetch_array($result)🔗[link]({{'https://www.tutorialspoint.com/php/php_function_mysqli_fetch_array.htm'| relative_url}} ){: .anc}
- {: .bg-yellow-000}  
+* `$row = mysqli_fetch_array($result)` <br/>
+  🔗[튜토리얼link]({{'https://www.tutorialspoint.com/php/php_function_mysqli_fetch_array.htm'| relative_url}} ){: .anc}<br/>
+  🔗[공식link]({{'https://www.php.net/manual/en/mysqli-result.fetch-array.php'| relative_url}} ){: .anc}<br/> 
+
   + mysqli_fetch_array: mysqli_query를 통해 얻은 result에서 데이터(레코드)를 1개씩 리턴해주는 함수
+  + 배열의 요소를 한번씩 순회후 자동 종료함 while 을 이용하여 값호출
+    ![]({{'/assets/img/php200.jpg'| relative_url}} )
 
-출력
-![]({{'/assets/img/php119.jpg'| relative_url}} )
+결과
+![]({{'/assets/img/php125.jpg'| relative_url}} )
 
 
 ---
@@ -579,7 +587,7 @@ echo $list;
 
 <details close markdown='block'>
   <summary>
-    전체코드
+    <span class="text-red-200">전체코드</span>
   </summary>
 ```
 <?php
@@ -591,7 +599,7 @@ if (!$conn) {
   echo 'db에 접속했습니다!!!';
 }
 //free_board 테이블에서 글 조회
-// SELECT * FROM 테이블명
+// SELECT 필드명 FROM 테이블명
 
 $view_num = $_GET['number'];
 $sql = "SELECT * FROM free_board WHERE number = $view_num";
@@ -617,7 +625,9 @@ $result = mysqli_query($conn, $sql);
   if ($row = mysqli_fetch_array($result)) {
   ?>
     <h3>글번호: <?= $row['number'] ?> / 글쓴이: <?= $row['name'] ?> </h3>
-    <div></div>
+    <div>
+     <?= $row['message'] ?>
+    </div>
   <?php
   }
   ?>
