@@ -18,7 +18,8 @@ parent: PHP
 >
 > {: .block-tip }
 
-<div class='box fs-6'>
+
+<div class='box fs-6 my-5'>
    php를 설치하면 회원가입, 로그인, 내용 검색, 관리자로 로그인해서 콘텐츠를 등록할 수 있음   <br/>
    php를 설치하려면 php와 아파치 서버, 데이터베이스가 설치되어 있어야 함
 </div>
