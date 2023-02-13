@@ -18,13 +18,19 @@ parent: PHP
 >
 > {: .block-tip }
 
+<div class='box fs-6'>
+   php를 설치하면 회원가입, 로그인, 내용 검색, 관리자로 로그인해서 콘텐츠를 등록할 수 있음   <br/>
+   php를 설치하려면 php와 아파치 서버, 데이터베이스가 설치되어 있어야 함
+</div>
+
+
 - apm setup
-- apache : 웹서버 프로그램
-- php : 서버사이드 언어
-- mysql : 데이터베이스
-- phpmadmin : 데이터베이스를 편리하게 운영할수 있는 프로그램
-- bitnami wamp⇒ 위의 프로그램들을 통합 설치해주는 통합개발환경설정관리툴
-- bitnami 의 서비스가 종료되어 xmapp로 진행함
+   - apache : 웹서버 프로그램
+   - php : 서버사이드 언어
+   - mysql : 데이터베이스
+   - phpmadmin : 데이터베이스를 편리하게 운영할수 있는 프로그램
+   - bitnami wamp⇒ 위의 프로그램들을 통합 설치해주는 통합개발환경설정관리툴
+   - bitnami 의 서비스가 종료되어 xmapp로 진행함
 
 ---
 
