@@ -343,3 +343,22 @@ require_once('inc/functions.php');
 ```
 
 ![]({{'/assets/img/php77.jpg'| relative_url}} )
+
+
+
+---
+{: .mb-10}
+ 
+# 총정리
+
+{: .note }
+>
+>include : 다른 PHP파일을 불러올때 사용
+>
+>include_once : 파일을 불러올때 1번만 로드하게 됨
+>
+>require :다른 PHP파일을 불러올때 사용
+>
+>require_once : 파일을 불러올때 1번만 로드하게 됨
+>
+> include, require 의 기능차이는 없으나 require 가 좀더 엄격한 문법처리를 함

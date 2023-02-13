@@ -136,7 +136,7 @@ callouts:
   highlight:
     color: yellow
   important:
-    title: ❗ Note
+    title: 📝 Note
     color: blue
   new:
     title: 😺 Comment

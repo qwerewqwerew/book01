@@ -1,6 +1,11 @@
 ---
 layout: default
-title: Jekyll
-nav_order: 6
+title: 02-Jekyll
+parent: Miscellaneous
 has_children: true
+
 ---
+
+1. TOC
+{:toc}
+--
