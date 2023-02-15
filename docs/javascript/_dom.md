@@ -1,6 +1,6 @@
 ---
 layout: default
-title: dom조작
+title: 09-dom조작
 parent: Javascript
 grand_parent: 
 ---
