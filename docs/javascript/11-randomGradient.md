@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Random gradient
+title: 11-Random gradient
 parent: Javascript
 grand_parent:
 ---
