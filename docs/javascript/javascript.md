@@ -173,3 +173,91 @@ setInterval(clock, 1000 / 60);
 ```
 #### 실행
 <img src='{{ "/assets/img/clock_fn.png"| relative_url }}'>
+
+
+
+---
+{: .mb-10}
+ 
+# 02-현재 시간 초단위 출력
+
+{: .note }
+>	현재 시간을 초단위로 출력하는 디지털 시계를 만들어보자
+>
+
+
+html
+{: .label .label-purple }
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>디지털시계</title>
+	<script src="getTime.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			function displayTime() {
+				document.querySelector("#time").innerHTML=getTime(true)
+			}
+			displayTime();
+			setInterval(displayTime, 1000);
+		})
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="main">
+				<h1>디지털시계</h1>
+				<p>현재시간: <strong id="time"></strong></p>
+				<div id="headlines"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+```
+
+
+
+js
+{: .label .label-purple }
+
+```js
+function getTime(secs) {
+	var sep = ':'; //separator character
+	var hours,minutes,seconds,time,am_pm;
+	var now = new Date();
+	hours = now.getHours();
+	if (hours < 12) {
+		am_pm = 'am';
+	} else {
+		am_pm = 'pm';
+	}
+	hours = hours % 12;
+	if (hours === 0) {
+		hours = 12;
+	} 
+	time = hours;
+	minutes = now.getMinutes();
+	if (minutes < 10) {
+		minutes = '0' + minutes;
+	}
+	time += sep + minutes;
+	if (secs) {
+		seconds = now.getSeconds();
+		//console.log(seconds)
+		if (seconds < 10) {
+			seconds = '0' + seconds;
+		}
+		time += sep + seconds;
+	} 
+	return time + ' ' + am_pm;
+}
+```
