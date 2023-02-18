@@ -26,7 +26,7 @@ tags: [admin]
 
 ## 완료소스
 
-## 🔗[download]({{{'/assets/img/login.zip'| relative_url}} ){: .anc}
+  + 🔗[download]({'/assets/img/login.zip'| relative_url} ){: .anc}
 
 # 로그인 페이지
 
