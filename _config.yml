@@ -136,16 +136,16 @@ callouts:
   highlight:
     color: yellow
   important:
-    title: 📝 Note
+    title: 📝 코드설명
     color: blue
   new:
-    title: 😺 Comment
+    title: 😺 코드설명
     color: green
   note:
-    title: 📣 Topic
+    title: 📣 학습목표
     color: purple
   warning:
-    title: 🔑 Point
+    title: 🔑 핵심정리
     color: red
 
 # Google Analytics Tracking (optional)

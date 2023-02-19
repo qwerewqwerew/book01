@@ -8,7 +8,7 @@ tags: [admin]
 ---
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
@@ -22,11 +22,11 @@ tags: [admin]
 
 🔗[Types_of_filters]({{'https://www.php.net/manual/en/filter.filters.php'| relative_url}} ){: .anc}
 
+🔗[완성코드]({{'/assets/img/login.zip'| relative_url}} ){: .anc}
+
 ---
 
-## 완료소스
 
-  + 🔗[download]({'/assets/img/login.zip'| relative_url} ){: .anc}
 
 # 로그인 페이지
 

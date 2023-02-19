@@ -2,7 +2,6 @@
 layout: default
 title: 13-filter
 parent: Javascript
-grand_parent:
 ---
 
 # 목차

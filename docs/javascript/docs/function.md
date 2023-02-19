@@ -1,6 +1,5 @@
 ---
 title: function
-date: 2019-04-28
 parent: Javascript
 layout: post
 ---

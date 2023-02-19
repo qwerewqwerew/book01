@@ -1,8 +1,7 @@
 ---
 layout: default
-title: 11-Random gradient
+title: 08 scroll-Effect
 parent: Javascript
-grand_parent:
 ---
 
 # 목차
@@ -20,118 +19,58 @@ HTML
 {: .label .label-purple }
 
 ```html
-
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Animated Gradients</title>
-
-		<style>
-      /* body의 변수값을 조정해서 container 의 그라디언트를 변경하는 소스 */
-			body {
-				margin: 0px;
-				padding: 0px;
-				--hue1: 176;
-				--hue2: 341;
-				--hue3: 250;
-				--hue4: 90;
-			}
-
-			#container {
-				width: 100vw;
-				height: 100vh;
-				background: radial-gradient(circle at top left, hsla(var(--hue1), 90%, 80%, 0.5), transparent 75%), radial-gradient(circle at top right, hsla(var(--hue2), 90%, 80%, 0.5), transparent 75%),
-					radial-gradient(at bottom left, hsla(var(--hue3), 90%, 80%, 0.5), transparent 75%), radial-gradient(at bottom right, hsla(var(--hue4), 90%, 80%, 0.5), transparent 75%);
-			}
-		</style>
-	</head>
-
-	<body>
-		<div id="container"></div>
-
-		<script>
-			var newHue1;
-			var newHue2;
-			var newHue3;
-			var newHue4;
-
-			var currentHue1;
-			var currentHue2;
-			var currentHue3;
-			var currentHue4;
-
-			var hueDiff1;
-			var hueDiff2;
-			var hueDiff3;
-			var hueDiff4;
-
-			var incrementer1 = 0;
-			var incrementer2 = 0;
-			var incrementer3 = 0;
-			var incrementer4 = 0;
-
-			var counter = 0;
-			var iterations = 200;
-
-			function setNewColor() {
-				var bodyStyle = getComputedStyle(document.body);
-				currentHue1 = Number(bodyStyle.getPropertyValue("--hue1"));
-				currentHue2 = Number(bodyStyle.getPropertyValue("--hue2"));
-				currentHue3 = Number(bodyStyle.getPropertyValue("--hue3"));
-				currentHue4 = Number(bodyStyle.getPropertyValue("--hue4"));
-
-				newHue1 = getRandomNumber(0, 360);
-				newHue2 = getRandomNumber(0, 360);
-				newHue3 = getRandomNumber(0, 360);
-				newHue4 = getRandomNumber(0, 360);
-
-				hueDiff1 = newHue1 - currentHue1;
-				hueDiff2 = newHue2 - currentHue2;
-				hueDiff3 = newHue3 - currentHue3;
-				hueDiff4 = newHue4 - currentHue4;
-
-				incrementer1 = hueDiff1 / iterations;
-				incrementer2 = hueDiff2 / iterations;
-				incrementer3 = hueDiff3 / iterations;
-				incrementer4 = hueDiff4 / iterations;
-			}
-
-			var frameId;
-
-			function animate() {
-				if (counter == 0) {
-					setNewColor();
-				}
-
-				counter++;
-
-				currentHue1 += incrementer1;
-				currentHue2 += incrementer2;
-				currentHue3 += incrementer3;
-				currentHue4 += incrementer4;
-
-				if (counter == iterations) {
-					counter = 0;
-				}
-
-				document.body.style.setProperty("--hue1", currentHue1);
-				document.body.style.setProperty("--hue2", currentHue2);
-				document.body.style.setProperty("--hue3", currentHue3);
-				document.body.style.setProperty("--hue4", currentHue4);
-
-				requestAnimationFrame(animate);
-			}
-			animate();
-
-			function getRandomNumber(low, high) {
-				var r = Math.floor(Math.random() * (high - low + 1)) + low;
-				return r;
-			}
-		</script>
-	</body>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+      }
+      .box {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <section>
+      <h2>section1</h2>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scroll.js"></script>
+  </body>
 </html>
-
 ```
 
 

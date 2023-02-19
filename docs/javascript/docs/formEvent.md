@@ -2,7 +2,6 @@
 layout: default
 title: 09-formEvent
 parent: Javascript
-grand_parent: 
 ---
 
 # 목차

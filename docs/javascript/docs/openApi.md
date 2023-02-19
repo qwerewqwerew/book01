@@ -2,7 +2,6 @@
 layout: default
 title: 07 오픈API
 parent: Javascript
-grand_parent:
 ---
 
 # 목차

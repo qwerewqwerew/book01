@@ -2,7 +2,6 @@
 layout: default
 title: fetch
 parent: Javascript
-grand_parent:
 ---
 
 

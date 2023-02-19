@@ -8,7 +8,7 @@ tags: [admin]
 ---
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 
@@ -19,6 +19,8 @@ tags: [admin]
 🔗[redirect_tut]({{'https://www.tutorialspoint.com/redirection-in-php'| relative_url}} ){: .anc}
 
 🔗[redirect_wiki]({{'https://wikidocs.net/116886'| relative_url}} ){: .anc}
+
+🔗[완성코드]({{'/assets/img/12.zip'| relative_url}} ){: .anc}
 
 ---
 
@@ -108,7 +110,7 @@ function authenticate_admin($email, $password){
 
 ![]({{'/assets/img/php139.jpg'| relative_url}} )
 
-{: .note }
+{: .new }
 
 > 1. 관리자가 정보를 입력한다<br/>
 > 2. authenticate_admin 함수의 조건문으로 조건별 처리<br/>

@@ -1,6 +1,6 @@
 ---
 title: 06-effects
-parent: Javascript+JQuery
+parent: javascript+jQuery
 layout: post
 ---
 
