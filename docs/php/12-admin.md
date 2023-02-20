@@ -115,7 +115,7 @@ function authenticate_admin($email, $password){
 > 1. 관리자가 정보를 입력한다<br/>
 > 2. authenticate_admin 함수의 조건문으로 조건별 처리<br/>
 > 3. config.php 에 저장된 값과 비교한다.<br/>
->    ![]({{'/assets/img/140.jpg'| relative_url}} )
+>    ![]({{'/assets/img/php140.jpg'| relative_url}} )
 
 ---
 

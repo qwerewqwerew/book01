@@ -46,7 +46,9 @@ calc(price, 5);
 ```js
 // subtractor 함수는 고차 함수이다. (다른 함수를 리턴한다.)
 function subtractor(subtract) {
+  //subtract=5 num=8
   return function (num) {
+    //8-5
     return num - subtract;
   }
 }

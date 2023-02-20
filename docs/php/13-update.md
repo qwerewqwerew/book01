@@ -1,5 +1,5 @@
 ---
-title: 13-modify
+title: 13-update
 layout: default
 parent: PHP
 tags: [admin]
@@ -13,27 +13,22 @@ tags: [admin]
 ---
 
 ## 참고링크
-
 {: .no_toc}
 
-🔗[완성코드]({{'/assets/img/14.zip'| relative_url}} ){: .anc}
-
-🔗[fopen-php-offical]({{'https://www.php.net/manual/en/function.fopen.php'| relative_url}} ){: .anc}
-🔗[fread-php-offical]({{'https://www.php.net/manual/en/function.fread.php'| relative_url}} ){: .anc}
-🔗[fread-php-tutorial]({{'https://www.w3schools.com/php/func_filesystem_fread.asp'| relative_url}} ){: .anc}
+🔗[완성코드]({{'/assets/img/15.zip'| relative_url}} ){: .anc}
 
 ---
 
 {: .note }
 > 게시판 글수정, 조회, update 구현
-
+> CRUD 의 마지막 update 를 구현한다.
+> CRUD(create, read, update, delete) 의 약자로 데이터베이스의 기본 처리 기능을 말한다
 
 ---
 {: .mb-10}
  
 # 01-view.php
 1. 수정하기 콘텐츠 추가
-
 
 view.php
 {: .label .label-purple }
@@ -174,7 +169,7 @@ $result = mysqli_query($conn, $sql);
   <?php
   if ($row = mysqli_fetch_array($result)) {
   ?>
-    <form action="insert.php" method="post">
+    <form action="modify.php" method="post">
       <p>
         <label for="name">작성자:</label>
         <input type="text" id="name" name="name" value=<?= $row['name'] ?> />
@@ -210,3 +205,99 @@ $result = mysqli_query($conn, $sql);
 # 05-modify.php
 
 1. insert.php 다른이름으로 저장 =>  `modify.php`
+2. 코드작성
+
+
+modify.php
+{: .label .label-purple }
+
+```php
+<?php
+//변수 conn 에 mysqli_connect(서버주소, mysql사용자아이디, mysql사용자비밀번호, 데이터베이스이름) 할당
+$conn = mysqli_connect("localhost", "root", "", "mango_board");
+if (!$conn) { //변수conn 이 false 일경우
+  echo 'db에 연결하지 못했습니다.' . mysqli_connect_error(); //문자열과 함께 에러메시지 출력함수 실행
+} else {
+  echo 'db에 접속했습니다'; //성공시 출력할 문자열
+}
+
+$number = $_POST['number'];
+$user_name = $_POST['name'];
+$user_msg = $_POST['message'];
+$sql = "UPDATE free_board SET name='$user_name', message='$user_msg' WHERE number=$number";
+
+$result = mysqli_query($conn, $sql);
+
+if ($result === false) {
+  echo "수정에 실패했습니다.";
+  error_log(mysqli_error($conn));
+} else {
+  echo "수정을 완료하였습니다.";
+}
+mysqli_close($conn);
+print "<p><a href='index.php'>메인화면으로 돌아가기</a></p>";
+?>
+</body>
+
+</html>
+
+```
+
+---
+{: .mb-10}
+ 
+# 06-update.php
+
+
+update.php
+{: .label .label-purple }
+
+```php
+<?php
+$conn = mysqli_connect("localhost", "root", "", "mango_board");
+
+if (!$conn) {
+  echo 'db에 연결하지 못했습니다.' . mysqli_connect_error();
+} else {
+  echo 'db에 접속했습니다!!!';
+}
+$view_num = $_GET['number'];
+$sql = "SELECT * FROM free_board WHERE number = $view_num";
+$result = mysqli_query($conn, $sql);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>글수정</title>
+</head>
+
+<body>
+  <h1>수정하기</h1>
+  <?php
+  if ($row = mysqli_fetch_array($result)) {
+  ?>
+    <form action="modify.php" method="post">
+      <input type="hidden" name="number" value="<?= $view_num ?>">
+      <p>
+        <label for="name">작성자:</label>
+        <input type="text" id="name" name="name" value=<?= $row['name'] ?> />
+      </p>
+      <p>
+        <label for="message">메시지:</label>
+        <textarea name="message" id="message" cols="30" rows="10"><?= $row['message'] ?></textarea>
+      </p>
+      <input type="submit" value="글쓰기" />
+    </form>
+  <?php
+  }
+  mysqli_close($conn);
+  ?>
+
+</body>
+
+</html>
+```
