@@ -254,6 +254,7 @@ insert.php
 ```php
 <?php
   //변수 conn 에 mysqli_connect(서버주소, mysql사용자아이디, mysql사용자비밀번호, 데이터베이스이름) 할당
+  //$conn=mysqli_connect("localhost","내닷홈db아이디","내닷홈db비번","내닷홈db명");
   $conn=mysqli_connect("localhost","root","","mango_board");
   if(!$conn){ //변수conn 이 false 일경우
     echo 'db에 연결하지 못했습니다.'. mysqli_connect_error(); //문자열과 함께 에러메시지 출력함수 실행
@@ -521,24 +522,24 @@ echo $list;
   {: .label .label-purple }
   ```html
 
-  <!--index.php 내용 붙여넣기-->
-    <?php
-            $conn = mysqli_connect("localhost", "root", "", "mango_board");
+<!--index.php 내용 붙여넣기-->
+<?php
+  $conn = mysqli_connect("localhost", "root", "", "mango_board");
 
-            if(!$conn){
-                echo 'db에 연결하지 못했습니다.'. mysqli_connect_error(); 
-            } else{
-                echo 'db에 접속했습니다!!!';
-            }
-            <!-- -->
-            <!--free_board 테이블에서 글 조회-->
-            <!-- SELECT * FROM 테이블명-->
+  if(!$conn){
+      echo 'db에 연결하지 못했습니다.'. mysqli_connect_error(); 
+  } else{
+      echo 'db에 접속했습니다!!!';
+  }
+  <!-- -->
+  <!--free_board 테이블에서 글 조회-->
+  <!-- SELECT * FROM 테이블명-->
 
-            $view_num = $_GET['number'];
-            $sql = "SELECT * FROM free_board WHERE number = $view_num";
-            $result = mysqli_query($conn, $sql);        
-            
-    ?>
+  $view_num = $_GET['number'];
+  $sql = "SELECT * FROM free_board WHERE number = $view_num";
+  $result = mysqli_query($conn, $sql);        
+  
+?>
 
   <!DOCTYPE html>
   <html lang="ko">
@@ -643,3 +644,19 @@ $result = mysqli_query($conn, $sql);
 ---
 {: .mb-10}
  
+
+  
+ # 05-닷홈에 올리기
+
+ 1. 무료호스팅 신청 🔗[link]({{'https://www.dothome.co.kr/web/free/index.php'| relative_url}} ){: .anc}
+ 2. 1단계는 알아서 할것 호스팅 신청이 완료되면 ftp 연결까지 완료할것
+ 3. 마이닷홈을 클릭하여 db정보를 확인한다.
+    ![]({{'/assets/img/php158.jpg'| relative_url}} )
+ 4. 상세보기 클릭  
+    ![]({{'/assets/img/php159.jpg'| relative_url}} )
+ 5. 하단의 db정보를 확인후 MySQL 관리 를 클릭하여 PHPMYADMIN에 접속한다. 이때 접속아이디와 비밀번호는 DB 정보대로 작성한다.
+    ![]({{'/assets/img/php167.jpg'| relative_url}} )
+    ![]({{'/assets/img/php170.jpg'| relative_url}} )
+ 6. 그후 [01단계](#01-sql로-게시판-만들기db생성) 의 테이블 생성과정을 반복한다.
+
+ 7. `$conn=mysqli_connect("localhost","내닷홈db아이디","내닷홈db비번","내닷홈db명");` 닷홈연결시 왼쪽의 값으로 수정하여 올린다.

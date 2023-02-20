@@ -20,8 +20,8 @@ tags: [admin]
 ---
 
 {: .note }
-> 게시판 글수정, 조회, update 구현
-> CRUD 의 마지막 update 를 구현한다.
+> 게시판 글수정, 조회, update 구현<br/>
+> CRUD 의 마지막 update 를 구현한다.<br/>
 > CRUD(create, read, update, delete) 의 약자로 데이터베이스의 기본 처리 기능을 말한다
 
 ---
@@ -38,6 +38,10 @@ view.php
 <p><a href="index.php">수정하기</a></p>
 
 ```
+실행
+
+하단에 수정하기 글씨 추가됨
+![]({{'/assets/img/php156.jpg'| relative_url}} )
 
 ---
 {: .mb-10}
@@ -61,14 +65,16 @@ update.php
 
   <body>
     <h1>수정하기</h1>
-    
-    <form action="insert.php" method="post">
+    <!-- 수정페이지로 이동한다 -->
+    <form action="modify.php" method="post">
       <p>
         <label for="name">작성자:</label>
+        <!--value에 임의의 값을 넣어 수정전의 데이터를 임시생성한다. 이후 데이터베이스를 조회하여 변수로 출력한다.  -->
         <input type="text" id="name" name="name" value="김망고"/>
       </p>
       <p>
         <label for="message">메시지:</label>
+        <!--임의의 값을 넣어 수정전의 데이터를 임시생성한다. 이후 데이터베이스를 조회하여 변수로 출력한다.  -->        
         <textarea name="message" id="message" cols="30" rows="10">이전글내용</textarea>
       </p>
       <input type="submit" value="글쓰기" />
@@ -116,21 +122,61 @@ $result = mysqli_query($conn, $sql);
 # 03-view.php
 
 + 글내용을 출력하는 코드를 응용하여 작성한다.
++ 표시된 부분을 복사한다.
+![]({{'/assets/img/php160.jpg'| relative_url}} )
 
 view.php
 {: .label .label-purple }
 
 ```php
-...
- <?php
+<!-- db접속시 php -->
+<?php
+$conn = mysqli_connect("localhost", "root", "", "mango_board");
+
+if (!$conn) {
+  echo 'db에 연결하지 못했습니다.' . mysqli_connect_error();
+} else {
+  echo 'db에 접속했습니다!!!';
+}
+$view_num = $_GET['number'];
+$sql = "SELECT * FROM free_board WHERE number = $view_num";
+$result = mysqli_query($conn, $sql);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View-망고게시글</title>
+</head>
+
+<body>
+  <h1>자유 게시판</h1>
+  <h2>글 내용</h2>
+  <?php
+  /* 여기부터 추가 */
+  if ($row = mysqli_fetch_array($result)) {
+  ?>
+    <h3>글번호: <?= $row['number'] ?> / 글쓴이: <?= $row['name'] ?> </h3>
+    <div> <?= $row['message'] ?></div>
+  <?php
   }
   mysqli_close($conn);
   ?>
   <p><a href="index.php">메인화면으로 돌아가기</a></p>
+  /* update.pnp에 매개변수로 number 를 전달한다.*/
   <p><a href="update.php?number=<?= $row['number'] ?>">수정하기</a></p>
-...
-```
 
+</body>
+</html>
+
+```
+![]({{'/assets/img/php157.jpg'| relative_url}} )
+
+| db를 조회해서 $row의 number 과 name, message 의 데이터를 출력한후 데이터베이스 서버를 종료한다.
+{: .box .bg-white-100}
 ---
 {: .mb-10}
  
