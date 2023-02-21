@@ -520,6 +520,7 @@ echo $list;
     
   view.php
   {: .label .label-purple }
+  
   ```html
 
 <!--index.php 내용 붙여넣기-->
@@ -566,6 +567,7 @@ echo $list;
   </body>
 
   </html>
+
   ```
 
 + 글내용 동적출력
@@ -644,9 +646,7 @@ $result = mysqli_query($conn, $sql);
 ---
 {: .mb-10}
  
-
-  
- # 05-닷홈에 올리기
+# 05-닷홈에 올리기
 
  1. 무료호스팅 신청 🔗[link]({{'https://www.dothome.co.kr/web/free/index.php'| relative_url}} ){: .anc}
  2. 1단계는 알아서 할것 호스팅 신청이 완료되면 ftp 연결까지 완료할것
@@ -659,4 +659,5 @@ $result = mysqli_query($conn, $sql);
     ![]({{'/assets/img/php170.jpg'| relative_url}} )
  6. 그후 [01단계](#01-sql로-게시판-만들기db생성) 의 테이블 생성과정을 반복한다.
 
- 7. `$conn=mysqli_connect("localhost","내닷홈db아이디","내닷홈db비번","내닷홈db명");` 닷홈연결시 왼쪽의 값으로 수정하여 올린다.
+ 7. `$conn=mysqli_connect("localhost","내닷홈db아이디","내닷홈db비번","내닷홈db명");` 
+ 8. 닷홈연결시 왼쪽의 값으로 수정하여 올린다.
