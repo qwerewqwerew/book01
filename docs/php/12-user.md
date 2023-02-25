@@ -24,6 +24,8 @@ tags: [user]
 
 🔗[실습예제]({{'/assets/img/newsgrid-start.zip'| relative_url}} ){: .anc}
 
+🔗[실습예제완성]({{'/assets/img/newsgrid.zip'| relative_url}} ){: .anc}
+
 ---
 
 # user 페이지
@@ -44,9 +46,6 @@ tags: [user]
 
 1. `htdoc/09/login.php` 수정
 2. 코드작성
-
-login.php
-{: .label .label-purple }
 
 ```php
 <?php
@@ -70,6 +69,7 @@ $password = $_POST['password'];
 > > INPUT_COOKIE : COOKIR로 넘겨받은 입력값 경우.<br/>
 > > INPUT_SERVER :  슈퍼전역변수 경우.<br/>
 > > INPUT_ENV : 환경변수 경우<br/>
+
 ---
 
 {: .mb-10}
@@ -82,10 +82,7 @@ $password = $_POST['password'];
 > 값과 비교해서 처리해야한다. <br/>
 > 이번에는 임시로 db를 파일로 생성하여 구현할것이다.
 
-1. 작업중인 폴더에 config.php 를 생성한다.
-
-config.php
-{: .label .label-purple }
+1. 작업중인 폴더에 config.php 를 생성후 사용자 정보 data를 작성.
 
 ```js
 <?php
@@ -101,11 +98,8 @@ config.php
 # 03-functions.php
 
 {: .note }
-
 > 사용자 인증정보를 확인하는 함수작성
 
-functions.php
-{: .label .label-purple }
 
 ```php
 
@@ -116,6 +110,8 @@ function authenticate_user($email, $password){
 }
 ```
 
+
+
 ![]({{'/assets/img/php139.jpg'| relative_url}} )
 
 {: .new }
@@ -124,6 +120,8 @@ function authenticate_user($email, $password){
 > 2. authenticate_user 함수의 조건문으로 조건별 처리<br/>
 > 3. config.php 에 저장된 값과 비교한다.<br/>
 >    ![]({{'/assets/img/php140.jpg'| relative_url}} )
+>
+> 입력 정보가 저장된 db와 같으면 true 를 반환하는 코드이다
 
 ---
 
@@ -131,12 +129,9 @@ function authenticate_user($email, $password){
 
 # 04-login.php
 
-1. login.php의 상단에 config.php를 인클루드 한다.
-2. login에 config가 로드되어 있어야 functions.php를 실행해서 값을 비교할수 있다
-3. login 에서 입력받은 값을 authenticate_user 함수로 전달한다.
+2. `login`에 `config`가 로드되어 있어야 `functions.php`를 실행해서 값을 비교할수 있으므로 `login.php`의 상단에 `config.php`를 인클루드 한다.
+3. `login` 에서 입력받은 값을 `authenticate_user` 함수로 전달한다.
 
-login.php
-{: .label .label-purple }
 
 ```php
 $title = 'Login';
@@ -179,18 +174,13 @@ if (isset($_POST['login'])) {
 
 | 구문                                       | 설명                                         |
 | :----------------------------------------- | :------------------------------------------- |
-| `header("Location: /target_url"); exit();` | Location 뒤에 이동할 페이지 경로를 작성한다. |
+| `header("Location: /target_url");` <br> `exit();` | Location 뒤에 이동할 페이지 경로를 작성한다. |
 
-exit() 는 php 실행을 끝내는 함수. <br/>
+`exit()` 는 php 실행을 끝내는 함수. <br/>
 이후에 어떤 코드가 있어도 실행하지 않로 응답을 브라우저에 되돌린다. <br/>
-exit() 를 굳이 쓰는 이유는 이후에 나오는 코드가 리다이렉트가 아닌 다른 상태로 바꿀 가능성을 차단하기 위해서이다. <br/>
+`exit()` 를 굳이 쓰는 이유는 이후에 나오는 코드가 리다이렉트가 아닌 다른 상태로 바꿀 가능성을 차단하기 위해서이다. <br/>
 <span class="fs-2 text-gray-100">출처:https://wikidocs.net/116886</span>
 {: .box .bg-white-100}
-
-
-
-function.php
-{: .label .label-purple }
 
 ```php
 
@@ -212,33 +202,35 @@ function redirect($url){
 
 # 06-user.php
 
-1. user.php 파일을 생성한다
+1. `user.php` 파일을 생성한다
 
-user.php
-{: .label .label-purple }
 
 ```php
 <?php
-//세션시작
+//1. 세션시작
 session_start();
+//2
 $title = '사용자페이지';
 include('header.php');
 include('config.php');
 require_once('functions.php');
 
-//session 에 저장된 email 정보를 출력
+//3. session 에 저장된 email 정보를 출력
 echo $_SESSION['email'];
 ```
 
 실행
 
+{: .new }
+> 1. 로그인기능은 세션을 시작해야 한다.
+> 2. `$title` 는 현재 페이지의  제목을 변수로 출력한다.
+> 3. session 에 저장된 email 정보를 출력
+
 ![]({{'/assets/img/php141.jpg'| relative_url}} )
 
-1. 사용자정보가 다를경우 login 으로 이동시키자
-2. 함수선언 user_is_auth();
+1. 사용자정보가 다를경우 `login` 으로 이동시키자
+2. 함수선언 `user_is_auth()`;
 
-user.php
-{: .label .label-purple }
 
 ```php
 confirm_user_is_auth();
@@ -250,10 +242,7 @@ confirm_user_is_auth();
 
 # 07-functions.php
 
-1. confirm_user_is_auth() 작성
-
-functions.php
-{: .label .label-purple }
+1. `confirm_user_is_auth() `작성
 
 ```php
 function user_is_auth(){
@@ -268,8 +257,8 @@ function confirm_user_is_auth(){
 }
 ```
 
-- user_is_auth 함수는 session 에 email 이 있는지를 확인한다.
-- confirm_user_is_auth 함수는 user_is_auth의 return 값을 비교하여 false 일경우 login 페이지로 이동 시킨다
+- `user_is_auth` 함수는 session 에 email 이 있는지를 확인한다.
+- `confirm_user_is_auth` 함수는 user_is_auth의 return 값을 비교하여 false 일경우 login 페이지로 이동 시킨다
   {: .box .bg-white-100}
 
 ---
@@ -308,33 +297,28 @@ if(user_is_auth()){
 # 09-logout.php
 
 ## user.php
-
 {: .no_toc}
 
 - user.php에서 로그아웃을 구현한다.
-- 세션을 비워 로그아웃을 구현할수 있다.
+- 로그아웃은 세션을 비워 구현할수 있다.
 
 user.php의 마지막에 아래의 코드를 추가한다.
 {: .box .bg-white-100}
 
-user.php
-{: .label .label-purple }
 
 ```php
 ...
 confirm_user_is_auth();
 ?>
-#add
+#add 로그아웃 페이지로 이동하는 링크 생성
 <p><a href="logout.php">logout</a></p>
 <?php include('footer.php'); ?>
 
 ```
 
-- logout.php 문서 생성
+## logout.php 문서 생성를 생성한다.
+{: .no_toc}
 
-
-logout.php
-{: .label .label-purple }
 
 ```php
 <?php
@@ -358,3 +342,26 @@ logout.php
 4. 실행
     ![]({{'/assets/img/php144.jpg'| relative_url}} )
 {: .box .bg-white-100}
+
+
+
+---
+{: .mb-10}
+ 
+# 10-php 에 자바스크립트 넣기
+
+```php
+  <?php
+  echo '<script>', 'showMessage();', '</script>';
+  ?>
+  <script>
+    function showMessage() {
+      alert("click here");
+    }
+  </script>
+  <h2 onclick="showMessage()">Editor Picks</h2>
+```
+{: .important }
+> 클릭시 함수실행됨
+>
+>

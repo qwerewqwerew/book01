@@ -29,6 +29,7 @@ code {
   padding:1rem 1.5rem;
   border:1px solid $grey-lt-300;
   box-shadow: 0 0 4px $grey-lt-300;
+  background-color: rgba(201, 131, 241, 0.05);
 }
 .box:before{
   content:'🤓';
@@ -59,7 +60,7 @@ code {
       font-weight:400;
     }
     h3 {
-      color: $grey-dk-200;
+      color: $purple-200;
       left: $sp-4;
       &:before {
         content: "";
@@ -84,3 +85,13 @@ code {
 }
 
 .highlight .c1{color:#8caf75;}
+p.note, blockquote.note{
+  background:rgb(114 83 237 / 10%);
+}
+p.important, blockquote.important{
+  background:rgb(44 133 250 / 10%);
+}
+p.new, blockquote.new{
+  background:rgb(65  214 147/10%);
+}
+code.language-plaintext.highlighter-rouge{font-size: $font-size-6; color:$red-100;}
