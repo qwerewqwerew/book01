@@ -87,7 +87,7 @@ header.php
 ## 03 footer.php
 
 1. login.php 와 같은 폴더에 footer.php 생성
-
+2. html 태그를 닫는 문장을 넣는다
 footer.php
 {: .label .label-purple }
 
@@ -102,15 +102,6 @@ footer.php
 
 1. login.php 와 같은 폴더에 functions.php 생성
 
-functions.php
-{: .label .label-purple }
-
-```php
-
-</body>
-</html>
-
-```
 
 ## 05 login 수정
 

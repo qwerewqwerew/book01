@@ -1,8 +1,8 @@
 ---
-title: 12-admin
+title: 12-user
 layout: default
 parent: PHP
-tags: [admin]
+tags: [user]
 ---
 
 ---
@@ -24,7 +24,7 @@ tags: [admin]
 
 ---
 
-# admin 페이지
+# user 페이지
 
 {: .no_toc}
 
@@ -34,7 +34,7 @@ tags: [admin]
 >
 > {: .no_toc}
 >
-> - admin page에서 관리자정보 입력시 로그인 구현
+> - user page에서 사용자정보 입력시 로그인 구현
 
 ---
 
@@ -70,7 +70,7 @@ $password = $_POST['password'];
 
 {: .new }
 
-> admin 페이지를 구현하려면 사용자의 입력 정보가 db에 저장된 <br>
+> user 페이지를 구현하려면 사용자의 입력 정보가 db에 저장된 <br>
 > 값과 비교해서 처리해야한다. <br/>
 > 이번에는 임시로 db를 파일로 생성하여 구현할것이다.
 
@@ -81,7 +81,7 @@ config.php
 
 ```js
 <?php
-    const admin_name = 'admin@admin.com';
+    const user_name = 'user@user.com';
     const password = '1234';
 ?>
 ```
@@ -101,8 +101,8 @@ functions.php
 
 ```php
 
-function authenticate_admin($email, $password){
-  if($email = admin_name && $password == password){
+function authenticate_user($email, $password){
+  if($email = user_name && $password == password){
       return true;
   }
 }
@@ -112,8 +112,8 @@ function authenticate_admin($email, $password){
 
 {: .new }
 
-> 1. 관리자가 정보를 입력한다<br/>
-> 2. authenticate_admin 함수의 조건문으로 조건별 처리<br/>
+> 1. 사용자가 정보를 입력한다<br/>
+> 2. authenticate_user 함수의 조건문으로 조건별 처리<br/>
 > 3. config.php 에 저장된 값과 비교한다.<br/>
 >    ![]({{'/assets/img/php140.jpg'| relative_url}} )
 
@@ -125,7 +125,7 @@ function authenticate_admin($email, $password){
 
 1. login.php의 상단에 config.php를 인클루드 한다.
 2. login에 config가 로드되어 있어야 functions.php를 실행해서 값을 비교할수 있다
-3. login 에서 입력받은 값을 authenticate_admin 함수로 전달한다.
+3. login 에서 입력받은 값을 authenticate_user 함수로 전달한다.
 
 login.php
 {: .label .label-purple }
@@ -142,12 +142,12 @@ if (isset($_POST['login'])) {
     $status = '이메일 형식에 맞게 입력해주세요.';
   }
   #add
-  if (authenticate_admin($email, $password)) {
-    //사용자가 입력한 email과 관리자의 email 이 같으면
+  if (authenticate_user($email, $password)) {
+    //사용자가 입력한 email과 사용자의 email 이 같으면
     //session 에 email을 저장-사용자가 로그아웃을 실행하여 세션을 초기화 하지 않는 이상 email은 세션에 저장됨
     $_SESSION['email'] = $email;
-    //redirect 함수를 사용하여 관리자페이지로 이동
-    redirect('admin.php');
+    //redirect 함수를 사용하여 사용자페이지로 이동
+    redirect('user.php');
   } else {
     $status = '비밀번호를 확인해주세요.';
   }
@@ -179,6 +179,8 @@ exit() 를 굳이 쓰는 이유는 이후에 나오는 코드가 리다이렉트
 <span class="fs-2 text-gray-100">출처:https://wikidocs.net/116886</span>
 {: .box .bg-white-100}
 
+
+
 function.php
 {: .label .label-purple }
 
@@ -200,18 +202,18 @@ function redirect($url){
 
 {: .mb-10}
 
-# 06-admin.php
+# 06-user.php
 
-1. admin.php 파일을 생성한다
+1. user.php 파일을 생성한다
 
-admin.php
+user.php
 {: .label .label-purple }
 
 ```php
 <?php
 //세션시작
 session_start();
-$title = '관리자페이지';
+$title = '사용자페이지';
 include('header.php');
 include('config.php');
 require_once('functions.php');
@@ -225,13 +227,13 @@ echo $_SESSION['email'];
 ![]({{'/assets/img/php141.jpg'| relative_url}} )
 
 1. 사용자정보가 다를경우 login 으로 이동시키자
-2. 함수선언 admin_is_auth();
+2. 함수선언 user_is_auth();
 
-admin.php
+user.php
 {: .label .label-purple }
 
 ```php
-confirm_admin_is_auth();
+confirm_user_is_auth();
 ```
 
 ---
@@ -240,26 +242,26 @@ confirm_admin_is_auth();
 
 # 07-functions.php
 
-1. confirm_admin_is_auth() 작성
+1. confirm_user_is_auth() 작성
 
 functions.php
 {: .label .label-purple }
 
 ```php
-function admin_is_auth(){
+function user_is_auth(){
   return isset($_SESSION['email']);
 }
 
-function confirm_admin_is_auth(){
-  if(!admin_is_auth()){
+function confirm_user_is_auth(){
+  if(!user_is_auth()){
       redirect('login.php');
       exit();
   }
 }
 ```
 
-- admin_is_auth 함수는 session 에 email 이 있는지를 확인한다.
-- confirm_admin_is_auth 함수는 admin_is_auth의 return 값을 비교하여 false 일경우 login 페이지로 이동 시킨다
+- user_is_auth 함수는 session 에 email 이 있는지를 확인한다.
+- confirm_user_is_auth 함수는 user_is_auth의 return 값을 비교하여 false 일경우 login 페이지로 이동 시킨다
   {: .box .bg-white-100}
 
 ---
@@ -270,15 +272,15 @@ function confirm_admin_is_auth(){
 
 {: .note }
 
-> 이미 관리자 로그인이 되어있는 상태로 login 페이지에 접속시 admin 페이지로 이동시킨다.
+> 이미 사용자 로그인이 되어있는 상태로 login 페이지에 접속시 user 페이지로 이동시킨다.
 
 login.php
 {: .label .label-purple }
 
 ```php
 
-if(admin_is_auth()){
-  redirect('admin.php');
+if(user_is_auth()){
+  redirect('user.php');
   exit();
 }
 
@@ -286,7 +288,7 @@ if(admin_is_auth()){
 
 ![]({{'/assets/img/php142.jpg'| relative_url}} )
 
-- 로그인 페이지 접속시 admin.php 로 리디렉션 되는지 확인한다.
+- 로그인 페이지 접속시 user.php 로 리디렉션 되는지 확인한다.
 
 - 실행
   ![]({{'/assets/img/php143.jpg'| relative_url}} )
@@ -297,22 +299,22 @@ if(admin_is_auth()){
 
 # 09-logout.php
 
-## admin.php
+## user.php
 
 {: .no_toc}
 
-- admin.php에서 로그아웃을 구현한다.
+- user.php에서 로그아웃을 구현한다.
 - 세션을 비워 로그아웃을 구현할수 있다.
 
-admin.php의 마지막에 아래의 코드를 추가한다.
+user.php의 마지막에 아래의 코드를 추가한다.
 {: .box .bg-white-100}
 
-admin.php
+user.php
 {: .label .label-purple }
 
 ```php
 ...
-confirm_admin_is_auth();
+confirm_user_is_auth();
 ?>
 #add
 <p><a href="logout.php">logout</a></p>
