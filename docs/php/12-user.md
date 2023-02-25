@@ -22,6 +22,8 @@ tags: [user]
 
 🔗[완성코드]({{'/assets/img/12.zip'| relative_url}} ){: .anc}
 
+🔗[실습예제]({{'/assets/img/newsgrid-start.zip'| relative_url}} ){: .anc}
+
 ---
 
 # user 페이지
@@ -51,6 +53,7 @@ login.php
 /* add */
 session_start();
 ...
+//filter_input 는 사용자의 입력값을 유효성 검증해주는 php내장 함수이다
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 /* add */
 $password = $_POST['password'];
@@ -58,10 +61,15 @@ $password = $_POST['password'];
 
 {: .important }
 
-> 1. form 에서 입력받은 정보를 저장하려면 session 을 유지해야함
-> 2. session은 최상단에 작성한다.
-> 3. password 변수에 password를 저장
-
+> 1. form 에서 입력받은 정보를 저장하려면 session 을 유지해야함<br/>
+> 2. session은 최상단에 작성한다.<br/>
+> 3. password 변수에 password를 저장<br/>
+> 4. filter_input 함수는 5가지 형태로 넘어온 값 지원 한다.<br/>
+> > INPUT_GET : GET 방식으로 받은 입력값 경우. <br/>
+> > INPUT_POST : POST 방식으로 받은 입력값 경우.<br/>
+> > INPUT_COOKIE : COOKIR로 넘겨받은 입력값 경우.<br/>
+> > INPUT_SERVER :  슈퍼전역변수 경우.<br/>
+> > INPUT_ENV : 환경변수 경우<br/>
 ---
 
 {: .mb-10}
