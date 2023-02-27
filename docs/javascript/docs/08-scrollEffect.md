@@ -1,15 +1,14 @@
 ---
 layout: default
-title: 08 scroll-Effect
+title: 08-스크롤효과
 parent: Javascript
 ---
 
 # 목차
-
 {: .no_toc}
 
 1. TOC
-   {:toc}
+{:toc}
 
 ---
 

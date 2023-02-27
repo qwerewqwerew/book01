@@ -1,5 +1,5 @@
 ---
-title: 12-시간표시
+title: 15-시간표시
 parent: Javascript
 layout: post
 ---
